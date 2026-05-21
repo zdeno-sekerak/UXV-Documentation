@@ -13,3 +13,4 @@
   * [Setting Up Actuators (Servos and Motors) in PX4](doodle-labs-radio-connections/setting-up-actuators-servos-and-motors-in-px4.md)
   * [Controlling an Unmanned Vehicle with Ethernet and QGC](doodle-labs-radio-connections/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
   * [Controlling an Unmanned Vehicle with SBUS](doodle-labs-radio-connections/controlling-an-unmanned-vehicle-with-sbus.md)
+  * [Antenna Terms](doodle-labs-radio-connections/antenna-terms.md)

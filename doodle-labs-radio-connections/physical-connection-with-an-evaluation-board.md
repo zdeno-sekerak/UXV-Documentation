@@ -53,7 +53,7 @@ If you wish to connect a Doodle Labs radio without an evaluation board, follow [
 For the setup of the radio, it is recommended to use an ethernet connection through a cable to a computer. This method works on all types of radios and is the most reliable. This guide focuses only on this method. It is also possible to use an USB, UART or WiFi connection, however this method might not be available on all types of radios. For example the Wifi connection, where the radio sets up a wifi network to which it is possible to connect, is only available on the Wearable and OEM radio variants.
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 Make sure to always connect the antennas to the radios, which needs to be done before powering on the radio otherwise there is a risk of damaging the internal electronics. Afterwards it is safe to start connecting the power and ethernet to the radio.&#x20;
 {% endhint %}
 

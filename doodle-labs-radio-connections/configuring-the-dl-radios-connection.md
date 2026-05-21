@@ -10,6 +10,10 @@ Part List:
 
 * 2 Doodle Labs Radios with antennas and working connection to a computer through ethernet cable (check [this](https://docs.google.com/document/d/1zot5UUsQdsEH8KkXq8VFGMw3t8RH3kEaSKkXSnUKDaE/edit?tab=t.0) guide)
 
+{% hint style="info" %}
+Please note that this guide focuses on the Point-to-Point communication, which establishes a direct link between two radios. Types of use-cases can be found [here](https://kb.doodlelabs.com/drone-performance-use-cases).
+{% endhint %}
+
 Start by powering both of the radios on (for example by connecting both of the cables to a power supply and setting the current limit higher). Connect at least one of the radios to a computer through an ethernet cable, ideally both at the same time for quicker debugging.
 
 Log into the web GUI for the radio that you are setting up. Navigate to simple configuration - simple configuration and select the appropriate settings. Each of them are explained here:
