@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Doodle Labs Radio Connections](README.md)
+  * [FAQ](doodle-labs-radio-connections/faq.md)
   * [Choosing a Doodle Labs Radio](doodle-labs-radio-connections/choosing-a-doodle-labs-radio.md)
   * [Physical Connection with an Evaluation Board](doodle-labs-radio-connections/physical-connection-with-an-evaluation-board.md)
   * [Physical Connection without an Evaluation Board](doodle-labs-radio-connections/physical-connection-without-an-evaluation-board.md)

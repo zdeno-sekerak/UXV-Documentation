@@ -1,7 +1,7 @@
 ---
 description: >-
-  This guide explains how to connect to a Doodle Labs radio from a computer so
-  that you can configure the settings and connections.
+  This guide explains how to physically wire a Doodle Labs radio to a computer
+  for a setup.
 ---
 
 # Physical Connection with an Evaluation Board
@@ -13,11 +13,11 @@ Part List:
 * Connectors for the DL Radios - Can be found in the documentation, read further
 * Ethernet Cable (+ adapter) - For connecting the radios to a PC for configuration
 * Doodle Labs Evaluation Board for the radio - Makes the process simpler
-* Power Supply for the Evaluation Board
+* Power Supply for the Evaluation Board - To power on the radio
 
 Tools List (Depending on the type of Evaluation board):
 
-* Tweezers
+* Tweezers - To modify connectors
 * Cables
 * Connectors (this guide uses XT60)
 * Wire Stripper (can also use fingernails for thin ones, around [24 AWG](https://en.wikipedia.org/wiki/American_wire_gauge#Tables_of_AWG_wire_sizes) max)
@@ -37,15 +37,23 @@ Begin by locating the documentation the radio on the website based on the part n
 {% endcolumn %}
 {% endcolumns %}
 
+{% hint style="success" %}
+Expected Outcome: Located documentation (link/pdf) for the radio model.
+{% endhint %}
+
 ### 2. Physical Connection
 
 {% hint style="info" %}
 If you wish to connect a Doodle Labs radio without an evaluation board, follow [this](physical-connection-without-an-evaluation-board.md) guide.
 {% endhint %}
 
+{% hint style="info" %}
 For the setup of the radio, it is recommended to use an ethernet connection through a cable to a computer. This method works on all types of radios and is the most reliable. This guide focuses only on this method. It is also possible to use an USB, UART or WiFi connection, however this method might not be available on all types of radios. For example the Wifi connection, where the radio sets up a wifi network to which it is possible to connect, is only available on the Wearable and OEM radio variants.
+{% endhint %}
 
-With the basics established, the next step is to connect the antennas to the radios, which needs to be done before powering on the radio otherwise there is a risk of damaging the internal electronics. Afterwards it is safe to start connecting the power and ethernet to the radio.&#x20;
+{% hint style="warning" %}
+Make sure to always connect the antennas to the radios, which needs to be done before powering on the radio otherwise there is a risk of damaging the internal electronics. Afterwards it is safe to start connecting the power and ethernet to the radio.&#x20;
+{% endhint %}
 
 #### 2.1 Connecting the Evaluation Board
 
@@ -57,7 +65,7 @@ Such a board significantly simplifies the process of powering up and connecting 
 
 #### 2.2 Powering the Evaluation Board
 
-Before connecting anything, make sure to first determine the correct voltage rating for the radio, which can be found in the documentation. Some radios will have a specified number (5V for the DL Mini), others will have a range (6V - 42V for the DL Embedded - legacy product).&#x20;
+Before connecting anything, make sure to first determine the correct voltage rating for the radio, which can be found in the documentation. Some radios will have a specified number (5V for the DL Mini), others will have a range (6V - 42V for the DL Embedded - legacy product). If you connect the wrong voltage, the radio will either not work or you will burn some components.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-05-21 112518.png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -77,7 +85,17 @@ Then continue by connecting these cables to the power supply pins. Keep the stan
 
 <table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><img src="../.gitbook/assets/Screenshot 2026-05-21 114050 (1).png" alt=""></td></tr><tr><td><img src="../.gitbook/assets/Screenshot 2026-05-21222 115437.png" alt=""></td></tr></tbody></table>
 
-Lastly set the power supply to the correct voltage for the radio along with a sufficiently high current limit to deliver a maximum of 15 Watts (power (watts) = current (ampers) \* voltage (volts)). However do not set it too high as if there is a wiring mistake, there is a higher chance of immidiately burning something. The radio will draw as much current as it needs, if it draws more, it will trigger the current limit and the voltage will start dropping. If the radio draws more then 15W, there is probably something wrong.
+Lastly set the power supply to the correct voltage for the radio along with a sufficiently high current limit to deliver a maximum of 15 Watts.
+
+{% hint style="info" %}
+power (watts) = current (ampers) \* voltage (volts)
+{% endhint %}
+
+However do not set it too high as if there is a wiring mistake, there is a higher chance of immidiately burning something. The radio will draw as much current as it needs, if it draws more, it will trigger the current limit and the voltage will start dropping. If the radio draws more then 15W, there is probably something wrong.
+
+{% hint style="success" %}
+Expected Outcome: Power can be delivered to the evaluation board.
+{% endhint %}
 
 #### 2.3 Ethernet and Radio Connection
 
@@ -90,5 +108,9 @@ The resulting connection should look similar to the following:
 <div align="center"><figure><img src="../.gitbook/assets/unknown (20).png" alt="" width="375"><figcaption><p>Radio With an Evaluation Board in a DIY Case to avoid Short Circuits</p></figcaption></figure></div>
 
 {% hint style="info" %}
-If you are missing a power cable, it is always possible to use a bench power supply set to the voltage found in the documentation. In this case it is os course nescessary to create a custom connector. Start by cutting a cable and stripping the two wires inside to metal. Then proceed to connect them to the correct + and - pins on the power supply. Find a guide for the respective cable online.
+On most of the radios, there is no indication of the radio working correctly after being powered on. Most of times you have to connect to them on the computer to verify they work
+{% endhint %}
+
+{% hint style="success" %}
+Expected Outcome: The Doodle Labs is physically connected to a computer, powered and ready to be configured.
 {% endhint %}
