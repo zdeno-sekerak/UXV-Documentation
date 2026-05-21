@@ -1,9 +1,11 @@
+---
+description: >-
+  This guide explains how to connect a radio to a computer without an evaluation
+  board. This is useful when you do not have access to one, or wish to integrate
+  a radio into a finished product.
+---
+
 # Physical Connection without an Evaluation Board
-
-Connecting the radio without an evaluation board is useful when:
-
-* You wish to configure it and are missing an evaluation board
-* You are integrating the configured radio into a product
 
 Parts:
 
@@ -17,6 +19,10 @@ Tools:
 * Power Source - Battery or Bench Power Supply
 * Multimeter
 * Soldering Iron
+
+{% hint style="info" %}
+It is reccomended to already have a working setup through the evaluation board as it simplifies the process of setting up and debugging the radio by eliminating some connection problems, such as a wrong pin connection.
+{% endhint %}
 
 The main challenge of connecting a radio without an evaluation board is finding the correct pins and connecting them together. It is therefore key to locate the documentation for the radio you have, the process of which was described in this [guide](physical-connection-with-an-evaluation-board.md).
 
@@ -32,13 +38,41 @@ You should end up with something like this.
 
 <figure><img src="../.gitbook/assets/IMG_0474.jpg" alt=""><figcaption></figcaption></figure>
 
-Now connect all of the PWR pins to the + pin and GND to the - pin on the power supply/battery. The recommended way to do this is to solder all of the PWR or GND wires onto two thicer cables going into the power supply.&#x20;
+Now connect all of the PWR/VCC/VDD/+ (equivalent terms in this context) and GND/- (angain equivalent) to the respective pins on the power supply/battery. The recommended way to do this is to solder all of the PWR or GND wires onto two thiccer cables. It is recommended to keep the convention of a red cable being the PWR/VCC and black being the GND/-.&#x20;
+
+Proceed by stripping the ends of the cable and connecting them to the power source, as shown below with an example of the - cable.
+
+{% columns %}
+{% column valign="middle" %}
+<figure><img src="../.gitbook/assets/Screenshot 2026-05-21222 115437.png" alt=""><figcaption><p>Stripped Cable</p></figcaption></figure>
+
+
+{% endcolumn %}
+
+{% column valign="middle" %}
+<figure><img src="../.gitbook/assets/Screenshot 2026-05-21 114050 (1).png" alt=""><figcaption><p>Stripped cable connected to a bench power supply</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
+
+A more reliable option is however to solder the correct connector at the end of each cable, which can then be plugged directly into the power supply terminal, as shown with an example of the - cable.
+
+{% columns %}
+{% column valign="middle" %}
+<figure><img src="../.gitbook/assets/Screenshot 2026-05-21 143338.png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column valign="middle" %}
+<figure><img src="../.gitbook/assets/IMG_0542.jpg" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
+
+The last option is to solder a connector (in this case XT60), which can be plugged to a battery to power the radio on the go. However be careful that you are using the correct voltage to not damage the radio. A lower voltage can sometimes corrupt data on the radio while a higher one will probably burn it. If the battery and radio voltages are mismatched, you can for example use a [voltage regulator](https://en.wikipedia.org/wiki/Voltage_regulator) to supply the correct amount.
 
 For a legacy radio model, which only requires one PWR and GND cable respectively, a connection might look something like the following.
 
 <figure><img src="../.gitbook/assets/IMG_0476 (1).jpg" alt=""><figcaption></figcaption></figure>
 
-The next step is to connect ethernet pins to a cable. In this case, UXV Technologies will be using a CUAV V6X flight controller with networking capablities and will wish to connect a radio using a 4-Pin JST-GH connector. Another common method of connecting ethernet is using the RJ-45 connector, which is easier to connect to a computer as a lot of them have a physical RJ-45 port (also simply called Ethernet Port).
+The next step is to connect ethernet pins to a cable. In this case, UXV Technologies is using a CUAV V6X flight controller with networking capablities and connected the radio using a 4-Pin JST-GH connector. Another common method of connecting ethernet is using the RJ-45 connector, which is easier to connect to a computer as a lot of them have a physical RJ-45 port (also simply called Ethernet Port).
 
 Start by locating the ETH pins in the documentation and on the radio.
 
@@ -56,3 +90,8 @@ Then find the pinout of the target connector, in our case it is the ETH port on 
 {% endcolumn %}
 {% endcolumns %}
 
+In this part, you need to be careful as the pins cannot be simply connected (RX+ to RX+). TX means transmit and RX receive, and each transmit pin needs to be connected to the receive pin of the corresponding polarity (TX+ -> RX+, TX- ->  RX-, RX+ -> TX+, RX- -> TX-). It is reccomended to solder the corresponding cables coming from the connectors together.&#x20;
+
+A finished connector will look something like this:
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-05-21 150521.png" alt=""><figcaption></figcaption></figure>

@@ -81,7 +81,7 @@ If you wish to use a dedicated connector, either use a power supply (for example
 
 <figure><img src="../.gitbook/assets/159029365-295131736-11453-org.jpg" alt="" width="300"><figcaption></figcaption></figure>
 
-#### 2.2.1 Powering the Evaluation Board with a Bench Power Supply
+#### 2.2.2 Powering the Evaluation Board with a Bench Power Supply
 
 The other option is to use a bench power supply. In this case you will need to use the connector wil cables already attached/soldered to it. An example with a 4.5 mm Barrel Jack is shown in the image.
 
