@@ -20,7 +20,7 @@ Tools List (Depending on the type of Evaluation board):
 * Tweezers
 * Cables
 * Connectors (this guide uses XT60)
-* Wire Stripper (can also use fingernails for thin ones, around [24 AGW](https://en.wikipedia.org/wiki/American_wire_gauge#Tables_of_AWG_wire_sizes) max)
+* Wire Stripper (can also use fingernails for thin ones, around [24 AWG](https://en.wikipedia.org/wiki/American_wire_gauge#Tables_of_AWG_wire_sizes) max)
 * Soldering Iron + Consumables
 
 ### 1. Locating the Documentation
