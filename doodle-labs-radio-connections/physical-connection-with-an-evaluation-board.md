@@ -59,7 +59,9 @@ Make sure to always connect the antennas to the radios, which needs to be done b
 
 To simplify the process of connecting and testing a Doodle Labs radio, it is reccomended to purchase the Evaluation Test Kit for the radio you wish to use. The kit contains all of the specialized cables and other quipment you will need, including the Evaluation Test Board. The list of Kits for every radio can be found [here](https://techlibrary.doodlelabs.com/quick-start-guide-ch1).
 
-<table data-card-size="large" data-view="cards" data-full-width="false"><thead><tr><th align="center"></th></tr></thead><tbody><tr><td align="center"><img src="../.gitbook/assets/unknown (15).png" alt=""></td></tr></tbody></table>
+
+
+<figure><img src="../.gitbook/assets/unknown (15).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Such a board significantly simplifies the process of powering up and connecting a DL radio to a computer as it has dedicated power and ethernet cable ports. It is then only necessary to use the correct cable to connect the board to the radio. The boards do however not come with a power supply.
 
@@ -83,7 +85,7 @@ If you do not have one, you can simply cut an existing cable and strip the end o
 
 Then continue by connecting these cables to the power supply pins. Keep the standard convention for cable colors, where the positive (+/VCC/VDD) is red and the negative (-/GND) is black.
 
-<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><img src="../.gitbook/assets/Screenshot 2026-05-21 114050 (1).png" alt=""></td></tr><tr><td><img src="../.gitbook/assets/Screenshot 2026-05-21222 115437.png" alt=""></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><img src="../.gitbook/assets/Screenshot 2026-05-21 114050 (1).png" alt=""></td></tr><tr><td><img src="../.gitbook/assets/Screenshot 2026-05-21222 115437.png" alt=""></td></tr></tbody></table>
 
 Lastly set the power supply to the correct voltage for the radio along with a sufficiently high current limit to deliver a maximum of 15 Watts.
 
