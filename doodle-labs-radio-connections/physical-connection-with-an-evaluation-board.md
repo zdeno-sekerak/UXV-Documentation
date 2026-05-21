@@ -8,28 +8,30 @@ description: >-
 
 Part List:
 
-* 2 Doodle Labs radios - One for the Ground Control Station and the other for the unmanned vehicle
-* 4 or 2 Antennas - Usually 2 per radio, 1 for the Nano variant
-* Connectors for the DL Radios - Can be found in the documentation, read further
-* Ethernet Cable (+ adapter) - For connecting the radios to a PC for configuration
-* Doodle Labs Evaluation Board for the radio - Makes the process simpler
-* Power Supply for the Evaluation Board - To power on the radio
+* 2 Doodle Labs radios - One for the Ground Control Station and the other for the unmanned vehicle.
+* 4 or 2 Antennas - Usually 2 per radio, 1 for the Nano variant.
+* Connectors for the DL Radios - Can be found in the documentation, read further.
+* Ethernet Cable (+ adapter) - For connecting the radios to a PC for configuration.
+* Doodle Labs Evaluation Board for the radio - Makes the process simpler.
+* Power Supply for the Evaluation Board - To power on the radio.
 
 Tools List (Depending on the type of Evaluation board):
 
-* Tweezers - To modify connectors
+* Tweezers - To modify connectors.
 * Cables
-* Connectors (this guide uses XT60)
-* Wire Stripper (can also use fingernails for thin ones, around [24 AWG](https://en.wikipedia.org/wiki/American_wire_gauge#Tables_of_AWG_wire_sizes) max)
+* Connectors - This guide uses XT60.
+* Wire Stripper - You can also use fingernails for thin ones, around [24 AWG](https://en.wikipedia.org/wiki/American_wire_gauge#Tables_of_AWG_wire_sizes) max.
 * Soldering Iron + Consumables
 
 ### 1. Locating the Documentation
 
-Begin by locating the documentation the radio on the website based on the part number, which is written on its label. The general naming convention for all doodle labs radios except the nimble variant dictates the name starts with RM followed by the part number (RM-XXXX-XXX) or they might be referred to by their marketing name such as Helix, Nano etc. In some cases, the radios might have been discontinued by Doodle Labs and it is necessary to look up the documentation in the [Legacy Product Index](https://techlibrary.doodlelabs.com/legacy-products).
+Begin by locating the documentation the radio on the website based on the radio model number, which is written on its label. The general naming convention for all doodle labs radios except the nimble variant dictates the name starts with RM followed by the part number (RM-XXXX-XXX) or they might be referred to by their marketing name such as Helix, Nano etc. In some cases, the radios might have been discontinued by Doodle Labs and it is necessary to look up the documentation in the [Legacy Product Index](https://techlibrary.doodlelabs.com/legacy-products).
+
+
 
 {% columns %}
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Label on RM-2250-2J-XM</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-05-21 132602.png" alt=""><figcaption><p>Label on RM-2450-2J-XM</p></figcaption></figure>
 {% endcolumn %}
 
 {% column valign="middle" %}
@@ -73,15 +75,21 @@ Before connecting anything, make sure to first determine the correct voltage rat
 
 Then you will need to find the power pins or connectors on the board. Some boards have only pins labelled + (equivalent: VCC and VDD) and - (equivalent: GND), others will have a dedicated connector, such as the 4.5 mm barrel jack.
 
+#### 2.2.1 Powering the Evaluation Board with a Laptop-style Power Supply
+
 If you wish to use a dedicated connector, either use a power supply (for example a laptop one) of the correct voltage rating.
 
 <figure><img src="../.gitbook/assets/159029365-295131736-11453-org.jpg" alt="" width="300"><figcaption></figcaption></figure>
+
+#### 2.2.1 Powering the Evaluation Board with a Bench Power Supply
 
 The other option is to use a bench power supply. In this case you will need to use the connector wil cables already attached/soldered to it. An example with a 4.5 mm Barrel Jack is shown in the image.
 
 <figure><img src="../.gitbook/assets/51dsMcAqVAL._AC_UF1000,1000_QL80_.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
-If you do not have one, you can simply cut an existing cable and strip the end of the wires inside of it. Afterwards locate the positive and negative wire. Some connectors might have an obvious indication. However in most of the cases you will need to find the pinout of the connector online and then use the ohm check on a voltmeter to locate the cable connected to the respective pins you are looking for.
+If you do not have one, you can simply cut an existing cable and strip the end of the wires inside of it of the plastic around them. Afterwards locate the positive and negative wire. Some connectors might have an obvious indication. However in most of the cases you will need to find the pinout of the connector online and then use the ohm check on a voltmeter to locate the cable connected to the respective pins you are looking for.
+
+If the evaluation board does not have a connector, they will have at least + and - pins. Sometimes the board has a [push in terminal block](https://caas.phoenixcontact.com/caas/v1/stable/media/33656/full/b700?format=jpg), into which a stripped cable can be simply inserted to establish a connection. Other boards have just exposed pins onto which a cable needs to be soldered.
 
 Then continue by connecting these cables to the power supply pins. Keep the standard convention for cable colors, where the positive (+/VCC/VDD) is red and the negative (-/GND) is black.
 
@@ -90,7 +98,7 @@ Then continue by connecting these cables to the power supply pins. Keep the stan
 Lastly set the power supply to the correct voltage for the radio along with a sufficiently high current limit to deliver a maximum of 15 Watts.
 
 {% hint style="info" %}
-power (watts) = current (ampers) \* voltage (volts)
+Power (Watts) = Current (Ampers) \* Voltage (Volts)
 {% endhint %}
 
 However do not set it too high as if there is a wiring mistake, there is a higher chance of immidiately burning something. The radio will draw as much current as it needs, if it draws more, it will trigger the current limit and the voltage will start dropping. If the radio draws more then 15W, there is probably something wrong.
@@ -101,7 +109,9 @@ Expected Outcome: Power can be delivered to the evaluation board.
 
 #### 2.3 Ethernet and Radio Connection
 
-To prepare the ethernet connection between the doodle labs radios an the computer, plug in all of the required connectors between the doodle labs and the evaluation board.
+To prepare the ethernet connection between the doodle labs radios an the computer, plug in all of the required connectors between the doodle labs and the evaluation board. An example of what that can look like is shown below.
+
+<figure><img src="../.gitbook/assets/IMG_0537 (1).jpg" alt=""><figcaption></figcaption></figure>
 
 Then use an ethernet cable to connect the computer and the evaluation board. This is usually done with the RJ-45 cable. In some other cases the connector is a 4-pin JST-GH, however, the evaluation kit should come with a reduction to the RJ-45 cable.
 
@@ -110,7 +120,7 @@ The resulting connection should look similar to the following:
 <div align="center"><figure><img src="../.gitbook/assets/unknown (20).png" alt="" width="375"><figcaption><p>Radio With an Evaluation Board in a DIY Case to avoid Short Circuits</p></figcaption></figure></div>
 
 {% hint style="info" %}
-On most of the radios, there is no indication of the radio working correctly after being powered on. Most of times you have to connect to them on the computer to verify they work
+On most of the radios, there is no indication of the radio working correctly after being powered on. Most of times you have to connect to them on the computer to verify they work. However a good indication of the radio working correctly is the power draw, which should be about 2W in the idle state.
 {% endhint %}
 
 {% hint style="success" %}
