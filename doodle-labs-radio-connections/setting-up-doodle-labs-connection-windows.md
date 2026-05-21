@@ -1,10 +1,12 @@
-# Setting Up the Connection
+---
+description: >-
+  Establish an ethernet connection to a radio. Use of the wiring with or without
+  evaluation board as  described in previous steps is a pre-requisite.
+---
 
-{% hint style="warning" %}
-Note: This guide focuses on point to point connection. If you wish to create a mesh network, follow this [guide](http://random-guide.com).
-{% endhint %}
+# Setting Up Doodle Labs Connection (Windows)
 
-In order to be able to connect to the radio, the network adapter in the computer needs to be configured. On windows, this is done through Control Panel - Network and Internet - Network and Sharing Centre - Change Adapter Settings. There locate the network adapter associated with the Doodle Labs connection (can be easily found by unplugging and replugging the ethernet cable of the doodle labs and seeing which one disappears and reappears). Please keep in mind that it might take up to 2 minutes after giving power to the radio for it to fully boot up.
+In order to communicate with the radio, the network adapter in the computer needs to be configured. On windows, this is done through Control Panel - Network and Internet - Network and Sharing Centre - Change Adapter Settings. There locate the network adapter associated with the Doodle Labs connection (can be easily found by unplugging and replugging the ethernet cable of the doodle labs and seeing which one disappears and reappears). Please keep in mind that it might take up to 2 minutes after giving power to the radio for it to fully boot up.
 
 {% hint style="info" %}
 You might recognize a lot of the terms used in this guide from the WiFi space, that is because the Doodle Labs radios use the same standard (with extensions) to create a network in between them.
