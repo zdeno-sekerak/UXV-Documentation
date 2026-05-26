@@ -14,6 +14,10 @@ Part List:
 Please note that this guide focuses on the Point-to-Point communication, which establishes a direct link between two radios. Types of use-cases can be found [here](https://kb.doodlelabs.com/drone-performance-use-cases).
 {% endhint %}
 
+### 1 Connect Attenuators
+
+Before testing the radios on the bench (in close proximity), it is reccomended to use attenuators, which will decrease the signal strength. At a very close range the waves from the antennas will intervene significantly decrease the link loss quality. Attenuators simulate the distance travelled of the signal.
+
 ### 1 Preliminary Steps
 
 Start by powering both of the radios on (for example by connecting both of the cables to a power supply and setting the current limit higher). Connect at least one of the radios to a computer through an ethernet cable, ideally both at the same time for quicker debugging.
@@ -68,7 +72,7 @@ _**DHCP**_ - A networking protocol that enables automatic IP address assignment 
 
 _**Traffic Prioritization**_ - For the scope of this guide, keep the default settings. It is a system which decides which packets are sent first when traffic is congested. Currently it is set to the highest priority.
 
-### 3 Functioning Setup &#x20;
+### 3 Functioning Setup Example
 
 A functioning setup of the ground control station (GCS) radio can look like this for example:
 
@@ -83,12 +87,12 @@ And the equivalent setup for the unmanned aerial vehicle (UAV) radio like this:
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-Expected outcome: The radios can communicate with each other.
+Expected outcome: Both of the radios have been set up and the connection is prepared to be verified in the next step.
 {% endhint %}
 
 ### 4 Verifying the connection
 
-To verify that the radios are communicating with each other, you can use several approaches:
+To verify that the radios are communicating with each other, you can use several approaches, two of them are listed as examples:
 
 #### A - Pinging the radios
 
