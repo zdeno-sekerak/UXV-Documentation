@@ -117,12 +117,12 @@ Start by locating the ETH pins in the documentation and on the radio.
 Then find the pinout of the target connector, in our case it is the ETH port on the CUAV V6X.
 
 {% columns %}
-{% column %}
-<figure><img src="../.gitbook/assets/image (37).png" alt="" width="189"><figcaption></figcaption></figure>
+{% column valign="middle" %}
+<figure><img src="../.gitbook/assets/image (37).png" alt="" width="189"><figcaption><p>Pinout of the ETH port on the CUAV V6X</p></figcaption></figure>
 {% endcolumn %}
 
-{% column %}
-<figure><img src="../.gitbook/assets/46e66c1fcbe21f8910b95691846599ba.jpg" alt=""><figcaption></figcaption></figure>
+{% column valign="middle" %}
+<figure><img src="../.gitbook/assets/46e66c1fcbe21f8910b95691846599ba.jpg" alt=""><figcaption><p>Pinout of the RJ-45 Ethernet connector</p></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 

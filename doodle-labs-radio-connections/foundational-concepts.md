@@ -57,3 +57,7 @@ The illustration below shows different ways a radio signal can be obstructed.
 <figure><img src="../.gitbook/assets/Screenshot 2026-05-26 152644.png" alt="" width="499"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-05-26 152633.png" alt="" width="488"><figcaption></figcaption></figure>
+
+### Power Level (unit: dBm)
+
+dBm is the standard unit used to express the transmit power of a radio (among other things). Because the scale spans an enormous range from microwatts (about the level of a weak received signal) to wats (transmit power), the unit is logarithmic, meaning every +3dBm doubles the power.
