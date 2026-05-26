@@ -4,12 +4,12 @@ description: >-
   achieve a high quality connection.
 ---
 
-# Optimizing Doodle Labs Radio Link
+# Optimizing Doodle Labs Link Settings
 
 Now both of the radios web GUI are accessible while only one of the radios is connected to the computer physically. The radio link enables information transfer from the other radio.
 
 {% hint style="info" %}
-In order to optimize the link, it is reccomended to mount the antennas in the final configuration.
+In order to optimize the link, it is recomended to mount the antennas in the final configuration, eg. on the UAV/UGV and the controller.
 {% endhint %}
 
 To optimize the radio link, it first needs to be analyzed for problems.

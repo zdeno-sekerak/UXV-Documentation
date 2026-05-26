@@ -48,3 +48,12 @@ It is also important to note, that there are two types of circular polarization 
 
 Radios operate at a certain frequency, for which a dedicated antenna has to be selected. A single-band antenna should be used when operating at a single frequency. However, if the radio is intended to operate across multiple frequencies, for example, when frequency hopping in environments with RF jamming, a multiband antenna is required. The tradeoff is that a multiband antenna is not optimized for any single frequency and will therefore perform worse than a dedicated single-band antenna at each respective frequency.
 
+### Fresnel Zone
+
+Intuitively, it would make sense that radio waves only need the line-of-sight without obstruction to achieve the best result. However due to the complexity of radio links, the zone, which must stay without obstruction takes a 3D ellipsoid shape between the transmitter and receiver.
+
+The illustration below shows different ways a radio signal can be obstructed.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-05-26 152644.png" alt="" width="499"><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-05-26 152633.png" alt="" width="488"><figcaption></figcaption></figure>
