@@ -44,5 +44,7 @@ For this reason, cyllindrically polarized antennas tend to be more popular for d
 
 It is also important to note, that there are two types of circular polarization antennas, left hand (LHCP) and right hand (RHCP) ones. This can be imagined as the ''spin'' direction of the circular signal and it is important that both of the antennas are using the same one.
 
+### Single-Band X Multiband
 
+Radios operate at a certain frequency, for which a dedicated antenna has to be selected. A single-band antenna should be used when operating at a single frequency. However, if the radio is intended to operate across multiple frequencies, for example, when frequency hopping in environments with RF jamming, a multiband antenna is required. The tradeoff is that a multiband antenna is not optimized for any single frequency and will therefore perform worse than a dedicated single-band antenna at each respective frequency.
 

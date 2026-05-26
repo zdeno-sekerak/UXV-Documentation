@@ -14,7 +14,7 @@ Part List:
 Please note that this guide focuses on the Point-to-Point communication, which establishes a direct link between two radios. Types of use-cases can be found [here](https://kb.doodlelabs.com/drone-performance-use-cases).
 {% endhint %}
 
-### 1. Preliminary Steps
+### 1 Preliminary Steps
 
 Start by powering both of the radios on (for example by connecting both of the cables to a power supply and setting the current limit higher). Connect at least one of the radios to a computer through an ethernet cable, ideally both at the same time for quicker debugging.
 
@@ -26,7 +26,7 @@ Log into the web GUI for the radio that you are setting up. Navigate to simple c
 Expected outcome: Open web GUI page where settings can be accessed.
 {% endhint %}
 
-### 2. Explanation of the Settings
+### 2 Explanation of the Settings
 
 {% hint style="info" %}
 This section explains the settings required for a optimized link. It is recommended to configure them based on your own needs, however if you just want a working link between a UAV and GCS, which is optimized for reliability, scroll down and copy the settings from the screenshots.
@@ -68,7 +68,7 @@ _**DHCP**_ - A networking protocol that enables automatic IP address assignment 
 
 _**Traffic Prioritization**_ - For the scope of this guide, keep the default settings. It is a system which decides which packets are sent first when traffic is congested. Currently it is set to the highest priority.
 
-### 3. Functioning Setup &#x20;
+### 3 Functioning Setup &#x20;
 
 A functioning setup of the ground control station (GCS) radio can look like this for example:
 
@@ -81,3 +81,31 @@ These settings should give you the maximum range and reliability at the cost of 
 And the equivalent setup for the unmanned aerial vehicle (UAV) radio like this:
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="success" %}
+Expected outcome: The radios can communicate with each other.
+{% endhint %}
+
+### 4 Verifying the connection
+
+To verify that the radios are communicating with each other, you can use several approaches:
+
+#### A - Pinging the radios
+
+Radios, which have a working link will create a network between each other. This means if you have one connected through ethernet to a computer, the other one will be acessible as if it were connected too. Therefore if you open the console you will be able to ping the other radio.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-05-26 111610.png" alt=""><figcaption></figcaption></figure>
+
+#### B - Mesh Map
+
+The radios have a feature, which allows the user to display a topology map of the entire network once enabled. To open the map, navigate to the Web GUI - Status - Mesh Map. In a point-to-point connection between two radios, you should see two points connected with a line.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-05-26 113231.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+The color of the line connecting the two dots representing the radios indicates the link quality ranging from good (green) through medium (orange) to bad (red).
+{% endhint %}
+
+{% hint style="success" %}
+Expected outcome: Two radios can communicate with each other and the connection between them has been verified.
+{% endhint %}
