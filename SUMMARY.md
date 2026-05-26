@@ -2,8 +2,9 @@
 
 * [Doodle Labs Radio Connections](README.md)
   * [FAQ](doodle-labs-radio-connections/faq.md)
-  * [Foundational Concept](doodle-labs-radio-connections/foundational-concept.md)
+  * [Foundational Concepts](doodle-labs-radio-connections/foundational-concepts.md)
   * [Choosing a Doodle Labs Radio](doodle-labs-radio-connections/choosing-a-doodle-labs-radio.md)
+  * [Choosing an Antenna](doodle-labs-radio-connections/choosing-an-antenna.md)
   * [Physical Connection with an Evaluation Board](doodle-labs-radio-connections/physical-connection-with-an-evaluation-board.md)
   * [Physical Connection without an Evaluation Board](doodle-labs-radio-connections/physical-connection-without-an-evaluation-board.md)
   * [Connecting Doodle Labs to a PC (Windows)](doodle-labs-radio-connections/connecting-doodle-labs-to-a-pc-windows.md)

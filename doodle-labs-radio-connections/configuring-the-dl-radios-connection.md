@@ -14,9 +14,19 @@ Part List:
 Please note that this guide focuses on the Point-to-Point communication, which establishes a direct link between two radios. Types of use-cases can be found [here](https://kb.doodlelabs.com/drone-performance-use-cases).
 {% endhint %}
 
+### 1. Preliminary Steps
+
 Start by powering both of the radios on (for example by connecting both of the cables to a power supply and setting the current limit higher). Connect at least one of the radios to a computer through an ethernet cable, ideally both at the same time for quicker debugging.
 
-Log into the web GUI for the radio that you are setting up. Navigate to simple configuration - simple configuration and select the appropriate settings. Each of them are explained here:
+Log into the web GUI for the radio that you are setting up. Navigate to simple configuration - simple configuration and select the appropriate settings. Each of them are explained in the next section.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-05-26 091631.png" alt=""><figcaption><p>Simple configuration tab in the Web GUI, firmware version: May 2023 (LST)</p></figcaption></figure>
+
+{% hint style="info" %}
+Expected outcome: Open web GUI page where settings can be accessed.
+{% endhint %}
+
+### 2. Configuring the Settings
 
 _**Profile Configuration**_ - A pre-built template optimizer either for a Ground Control Station (GCS) or an unmanned vehicle (UAV)
 
