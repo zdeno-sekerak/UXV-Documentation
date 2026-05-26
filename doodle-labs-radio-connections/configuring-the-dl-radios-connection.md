@@ -26,11 +26,15 @@ Log into the web GUI for the radio that you are setting up. Navigate to simple c
 Expected outcome: Open web GUI page where settings can be accessed.
 {% endhint %}
 
-### 2. Configuring the Settings
+### 2. Explanation of the Settings
 
-_**Profile Configuration**_ - A pre-built template optimizer either for a Ground Control Station (GCS) or an unmanned vehicle (UAV)
+{% hint style="info" %}
+This section explains the settings required for a optimized link. It is recommended to configure them based on your own needs, however if you just want a working link between a UAV and GCS, which is optimized for reliability, scroll down and copy the settings from the screenshots.
+{% endhint %}
 
-_**Serial Port Configuration (on UAV radio only)**_ - Converts UART signal from a flight from a telemetry port to UDP packets and sends them over the network.
+_**Profile Configuration**_ - A pre-built template optimized either for a Ground Control Station (GCS) or an unmanned vehicle (UAV). In simple terms, the GCS configuration makes all of the traffic of the network go through the radio with this setting, while the UAV profile makes the radio act as a single node.
+
+_**Serial Port Configuration (on UAV radio only)**_ - Converts UART signal from a flight from a telemetry port to UDP packets and sends them over the network. The configuration is described in detail in the UART Guide.
 
 _**Enable Central Config**_ - The configuration of the radio will be pushed to all of the other radios on the network. This makes sense for a GCS, however this guide focuses on configuring both of the radios individually.
 
@@ -44,17 +48,17 @@ _**SSID**_ - Network name, must be the same for all radios that communicate with
 
 _**Password**_ - Must me again the same for both of the radios.
 
-_**Channel**_ - Every frequency band (a slice of the Radio Frequency spectrum assigned to a specific use, for example 2.4 GHz) is divided into several channels so that several users can share the same spectrum without interfering with each other. The channels are spaced equally within the frequency band. Both of the radios have to be on the same channel.
+_**Channel**_ - Every frequency band (a slice of the Radio Frequency spectrum assigned to a specific use, for example 2.4 GHz) is divided into several channels so that several users can share the same spectrum without interfering with each other. The channels are spaced equally within the frequency band. It is best to choose the least congested channel (if you know which). Both of the radios have to be on the same channel.
 
 {% hint style="info" %}
-Note that if ACS is enabled, this setting might be overridden and the radios will automatically select the least congested chanell.
+Note that if ACS is enabled, this setting might be overridden and the radios will automatically select the least congested channel.
 {% endhint %}
 
 [_**Bandwidth**_](https://en.wikipedia.org/wiki/Bandwidth) - The difference between the upper and lower frequencies used centered around the chanell frequency. The explanation is beyond the scope of this guide, however a few basic rules apply. A larger bandwidth can carry more information. On the other hand a wider channel is more likely to overlap with neighbouring channels, increasing susceptibility to interference and packet loss.. For the most reliable communication set the bandwidth as low as possible. If you wish to stream a lot of data at the same time and accept a higher loss, it is advantageous to set the bandwidth higher.
 
 _**Operating Distance**_ - This setting does not control the transmit power. It only determines the time a radio waits for an acknowledgement that each of the packets was received.
 
-_**Add ETH1 to br-wan**_ - If enabled, this settings bridges the second ethernet port to the bridge-wide area network (br-wan) making it accessible from other radios, not just the local area network (lan) on the one radio itself.
+_**Add ETH1 to br-wan**_ - If enabled, this settings bridges the second ethernet port to the bridge-wide area network (br-wan) making it accessible from other radios, not just the local area network (lan) on the one radio itself. Keep in mind that ETH1 is the second Ethernet port as the numbering starts from 0 and ETH0 is the first one.
 
 _**Additional Static IPv4 on br-wan**_ - This lets you assign another IP address to the same interface making the radio reachable on two different addresses.
 
@@ -62,14 +66,18 @@ _**Additional Static IPv4 netmask**_ - Defines the size of the subnet that the a
 
 _**DHCP**_ - A networking protocol that enables automatic IP address assignment on the network. In client mode, the radio asks another device (server) to assign it an IP address. In server mode, the radio is the one doing the assigning and when disabled only the static IP addresses set above are used.
 
-A functioning setup of the Ground Control Station radio can look like this for example:
+_**Traffic Prioritization**_ - For the scope of this guide, keep the default settings. It is a system which decides which packets are sent first when traffic is congested. Currently it is set to the highest priority.
+
+### 3. Functioning Setup &#x20;
+
+A functioning setup of the ground control station (GCS) radio can look like this for example:
+
+{% hint style="info" %}
+These settings should give you the maximum range and reliability at the cost of throughput, if you wish to analyze the settings further, please check the next guide.
+{% endhint %}
 
 <figure><img src="../.gitbook/assets/unknown (3).png" alt=""><figcaption></figcaption></figure>
 
-And the equivalent setup for the unmanned vehicle like this:
+And the equivalent setup for the unmanned aerial vehicle (UAV) radio like this:
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-_**Traffic Prioritization**_ - For the scope of this guide, keep the default settings. It is a system which decides which packets are sent first when traffic is congested. Currently it is set to the highest priority.
-
-These settings should give you the maximum range and reliability at the cost of throughput, if you wish to analyze the settings further, please check the next guide.
