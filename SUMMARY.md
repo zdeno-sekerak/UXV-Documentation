@@ -6,19 +6,27 @@
 * [Choosing a Doodle Labs Radio](hardware-selection/choosing-a-doodle-labs-radio.md)
 * [Choosing an Antenna](hardware-selection/choosing-an-antenna.md)
 
-***
+## Doodle Labs Connection Setup
 
-* [Doodle Labs Radio Connections](<README (1).md>)
-  * [FAQ](doodle-labs-radio-connections/faq.md)
-  * [Physical Connection with an Evaluation Board](doodle-labs-radio-connections/physical-connection-with-an-evaluation-board.md)
-  * [Physical Connection without an Evaluation Board](doodle-labs-radio-connections/physical-connection-without-an-evaluation-board.md)
-  * [Connecting Doodle Labs to a PC (Windows)](doodle-labs-radio-connections/connecting-doodle-labs-to-a-pc-windows.md)
-  * [Configuring the DL Radios Connection](doodle-labs-radio-connections/configuring-the-dl-radios-connection.md)
-  * [Correct Antenna Configuration](doodle-labs-radio-connections/correct-antenna-configuration.md)
-  * [Optimizing Doodle Labs Link Settings](doodle-labs-radio-connections/optimizing-doodle-labs-link-settings.md)
-  * [Setting up a PX4 Vehicle](doodle-labs-radio-connections/setting-up-a-px4-vehicle.md)
-  * [Physical Wiring of Servos and Motors](doodle-labs-radio-connections/physical-wiring-of-servos-and-motors.md)
-  * [Setting Up Actuators (Servos and Motors) in PX4](doodle-labs-radio-connections/setting-up-actuators-servos-and-motors-in-px4.md)
-  * [Controlling an Unmanned Vehicle with SBUS](doodle-labs-radio-connections/controlling-an-unmanned-vehicle-with-sbus.md)
-  * [Controlling an Unmanned Vehicle with Ethernet and QGC](doodle-labs-radio-connections/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
-  * [Controlling an Unmanned Vehicle with Ethernet and QGC](doodle-labs-radio-connections/controlling-an-unmanned-vehicle-with-ethernet-and-qgc-1.md)
+* [Physical Connection without an Evaluation Board](doodle-labs-connection-setup/physical-connection-without-an-evaluation-board.md)
+* [Physical Connection with an Evaluation Board](doodle-labs-connection-setup/physical-connection-with-an-evaluation-board.md)
+* [Connecting Doodle Labs to a PC (Windows)](doodle-labs-connection-setup/connecting-doodle-labs-to-a-pc-windows.md)
+* [Configuring the DL Radios Connection](doodle-labs-connection-setup/configuring-the-dl-radios-connection.md)
+* [Optimizing Doodle Labs Link Settings](doodle-labs-connection-setup/optimizing-doodle-labs-link-settings.md)
+
+## GCS, UxV and Antenna Setup
+
+* [Correct Antenna Configuration](gcs-uxv-and-antenna-setup/correct-antenna-configuration.md)
+* [Setting up a PX4 Vehicle](gcs-uxv-and-antenna-setup/setting-up-a-px4-vehicle.md)
+* [Physical Wiring of Servos and Motors](gcs-uxv-and-antenna-setup/physical-wiring-of-servos-and-motors.md)
+* [Setting Up Actuators (Servos and Motors) in PX4](gcs-uxv-and-antenna-setup/setting-up-actuators-servos-and-motors-in-px4.md)
+
+## Doodle Labs integration into UxV
+
+* [Controlling an Unmanned Vehicle with SBUS](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-sbus.md)
+* [Controlling an Unmanned Vehicle with Ethernet and QGC](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
+* [Controlling an Unmanned Vehicle with Ethernet and QGC](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-ethernet-and-qgc-1.md)
+
+## FAQ
+
+* [Page 1](faq/page-1.md)
