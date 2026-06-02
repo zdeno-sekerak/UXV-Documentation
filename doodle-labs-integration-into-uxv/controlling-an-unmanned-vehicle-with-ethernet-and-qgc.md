@@ -101,6 +101,9 @@ For parameter reference visit this link https://docs.px4.io/main/en/advanced_con
 
 This will set the framework for how the communication on the port works.
 
+#### 2.3 Configuring QGroundControl
+
+After setting up everything 
 
 
 
