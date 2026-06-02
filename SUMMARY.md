@@ -14,5 +14,6 @@
   * [Setting up a PX4 Vehicle](doodle-labs-radio-connections/setting-up-a-px4-vehicle.md)
   * [Physical Wiring of Servos and Motors](doodle-labs-radio-connections/physical-wiring-of-servos-and-motors.md)
   * [Setting Up Actuators (Servos and Motors) in PX4](doodle-labs-radio-connections/setting-up-actuators-servos-and-motors-in-px4.md)
-  * [Controlling an Unmanned Vehicle with Ethernet and QGC - WHAT ABOUT SRM, WOULD MAKE SENSE TO USE IT](doodle-labs-radio-connections/controlling-an-unmanned-vehicle-with-ethernet-and-qgc-what-about-srm-would-make-sense-to-use-it.md)
   * [Controlling an Unmanned Vehicle with SBUS](doodle-labs-radio-connections/controlling-an-unmanned-vehicle-with-sbus.md)
+  * [Controlling an Unmanned Vehicle with Ethernet and QGC](doodle-labs-radio-connections/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
+  * [Controlling an Unmanned Vehicle with Ethernet and QGC](doodle-labs-radio-connections/controlling-an-unmanned-vehicle-with-ethernet-and-qgc-1.md)
