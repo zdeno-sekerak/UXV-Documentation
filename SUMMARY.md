@@ -2,7 +2,7 @@
 
 * [Doodle Labs Radio Connections](README.md)
   * [FAQ](doodle-labs-radio-connections/faq.md)
-  * [Foundational Concepts](doodle-labs-radio-connections/foundational-concepts.md)
+  * [Foundational Antenna Concepts](doodle-labs-radio-connections/foundational-antenna-concepts.md)
   * [Choosing a Doodle Labs Radio](doodle-labs-radio-connections/choosing-a-doodle-labs-radio.md)
   * [Choosing an Antenna](doodle-labs-radio-connections/choosing-an-antenna.md)
   * [Physical Connection with an Evaluation Board](doodle-labs-radio-connections/physical-connection-with-an-evaluation-board.md)
