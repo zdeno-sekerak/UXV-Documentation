@@ -40,7 +40,7 @@ _**Enable Central Config**_ - The configuration of the radio will be pushed to a
 
 _**Is Primary Node**_ - This designates the radio as the reference point for network-wide settings such as the chanell selection. Only one radio on the network should have this setting enabled.
 
-_**Enable Central ACS**_ - Enables automatic Channel selection, which is a process where the primary node scans the spectrum for the least congested frequency chanell and switches all of the nodes on the network to it.&#x20;
+_**Enable Central ACS**_ - Enables automatic Channel selection, which is a process where the primary node scans the spectrum for the least congested frequency chanell and switches all of the nodes on the network to it.
 
 _**Scenario**_ - Can be either set to [mesh](https://en.wikipedia.org/wiki/Wireless_mesh_network) or [WDS](https://en.wikipedia.org/wiki/Wireless_distribution_system). In a mesh all of the radios are equal and can talk to each other directly or through other radios if a link is not available. WDS configures one radio as an access point onto which other radios connect and communicate through.
 
@@ -76,7 +76,7 @@ A functioning setup of the ground control station (GCS) radio can look like this
 These settings should give you the maximum range and reliability at the cost of throughput, if you wish to analyze the settings further, please check the next guide.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/unknown (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
 
 And the equivalent setup for the unmanned aerial vehicle (UAV) radio like this:
 

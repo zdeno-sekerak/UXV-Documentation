@@ -30,17 +30,13 @@ The IP address of every radio is written on its label:
 {% column %}
 Picture 1:
 
-<div align="left"><figure><img src="../.gitbook/assets/image (10).png" alt="" width="356"><figcaption></figcaption></figure></div>
-
-
+<div align="left"><figure><img src="../.gitbook/assets/image (7).png" alt="" width="356"><figcaption></figcaption></figure></div>
 {% endcolumn %}
 
 {% column %}
 Picture 2:
 
-<div align="left"><figure><img src="../.gitbook/assets/image (13).png" alt="" width="333"><figcaption></figcaption></figure></div>
-
-
+<div align="left"><figure><img src="../.gitbook/assets/image (9).png" alt="" width="333"><figcaption></figcaption></figure></div>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -52,11 +48,11 @@ Expected Outcome: IP adress is noted down on the radio
 
 ### 2 Verifying the Connection
 
-Firstly we will determine if connection even works by pinging it through the command prompt on&#x20;
+Firstly we will determine if connection even works by pinging it through the command prompt on
 
 windows. Use the command ping . The correct output should look as follows:
 
-<figure><img src="../.gitbook/assets/unknown (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/unknown (8).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note that it can take up to 2 minutes for the radio to be available after turning on the power to it. If pinging the radio does not work, try to turn the power off, wait a 10 seconds and turn it back on. Then start trying to ping the radios almost immediately. It is possible that the radio has been configured to enter sleep mode after only a few seconds of inactivity.
@@ -70,15 +66,15 @@ Expected Outcome: The IP adress of the radio can be pinged - verifies it is work
 
 After successfully pinging the radios, go into any web browser and type in the IP address of the radio and press enter. This will open the web Graphical User Interface (GUI), where the radio can be configured.
 
-<p align="center"><img src="../.gitbook/assets/unknown (27).png" alt=""></p>
+<div align="center"><img src="../.gitbook/assets/unknown (9).png" alt=""></div>
 
 Some browsers will give a warning about the security of the connection. Go into advanced and proceed to the address.
 
-<figure><img src="../.gitbook/assets/unknown (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/unknown (10).png" alt=""><figcaption></figcaption></figure>
 
 There are two different combinations of usernames and passwords, depending on the firmware versions. On the older ones the username is root and the password is not set. On newer versions, the username is user with the password being DoodleSmartRadio
 
-<figure><img src="../.gitbook/assets/unknown (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/unknown (11).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Expected Outcome: The web GUI can be acessed.
@@ -95,7 +91,7 @@ You can also try to ssh into the radio using the command ssh root@\<radio IP-adr
 {% endhint %}
 
 {% hint style="info" icon="3" %}
-Lastly you can use the fallback IP address which is 192.168.153.1 to acces the web GUI. You will however need to set your computer IP address to 192.168.153.X with X being any number between 0 and 255 except 1 and a subnet  mask 255.255.255.0.
+Lastly you can use the fallback IP address which is 192.168.153.1 to acces the web GUI. You will however need to set your computer IP address to 192.168.153.X with X being any number between 0 and 255 except 1 and a subnet mask 255.255.255.0.
 {% endhint %}
 
 {% hint style="info" %}

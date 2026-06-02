@@ -27,15 +27,13 @@ Tools List (Depending on the type of Evaluation board):
 
 Begin by locating the documentation the radio on the website based on the radio model number, which is written on its label. The general naming convention for all doodle labs radios except the nimble variant dictates the name starts with RM followed by the part number (RM-XXXX-XXX) or they might be referred to by their marketing name such as Helix, Nano etc. In some cases, the radios might have been discontinued by Doodle Labs and it is necessary to look up the documentation in the [Legacy Product Index](https://techlibrary.doodlelabs.com/legacy-products).
 
-
-
 {% columns %}
 {% column valign="middle" %}
 <figure><img src="../.gitbook/assets/Screenshot 2026-05-21 132602.png" alt=""><figcaption><p>Label on RM-2450-2J-XM</p></figcaption></figure>
 {% endcolumn %}
 
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Label on RM-2025-62M3</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Label on RM-2025-62M3</p></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -54,16 +52,14 @@ For the setup of the radio, it is recommended to use an ethernet connection thro
 {% endhint %}
 
 {% hint style="danger" %}
-Make sure to always connect the antennas to the radios, which needs to be done before powering on the radio otherwise there is a risk of damaging the internal electronics. Afterwards it is safe to start connecting the power and ethernet to the radio.&#x20;
+Make sure to always connect the antennas to the radios, which needs to be done before powering on the radio otherwise there is a risk of damaging the internal electronics. Afterwards it is safe to start connecting the power and ethernet to the radio.
 {% endhint %}
 
 #### 2.1 Connecting the Evaluation Board
 
 To simplify the process of connecting and testing a Doodle Labs radio, it is reccomended to purchase the Evaluation Test Kit for the radio you wish to use. The kit contains all of the specialized cables and other quipment you will need, including the Evaluation Test Board. The list of Kits for every radio can be found [here](https://techlibrary.doodlelabs.com/quick-start-guide-ch1).
 
-
-
-<figure><img src="../.gitbook/assets/unknown (15).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/unknown (5).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Such a board significantly simplifies the process of powering up and connecting a DL radio to a computer as it has dedicated power and ethernet cable ports. It is then only necessary to use the correct cable to connect the board to the radio. The boards do however not come with a power supply.
 
@@ -93,7 +89,7 @@ If the evaluation board does not have a connector, they will have at least + and
 
 Then continue by connecting these cables to the power supply pins. Keep the standard convention for cable colors, where the positive (+/VCC/VDD) is red and the negative (-/GND) is black.
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><img src="../.gitbook/assets/Screenshot 2026-05-21 114050 (1).png" alt=""></td></tr><tr><td><img src="../.gitbook/assets/Screenshot 2026-05-21222 115437.png" alt=""></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><img src="../.gitbook/assets/Screenshot 2026-05-21 114050.png" alt=""></td></tr><tr><td><img src="../.gitbook/assets/Screenshot 2026-05-21222 115437.png" alt=""></td></tr></tbody></table>
 
 Lastly set the power supply to the correct voltage for the radio along with a sufficiently high current limit to deliver a maximum of 15 Watts.
 
@@ -117,7 +113,7 @@ Then use an ethernet cable to connect the computer and the evaluation board. Thi
 
 The resulting connection should look similar to the following:
 
-<div align="center"><figure><img src="../.gitbook/assets/unknown (20).png" alt="" width="375"><figcaption><p>Radio With an Evaluation Board in a DIY Case to avoid Short Circuits</p></figcaption></figure></div>
+<div align="center"><figure><img src="../.gitbook/assets/unknown (6).png" alt="" width="375"><figcaption><p>Radio With an Evaluation Board in a DIY Case to avoid Short Circuits</p></figcaption></figure></div>
 
 {% hint style="info" %}
 On most of the radios, there is no indication of the radio working correctly after being powered on. Most of times you have to connect to them on the computer to verify they work. However a good indication of the radio working correctly is the power draw, which should be about 2W in the idle state.

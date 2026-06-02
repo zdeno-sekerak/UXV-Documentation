@@ -30,11 +30,11 @@ The main challenge of connecting a radio without an evaluation board is finding 
 
 To power the radios, locate the PWR and GND pins. Most of the newer radios have more than one pin for PWR and GND. This is to distribute the load across several cables and pins as the connectors have a safe current rating of 1A per contact. Plug in a cable into each of the connectors.
 
-<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 Then use tweezers to remove te cables from the free connector. Insert the shart end under a plastic hinge above the metal and lift it up. Then it is possible to pull the cable out.
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 You should end up with something like this.
 
@@ -46,7 +46,7 @@ Expected Outcome: Connectors are plugged into a radio on one side and cables are
 
 ### 2 Powering the Radio With a Power Supply
 
-Locate all of the PWR/VCC/VDD/+ (equivalent terms in this context) and GND/- (angain equivalent) pins and connect them to a power source. The recommended way to do this is to solder all of the PWR or GND wires onto two thiccer cables. It is recommended to keep the convention of a red cable being the PWR/VCC and black being the GND/-.&#x20;
+Locate all of the PWR/VCC/VDD/+ (equivalent terms in this context) and GND/- (angain equivalent) pins and connect them to a power source. The recommended way to do this is to solder all of the PWR or GND wires onto two thiccer cables. It is recommended to keep the convention of a red cable being the PWR/VCC and black being the GND/-.
 
 Next, there are three basic options of connecting the radio to a power supply.
 
@@ -57,12 +57,10 @@ Proceed by stripping the ends of the cable and connecting them to the power sour
 {% columns %}
 {% column valign="middle" %}
 <figure><img src="../.gitbook/assets/Screenshot 2026-05-21222 115437.png" alt=""><figcaption><p>Stripped Cable</p></figcaption></figure>
-
-
 {% endcolumn %}
 
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/Screenshot 2026-05-21 114050 (1).png" alt=""><figcaption><p>Stripped cable connected to a bench power supply</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-05-21 114050.png" alt=""><figcaption><p>Stripped cable connected to a bench power supply</p></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -100,7 +98,7 @@ The last option is to solder a connector (in this case XT60), which can be plugg
 
 For a legacy radio model, which only requires one PWR and GND cable respectively, a connection might look something like the following.
 
-<figure><img src="../.gitbook/assets/IMG_0476 (1).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/IMG_0476.jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Expected Outcome: Power can be delivered to the evaluation board from a battery on the go.
@@ -112,13 +110,13 @@ The next step is to connect ethernet pins to a cable. In this case, UXV Technolo
 
 Start by locating the ETH pins in the documentation and on the radio.
 
-<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 Then find the pinout of the target connector, in our case it is the ETH port on the CUAV V6X.
 
 {% columns %}
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/image (37).png" alt="" width="189"><figcaption><p>Pinout of the ETH port on the CUAV V6X</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (27).png" alt="" width="189"><figcaption><p>Pinout of the ETH port on the CUAV V6X</p></figcaption></figure>
 {% endcolumn %}
 
 {% column valign="middle" %}
@@ -126,13 +124,13 @@ Then find the pinout of the target connector, in our case it is the ETH port on 
 {% endcolumn %}
 {% endcolumns %}
 
-Then take a connector which can be plugged into the ETH port on the flight controller and the one from the radio. Cut both of them in half and solder corresponding pins as described by the following guide.&#x20;
+Then take a connector which can be plugged into the ETH port on the flight controller and the one from the radio. Cut both of them in half and solder corresponding pins as described by the following guide.
 
 {% hint style="info" %}
 It is highly reccomended to solder the cables or use another highly reliable link as any time saved on making an improper connection is likely to be wasted on debugging the connection.
 {% endhint %}
 
-In this part, you need to be careful as the pins cannot be simply connected (RX+ to RX+). TX means transmit and RX receive, and each transmit pin needs to be connected to the receive pin of the corresponding polarity (TX+ -> RX+, TX- ->  RX-, RX+ -> TX+, RX- -> TX-). It is reccomended to solder the corresponding cables coming from the connectors together.&#x20;
+In this part, you need to be careful as the pins cannot be simply connected (RX+ to RX+). TX means transmit and RX receive, and each transmit pin needs to be connected to the receive pin of the corresponding polarity (TX+ -> RX+, TX- -> RX-, RX+ -> TX+, RX- -> TX-). It is reccomended to solder the corresponding cables coming from the connectors together.
 
 A finished connector will look something like this:
 
