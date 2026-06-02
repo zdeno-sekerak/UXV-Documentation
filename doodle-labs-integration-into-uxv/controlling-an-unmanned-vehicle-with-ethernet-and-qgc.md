@@ -87,9 +87,20 @@ The above settings gave the vehicle controller an IP adress on the ethernet netw
 
 #### 2.2 Configuring the Ethernet port
 
-To configure the ethernet port on the Vehicle 
+To configure the ethernet port on the Vehicle, navigate to QGC Icon -> Vehicle Setup -> Parameters and set the following:
 
-Next navigate to QGC Icon -> Vehicle Setup -> Parameters.
+MAV_2_CONFIG 1000 (Ethernet)
+MAV_2_BROADCAST 1 (Always Boradcast)
+MAV_2_MODE 0 (Normal)
+MAV_2_RADIO_CTL 0 (Disabled)
+MAV_2_RATE 100000 (100000 Bits per second)
+MAV_2_REMOTE_PRT 14550 (Sets 14550 as the remote port number, which is the number at which PX4 listens to GCS Messages)
+MAV_2_UDP_PRT 14550 (Sets 14550 as the local port number)
+
+For parameter reference visit this link https://docs.px4.io/main/en/advanced_config/ethernet_setup#px4-mavlink-serial-port-configuration.
+
+This will set the framework for how the communication on the port works.
+
 
 
 
