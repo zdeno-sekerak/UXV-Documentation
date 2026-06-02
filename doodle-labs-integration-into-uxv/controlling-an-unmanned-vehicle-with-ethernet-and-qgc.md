@@ -55,13 +55,36 @@ Continue by wiring the ethernet connection from the UAV radio to the flight cont
 
 ### 2 Flight Controller Configuration
 
+#### 2.1 Setting IP Adress of the Controller
+
 {% hint style="info" %}
 This step assumes you have already set up your PX4 vehicle controller according to [this guide](../gcs-uxv-and-antenna-setup/setting-up-a-px4-vehicle.md).
 {% endhint %}
 
 Completely disconnect the PX4 vehicle controller from the radios and only use an connection through USB to your computer.
 
-To make the configuration work on the current setup, go to QGC Icon -> MavLink Console. The configuration file is located in /fs/microsd/net.cfg on the SD card. The file contains text where each of the settings is written on a new line as a **name=value** pair. Type in the following:
+To make the configuration work on the current setup, go to QGC Icon -> Analyze Tools -> MavLink Console. The configuration file is located in /fs/microsd/net.cfg on the SD card. The file contains text where each of the settings is written on a new line as a **name=value** pair. Type in the following to change values in the file:
+
+echo DEVICE=eth0 > /fs/microsd/net.cfg
+echo BOOTPROTO=static > /fs/microsd/net.cfg
+echo IPADDR=10.223.218.99 > /fs/microsd/net.cfg
+echo NETMASK=255.255.255.0 > /fs/microsd/net.cfg
+echo ROUTER=10.223.218.204 > /fs/microsd/net.cfg
+echo DNS=10.223.218.204 > /fs/microsd/net.cfg
+
+Next, type the command:
+*netman update*
+Be careful not to use the command *netman save* as it will load the previous configuration from the volatile memory and override the one you had just set up.
+
+The IPADDR setting changes the IP adress of the Vehicle Controller. UXV is using 10.223.218.99, however you can use any other one as long as it is not the same as any of the radios. If you are using a different one, make sure to note it down as it will be useful later. The **ROUTER** and **DNS** settings state the IP of the UxV radio, so it is going to be different for each setup. **BOOTPROTO** is set to statis, which means the Vehicle Controller will have the IP defined by **IPADDR**.
+
+The above settings gave the vehicle controller an IP adress on the ethernet network. 
+
+#### 2.2 Configuring the Ethernet port
+
+To configure the ethernet port on the Vehicle 
+
+Next navigate to QGC Icon -> Vehicle Setup -> Parameters.
 
 
 
