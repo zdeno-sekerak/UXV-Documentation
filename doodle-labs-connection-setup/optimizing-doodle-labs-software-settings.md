@@ -4,15 +4,19 @@ description: >-
   achieve a high quality connection.
 ---
 
-# Optimizing Doodle Labs Link Settings
+# Optimizing Doodle Labs Software Settings
 
-Now both of the radios web GUI are accessible while only one of the radios is connected to the computer physically. The radio link enables information transfer from the other radio.
+In the previous step, we set up the RF link in a way that it works, most users will however wish to optimize the link.
+
+{% hint style="info" %}
+Based on a previous guide, both of the radios web GUI are accessible while only one of the radios is connected to the computer physically. The radio link enables information transfer from the other radio.
+{% endhint %}
 
 {% hint style="info" %}
 In order to optimize the link, it is recomended to mount the antennas in the final configuration, eg. on the UAV/UGV and the controller.
 {% endhint %}
 
-To optimize the radio link, it first needs to be analyzed for problems.
+### 1 Check Antenna Quality
 
 Start by navigating to Advanced Settings - Network configuration - Wireless in the web GUI on both of the radios. Then select edit in the link between the radios. A menu will appear.&#x20;
 

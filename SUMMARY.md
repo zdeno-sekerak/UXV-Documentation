@@ -12,11 +12,11 @@
 * [Physical Connection with an Evaluation Board](doodle-labs-connection-setup/physical-connection-with-an-evaluation-board.md)
 * [Connecting Doodle Labs to a PC (Windows)](doodle-labs-connection-setup/connecting-doodle-labs-to-a-pc-windows.md)
 * [Configuring the DL Radios Connection](doodle-labs-connection-setup/configuring-the-dl-radios-connection.md)
-* [Optimizing Doodle Labs Link Settings](doodle-labs-connection-setup/optimizing-doodle-labs-link-settings.md)
+* [Optimizing Doodle Labs Software Settings](doodle-labs-connection-setup/optimizing-doodle-labs-software-settings.md)
 
 ## GCS, UxV and Antenna Setup
 
-* [Correct Antenna Configuration](gcs-uxv-and-antenna-setup/correct-antenna-configuration.md)
+* [Optimizing Antenna Configuration](gcs-uxv-and-antenna-setup/optimizing-antenna-configuration.md)
 * [Setting up a PX4 Vehicle](gcs-uxv-and-antenna-setup/setting-up-a-px4-vehicle.md)
 * [Physical Wiring of Servos and Motors](gcs-uxv-and-antenna-setup/physical-wiring-of-servos-and-motors.md)
 * [Setting Up Actuators (Servos and Motors) in PX4](gcs-uxv-and-antenna-setup/setting-up-actuators-servos-and-motors-in-px4.md)
