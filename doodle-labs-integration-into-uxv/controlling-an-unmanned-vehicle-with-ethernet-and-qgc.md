@@ -59,7 +59,9 @@ Continue by wiring the ethernet connection from the UAV radio to the flight cont
 This step assumes you have already set up your PX4 vehicle controller according to [this guide](../gcs-uxv-and-antenna-setup/setting-up-a-px4-vehicle.md).
 {% endhint %}
 
-Completely disconnect the PX4 vehicle controller from the radios and only use an connection through USB to your computer. On you pc open QGroundControl and navigate t
+Completely disconnect the PX4 vehicle controller from the radios and only use an connection through USB to your computer.
+
+To make the configuration work on the current setup, go to QGC Icon -> MavLink Console. The configuration file is located in /fs/microsd/net.cfg on the SD card. The file contains text where each of the settings is written on a new line as a **name=value** pair. Type in the following:
 
 
 
