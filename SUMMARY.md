@@ -8,8 +8,8 @@
 
 ## Doodle Labs Connection Setup
 
-* [Physical Connection without an Evaluation Board](doodle-labs-connection-setup/physical-connection-without-an-evaluation-board.md)
 * [Physical Connection with an Evaluation Board](doodle-labs-connection-setup/physical-connection-with-an-evaluation-board.md)
+* [Physical Connection without an Evaluation Board](doodle-labs-connection-setup/physical-connection-without-an-evaluation-board.md)
 * [Connecting Doodle Labs to a PC (Windows)](doodle-labs-connection-setup/connecting-doodle-labs-to-a-pc-windows.md)
 * [Configuring the DL Radios Connection](doodle-labs-connection-setup/configuring-the-dl-radios-connection.md)
 * [Optimizing Doodle Labs Software Settings](doodle-labs-connection-setup/optimizing-doodle-labs-software-settings.md)
@@ -25,7 +25,7 @@
 
 * [Controlling an Unmanned Vehicle with SBUS](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-sbus.md)
 * [Controlling an Unmanned Vehicle with Ethernet and QGC](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
-* [Controlling an Unmanned Vehicle with Ethernet and QGC](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-ethernet-and-qgc-1.md)
+* [Upgrading an Ethernet Autonomous Vehicle with UXV Gimbal](doodle-labs-integration-into-uxv/upgrading-an-ethernet-autonomous-vehicle-with-uxv-gimbal.md)
 
 ## FAQ
 

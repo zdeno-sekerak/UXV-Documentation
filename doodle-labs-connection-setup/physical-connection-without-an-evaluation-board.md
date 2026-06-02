@@ -126,6 +126,12 @@ Then find the pinout of the target connector, in our case it is the ETH port on 
 {% endcolumn %}
 {% endcolumns %}
 
+Then take a connector which can be plugged into the ETH port on the flight controller and the one from the radio. Cut both of them in half and solder corresponding pins as described by the following guide.&#x20;
+
+{% hint style="info" %}
+It is highly reccomended to solder the cables or use another highly reliable link as any time saved on making an improper connection is likely to be wasted on debugging the connection.
+{% endhint %}
+
 In this part, you need to be careful as the pins cannot be simply connected (RX+ to RX+). TX means transmit and RX receive, and each transmit pin needs to be connected to the receive pin of the corresponding polarity (TX+ -> RX+, TX- ->  RX-, RX+ -> TX+, RX- -> TX-). It is reccomended to solder the corresponding cables coming from the connectors together.&#x20;
 
 A finished connector will look something like this:

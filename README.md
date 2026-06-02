@@ -13,7 +13,7 @@ The RF signal is essentially a high frequency sound. And in a similar way normal
 
 The radiation pattern is the general term for a 3D graphical representation of how such a power distribution might look. as shown by some examples.
 
-<figure><img src="../.gitbook/assets/6b67a936-d887-4feb-b131-96dc953cab32.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/6b67a936-d887-4feb-b131-96dc953cab32.jpg" alt=""><figcaption></figcaption></figure>
 
 Antenna radiation patterns can be quite nuanced so if you are trying to set up an antenna to get the best connection, it should be advantageous to look up the radiation pattern for it specifically.
 
@@ -23,7 +23,7 @@ Antenna gain is a single number explaining the strongest direction of the radiat
 
 The choice of appropriate antenna gain is dependent on the use-case.
 
-<figure><img src="../.gitbook/assets/antenna-gain-explanation (1).jpg" alt=""><figcaption><p>An image representing the cross-section of an antenna radiation pattern for a directional antenna (this image would be different for an omnidirectional antenna for example - it would be a squished doughnut)</p></figcaption></figure>
+<figure><img src=".gitbook/assets/antenna-gain-explanation (1).jpg" alt=""><figcaption><p>An image representing the cross-section of an antenna radiation pattern for a directional antenna (this image would be different for an omnidirectional antenna for example - it would be a squished doughnut)</p></figcaption></figure>
 
 It is pretty common to combine two types of antennas in one link, for example to use a high-gain for the GCS antenna as the drone will generally only fly in one direction, and a low-gain antenna on the UAV so that the signal signal is independent of the drone orientation. Some setups even combine two types of antennas on the receiver side.
 
@@ -37,11 +37,11 @@ The radio signal consists of an electric and magnetic field oscillating perpendi
 
 {% columns %}
 {% column %}
-<figure><img src="../.gitbook/assets/Circular_Polarization_Linear_Polarized_Light_Entering_Quarter_Wave_Plate_Components.svg.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Circular_Polarization_Linear_Polarized_Light_Entering_Quarter_Wave_Plate_Components.svg.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../.gitbook/assets/Circular.Polarization.Circularly.Polarized.Light_Without.Components_Right.Handed.svg.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Circular.Polarization.Circularly.Polarized.Light_Without.Components_Right.Handed.svg.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -63,9 +63,11 @@ Intuitively, it would make sense that radio waves only need the line-of-sight wi
 
 The illustration below shows different ways a radio signal can be obstructed.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-05-26 152644.png" alt="" width="499"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Screenshot 2026-05-26 152644.png" alt="" width="499"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-05-26 152633.png" alt="" width="488"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Screenshot 2026-05-26 152633.png" alt="" width="488"><figcaption></figcaption></figure>
+
+From this infographic we can see that Fresnel zone is not a very big problem for flying vehicles as the antennas are pointing up.
 
 ### Power Level (unit: dBm)
 
@@ -75,7 +77,7 @@ dBm is the standard unit used to express the transmit power of a radio (among ot
 
 The frequency is the optimal wave frequency the antenna is designed to receive.
 
-Generally a lower frequency means that the waves themselves are longer and travel further, in both open and congested areas as object penetration is also exceptional.
+Generally a lower frequency means that the waves themselves are longer and travel further, in both open and congested areas as object penetration is also exceptional. On the other hand they have a wide [Fresnel zone](./#fresnel-zone) which means the antennas cannot be close to the ground.
 
 On the other hand, a higher frequency bands have vastly more spectrum available in absolute terms, so there's more room to allocate wide channels. This results in a higher data throughput.
 
@@ -95,10 +97,10 @@ SMA and RP-SMA are antenna connector types. They look very similar at first glan
 
 {% columns %}
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/RP-SMA-Femal.jpg" alt=""><figcaption><p>RP-SMA Female Connector</p></figcaption></figure>
+<figure><img src=".gitbook/assets/RP-SMA-Femal.jpg" alt=""><figcaption><p>RP-SMA Female Connector</p></figcaption></figure>
 {% endcolumn %}
 
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/SMA-Female.jpg" alt=""><figcaption><p>SMA Female Connector</p></figcaption></figure>
+<figure><img src=".gitbook/assets/SMA-Female.jpg" alt=""><figcaption><p>SMA Female Connector</p></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}

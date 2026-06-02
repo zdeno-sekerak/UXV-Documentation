@@ -13,6 +13,12 @@ Tools:
 * Computer/UXV Controller with Windows&#x20;
 * USB Cable - To connect the flight controller to the computer/UXV controller
 
+### 1 What is PX4?
+
+
+
+### 2 Install QGC
+
 Begin by installing [QGroundControl](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html) on your SRoC. This is a software used to set up vehicle controllers, get data from them during operation and in our case also to control the vehicle itself. Optionally you can also install the software on your computer as using a mouse and a keyboard will make configuring everything easier.
 
 Continue by verifying that the flight controller has the correct firmware installed. In this guide we will be using the PX4, which is an open-source vehicle controller software. Open QgroundControl on your computer or SRoC and connect the vehicle controller via an USB cable. QGroundControl should automatically detect it and load its parameters.&#x20;
