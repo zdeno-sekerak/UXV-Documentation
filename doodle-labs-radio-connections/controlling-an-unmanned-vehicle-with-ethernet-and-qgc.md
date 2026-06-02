@@ -27,4 +27,5 @@ Part list:
 
 This guide assumes you have a working peer-to-peer (P2P) connection between two radios based on previous guides. The first step is to choose one of the radios to be a GCS and the other a UxV radio.
 
-Continue by wiring the ethernet connection from the UAV radio to the flight controller and from GCS radio to the ethernet adapter on the controller based on th
+Continue by wiring the ethernet connection from the UAV radio to the flight controller and from GCS radio to the ethernet adapter on the controller based on the previous guide.
+

@@ -8,7 +8,7 @@ description: >-
 # Correct Antenna Configuration
 
 {% hint style="info" %}
-This guide assumes you already have chosen an antenna based on a previous [manual](choosing-an-antenna.md) and therefore only focuses on setting them in the correct orientation.
+This guide assumes you already have chosen an antenna based on a previous [manual](../hardware-selection/choosing-an-antenna.md) and therefore only focuses on setting them in the correct orientation.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -21,7 +21,7 @@ The mounting requirements will depend on the mounting location
 
 ### 1 Ground Control Station (GCS)
 
-The GCS antenna is usually not limited by space and remains stationary. Therefore the usual antenna used is a directional one, if the unmanned vehicle moves in a single direction. It is also mounted on a tripod due to the [Fresnel Zone](foundational-antenna-concepts.md#fresnel-zone) clearance.&#x20;
+The GCS antenna is usually not limited by space and remains stationary. Therefore the usual antenna used is a directional one, if the unmanned vehicle moves in a single direction. It is also mounted on a tripod due to the [Fresnel Zone](../#fresnel-zone) clearance.&#x20;
 
 {% hint style="info" %}
 This is the ideal mounting case, operational requirements may demand a less optimal mounting position, which will however result in a weaker link.
@@ -44,5 +44,5 @@ Essentially the conclusion is to keep the antenna radiation pattern peaks pointe
 {% endhint %}
 
 {% hint style="danger" %}
-Be careful about [SMA and RP-SMA](foundational-antenna-concepts.md#sma-and-rp-sma) antenna types.
+Be careful about [SMA and RP-SMA](../#sma-and-rp-sma) antenna types.
 {% endhint %}
