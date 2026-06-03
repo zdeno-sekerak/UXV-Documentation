@@ -69,7 +69,7 @@ INSERT AN IMAGE OF A FLIGHT CONRTOLLER CONNECTED WITH A CABLE&#x20;
 
 To make the configuration work on the current setup, go to QGC Icon -> Analyze Tools -> MavLink Console. The configuration file is located in /fs/microsd/net.cfg on the SD card and the file contains text where each of the settings is written on a new line as a name=value pair. Type in the following in the console to change values in the file:&#x20;
 
-```bash
+```c
 echo DEVICE=eth0 > /fs/microsd/net.cfg 
 echo BOOTPROTO=static > /fs/microsd/net.cfg
 echo IPADDR=10.223.218.99 > /fs/microsd/net.cfg
