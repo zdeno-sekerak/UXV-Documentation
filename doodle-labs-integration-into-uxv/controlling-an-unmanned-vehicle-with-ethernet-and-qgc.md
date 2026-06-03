@@ -166,5 +166,12 @@ Expected outcome: The vehicle controller can accessed from the Controller runnin
 
 Now the Vehicle Controller is connected to the GCS through QGC. However it still is configured to only use the connection to send MavLink messages with telemetry and expects joystick commands through a dedicated RC (radio control) input.&#x20;
 
-To send manual stick commands through telemetry, set `COM_RC_IN_MODE` to `1`.
+To send manual stick commands through telemetry, set the parameter `COM_RC_IN_MODE` to `1`.
 
+{% hint style="info" %}
+To configure the joystick input itself, follow [this](../gcs-uxv-and-antenna-setup/setting-up-actuators-servos-and-motors-in-px4.md) guide.
+{% endhint %}
+
+{% hint style="success" %}
+Expected outcome: The Unmanned Vehicle can be connected and send telemetry through an ethernet connection.
+{% endhint %}
