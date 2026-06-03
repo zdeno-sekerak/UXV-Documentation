@@ -17,7 +17,7 @@
 ## Doodle Labs integration into UxV
 
 * [Controlling an Unmanned Vehicle with SBUS](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-sbus.md)
-* [Controlling an Unmanned Vehicle with Ethernet and QGC](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
+* [Connecting an Unmanned Vehicle with Ethernet and QGC](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
 * [Upgrading an Ethernet Autonomous Vehicle with UXV Gimbal](doodle-labs-integration-into-uxv/upgrading-an-ethernet-autonomous-vehicle-with-uxv-gimbal.md)
 
 ## GCS, UxV and Antenna Setup

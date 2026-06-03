@@ -4,7 +4,7 @@ description: >-
   control a PX4 Unmanned Vehicle with an SRoC running Windows.
 ---
 
-# Controlling an Unmanned Vehicle with Ethernet and QGC
+# Connecting an Unmanned Vehicle with Ethernet and QGC
 
 {% hint style="info" %}
 This guide assumes you have a working communication link between the radios and have a basic understanding of how it works.
@@ -21,9 +21,9 @@ Part list:
 * 1x UXV Controller - Using SRoC 7'' Windows
 * 1x Ethernet Adapter for the Controller - Using SRM-RJ45
 
-### 1 Create Connecting Cables
+## 1 Create Connecting Cables
 
-#### 1.1 GCS Radio + GCS Controller
+### 1.1 GCS Radio + GCS Controller
 
 Start by connecting the radio which has been configured as a GCS to a controller through ethernet. In a previous guide, we showed how to wire a RJ-45 connector to the ethernet pins on the Doodle Labs radio. Now use the connector to connect the radio to SRM-RJ45 adapter on the SRoC Controller.
 
@@ -47,7 +47,7 @@ Several alternatives are also shown below with the UXV Micronav Dev Kit, which h
 
 The reccomended wiring for a GCS however remains a simple DL Radio -> SRM-RJ45 -> SRoC.
 
-#### 1.2 UxV Radio + PX4 Vehicle Controller
+### 1.2 UxV Radio + PX4 Vehicle Controller
 
 Continue by wiring the ethernet connection from the UAV radio to the flight controller as explained in the [guide](../doodle-labs-connection-setup/physical-connection-without-an-evaluation-board.md).
 
@@ -55,9 +55,9 @@ Continue by wiring the ethernet connection from the UAV radio to the flight cont
 Expected outcome: The radios are connected to a controller and a flight controller respectively with power and ethernet cables.
 {% endhint %}
 
-### 2 Flight Controller Configuration
+## 2 Flight Controller Configuration
 
-#### 2.1 Setting IP Adress of the Controller
+### 2.1 Setting IP Adress of the Controller
 
 {% hint style="info" %}
 This step assumes you have already set up your PX4 vehicle controller according to this guide.&#x20;
@@ -90,11 +90,11 @@ netman show
 
 The printed settings should be the same as you had just set up. If the wrong commands are used, the settings will only be stored in volatile memory. After being power cycled, the volatile memory is cleared and the settings are loaded from the net.cfg file on the SD card.
 
-{% hint style="info" %}
+{% hint style="success" %}
 Expected outcome: The correct network settings are stored on the SD card.
 {% endhint %}
 
-#### 2.2 Configuring the Ethernet port
+### 2.2 Configuring the Ethernet port
 
 To configure the ethernet port on the Vehicle, navigate to QGC Icon -> Vehicle Setup -> Parameters and set the following:&#x20;
 
@@ -108,9 +108,15 @@ To configure the ethernet port on the Vehicle, navigate to QGC Icon -> Vehicle S
 | [MAV\_2\_REMOTE\_PRT](https://docs.px4.io/main/en/advanced_config/parameter_reference#MAV_2_REMOTE_PRT) | 14550                    | Makes the Vehicle Controller listen at port 14550                                             |
 | [MAV\_2\_UDP\_PRT](https://docs.px4.io/main/en/advanced_config/parameter_reference#MAV_2_UDP_PRT)       | 14550                    | Makes the vehicle controller send data to port 14550 on the GCS                               |
 
-For parameter reference visit this [link](https://docs.px4.io/main/en/advanced_config/ethernet_setup#px4-mavlink-serial-port-configuration)&#x20;
+For parameter reference visit this [link](https://docs.px4.io/main/en/advanced_config/ethernet_setup#px4-mavlink-serial-port-configuration).
 
-#### 2.3 Setting up QGroundControl
+To upload the parameter settings, reboot the vehicle controller, ideally by completely disconnecting and reconnecting it.
+
+{% hint style="success" %}
+Expected outcome: The vehicle controller ethernet port is configured correctly.
+{% endhint %}
+
+### 2.3 Setting up QGroundControl
 
 In the previous steps, we had been guided on how to change the settings on the Vehicle Controller by using QGroundControl to write the data. Now the QGroundControl settings themselves need to be configured to read the correct data from UXV controller and the Vehicle Controller.
 
@@ -148,6 +154,16 @@ The port number is the same as when setting up the ethernet port in QGC. UXV als
 
 The name of the Link does not matter.
 
-#### 2.4 Connecting to the Vehicle Controller
+### 2.4 Connecting to the Vehicle Controller
 
 To connect to the vehicle controller, click on 'Disconnected - Click to manually connect' and click on the Link you had just set up. PX4 should start loading parameters the same way it would with a USB connection.
+
+{% hint style="success" %}
+Expected outcome: The vehicle controller can accessed from the Controller running QGC.
+{% endhint %}
+
+## 3 Configuring the Joystick
+
+Now the Vehicle Controller is connected to the GCS through QGC. However it still is configured to only use the connection to send MavLink messages with telemetry and expects joystick commands through a dedicated RC (radio control) input.&#x20;
+
+To send manual stick commands through telemetry, set <code class="expression">COM_RC_IN_MODE</code> to <code class="expression">1</code>. Then proceed with mapping control inputs based on this [guide](../gcs-uxv-and-antenna-setup/setting-up-actuators-servos-and-motors-in-px4.md).
