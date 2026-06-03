@@ -14,18 +14,18 @@
 * [Configuring the DL Radios Connection](doodle-labs-connection-setup/configuring-the-dl-radios-connection.md)
 * [Optimizing Doodle Labs Software Settings](doodle-labs-connection-setup/optimizing-doodle-labs-software-settings.md)
 
+## Doodle Labs integration into UxV
+
+* [Controlling an Unmanned Vehicle with SBUS](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-sbus.md)
+* [Controlling an Unmanned Vehicle with Ethernet and QGC](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
+* [Upgrading an Ethernet Autonomous Vehicle with UXV Gimbal](doodle-labs-integration-into-uxv/upgrading-an-ethernet-autonomous-vehicle-with-uxv-gimbal.md)
+
 ## GCS, UxV and Antenna Setup
 
 * [Optimizing Antenna Configuration](gcs-uxv-and-antenna-setup/optimizing-antenna-configuration.md)
 * [Setting up a PX4 Vehicle](gcs-uxv-and-antenna-setup/setting-up-a-px4-vehicle.md)
 * [Physical Wiring of Servos and Motors](gcs-uxv-and-antenna-setup/physical-wiring-of-servos-and-motors.md)
 * [Setting Up Actuators (Servos and Motors) in PX4](gcs-uxv-and-antenna-setup/setting-up-actuators-servos-and-motors-in-px4.md)
-
-## Doodle Labs integration into UxV
-
-* [Controlling an Unmanned Vehicle with SBUS](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-sbus.md)
-* [Controlling an Unmanned Vehicle with Ethernet and QGC](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
-* [Upgrading an Ethernet Autonomous Vehicle with UXV Gimbal](doodle-labs-integration-into-uxv/upgrading-an-ethernet-autonomous-vehicle-with-uxv-gimbal.md)
 
 ## FAQ
 

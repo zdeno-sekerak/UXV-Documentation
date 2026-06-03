@@ -51,6 +51,10 @@ The reccomended wiring for a GCS however remains a simple DL Radio -> SRM-RJ45 -
 
 Continue by wiring the ethernet connection from the UAV radio to the flight controller as explained in the [guide](../doodle-labs-connection-setup/physical-connection-without-an-evaluation-board.md).
 
+{% hint style="success" %}
+Expected outcome: The radios are connected to a controller and a flight controller respectively with power and ethernet cables.
+{% endhint %}
+
 ### 2 Flight Controller Configuration
 
 #### 2.1 Setting IP Adress of the Controller
@@ -78,40 +82,72 @@ Next, type the command: netman update Be careful not to use the command netman s
 
 The IPADDR setting changes the IP adress of the Vehicle Controller. UXV is using 10.223.218.99, however you can use any other one as long as it is not the same as any of the radios. If you are using a different one, make sure to note it down as it will be useful later. The ROUTER and DNS settings state the IP of the UxV radio, so it is going to be different for each setup. BOOTPROTO is set to statis, which means the Vehicle Controller will have the IP defined by IPADDR.&#x20;
 
-The above settings gave the vehicle controller an IP adress on the ethernet network.
+To check that your settings are correct, completely disconenct the flight controller and wait for a few seconds. Then recconect it, open MavLink console and type:
+
+```bash
+netman show
+```
+
+The printed settings should be the same as you had just set up. If the wrong commands are used, the settings will only be stored in volatile memory. After being power cycled, the volatile memory is cleared and the settings are loaded from the net.cfg file on the SD card.
+
+{% hint style="info" %}
+Expected outcome: The correct network settings are stored on the SD card.
+{% endhint %}
 
 #### 2.2 Configuring the Ethernet port
 
 To configure the ethernet port on the Vehicle, navigate to QGC Icon -> Vehicle Setup -> Parameters and set the following:&#x20;
 
-MAV\_2\_CONFIG 1000 (Ethernet)&#x20;
-
-MAV\_2\_BROADCAST 1 (Always Boradcast)&#x20;
-
-MAV\_2\_MODE 0 (Normal)&#x20;
-
-MAV\_2\_RADIO\_CTL 0 (Disabled)&#x20;
-
-MAV\_2\_RATE 100000 (100000 Bits per second)&#x20;
-
-MAV\_2\_REMOTE\_PRT 14550 (Sets 14550 as the remote port number, which is the number at which PX4 listens to GCS Messages)&#x20;
-
-MAV\_2\_UDP\_PRT 14550 (Sets 14550 as the local port number)&#x20;
-
-| Parameter           | Value                    | Explanation                                                                                   |
-| ------------------- | ------------------------ | --------------------------------------------------------------------------------------------- |
-| MAV\_2\_CONFIG      | 1000 (Ethernet)          | Configures the port as Ethernet                                                               |
-| MAV\_2\_BROADCAST   | 1 (Always Broadcast)     | Broadcasts Heartbeat Messages, lets the network know it is alive                              |
-| MAV\_2\_MODE        | 0 (Normal)               | Treat whatever is plugged to this port as a GCS (through a network)                           |
-| MAV\_2\_RADIO\_CTL  | 0 (Disabled)             | Disables the drones ability to slow down or compress sent data if the network cannot keep up. |
-| MAV\_2\_RATE        | 100000 (Bits per second) | Maximum sending rate                                                                          |
-| MAV\_2\_REMOTE\_PRT | 14550                    | Makes the Vehicle Controller listen at port 14550                                             |
-| MAV\_2\_UDP\_PRT    | 14550                    | Makes the vehicle controller send data to port 14550 on the GCS                               |
+| Parameter                                                                                               | Value                    | Explanation                                                                                   |
+| ------------------------------------------------------------------------------------------------------- | ------------------------ | --------------------------------------------------------------------------------------------- |
+| [MAV\_2\_CONFIG](https://docs.px4.io/main/en/advanced_config/parameter_reference#MAV_2_CONFIG)          | 1000 (Ethernet)          | Configures the port as Ethernet                                                               |
+| [MAV\_2\_BROADCAST](https://docs.px4.io/main/en/advanced_config/parameter_reference#MAV_2_BROADCAST)    | 1 (Always Broadcast)     | Broadcasts Heartbeat Messages, lets the network know it is alive                              |
+| [MAV\_2\_MODE](https://docs.px4.io/main/en/advanced_config/parameter_reference#MAV_2_MODE)              | 0 (Normal)               | Treat whatever is plugged to this port as a GCS (through a network)                           |
+| [MAV\_2\_RADIO\_CTL](https://docs.px4.io/main/en/advanced_config/parameter_reference#MAV_2_RADIO_CTL)   | 0 (Disabled)             | Disables the drones ability to slow down or compress sent data if the network cannot keep up. |
+| [MAV\_2\_RATE](https://docs.px4.io/main/en/advanced_config/parameter_reference#MAV_2_RATE)              | 100000 (Bits per second) | Maximum sending rate                                                                          |
+| [MAV\_2\_REMOTE\_PRT](https://docs.px4.io/main/en/advanced_config/parameter_reference#MAV_2_REMOTE_PRT) | 14550                    | Makes the Vehicle Controller listen at port 14550                                             |
+| [MAV\_2\_UDP\_PRT](https://docs.px4.io/main/en/advanced_config/parameter_reference#MAV_2_UDP_PRT)       | 14550                    | Makes the vehicle controller send data to port 14550 on the GCS                               |
 
 For parameter reference visit this [link](https://docs.px4.io/main/en/advanced_config/ethernet_setup#px4-mavlink-serial-port-configuration)&#x20;
 
-This will set the framework for how the communication on the port works.&#x20;
+#### 2.3 Setting up QGroundControl
 
-#### 2.3 Configuring QGroundControl
+In the previous steps, we had been guided on how to change the settings on the Vehicle Controller by using QGroundControl to write the data. Now the QGroundControl settings themselves need to be configured to read the correct data from UXV controller and the Vehicle Controller.
 
-After setting up everything To make the configuration work on the current setup, go to QGC Icon -> Analyze Tools -> MavLink Console. The configuration file is located in /fs/microsd/net.cfg on the SD card. The file contains text where each of the settings is written on a new line as a name=value pair. Type in the following to change values in the file: echo DEVICE=eth0 > /fs/microsd/net.cfg echo BOOTPROTO=static > /fs/microsd/net.cfg echo IPADDR=10.223.218.99 > /fs/microsd/net.cfg echo NETMASK=255.255.255.0 > /fs/microsd/net.cfg echo ROUTER=10.223.218.204 > /fs/microsd/net.cfg echo DNS=10.223.218.204 > /fs/microsd/net.cfg Next, type the command: netman update Be careful not to use the command netman save as it will load the previous configuration from the volatile memory and override the one you had just set up. The IPADDR setting changes the IP adress of the Vehicle Controller. UXV is using 10.223.218.99, however you can use any other one as long as it is not the same as any of the radios. If you are using a different one, make sure to note it down as it will be useful later. The ROUTER and DNS settings state the IP of the UxV radio, so it is going to be different for each setup. BOOTPROTO is set to statis, which means the Vehicle Controller will have the IP defined by IPADDR. The above settings gave the vehicle controller an IP adress on the ethernet network. 2.2 Configuring the Ethernet port To configure the ethernet port on the Vehicle, navigate to QGC Icon -> Vehicle Setup -> Parameters and set the following: MAV\_2\_CONFIG 1000 (Ethernet) MAV\_2\_BROADCAST 1 (Always Boradcast) MAV\_2\_MODE 0 (Normal) MAV\_2\_RADIO\_CTL 0 (Disabled) MAV\_2\_RATE 100000 (100000 Bits per second) MAV\_2\_REMOTE\_PRT 14550 (Sets 14550 as the remote port number, which is the number at which PX4 listens to GCS Messages) MAV\_2\_UDP\_PRT 14550 (Sets 14550 as the local port number) For parameter reference visit this link https://docs.px4.io/main/en/advanced\_config/ethernet\_setup#px4-mavlink-serial-port-configuration. This will set the framework for how the communication on the port works. 2.3 Configuring QGroundControl After setting up everything
+Begin by connecting the whole setup and powering it on.&#x20;
+
+UXV Controller -> GCS Radio -> UAV Radio -> Vehicle Controller
+
+In QGroundControl Click on 'Disconnected - Click to manually connect' in the top left corner.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-03 140042.png" alt="" width="375"><figcaption></figcaption></figure>
+
+Proceed by clicking on the little arrow in the top right corner of the pop-up.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-03 140623.png" alt="" width="375"><figcaption></figcaption></figure>
+
+Then click on 'configure' communication links.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-03 140755.png" alt="" width="375"><figcaption></figcaption></figure>
+
+And click on 'Add Link.'
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-03 140849.png" alt="" width="375"><figcaption></figcaption></figure>
+
+Then set up according to the following:
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-03 140605.png" alt="" width="281"><figcaption></figcaption></figure>
+
+By setting the type as UDP, the data transmission will be faster, but there will be less integrity checks in the conection itself. On the other hand, that does not matter much as PX4 does have its own.
+
+The port number is the same as when setting up the ethernet port in QGC. UXV also noticed the establishing of the connection seems to be quicker when the server adress is set. The format is:&#x20;
+
+```
+<IP adress of the vehicle controller>:<Port number>
+```
+
+The name of the Link does not matter.
+
+#### 2.4 Connecting to the Vehicle Controller
+
+To connect to the vehicle controller, click on 'Disconnected - Click to manually connect' and click on the Link you had just set up. PX4 should start loading parameters the same way it would with a USB connection.
