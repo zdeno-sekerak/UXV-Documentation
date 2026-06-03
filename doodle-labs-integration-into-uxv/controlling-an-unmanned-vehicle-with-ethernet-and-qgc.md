@@ -166,4 +166,5 @@ Expected outcome: The vehicle controller can accessed from the Controller runnin
 
 Now the Vehicle Controller is connected to the GCS through QGC. However it still is configured to only use the connection to send MavLink messages with telemetry and expects joystick commands through a dedicated RC (radio control) input.&#x20;
 
-To send manual stick commands through telemetry, set <code class="expression">COM_RC_IN_MODE</code> to <code class="expression">1</code>. Then proceed with mapping control inputs based on this [guide](../gcs-uxv-and-antenna-setup/setting-up-actuators-servos-and-motors-in-px4.md).
+To send manual stick commands through telemetry, set `COM_RC_IN_MODE` to `1`.
+
