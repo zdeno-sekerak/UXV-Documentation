@@ -42,10 +42,10 @@ Note: This guide is building upon a TRAXXAS MAXX rc car, which already has a BLD
 ## Connection Diagram
 
 {% hint style="info" %}
-The following diagram shows the connection on the UxV side.
+The following diagram shows the connection on the UxV side. As per electronics convention, a GND (-) cable is black, a VCC (+) cable is red. Signal cables have various other colors.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/SBUS-Rc-Car-Connection (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/SBUS-Rc-Car-Connection (9).png" alt=""><figcaption></figcaption></figure>
 
 ## 1. Check Firmare
 
@@ -70,3 +70,40 @@ It is common to have several components drawing power connected to the battery. 
 All of the components need to be grounded. However not all grounds are the same. Some voltage regulators have a [floating](../#floating-power-rail) or [isolated](../#isolated-power-rail) power rails. They are good at protecting the components from overvoltages. On the other hand, it can be tricky if you are using a type of communication protocol where the receiving signal is read against the components ground reference (such as SBUS).
 
 Connecting the two components with a ground wire will make the connection work, but you will lose isolation of the sensitive component.
+
+In order to make the connection work without ruining the isolation of the component, the signal needs to be transferred using either light or magnetic field. Some common components used for this purpose are octocouplers or digital isolators.
+
+{% hint style="info" %}
+If you know the number of outputs and the target voltage, it is common to use a PDB (power distribution board) to simplify the connections.
+{% endhint %}
+
+{% hint style="danger" %}
+A well grounded connection is especially important for SBUS.
+{% endhint %}
+
+## 3. Making the Connections
+
+### A. VESC Connection
+
+{% hint style="info" %}
+The VESC UXV Technologies is using is a custom made board based on the open source VESC project. Everything that applies to the board will apply to every other VESC board. If you do not wish to use a VESC, any other ESC with a sufficiently high power rating will do the job.
+{% endhint %}
+
+Firstly we will swap out the original TRAXXAS ESC for a VESC. There are several reasons to do this:
+
+* The maximum current the ESC can supply to servos and other electronics is 3A (TRAXXAS MAXX), which might not be sufficient to run other electronic.&#x20;
+* The ESC only offers 3 control modes. It does not allow the user to control:
+  * Ramp-up time
+  * Throttle curve
+  * Brake
+  * Top speed
+  * Failsafe
+
+On the other hand, the TRAXXAS ESC is waterproof.
+
+This setup uses a PWM signal to control the VESC. The connectors on the various VESCs will be different, for example the UXV one only has soldering holes, however the important thing is that the cable coming out of it is a male servo cable.
+
+{% hint style="info" %}
+The PWM pins on the VESCs are commonly labelled PPM, which is a historical naming mistake. They are in fact PWM pins.
+{% endhint %}
+
