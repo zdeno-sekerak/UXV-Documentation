@@ -7,7 +7,9 @@ description: >-
 
 # Wiring for Control of Unmanned Vehicle using SBUS
 
-## Parts List:
+## Requirements:
+
+### Parts List:
 
 * 1x UXV Micronav Dev Kit (or another controller with SBUS output)
 * 1x UXV Airside Integrated Module (firmware > v2.0.0)
@@ -16,7 +18,7 @@ description: >-
 * 1x 5V UBEC
 * 1x VESC (open-source electronic speed controller)
 
-## Consumables List
+### Consumables List
 
 * Min 5x 2-Pin connectors of your choice, this guide uses XT60/XT90 (male and female)
 * Min 3x Bare pin connectors, this guide uses 4mm bullet connector (male and female)
@@ -24,19 +26,39 @@ description: >-
 * Min 1m AWG16 cable
 * Min 3x 3-Pin servo connection leads (both male and female)
 
-## Tools List:
+### Tools List:
 
 * Soldering Iron (recommended at least 100W)
 
-## (Optional:)
+### (Optional:)
 
 * 4x 20dB attenuators for bench testing of Doodle Labs radios
 * Bench power supply&#x20;
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Note: This guide is building upon a TRAXXAS MAXX rc car, which already has a BLDC motor and battery.
 {% endhint %}
 
 ## Connection Diagram
 
+{% hint style="info" %}
+The following diagram shows the connection on the UxV side.
+{% endhint %}
+
 <figure><img src="../.gitbook/assets/SBUS-Rc-Car-Connection (7).png" alt=""><figcaption></figcaption></figure>
+
+## 1. Check Firmare
+
+The Micronav controller needs to be flashed with special firmware, which helps smooth out the signal coming from the radio on the AirSide module. It also enables failsafe values on the airside module. To set them up, you should use the NavSuite on the Micronav, as will be explained later. For now, the important step is to ask UXV to use the special firmware on the MicroNav.
+
+## 2. Explaining the connections
+
+### A. Power Distribution
+
+A Li-Po battery is not an ideal power source. When components ramp up current draw from it, the voltage momentarily drops, which can for example cause an undervoltage error in the VESC when drawing a lot of power from the steering servo.&#x20;
+
+Therefore it is recommended to use a BEC (battery eliminator circuit) to power the radios, unless they have their own (some models, such as the one UXV is using). This way you can make sure the radios get a constant voltage input. It also ensures that any back-current noise coming from the ESC (for example when breaking) will not disturb the transmitted signal.
+
+It is common to have several components drawing power connected to the battery. The components should each be connected in parallel. This is done by splitting both the (+) and (-) cable into the same amount of cables as there are components, in one point. The following schematic shows how to power 3 ESCs from one battery.
+
+<figure><img src="../.gitbook/assets/3ESC+1Battery-Connection.drawio (1).png" alt=""><figcaption></figcaption></figure>
