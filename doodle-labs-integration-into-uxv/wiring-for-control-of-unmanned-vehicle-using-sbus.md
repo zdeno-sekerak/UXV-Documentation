@@ -67,4 +67,6 @@ It is common to have several components drawing power connected to the battery. 
 
 ### C. Ground Connections
 
-All of the components need to be g
+All of the components need to be grounded. However not all grounds are the same. Some voltage regulators have a [floating](../#floating-power-rail) or [isolated](../#isolated-power-rail) power rails. They are good at protecting the components from overvoltages. On the other hand, it can be tricky if you are using a type of communication protocol where the receiving signal is read against the components ground reference (such as SBUS).
+
+Connecting the two components with a&#x20;
