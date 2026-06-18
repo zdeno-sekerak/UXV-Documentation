@@ -53,12 +53,18 @@ The Micronav controller needs to be flashed with special firmware, which helps s
 
 ## 2. Explaining the connections
 
-### A. Power Distribution
+### A. Voltage Sag
 
 A Li-Po battery is not an ideal power source. When components ramp up current draw from it, the voltage momentarily drops, which can for example cause an undervoltage error in the VESC when drawing a lot of power from the steering servo.&#x20;
 
 Therefore it is recommended to use a BEC (battery eliminator circuit) to power the radios, unless they have their own (some models, such as the one UXV is using). This way you can make sure the radios get a constant voltage input. It also ensures that any back-current noise coming from the ESC (for example when breaking) will not disturb the transmitted signal.
 
-It is common to have several components drawing power connected to the battery. The components should each be connected in parallel. This is done by splitting both the (+) and (-) cable into the same amount of cables as there are components, in one point. The following schematic shows how to power 3 ESCs from one battery.
+### B. Powering Several Components
+
+It is common to have several components drawing power connected to the battery. The components should each be connected in parallel. This is done by splitting both the (+) and (-) cable into the same amount of cables as there are components, in one point. The following schematic shows how to power 3 ESCs from one battery using the star topology, which is the optimal used one.&#x20;
 
 <figure><img src="../.gitbook/assets/3ESC+1Battery-Connection.drawio (1).png" alt=""><figcaption></figcaption></figure>
+
+### C. Ground Connections
+
+All of the components need to be g

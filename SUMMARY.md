@@ -2,7 +2,8 @@
 
 ## Hardware Selection
 
-* [Serial Communication Basic Concepts](README.md)
+* [Foundational Electronics Concepts](README.md)
+* [Serial Communication Basic Concepts](<README (2).md>)
 * [Foundational Antenna Concepts](<README (1).md>)
 * [Choosing a Doodle Labs Radio](hardware-selection/choosing-a-doodle-labs-radio.md)
 * [Choosing an Antenna](hardware-selection/choosing-an-antenna.md)

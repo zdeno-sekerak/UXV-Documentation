@@ -1,39 +1,16 @@
-# Serial Communication Basic Concepts
+# Foundational Electronics Concepts
 
-## Synchronous X Asynchronous
+## Isolated Power Rail&#x20;
 
-A digital communication is just a combination of `HIGH` and `LOW` pulses sent across a wire. If there is a constant high pulse, the receiving side does not know if it is just one or several HIGH pulses in a row. There are two common ways communication protocols have been dealing with this issue.
+A power rail, which creates its own circuit essentially with the same voltage and current as the main circuit. There are no electrons passing between the rail and the main power supply. Power is transferred using another means, such as a magnetic field.&#x20;
 
-Synchronous communication protocols share an additional clock wire. One of the devices is defined as master and sends high and low pulses at a constant rhythm. This makes it very easy for the other device to interpret the data and the communication speed is exceptionally high.
+The primary purpose of this isolation is safety and extreme noise blocking.&#x20;
 
-Asynchronous communication relies on the internal clocks of the two devices, which are not always in sync. Therefore it sends framing (start and stop) bits, which define the start and end of a data frame. The advantage of this protocol is that it requires only one wire (for one-way communication) and a common ground.
+## Floating Power Rail
 
-## UART
+When a rail is floating, it means that its negative terminal is simply not connected to the main system ground terminal. Its voltage is free to shift or "float" relative to the rest of the system.
 
-Hardware communication protocol used to send serial data between two devices. It uses 3 wires - Transmit (TX), Receive (RX) and Ground (GND). The wires are connected cross-wise, meaning TX pin of Device A is connected to RX pin of Device B.
+It is for example used in ESCs (electronic speed controllers) to achieve a higher momentary voltage output.
 
-The signal has no shared clock and instead both of the devices must agree on a baud rate at which the bits are transferred, for example a baud rate of 115 200 means 115 200 bits per second. The most common baud rates are $$2^{n} * 16$$.
+The consequence is that if you are using this kind of a source, the ground wire coupled with a signal wire (in SBUS for example) muse be connected to the receiving component if it is connected to the main circuit, otherwise the communication will fail completely.&#x20;
 
-In standard UART, the IDLE state is HIGH (1). If the IDLE state was LOW, a broken line would not be distinguishable from an IDLE line, which can be relevant in certain situations.&#x20;
-
-## Parity
-
-Single bit appended to the end of every UART frame which gives the reciever a basic way of detecting an error. Before transmitting a bite (8 bits) of data, the sender counts the number of 1s and then appends the parity bites which makes the count either even or odd.&#x20;
-
-The following table gives an example of how a parity is commonly defined in UART. The first number determines the number of data bits (carrying information), the middle letter defines the parity and the last number defines the number of stop bits.
-
-| Setting | Meaning                                             |
-| ------- | --------------------------------------------------- |
-| 8N1     | No parity at all.                                   |
-| 8E1     | Even parity, sets the total number of 1 to be even. |
-| 8O1     | Odd parity, sets the total number of 1 to be odd.   |
-
-## Start and Stop Bits
-
-For the start bit, the transmitter sets the first bit to the opposite state of IDLE, which signals to the receiver that a byte is coming. The start bit is always one bit long.
-
-The duration of the stop bits can differ for various UART configuration, however the concept is the same. The transmitter pulls the line back to the idle state for the duration of the stop bit, signaling an end of a frame.
-
-## SBUS
-
-SBUS is a protocol used to send data over UART with a baud rate of 100 000 bps developed by Futaba for RC airplanes. It uses inverted logic, meaning the IDLE line is LOW and the configuration is specified at 8E2.
