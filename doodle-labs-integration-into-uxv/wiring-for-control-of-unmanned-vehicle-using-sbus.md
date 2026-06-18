@@ -36,3 +36,7 @@ description: >-
 {% hint style="info" %}
 Note: This guide is building upon a TRAXXAS MAXX rc car, which already has a BLDC motor and battery.
 {% endhint %}
+
+## Connection Diagram
+
+<figure><img src="../.gitbook/assets/SBUS-Rc-Car-Connection.png" alt=""><figcaption></figcaption></figure>
