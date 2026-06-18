@@ -39,4 +39,4 @@ Note: This guide is building upon a TRAXXAS MAXX rc car, which already has a BLD
 
 ## Connection Diagram
 
-<figure><img src="../.gitbook/assets/SBUS-Rc-Car-Connection.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/SBUS-Rc-Car-Connection (1).png" alt=""><figcaption></figcaption></figure>
