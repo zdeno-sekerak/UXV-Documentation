@@ -42,3 +42,18 @@ If you are using the UXV Airside module with the correct firmware for error comp
 ## 4. Using a Logic Analyzer
 
 If all of the cables are transmitting the signal correctly, but the connection is bad, you can use a logic analyzer.
+
+The setup you should use will depend on the logic analyzer. UXV used Analog Discovery 3 pro from Digilent paired with the Waveforms software.&#x20;
+
+Begin by connecting the logic analyzer and setting the expected baudrate and signal type in the software. From the read signal, you can see if the signal from the airside is:
+
+* Readable
+* Correct wavelengt
+* Correct baudrate
+* Correct logic (SBUS is inverted)
+
+it is recommended to read the data from the SBUS output of the airside as SBUS uses a standardized logic for encoding channel values for joysticks and switches.
+
+{% hint style="info" %}
+Analyzing the SBUS to PWM converter is difficult as the JHEMCU one is not open source. If having probelms with it, try contacting the manufacturer to analyze the behavior as having a look at the code the converter is running can be very useful.
+{% endhint %}

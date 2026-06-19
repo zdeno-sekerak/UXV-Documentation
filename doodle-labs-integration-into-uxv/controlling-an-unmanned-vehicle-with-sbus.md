@@ -36,6 +36,10 @@ Then proceed to the SBUS tab, which is found at the top center of the screen. He
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-19 014805.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+If you get a "Failed to acknowledge settings" error in Navsuite, you very likely entered conflicting settings (one SBUS channel assigned to two axis etc).
+{% endhint %}
+
 These settings will make the connection work for the wiring described in the previous guide.&#x20;
 
 It is useful to verify that the signal is propagating through the system correctly after every step. <mark style="color:$danger;">UXV used an oscilloscope to probe the pins on the Micronav controller to verify the correctness of the connection. (where to find the documentation for the pinout when using SRM?)</mark>
