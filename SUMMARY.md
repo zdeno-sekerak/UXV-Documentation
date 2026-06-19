@@ -27,6 +27,7 @@
 ## GCS, UxV and Antenna Setup
 
 * [Optimizing Antenna Configuration](gcs-uxv-and-antenna-setup/optimizing-antenna-configuration.md)
+* [Setting up a VESC](gcs-uxv-and-antenna-setup/setting-up-a-vesc.md)
 * [Setting up a PX4 Vehicle](gcs-uxv-and-antenna-setup/setting-up-a-px4-vehicle/README.md)
   * [Non-Airplane Airframe Setup in PX4](gcs-uxv-and-antenna-setup/setting-up-a-px4-vehicle/non-airplane-airframe-setup-in-px4.md)
 * [Physical Wiring of Servos and Motors](gcs-uxv-and-antenna-setup/physical-wiring-of-servos-and-motors.md)
