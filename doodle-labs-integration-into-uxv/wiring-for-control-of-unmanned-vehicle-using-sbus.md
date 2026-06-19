@@ -153,7 +153,7 @@ The following picutre is an example of the connectors on the motor:
 
 ### C. SBUS to PWM + Power Connections
 
-For the signal connections, UXV soldered JR Style servo connectors for cables, which carry the PWM/SBUS signal and XT60 connectors for wires which carry power. Often it was nescessary to split the servo cables (3 wires) in two, using two wires for power and ground and one wire to connect the PWM signal from the JHEMCU SBUS to PWM.
+For the signal connections, UXV soldered JR Style servo connectors for cables, which carry the PWM/SBUS signal and XT60 connectors for wires which carry power. Often it was nescessary to split the servo cables (3 wires) in two, using two wires for power and ground and one wire to connect the PWM signal from the JHEMCU SBUS to PWM. You do not need to be concerned with the pin connections on the SBUS to PWM converter very much as they will depend on your software configuration (see [next guide](controlling-an-unmanned-vehicle-with-sbus.md)).
 
 An example of a servo cable:
 

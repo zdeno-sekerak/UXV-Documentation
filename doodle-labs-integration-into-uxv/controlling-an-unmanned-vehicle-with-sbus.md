@@ -56,6 +56,8 @@ There is a known bug in socat, which makes changing the configuration through th
 Always start by setting Simple Configuration - Simple Configuration settings first. The configuration acts as a script which will erase all other conflicting settings, if set differently to the simpleconfig. The baud rate settings for in the simpleconfig are only&#x20;
 {% endhint %}
 
+### A. Settings
+
 Navigate to Advanced Settings - Services - Serial Configuration and enable socat on both of the radios. Then continue to set the settings according to the screenshots below.
 
 A correct configuration for the GCS Radio is the following:
@@ -70,7 +72,13 @@ If you click on the small [here](https://app.gitbook.com/s/KjNFVuuNpc9Zwv7CH0ci/
 
 And respective configuration for the UxV radio:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 115530.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 143014.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 143130.png" alt=""><figcaption></figcaption></figure>
+
+Keep in mind to also set the firewall rule for the UAV radio.
+
+### B. Explanation of Settings
 
 A radio can be either set as a socat server, or socat client. When a radio is set as a client, it initiates the connection to the radio set up as a server (host IP address). It has to be configured with the exact IP address of the radio it wishes to reach and it will try to do so. On the other hand the server just waits for any radio to reach out, without listening to only specific address, but it is connected to a specific port.&#x20;
 
@@ -84,8 +92,24 @@ The devices are configured as TCP, which is a networking protocol with higher la
 
 The port in the socat configurations of both the GCS and UxV is set to 2001. By default the port is 2000, however the setting conflicts with the simpleconfig of the UAV radio, where it also searches for GCS at port 2000. As one port cannot be used for two operations, socat would not work with the default settings.
 
+Because I changed the socat port, I also need to change the firewall traffic rules by clicking the button in serial configuration, or by navigating to Advanced Settings - Network - Firewall - Traffic Rules (horizontal ribbon on top).
+
 {% hint style="info" %}
 The most tricky part of this configuration is avoiding conflicting settings. A simple way to discover them is to power off and on the radios and check socat. If is it disabled even if it was previously enabled, there is likely a conflicting setting.
 {% endhint %}
 
-I also have to configure the firewall traffic rules to the new port. Currently it is set to allow socat on port 2000, I need to change it to port 2001.&#x20;
+{% hint style="success" %}
+Expected outcome: The UAV radio is outputting SBUS signal to the Airside module, which is outputting SBUS at its RC\_OUT pin. (verify with oscilloscope)
+{% endhint %}
+
+## 3. SBUS to PWM Wiring
+
+The JHEMCU SBUS to PWM converter is not configurable in any way. The input is clearly visible and marked as SBUS, as the PWM pins are. The output pins have numbers written next to them, which correspond to the RC channels.&#x20;
+
+To assign axis movements on the Micronav to channel values, go to Navsuite - Lock Icon (enter pin)  - SBUS - AXES. There you can move the joysticks, see the axis that changes and assign the intended output chanell. You then connect the corresponding component connector to the correct number pin on the SBUS to PWM converter.
+
+{% hint style="info" %}
+The JHEMCU supposrts a maximum of 8 PWM output chanells.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 055624.png" alt=""><figcaption></figcaption></figure>
