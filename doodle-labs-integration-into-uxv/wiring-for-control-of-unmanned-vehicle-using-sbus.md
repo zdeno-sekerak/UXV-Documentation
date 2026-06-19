@@ -45,7 +45,7 @@ Note: This guide is building upon a TRAXXAS MAXX rc car, which already has a BLD
 The following diagram shows the connection on the UxV side. As per electronics convention, a GND (-) cable is black, a VCC (+) cable is red. Signal cables have various other colors.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/SBUS-Rc-Car-Connection (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/SBUS-Rc-Car-Connection (10).png" alt=""><figcaption></figcaption></figure>
 
 ## 1. Check Firmare
 
@@ -69,7 +69,7 @@ It is common to have several components drawing power connected to the battery. 
 
 All of the components need to be grounded. However not all grounds are the same. Some voltage regulators have a [floating](../#floating-power-rail) or [isolated](../#isolated-power-rail) power rails. They are good at protecting the components from overvoltages. On the other hand, it can be tricky if you are using a type of communication protocol where the receiving signal is read against the components ground reference (such as SBUS).
 
-Connecting the two components with a ground wire will make the connection work, but you will lose isolation of the sensitive component.
+Connecting the two components with a ground wire will make the connection work, but you will lose isolation of the sensitive component. If the connected device is capable of producing a powerful back-current (braking motor etc), it can corrupt the signal in other connected components.&#x20;
 
 In order to make the connection work without ruining the isolation of the component, the signal needs to be transferred using either light or magnetic field. Some common components used for this purpose are octocouplers or digital isolators.
 
@@ -95,7 +95,7 @@ After:
 
 Continue by disconnecting the motor from the wheels. When callibrating the VESC (and usually any other ESC), it will spin up the motor. It is less risky to conduct the operations without having to observe the car at all times.
 
-On the TRAXXAS MAXX, simply remove the wheel gear cover.
+On the TRAXXAS MAXX, simply remove the wheel gear cover and remove the gear between the motor and the driveshaft.
 
 ## 4. Making the Connections
 
@@ -139,7 +139,20 @@ The most common connectors used are bullet connectors, while other people use MT
 
 When using bullet connectors, it is common to use female on the ESC side and cover them with heat shrink tubes on the outside. This way the connectors will not conduct electricity if they touch on accident, which would likely fry the ESC.
 
-The following picture is an example of a VESC connection:
+The following picture is an example of connectors on the VESC:
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-19 082308.png" alt=""><figcaption></figcaption></figure>
 
+The following picutre is an example of the connectors on the motor:
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 095408.png" alt=""><figcaption></figcaption></figure>
+
+### C. SBUS to PWM + Power Connections
+
+For the signal connections, UXV soldered JR Style servo connectors for cables, which carry the PWM/SBUS signal and XT60 connectors for wires which carry power. Often it was nescessary to split the servo cables (3 wires) in two, using two wires for power and ground and one wire to connect the PWM signal from the JHEMCU SBUS to PWM.
+
+An example of a servo cable:
+
+## 5. Shell of the Car
+
+UXV created a 3D-Printed shell for the car to ease the mounting of components, especially antennas.
