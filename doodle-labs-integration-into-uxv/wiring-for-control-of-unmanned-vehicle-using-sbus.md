@@ -165,4 +165,10 @@ UXV created a 3D-Printed shell for the car to ease the mounting of components, e
 To test this setup, it is reccomended to use a battery. If you are using a power supply, make sure to have a sufficient headroom for power ar servos. When commands are applied to these components, they might produce a current spike, which will trigger the current limit on a power supply. This spike disappears quickly enough that it is usually not even noticable. It will however cause certain errors, for example undervoltage error on the VESC, which will cut the power.
 {% endhint %}
 
-Connecting the SBUS on the radios, keep in mind to swap the pins.
+## 6. Radio Connection
+
+{% hint style="info" %}
+The connection between the Micronav and SRM should already be established. If not, use the same as for the UxV.
+{% endhint %}
+
+The connection between the radio and the controller or airside module respectively should be done using a simple stock cable, or in the case of the SRM just slotting it in. Keep in mind that the RX pin should be connected to the TX pin on the other device and vice-versa.
