@@ -59,6 +59,10 @@ Next click ok in the port settings in Termite and connect to the port. The Airsi
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-19 074041.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+The airside might print something about SAMBUS, which is an internal UXV protocol.
+{% endhint %}
+
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-19 074246.png" alt=""><figcaption></figcaption></figure>
 
 Next, type in the command "start\_stream 2". The Airside will start printing live values with 1s update time, which can help verify the input/output is correct.

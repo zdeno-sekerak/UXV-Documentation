@@ -1,4 +1,4 @@
-# Serial Communication Basic Concepts
+# Electronics Communication Basic Concepts
 
 ## Synchronous X Asynchronous
 
@@ -37,3 +37,5 @@ The duration of the stop bits can differ for various UART configuration, however
 ## SBUS
 
 SBUS is a protocol used to send data over UART with a baud rate of 100 000 bps developed by Futaba for RC airplanes. It uses inverted logic, meaning the IDLE line is LOW and the configuration is specified at 8E2.
+
+SBUS is able to flag bits as failsafe along with sending position information to let the downstream electronics know.
