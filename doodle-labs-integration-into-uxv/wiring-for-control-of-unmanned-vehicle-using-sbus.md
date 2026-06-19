@@ -164,3 +164,5 @@ UXV created a 3D-Printed shell for the car to ease the mounting of components, e
 {% hint style="info" %}
 To test this setup, it is reccomended to use a battery. If you are using a power supply, make sure to have a sufficient headroom for power ar servos. When commands are applied to these components, they might produce a current spike, which will trigger the current limit on a power supply. This spike disappears quickly enough that it is usually not even noticable. It will however cause certain errors, for example undervoltage error on the VESC, which will cut the power.
 {% endhint %}
+
+Connecting the SBUS on the radios, keep in mind to swap the pins.

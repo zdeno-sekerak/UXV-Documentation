@@ -40,8 +40,25 @@ Then proceed to the SBUS tab, which is found at the top center of the screen. He
 
 These settings will make the connection work for the wiring described in the previous guide.&#x20;
 
+It is useful to verify that the signal is propagating through the system correctly after every step. <mark style="color:$danger;">UXV used an oscilloscope to probe the pins on the Micronav controller to verify the correctness of the connection. (where to find the documentation for the pinout when using SRM?)</mark>
+
 ## 2. Doodle Labs Configuration
 
 This guide assumes a working connection is already established between a pair of Doodle Labs radios and only enabling serial configuration is nescessary.
 
-Since the radios communicate over&#x20;
+Since the radios communicate over IP, the UART signal is split into individual packets, which are sent over the network and decoded on the other side. Doodle Labs is using socat utility for this.&#x20;
+
+{% hint style="info" %}
+There is a known bug in socat, which makes changing the configuration through the command line interface glitchy. Doodle Labs reccomend users to use the web GUI for socat configuration.
+{% endhint %}
+
+The Doodle Labs radio is es
+
+A correct configuration for the GCS Radio is the following:
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 115417.png" alt=""><figcaption></figcaption></figure>
+
+And respective configuration for the UxV radio:
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 115530.png" alt=""><figcaption></figcaption></figure>
+
