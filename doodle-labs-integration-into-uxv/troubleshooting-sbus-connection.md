@@ -39,6 +39,12 @@ If the signal from the UXV MIcronav appears clean, but the signal from UXV Airsi
 It is possible to measure the baudrate of a connection on the oscilloscope, however identifying the frames correctly can be tricky and therefore it is reccomended to use a logic analyzer. If you decide to use an oscilloscope anyways, make sure to double-check measurements.
 {% endhint %}
 
+{% hint style="info" %}
+The cables you are masuring on have to be connected on both sides, otherwise one end of the cable will be left floating and reflect the signal back into the radio, which will create wrongly-shaped waves.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 172147.png" alt=""><figcaption></figcaption></figure>
+
 ## 3. Reading the Values from UXV Airside
 
 The UXV Airside module has a function which allows you to debug its working. To connect to it, use a cable from USB-C port on the airside to your computer. Then use the application termite, or other serial monitor.
@@ -93,6 +99,10 @@ To read the baud rate from the logic analyzer correctly, make sure to understand
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-19 162028.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+There is no single way to encode position values for RC channels in UART, however MavLink has a standard for UART which is commonly used.
+{% endhint %}
 
 {% hint style="info" %}
 Analyzing the SBUS to PWM converter is difficult as the JHEMCU one is not open source. If having problems with it, try contacting the manufacturer to analyze the behavior as having a look at the code the converter is running can make the process  of understanding what is happening internally significantly simpler.
