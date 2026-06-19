@@ -2,8 +2,6 @@
 description: >-
   This page describes how to control an unmanned vehicle with SBUS using a UXV
   controller
-tags:
-  - add-later
 ---
 
 # Configuring an Unmanned Vehicle with SBUS
@@ -109,7 +107,13 @@ The JHEMCU SBUS to PWM converter is not configurable in any way. The input is cl
 To assign axis movements on the Micronav to channel values, go to Navsuite - Lock Icon (enter pin)  - SBUS - AXES. There you can move the joysticks, see the axis that changes and assign the intended output chanell. You then connect the corresponding component connector to the correct number pin on the SBUS to PWM converter.
 
 {% hint style="info" %}
-The JHEMCU supposrts a maximum of 8 PWM output chanells.
+The JHEMCU supports a maximum of 8 PWM output channels.
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-19 055624.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="success" %}
+Expected outcome: Moving the correct joystick sticks gives the correct input to components (throttle to motor etc).
+{% endhint %}
+
+If you are having trouble with any of the steps, refer to the [following guide](troubleshooting-sbus-connection.md) for trhoubleshooting steps.
