@@ -19,11 +19,11 @@ A common pitfall is a baudrate mismatch in the settings. Verify all of the compo
 | UAV Radio      | 115 200         | Radio Web GUI   |
 | Airside Module | 100 000         | Contact UXV     |
 
-A common symptom of a baudrate mismatch is a glitchy servo. If the baudrates are mismatched within a margin, every once in a while the signal will match and produce the correct output moving the servo for example. The frequency of the servo working and not working should stay constant for this glitch.
+A common symptom of a baudrate mismatch is a glitchy servo. If the baudrates are mismatched within a margin, every once in a while the signal will match and produce an output, which is not necessarily right but moves the servo. The frequency of the servo working and not working should stay constant for this glitch.
 
 ## 2. Verify Signal Output from all Components
 
-The next step to verify all of the components are outputting signal (are not dead), use an oscilloscope. The operating steps for your model can be different, however the basic principle is that you should connect the crocodile clip to a ground and touch the different pins in the setup with the probe. When the oscilloscope is set correctly, it will display a square wave for a working UART signal.
+The next step to verify all of the components are outputting signal (are not dead), use an oscilloscope. The operating steps for your model can be different, however the basic principle is that you should connect the crocodile clip to a ground wire on the setup (for example from an airside) and touch the different pins in the setup with the probe. When the oscilloscope is set correctly, it will display a square wave for a working UART signal.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-19 153332.png" alt=""><figcaption></figcaption></figure>
 
@@ -95,7 +95,7 @@ Begin by connecting the logic analyzer and setting the expected baudrate and sig
 it is recommended to read the data from the SBUS output of the airside as SBUS uses a standardized logic for encoding channel values for joysticks and switches.
 
 {% hint style="danger" %}
-To read the baud rate from the logic analyzer correctly, make sure to understand the logic of the protocol you are using. For example the length of an SBUS frame in the picture is $$115.2 ms$$ as the frame has 11 bits in it. If one bit is measured, it would give the correct value for the SBUS frame.
+To read the baud rate from the logic analyzer correctly, make sure to understand the logic of the protocol you are using. For example the length of an SBUS byte in the picture is 115 µs as one byte has 12 bits (1 start, 8 data, 1 parity and 2 stop) in it. If one bit is measured, it would give roughly the correct value for SBUS (10 µs). One SBUS frame is composed of many bytes.
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-19 162028.png" alt=""><figcaption></figcaption></figure>
