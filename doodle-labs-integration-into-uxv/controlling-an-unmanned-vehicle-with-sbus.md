@@ -41,3 +41,7 @@ Then proceed to the SBUS tab, which is found at the top center of the screen. He
 These settings will make the connection work for the wiring described in the previous guide.&#x20;
 
 ## 2. Doodle Labs Configuration
+
+This guide assumes a working connection is already established between a pair of Doodle Labs radios and only enabling serial configuration is nescessary.
+
+Since the radios communicate over&#x20;

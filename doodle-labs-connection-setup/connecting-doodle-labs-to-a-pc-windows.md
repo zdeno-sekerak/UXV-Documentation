@@ -91,7 +91,15 @@ You can also try to ssh into the radio using the command ssh root@\<radio IP-adr
 {% endhint %}
 
 {% hint style="info" icon="3" %}
-Lastly you can use the fallback IP address which is 192.168.153.1 to acces the web GUI. You will however need to set your computer IP address to 192.168.153.X with X being any number between 0 and 255 except 1 and a subnet mask 255.255.255.0.
+You can use the fallback IP address which is 192.168.153.1 to acces the web GUI. You will however need to set your computer IP address to 192.168.153.X with X being any number between 0 and 255 except 1 and a subnet mask 255.255.255.0.
+{% endhint %}
+
+{% hint style="info" icon="4" %}
+If the radio is still not replying, you can try the Windows Terminal command:
+
+netsh interface ipv4 show neighbors
+
+This will show the list of all IP adresses on your network, which you can use to see if you are using the correct IP adress and if the radio is even working.
 {% endhint %}
 
 {% hint style="info" %}
