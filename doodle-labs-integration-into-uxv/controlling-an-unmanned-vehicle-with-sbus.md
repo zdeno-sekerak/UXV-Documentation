@@ -60,7 +60,13 @@ Navigate to Advanced Settings - Services - Serial Configuration and enable socat
 
 A correct configuration for the GCS Radio is the following:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 115417.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 142416 (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 142552 (1).png" alt=""><figcaption></figcaption></figure>
+
+If you click on the small [here](https://app.gitbook.com/s/KjNFVuuNpc9Zwv7CH0ci/faq) button in the serial configuration, you can also acces the firewall rules, where you have to change the port for socat to 2001 (edit - change port number), which has to be applied to both of the radios
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 142802.png" alt=""><figcaption></figcaption></figure>
 
 And respective configuration for the UxV radio:
 
@@ -82,4 +88,4 @@ The port in the socat configurations of both the GCS and UxV is set to 2001. By 
 The most tricky part of this configuration is avoiding conflicting settings. A simple way to discover them is to power off and on the radios and check socat. If is it disabled even if it was previously enabled, there is likely a conflicting setting.
 {% endhint %}
 
-I also have to configure the firewall traffic rules to the new port. Currently it is set to allow socat on port 2000, I need to change it to port 2001.
+I also have to configure the firewall traffic rules to the new port. Currently it is set to allow socat on port 2000, I need to change it to port 2001.&#x20;
