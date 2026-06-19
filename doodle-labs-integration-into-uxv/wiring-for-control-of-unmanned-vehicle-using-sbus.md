@@ -171,4 +171,4 @@ To test this setup, it is reccomended to use a battery. If you are using a power
 The connection between the Micronav and SRM should already be established. If not, use the same as for the UxV.
 {% endhint %}
 
-The connection between the radio and the controller or airside module respectively should be done using a simple stock cable, or in the case of the SRM just slotting it in. Keep in mind that the RX pin should be connected to the TX pin on the other device and vice-versa.
+The connection between the radio and the controller or airside module respectively should be done using a simple stock cable, or in the case of the SRM just slotting it in. Keep in mind that the RX pin should be connected to the TX pin on the other device and vice-versa if creating a custom cable or doing any modifications.
