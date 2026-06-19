@@ -14,3 +14,7 @@ It is for example used in ESCs (electronic speed controllers) to achieve a highe
 
 The consequence is that if you are using this kind of a source, the ground wire coupled with a signal wire (in SBUS for example) muse be connected to the receiving component if it is connected to the main circuit, otherwise the communication will fail completely.&#x20;
 
+## Failsafe
+
+The pre-programmed behavior of an electronic system automatically executes when communication with the source of instructions is lost. For example is a signal from a GCS is lost, a UGV vehicle controller will cut throttle and put all servos in the neutral position.
+

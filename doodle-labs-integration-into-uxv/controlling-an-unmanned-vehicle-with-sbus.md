@@ -39,3 +39,5 @@ Then proceed to the SBUS tab, which is found at the top center of the screen. He
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-19 014805.png" alt=""><figcaption></figcaption></figure>
 
 These settings will make the connection work for the wiring described in the previous guide.&#x20;
+
+## 2. Doodle Labs Configuration
