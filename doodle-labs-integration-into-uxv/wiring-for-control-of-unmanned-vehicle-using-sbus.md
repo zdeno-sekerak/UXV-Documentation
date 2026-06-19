@@ -11,7 +11,6 @@ description: >-
 
 ### Parts List:
 
-* 1x UXV Micronav Dev Kit (or another controller with UART output)
 * 1x UXV Airside Integrated Module (firmware > v2.0.0)
 * 2x Doodle Labs radios with working connection
 * 1x JHEMCU SBUS to PWM converter
@@ -25,6 +24,7 @@ description: >-
 * Min 0.5m AWG10 cable
 * Min 1m AWG16 cable
 * Min 3x 3-Pin servo connection leads (both male and female)
+* Heat shrinks
 
 ### Tools List:
 
@@ -37,6 +37,10 @@ description: >-
 
 {% hint style="warning" %}
 Note: This guide is building upon a TRAXXAS MAXX rc car, which already has a BLDC motor and battery.
+{% endhint %}
+
+{% hint style="info" %}
+This guide shows a finished connection integrated into a car. If you are using different components than this guide, it is highly reccomended to build the setup on a bench first, testing it, and only then integrating it into a UAV/UGV.
 {% endhint %}
 
 ## Connection Diagram
@@ -156,3 +160,7 @@ An example of a servo cable:
 ## 5. Shell of the Car
 
 UXV created a 3D-Printed shell for the car to ease the mounting of components, especially antennas.
+
+{% hint style="info" %}
+To test this setup, it is reccomended to use a battery. If you are using a power supply, make sure to have a sufficient headroom for power ar servos. When commands are applied to these components, they might produce a current spike, which will trigger the current limit on a power supply. This spike disappears quickly enough that it is usually not even noticable. It will however cause certain errors, for example undervoltage error on the VESC, which will cut the power.
+{% endhint %}
