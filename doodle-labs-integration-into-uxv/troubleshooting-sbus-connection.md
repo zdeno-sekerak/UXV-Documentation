@@ -10,4 +10,4 @@ This guide offers several workflows for troubleshooting the connection made in t
 
 A common pitfall is a baudrate mismatch in the settings. Verify all of the components keep the workflow:
 
-<figure><img src="../.gitbook/assets/UART-to-PWM-Flowchart.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/UART-to-PWM-Flowchart (1).png" alt=""><figcaption></figcaption></figure>
