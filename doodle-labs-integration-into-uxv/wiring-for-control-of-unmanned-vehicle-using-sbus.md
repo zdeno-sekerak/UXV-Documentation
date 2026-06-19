@@ -11,7 +11,7 @@ description: >-
 
 ### Parts List:
 
-* 1x UXV Micronav Dev Kit (or another controller with SBUS output)
+* 1x UXV Micronav Dev Kit (or another controller with UART output)
 * 1x UXV Airside Integrated Module (firmware > v2.0.0)
 * 2x Doodle Labs radios with working connection
 * 1x JHEMCU SBUS to PWM converter
@@ -83,7 +83,7 @@ A well grounded connection is especially important for SBUS.
 
 ## 3. Making the Connections
 
-### A. VESC Connection
+### A. VESC PWM Connection
 
 {% hint style="info" %}
 The VESC UXV Technologies is using is a custom made board based on the open source VESC project. Everything that applies to the board will apply to every other VESC board. If you do not wish to use a VESC, any other ESC with a sufficiently high power rating will do the job.
@@ -101,9 +101,29 @@ Firstly we will swap out the original TRAXXAS ESC for a VESC. There are several 
 
 On the other hand, the TRAXXAS ESC is waterproof.
 
-This setup uses a PWM signal to control the VESC. The connectors on the various VESCs will be different, for example the UXV one only has soldering holes, however the important thing is that the cable coming out of it is a male servo cable.
+This setup uses a PWM signal to control the VESC. The connectors on the various VESCs will be different, for example the UXV one only has soldering holes, however the important thing is that the cable coming out of it is a male servo cable, no matter how you make the cable.
 
-{% hint style="info" %}
+The following picture is an example of what the PWM input pins can look like.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 081317.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="success" %}
+Expected outcome: Connected cable for PWM output, which has a male servo connector
+{% endhint %}
+
+{% hint style="warning" %}
 The PWM pins on the VESCs are commonly labelled PPM, which is a historical naming mistake. They are in fact PWM pins.
 {% endhint %}
+
+### B. VESC-Motor Connection
+
+The VESC produces a switching signal through 3 wires which drive the different phases of the motor. The cables do not have polarity and can be used interchangeably as the VESC will automatically detect the phase it is connected to.&#x20;
+
+The most common connectors used are bullet connectors, while other people use MT60/MR60 connectors. For high performance applications where the ESC will not be changed, the cables between the motor and the ESC are soldered directly.
+
+When using bullet connectors, it is common to use female on the ESC side and cover them with heat shrink tubes on the outside. This way the connectors will not conduct electricity if they touch on accident, which would likely fry the ESC.
+
+The following picture is an example of a VESC connection:
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 082308.png" alt=""><figcaption></figcaption></figure>
 
