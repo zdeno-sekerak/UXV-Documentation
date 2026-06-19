@@ -121,3 +121,7 @@ Expected outcome: Moving the correct joystick sticks gives the correct input to 
 {% endhint %}
 
 If you are having trouble with any of the steps, refer to the [following guide](troubleshooting-sbus-connection.md) for trhoubleshooting steps.
+
+## 4. Failsafe Behavior
+
+The failsafe behavior is handeled by the UXV Airside module and can be configured in Navsuite. UXV used the FAILSAFE\_CUT\_COMMS setting to interrupt the communication if any part of the connection between the Airside and the Micronav is interrupted. The car will cut throttle in that case.
