@@ -81,7 +81,23 @@ If you know the number of outputs and the target voltage, it is common to use a 
 A well grounded connection is especially important for SBUS.
 {% endhint %}
 
-## 3. Making the Connections
+## 3. Preparing the car (TRAXXAS Specific)
+
+To integrate the custom electronics in the TRAXXAS MAXX, we will first remove some of the old ones, while keeping the servo and the motor in.&#x20;
+
+Before (ESC and Receiver marked in red):
+
+<figure><img src="../.gitbook/assets/IMG_0810.jpg" alt=""><figcaption></figcaption></figure>
+
+After:
+
+<figure><img src="../.gitbook/assets/IMG_0812.jpg" alt=""><figcaption></figcaption></figure>
+
+Continue by disconnecting the motor from the wheels. When callibrating the VESC (and usually any other ESC), it will spin up the motor. It is less risky to conduct the operations without having to observe the car at all times.
+
+On the TRAXXAS MAXX, simply remove the wheel gear cover.
+
+## 4. Making the Connections
 
 ### A. VESC PWM Connection
 
