@@ -33,8 +33,8 @@ FOC is a control algorithm for BLDC and PMSM motors, which defines the stator cu
 The electronic speed controller (ESC) follows this process (simplified):
 
 1. Speed controller tells the system how much flux and torque it needs.
-2. As the motor is spinning, it produces back-current which the ESC measures.
+2. As the motor is spinning, it produces back-EMF (voltage) reducing the current flowing through the coils, which the ESC measures.&#x20;
 3. The system compares the measured current components to those referenced values and calculates the correction needed.
-4. The corrections are converted back to 3-phase voltage references (a back-current decreases the voltage)
-5. The controllers switches the MOSFETs on and off based on these setpoint values.
+4. The corrections are converted back to 3-phase voltage references.
+5. The controllers switches the MOSFETs on and off based on these voltage references.
 
