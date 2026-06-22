@@ -2,7 +2,8 @@
 
 ## Hardware Selection
 
-* [Foundational Electronics Concepts](README.md)
+* [Foundational AC Motor Concepts](README.md)
+* [Foundational Electronics Concepts](<README (2).md>)
 * [Electronics Communication Basic Concepts](hardware-selection/electronics-communication-basic-concepts.md)
 * [Foundational Antenna Concepts](<README (1).md>)
 * [Choosing a Doodle Labs Radio](hardware-selection/choosing-a-doodle-labs-radio.md)

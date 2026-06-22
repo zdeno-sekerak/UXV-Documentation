@@ -58,11 +58,11 @@ To turn on the VESC, both the power (usually XT60) and connection cable to PC (U
 
 Connected power cable on the VESC:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 141155.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 151319.png" alt=""><figcaption></figcaption></figure>
 
 Connected power and USB on the VESC:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 141129.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 151303.png" alt=""><figcaption></figcaption></figure>
 
 ### 2.2 VESC Tool
 
@@ -72,5 +72,6 @@ After launching the software with a connected VESC, the tool should recognize a 
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-22 141756.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 142119.png" alt=""><figcaption></figcaption></figure>
+Begin by setting up the motor FOC by clicking the "Setup Motor FOC" button. FOC is a control algorithm for 3-phase motors.
 
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 142119.png" alt=""><figcaption></figcaption></figure>
