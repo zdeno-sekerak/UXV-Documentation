@@ -72,6 +72,40 @@ After launching the software with a connected VESC, the tool should recognize a 
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-22 141756.png" alt=""><figcaption></figcaption></figure>
 
-Begin by setting up the motor FOC by clicking the "Setup Motor FOC" button. FOC is a control algorithm for 3-phase motors.
+## 3. Configuring the VESC
+
+{% hint style="info" %}
+This guide does not focus on setting up a VESC for a motor with a sensor.
+{% endhint %}
+
+## 3.1 Set Initial Values
+
+Before running the callibration of the motor, change the following values according to your motor:
+
+* ω - Target detection RPM. The speed the motor will spin up to during callibration.
+* D - Duty cycle using detection. Sets the taget maximum average voltage on a scale from 0 to 1.
+* I - Current during detection.
+
+These values will then be used for callibration of the VESC in the next step.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 162929.png" alt=""><figcaption></figcaption></figure>
+
+### 3.1 Setup Motor FOC
+
+Begin by setting up the motor FOC by clicking the "Setup Motor FOC" button. [FOC](../#foc-field-oriented-control) is a control algorithm for 3-phase motors. Make sure to have the motor connected to the VESC and disconnect any wheels/propellers. The callibration will spin up the motor.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-22 142119.png" alt=""><figcaption></figcaption></figure>
+
+Once you have entered the values for the motor and the battery and the callibration has been completed, write the motor and app configuration to the VESC to apply everything by clicking the highlighted buttons:
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 161547.png" alt=""><figcaption></figcaption></figure>
+
+### 3.2 Max Current and Voltage
+
+Go into Motor Settings - General - Current/Voltage to set the maximum current and voltage your battery can provide.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 162355 (1).png" alt=""><figcaption></figcaption></figure>
+
+You can also set the maximum BMS (battery management system), RPM and wattage in the top ribbon if you wish.
+
+After you had set the values, write the configuration using the "Write Motor Configuration" and "Write App Configuration" buttons.
