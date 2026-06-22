@@ -53,6 +53,14 @@ Continue by wiring the ethernet connection from the UAV radio to the flight cont
 
 <figure><img src="../.gitbook/assets/ETH-RC-Car-Connection.png" alt=""><figcaption></figcaption></figure>
 
+#### 1.2.1 Explaining the Connections
+
+In this connection, the power is going through the VESC, as it simplifies the soldering. In the other case, it would be nescessary to make a solder which would split a cable into two.
+
+The PMU in this case does not have any signal wires connected, as the power and voltage readings are takes from the VESC, which is a more accurate measurement. On some controllers, it is not even nescessary to connect a PMU as the servo rail is connected to the flight controller power and can supply it directly. On the CUAV V6X however, the servo rail is an isolated component and by connecting any two (+) and (-) pins to the UBEC, all of the servos will be powered.
+
+The VESC is communicating through CAN with the flight controller and, which is better then connecting it through PWM, as is common with hobby servos, because a bidirectional connection is possible.
+
 {% hint style="success" %}
 Expected outcome: The radios are connected to a controller and a flight controller respectively with power and ethernet cables.
 {% endhint %}
