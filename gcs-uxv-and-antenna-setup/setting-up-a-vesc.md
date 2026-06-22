@@ -10,6 +10,10 @@ A VESC is an open-source ESC which allows a significant level of function custom
 Some of the VESC boards need to be flashed with firmware before use.
 {% endhint %}
 
+{% hint style="info" %}
+For additional resources, please refer to the [Vedder ESC documentation](https://vedder.se/2015/01/vesc-open-source-esc/).
+{% endhint %}
+
 ## 1. VESC-Motor Connection
 
 The can be used to control BLDC (brushless DC), PMSM (pernament magnet synchronous motor) and a brushed DC motor. This guide focuses on controlling BLDC and PMSM motors, which are both 3-phase motors and both have 3 cables connected to an electronic speed controller. They however differ in wiring, which a VESC is able to detect.
@@ -109,3 +113,17 @@ Go into Motor Settings - General - Current/Voltage to set the maximum current an
 You can also set the maximum BMS (battery management system), RPM and wattage in the top ribbon if you wish.
 
 After you had set the values, write the configuration using the "Write Motor Configuration" and "Write App Configuration" buttons.
+
+### 3.3 Observer
+
+{% hint style="info" %}
+The previous setup shoul produce a "good enough" result while driving a motor, which will be better then any cheap ESC. If you however want more from your ESC, you can set up an observer and many more complicated things beyond the scope of this guide.
+{% endhint %}
+
+The observer is a software which estimates the rotor position and speed in real time without any sensors present on the motor. To set the observer, go into Motor Settings - FOC - Advanced - Observer Type.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 165320.png" alt=""><figcaption></figcaption></figure>
+
+To determine the correct observer, you will usually just need to try all of them and see which one works best.
+
+To find out which observer works the best, enable realtime data by clicking the "RT" icon and keyboard control by clicking the keyboard icon on the right sidebar. Then go into Data Analysis -&#x20;

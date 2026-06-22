@@ -80,7 +80,7 @@ These settings should give you the maximum range and reliability at the cost of 
 
 And the equivalent setup for the unmanned aerial vehicle (UAV) radio like this:
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Expected outcome: Both of the radios have been set up and the connection is prepared to be verified in the next step.

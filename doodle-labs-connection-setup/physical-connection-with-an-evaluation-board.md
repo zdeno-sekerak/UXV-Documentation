@@ -33,7 +33,7 @@ Begin by locating the documentation the radio on the website based on the radio 
 {% endcolumn %}
 
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Label on RM-2025-62M3</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Label on RM-2025-62M3</p></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
