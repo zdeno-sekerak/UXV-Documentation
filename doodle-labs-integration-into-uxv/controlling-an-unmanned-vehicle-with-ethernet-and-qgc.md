@@ -49,7 +49,9 @@ The reccomended wiring for a GCS however remains a simple DL Radio -> SRM-RJ45 -
 
 ### 1.2 UxV Radio + PX4 Vehicle Controller
 
-Continue by wiring the ethernet connection from the UAV radio to the flight controller as explained in the [guide](../doodle-labs-connection-setup/physical-connection-without-an-evaluation-board.md).
+Continue by wiring the ethernet connection from the UAV radio to the flight controller as explained in the [guide](../doodle-labs-connection-setup/physical-connection-without-an-evaluation-board.md). The finished setup will look similar to the example with one servo and one motor.
+
+<figure><img src="../.gitbook/assets/ETH-RC-Car-Connection.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Expected outcome: The radios are connected to a controller and a flight controller respectively with power and ethernet cables.
