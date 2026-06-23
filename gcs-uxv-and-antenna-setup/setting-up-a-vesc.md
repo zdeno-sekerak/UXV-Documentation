@@ -154,3 +154,4 @@ With the load connected, the graph should look something like the following, whe
 
 The process of tuning a VESC to perfection is much more complicated then this guide covers and the result you will get with this guide is more "Good Enough". Therefore we have attached further resources to base your research on:
 
+[Endless Sphere Forum](https://endless-sphere.com/sphere/threads/vesc-tuning-tips.125527/)
