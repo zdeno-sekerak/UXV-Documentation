@@ -126,4 +126,31 @@ The observer is a software which estimates the rotor position and speed in real 
 
 To determine the correct observer, you will usually just need to try all of them and see which one works best.
 
-To find out which observer works the best, enable realtime data by clicking the "RT" icon and keyboard control by clicking the keyboard icon on the right sidebar. Then go into Data Analysis -&#x20;
+It is also reccomended to set the "Control Sample Mode" to V0 and V7 Interpolation for a higher frequency of readings of the motor state.
+
+### 3.4 Analyzing the VESC
+
+To find out which observer works the best, enable realtime data by clicking the "RT" icon and keyboard control by clicking the keyboard icon on the right sidebar. This way the VESC Tool will read realtime data from the controller and you can also ramp up the throttle using left and right arrow keys.
+
+The go into Data Analysis - Sampled Data, spin up the motor using the keyboard for a few seconds and in the meantime, click on the "Sample Now" button.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-23 084528.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+The picture is an improperly callibrated VESC, the sampled data should absolutely not look like this.
+{% endhint %}
+
+The goal here is to get the "PH1", "PH2" and "PH3" to resemble a sinusoidal as close as possible and the "MC Total" to be a flat line.
+
+As the motor is currently not under load for bench testing, the back-current is lower and the motor is much more sensitive to changes, therefore a result like the following is reasonable. The cyan line is the Motor Controller total current and the green one is the graph for the current of phase 1:
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-06-23 091624.png" alt=""><figcaption></figcaption></figure>
+
+With the load connected, the graph should look something like the following, where the phases follow a sinusoidal curve perfectly:
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-03-23 121140.png" alt=""><figcaption></figcaption></figure>
+
+## 4 Additional Resources
+
+The process of tuning a VESC to perfection is much more complicated then this guide covers and the result you will get with this guide is more "Good Enough". Therefore we have attached further resources to base your research on:
+
