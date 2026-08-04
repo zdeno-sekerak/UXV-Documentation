@@ -81,11 +81,11 @@ To make the configuration work on the current setup, go to QGC Icon -> Analyze T
 
 ```c
 echo DEVICE=eth0 > /fs/microsd/net.cfg 
-echo BOOTPROTO=static > /fs/microsd/net.cfg
-echo IPADDR=10.223.218.99 > /fs/microsd/net.cfg
-echo NETMASK=255.255.255.0 > /fs/microsd/net.cfg
-echo ROUTER=10.223.218.204 > /fs/microsd/net.cfg
-echo DNS=10.223.218.204 > /fs/microsd/net.cfg 
+echo BOOTPROTO=static >> /fs/microsd/net.cfg
+echo IPADDR=10.223.218.99 >> /fs/microsd/net.cfg
+echo NETMASK=255.255.255.0 >> /fs/microsd/net.cfg
+echo ROUTER=10.223.218.204 >> /fs/microsd/net.cfg
+echo DNS=10.223.218.204 >> /fs/microsd/net.cfg 
 ```
 
 Next, type the command: netman update Be careful not to use the command netman save as it will load the previous configuration from the volatile memory and override the one you had just set up.
