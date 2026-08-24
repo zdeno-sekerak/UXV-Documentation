@@ -23,7 +23,15 @@
 * [Configuring an Unmanned Vehicle with SBUS](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-sbus.md)
 * [Troubleshooting SBUS Connection](doodle-labs-integration-into-uxv/troubleshooting-sbus-connection.md)
 * [Connecting an Unmanned Vehicle with Ethernet and QGC](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
-* [Upgrading an Ethernet Autonomous Vehicle with UXV Gimbal](doodle-labs-integration-into-uxv/upgrading-an-ethernet-autonomous-vehicle-with-uxv-gimbal.md)
+
+## UXV Technologies Product Guides
+
+* [Radios](uxv-technologies-product-guides/radios/README.md)
+  * [SRM-S-DL+](uxv-technologies-product-guides/radios/srm-s-dl+.md)
+  * [SRM Airside ETH Setup](uxv-technologies-product-guides/radios/srm-airside-eth-setup.md)
+* [Sensors - Optroxa Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/README.md)
+  * [Gimbal Mounting and Wiring](uxv-technologies-product-guides/sensors-optroxa-gimbal/gimbal-mounting-and-wiring.md)
+  * [Streaming Gimbal Video to QGC](uxv-technologies-product-guides/sensors-optroxa-gimbal/streaming-gimbal-video-to-qgc.md)
 
 ## GCS, UxV and Antenna Setup
 

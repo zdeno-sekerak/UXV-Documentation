@@ -1,0 +1,2 @@
+# Gimbal Mounting and Wiring
+
