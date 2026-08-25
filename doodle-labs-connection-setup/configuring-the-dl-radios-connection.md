@@ -6,7 +6,7 @@ description: >-
 
 # Configuring the DL Radios Connection
 
-Part List:
+### Part List:
 
 * 2 Doodle Labs Radios with antennas and working connection to a computer through ethernet cable (check [this](https://docs.google.com/document/d/1zot5UUsQdsEH8KkXq8VFGMw3t8RH3kEaSKkXSnUKDaE/edit?tab=t.0) guide)
 

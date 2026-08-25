@@ -4,11 +4,11 @@ description: This guide explains how to set up an out-of-the-box flight controll
 
 # Setting up a PX4 Vehicle
 
-Part List:
+## Part List:
 
 * PX4-Compatible Flight Controller
 
-Tools:
+## Tools:
 
 * Computer/UXV Controller with Windows
 * USB Cable - To connect the flight controller to the computer/UXV controller
