@@ -22,7 +22,7 @@ This guide assumes a working connection from [previous](wiring-for-control-of-un
 
 ## 1. UART Output from Micronav
 
-The Micronav controller supports UART output to the Doodle Labs radio. If you have a radio connected (SRM), check if the SBUS (form of UART, check the [guide](../hardware-selection/electronics-communication-basic-concepts.md#sbus)) output is enabled in NavSuite. Navigate to Output, where SBUS EABLED should be displayed.
+The Micronav controller supports UART output to the Doodle Labs radio. If you have a radio connected (SRM), check if the SBUS (form of UART, check the [guide](../explained-concepts/electronics-communication-basic-concepts.md#sbus)) output is enabled in NavSuite. Navigate to Output, where SBUS EABLED should be displayed.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-19 014656 (1).png" alt=""><figcaption></figcaption></figure>
 

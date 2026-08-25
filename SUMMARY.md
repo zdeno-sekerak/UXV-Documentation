@@ -1,13 +1,14 @@
 # Table of contents
 
-## Hardware Selection
+## Explained Concepts
 
 * [Foundational AC Motor Concepts](README.md)
-* [Foundational Electronics Concepts](<README (2).md>)
-* [Electronics Communication Basic Concepts](hardware-selection/electronics-communication-basic-concepts.md)
-* [Foundational Antenna Concepts](<README (1).md>)
-* [Choosing a Doodle Labs Radio](hardware-selection/choosing-a-doodle-labs-radio.md)
-* [Choosing an Antenna](hardware-selection/choosing-an-antenna.md)
+* [Foundational Electronics Concepts](explained-concepts/foundational-electronics-concepts.md)
+* [Electronics Communication Basic Concepts](explained-concepts/electronics-communication-basic-concepts.md)
+* [Foundational Antenna Concepts](explained-concepts/readme.md)
+* [Choosing a Doodle Labs Radio](explained-concepts/choosing-a-doodle-labs-radio.md)
+* [Choosing an Antenna](explained-concepts/choosing-an-antenna.md)
+* [Autonomy Using ROS2](explained-concepts/autonomy-using-ros2.md)
 
 ## Doodle Labs Connection Setup
 
@@ -30,7 +31,7 @@
   * [SRM-S-DL+](uxv-technologies-product-guides/swappable-radio-modules/srm-s-dl+.md)
   * [SRM Airside ETH Setup](uxv-technologies-product-guides/swappable-radio-modules/srm-airside-eth-setup.md)
 * [Sensors - Optroxa Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/README.md)
-  * [GMB600 Mounting and Wiring](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb600-mounting-and-wiring.md)
+  * [GMB600 Mounting and Wiring Ethernet](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb600-mounting-and-wiring-ethernet.md)
   * [Streaming Gimbal Video to QGC](uxv-technologies-product-guides/sensors-optroxa-gimbal/streaming-gimbal-video-to-qgc.md)
 
 ## GCS, UxV and Antenna Setup
