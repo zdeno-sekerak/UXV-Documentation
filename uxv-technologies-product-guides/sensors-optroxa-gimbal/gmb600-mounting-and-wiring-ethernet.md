@@ -27,13 +27,13 @@ This guide assumes the typical system architecture where both the flight control
 This architecture, where the gimbal and flight controller are on the same network, is typical for an unmanned vehicle. The SRM Airside ETH acts as a switch, bringing both of the devices and the radio on the same network. This is advantageous for two reasons:
 
 1. The video and telemetry stream are unified on one link, eliminating any redundancies of old systems where the streams were split.
-2. The gimbal has a NVidia Jetson Orin Nano integrated in it turning it into an edge-compute node. By having the flight controller on the same network as the Jetson, autonomy is enabled in the vehicle without having to strain the radio link by sending the data to the GCS for processing or adding an extra computing note, which would consume more power and increase the wiring complexity.
+2. The gimbal has a NVidia Jetson Orin Nano integrated in it turning it into an edge-compute node. By having the flight controller on the same network as the Jetson, [autonomy](../../explained-concepts/basic-autonomy-using-ros2.md) is enabled in the vehicle without having to strain the radio link by sending the data to the GCS for processing or adding an extra computing note, which would consume more power and increase the wiring complexity.
 
 {% hint style="info" %}
 The UXV Technologies gimbal also has the CAN port exposed for a rebust control, this is however a topic in another guide.&#x20;
 {% endhint %}
 
-
+### 2.&#x20;
 
 
 

@@ -31,7 +31,28 @@ It has the following physical ports:
 * 1x Ethernet in the SRM slot
 * 1x Power and UART on the ODU G80 - 10 pin
 
-By default, the first ethernet port on the side is set as a configuration port to directly access the SRM Airside ETH. The IP is the default IP set by OpenWRT - 192.168.1.1. The other ethernet port is a passthrough port bridged to the SRM Radio.
+By default, the first ethernet port on the side is set as a configuration port to directly access the SRM Airside ETH. The second ethernet port is set as a passthrough port for the SRM slot.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-25 165559 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Connecting to the SRM Airside ETH
 
+Locate the ethernet port set up for configuration. Connect a cable from the SRM Airside ETH configuration port (ODU S11YAR 8 Pin) to an ethernet port on your computer. An example of the cable UXV used is pictured below:
+
+<figure><img src="../../.gitbook/assets/img_1710-removebg-preview.png" alt=""><figcaption></figcaption></figure>
+
+Then connect the power cable to the middle connector (ODU S10YAR 10 Pin) and power on the SRM Airside with 5V to 20V.&#x20;
+
+{% hint style="info" %}
+To prove that the SRM airside is being powered on, put an SRM into the radio slot and observe its power status LED.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/IMG_1711.jpg" alt=""><figcaption></figcaption></figure>
+
+After about 40 seconds, the SRM Airside ETH is fully booted up and you can connect to it at 192.168.1.1. The easiest way to do it is through a web browser to acces the web GUI.&#x20;
+
+{% hint style="info" %}
+If you cannot connect to the SRM Airside ETH, try the following (in order):
+
+1. Try the other ethernet port on the SRM Airside ETH.
+{% endhint %}

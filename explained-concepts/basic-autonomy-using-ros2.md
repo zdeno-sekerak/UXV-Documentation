@@ -1,4 +1,4 @@
-# Autonomy Using ROS2
+# Basic Autonomy Using ROS2
 
 ### Terms Explained
 
@@ -21,11 +21,24 @@ ROS2 building blocks:
 
 In an autonomous vehicle, ROS2 would be running on the computing node, such as the NVidia Jetson.
 
+#### DDS
+
+Data Distribution Service (DDS) is an open standard for real-time publish-subscribe middleware that ROS2 runs on. In robots/unmanned vehicles it passes sensor data and control commands between software modules. For example between a flight controller (sends sensor data) and an autonomy node (sends command setpoints).
+
 #### DDS-XRCE
 
 Because a flight controller and its sensors realistically does not have the computing power DDS expects, it runs the Data Distribution Service for Extremely Resource Constrained Environments (DDS-XRCE) protocol.&#x20;
 
-#### DDS
+It uses an agent-client setup where the client (flight controller) sends data to the agent (jetson) which then joins the DDS network and talks to every other DDS system. The client only sends simple requests, such as which data it would like to publish and which topics it would like to subscribe to.
 
-Data Distribution Service (DDS) is an open standard for real-time publish-subscribe middleware. In robots/unmanned vehicles it passes sensor data and control commands between software modules. For example between a flight controller (sends sensor data) and an autonomy node (sends command setpoints).
+{% hint style="info" %}
+Communication based on DDS-XRCE has no trouble running on CAN, serial, or Ethernet.&#x20;
+{% endhint %}
 
+#### MAVROS
+
+MAVROS is the bridge that lets you keep MAVLink on the flight controller side (so GCS tools like QGroundControl still work) while giving your ROS2/DDS-based autonomy stack a way to consume that same data. This publish/subscribe layer receives MavLink commands and translates them into  ROS2 topics which use DDS the companion computer uses.&#x20;
+
+{% hint style="info" %}
+MAVROS was designed to run over Ethernet, or serial. CAN is not natively supported.
+{% endhint %}
