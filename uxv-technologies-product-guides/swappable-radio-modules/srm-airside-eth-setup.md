@@ -116,8 +116,18 @@ Continue setting all the rest of the parameters listed below:
    8. DHCP Server - General Setup - Limit: 1
    9. DHCP Server - General Setup - Lease time: 12h
 
-|                                                               |                                                               |                                                               |
-| ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
-| ![](<../../.gitbook/assets/Screenshot 2026-08-26 111325.png>) | ![](<../../.gitbook/assets/Screenshot 2026-08-26 111314.png>) | ![](<../../.gitbook/assets/Screenshot 2026-08-26 111331.png>) |
-|                                                               |                                                               |                                                               |
-|                                                               |                                                               |                                                               |
+{% tabs %}
+{% tab title="General Settings" %}
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 111314.png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+
+{% tab title="Firewall Settings" %}
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 111325.png" alt=""><figcaption></figcaption></figure>
+
+
+{% endtab %}
+
+{% tab title="DHCP Server" %}
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 111331.png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+{% endtabs %}
