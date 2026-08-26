@@ -143,6 +143,10 @@ Continue setting all the rest of the parameters listed below:
    4. IPv4 address: 10.223.30.1
    5. IPv4 netmask: 255.255.0.0
 
+{% hint style="info" %}
+The DHCP lease expire time sets how long the DHCP server will keep an IP assigned to a DHCP client without renewal (even if the device is disconnected). During normal operation, DHCP clients renew their lease half of the total lease period, meaning theoretically a lease can last forever.
+{% endhint %}
+
 {% tabs %}
 {% tab title="General Settings" %}
 <figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 111314.png" alt=""><figcaption></figcaption></figure>
@@ -160,8 +164,10 @@ Continue setting all the rest of the parameters listed below:
 {% endtabs %}
 
 {% hint style="info" %}
-Please note that the IP addresses on the 10.224.30.1 port will not be assigned based on numerical order. They will be generated based on the DHCP clients MAC address and distributed across the whole subnet.
+Please note that the IP addresses on the 10.224.30.1 port will not be assigned based on numerical order. They will be generated based on the DHCP clients MAC address and distributed across the whole subnet. This means that the client is often able to keep its IP even after the DHCP lease has expired.
 {% endhint %}
+
+If you wish to allocate the IP addresses of connected devices based on numerical order instead as a number based on the mac address, navigate to: Network - DHCP and DNS. Scroll down and find a check box labelled "Allocate IPs sequentially." It is not recommended to use because now the IPs are more likely to change specifically when a client's lease is allowed to expire
 
 {% hint style="info" %}
 The alias port (interface 4) was added to alias the IP of the radios on the IP 10.223.0.0/16 to the 10.224.30.1 port. This way the radios get assigned an IP on 10.224.x.x and will keep the 10.223.x.x instead of having both of the IPs overlapping. IP aliasing lets a single physical network interface respond to multiple IP addresses simultaneously, which means that devices on the other side of the radio link and the radios themselves also get assigned IPs on 10.224.30.x.&#x20;
@@ -191,3 +197,12 @@ Ensure Input, Output and Forward are all set to accept and verify that all of th
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 124536.png" alt=""><figcaption></figcaption></figure>
 
+### 7. Saving the settings
+
+When you save and apply the settings, you will lose connection to the SRM Airside ETH because its IP adress will change from 192.168.1.1. to 10.224.10/20/30.1 (depending on which port you have the computer connected to.&#x20;
+
+Previously it was nescessary to set the IP of your computer manually to connect to the device. Now that it works as a DHCP however, you can set your computer as a DHCP client. The computer will now get its IP address assigned from the SRM Airside ETH and you can acces the web interface on its new address again.
+
+{% hint style="info" %}
+If your compuer is set as a DHCP client and sets its address to 169.254.1.1/16, which is the fallback address, it has not received an IP from the DHCP server. Before doing any changes, it is reccomended to wait a minute as booting up the devices on the network can take some time.&#x20;
+{% endhint %}
