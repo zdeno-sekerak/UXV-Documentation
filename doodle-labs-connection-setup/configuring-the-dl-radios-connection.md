@@ -82,6 +82,10 @@ And the equivalent setup for the unmanned aerial vehicle (UAV) radio like this:
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+Some radios offer the option to change the frequency band. By doing that you however also change the submodel identity of the radio. Therefore it might be nescessary to clear browser cache in order to connect to it again after the change.
+{% endhint %}
+
 {% hint style="success" %}
 Expected outcome: Both of the radios have been set up and the connection is prepared to be verified in the next step.
 {% endhint %}
