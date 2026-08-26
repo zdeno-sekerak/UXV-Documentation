@@ -172,3 +172,22 @@ The alias port (interface 4) was added to alias the IP of the radios on the IP 1
 {% hint style="info" %}
 A network device in OpenWRT is the underlying physical or virtual networking hardware where hardware-specific properties like MAC address are set up.
 {% endhint %}
+
+To change Network Devices settings, navigate to Network - Interfaces - Devices.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 123733.png" alt=""><figcaption></figcaption></figure>
+
+### 6. Configuring SRM Airside ETH Firewall
+
+To configure the firewall settings, navigate to Network - Firewall.&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 124055.png" alt=""><figcaption></figcaption></figure>
+
+In zones, find the LAN row and click on Edit.&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 124236.png" alt=""><figcaption></figcaption></figure>
+
+Ensure Input, Output and Forward are all set to accept and verify that all of the ports (RADIO, FR, CAM) are listed under covered networks.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 124536.png" alt=""><figcaption></figcaption></figure>
+
