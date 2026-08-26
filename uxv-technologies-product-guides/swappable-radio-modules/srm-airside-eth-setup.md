@@ -85,7 +85,7 @@ The following setup also divides the network into several segments. This way the
 The current setup does not consider security as the firewall is set to forward all. If you wish to add security, it is reccomended to configure the firewall settings first.
 {% endhint %}
 
-### 4. Configuring SRM Airside ETH as a multi-homed router
+### 4. Configuring SRM Airside ETH network interfaces
 
 To implement the settings, log into the web interface and navigate to Network - Interfaces.
 
@@ -115,6 +115,33 @@ Continue setting all the rest of the parameters listed below:
    7. DHCP Server - General Setup - Start: 10
    8. DHCP Server - General Setup - Limit: 1
    9. DHCP Server - General Setup - Lease time: 12h
+2. Interface 2 - FC\_Port
+   1. Name: FC\_Port
+   2. Protocol: Static Adress
+   3. Device: eth1
+   4. General Settings - IPv4 address: 10.224.20.1
+   5. General Settings - IPv4 netmask: 255.255.255.0
+   6. Firewall Settings - Firewall zone: lan (all port interfaces are there)
+   7. DHCP Server - General Setup - Start: 10
+   8. DHCP Server - General Setup - Limit: 1
+   9. DHCP Server - General Setup - Lease time: 12h
+3. Interface 3 - RADIO\_Port
+   1. Name: RADIO\_Port
+   2. Protocol: Static Adress
+   3. Device: eth2
+   4. General Settings - IPv4 address: 10.224.30.1
+   5. General Settings - IPv4 address: 10.223.10.10/16
+   6. General Settings - IPv4 netmask: 255.255.255.0
+   7. Firewall Settings - Firewall zone: lan (all port interfaces are there)
+   8. DHCP Server - General Setup - Start: 10
+   9. DHCP Server - General Setup - Limit: 50
+   10. DHCP Server - General Setup - Lease time: 12h
+4. Interface 4 - radio\_port\_alias
+   1. Name: radio\_port\_alias
+   2. Protocol: Static address
+   3. Device: Alias Interface @ RADIO\_Port
+   4. IPv4 address: 10.223.30.1
+   5. IPv4 netmask: 255.255.0.0
 
 {% tabs %}
 {% tab title="General Settings" %}
@@ -131,3 +158,17 @@ Continue setting all the rest of the parameters listed below:
 <figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 111331.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
+
+{% hint style="info" %}
+Please note that the IP addresses on the 10.224.30.1 port will not be assigned based on numerical order. They will be generated based on the DHCP clients MAC address and distributed across the whole subnet.
+{% endhint %}
+
+{% hint style="info" %}
+The alias port (interface 4) was added to alias the IP of the radios on the IP 10.223.0.0/16 to the 10.224.30.1 port. This way the radios get assigned an IP on 10.224.x.x and will keep the 10.223.x.x instead of having both of the IPs overlapping. IP aliasing lets a single physical network interface respond to multiple IP addresses simultaneously, which means that devices on the other side of the radio link and the radios themselves also get assigned IPs on 10.224.30.x.&#x20;
+{% endhint %}
+
+### 5. Configuring SRM Airside ETH network devices
+
+{% hint style="info" %}
+A network device in OpenWRT is the underlying physical or virtual networking hardware where hardware-specific properties like MAC address are set up.
+{% endhint %}

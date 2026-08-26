@@ -9,6 +9,7 @@
 * [Choosing a Doodle Labs Radio](explained-concepts/choosing-a-doodle-labs-radio.md)
 * [Choosing an Antenna](explained-concepts/choosing-an-antenna.md)
 * [Basic Autonomy Using ROS2](explained-concepts/basic-autonomy-using-ros2.md)
+* [Networking Concepts](explained-concepts/networking-concepts.md)
 
 ## Doodle Labs Connection Setup
 
