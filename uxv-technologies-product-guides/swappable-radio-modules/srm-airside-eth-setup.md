@@ -63,7 +63,7 @@ If you cannot connect to the SRM Airside ETH, try the following (in order):
 3. Try to ssh into the SRM Airside ETH through the terminal (ssh root@192.168.1.1). If it works but you cannot acces the web GUI, try clearing browsing cache. Certain internet browsers will block a connection after several attempts.
 {% endhint %}
 
-From this point, the SRM Airside ETH can be configured based on customer needs&#x20;
+The rest of the guide will focus on configuring the SRM Airside ETH in a specific way to use with a ethernet-enabled flight controller and a UXV Technologies Optroxa Gimbal.
 
 ### 3. Settings Rationale
 
@@ -205,4 +205,8 @@ Previously it was nescessary to set the IP of your computer manually to connect 
 
 {% hint style="info" %}
 If your compuer is set as a DHCP client and sets its address to 169.254.1.1/16, which is the fallback address, it has not received an IP from the DHCP server. Before doing any changes, it is reccomended to wait a minute as booting up the devices on the network can take some time.&#x20;
+{% endhint %}
+
+{% hint style="success" %}
+Expected outcome: The SRM Airside acts as a DHCP server and lets the ground control station acces all devices on the network at theire assigned IP addresses.
 {% endhint %}

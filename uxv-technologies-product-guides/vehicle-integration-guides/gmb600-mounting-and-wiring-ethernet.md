@@ -1,7 +1,7 @@
 # GMB600 Mounting and Wiring Ethernet
 
 {% hint style="info" %}
-This guide explains the process of integrating a the Optroxa GMB600 into an unmanned vehicle using other UXV Technologies products.
+This guide explains the process of integrating a the Optroxa GMB600 into an unmanned vehicle with other UXV Technologies products using the ethernet connection.
 {% endhint %}
 
 ### Part List:
@@ -17,7 +17,7 @@ This guide explains the process of integrating a the Optroxa GMB600 into an unma
 * 1x ODU A10WAM-P12XMM0-0000 to ODU G81 - 8 pin and Power (such as XT30) for connecting GMB600 to SRM Airside (UXV does not make one yet, coming soon)
 
 {% hint style="info" %}
-This guide assumes the typical system architecture where both the flight controller and the gimbal are on the same network and communicate with each other.
+This guide assumes that the SRM Airside ETH is set up according to [this guide](../swappable-radio-modules/srm-airside-eth-setup.md).
 {% endhint %}
 
 ### 1. Explaining the architecture
@@ -30,10 +30,9 @@ This architecture, where the gimbal and flight controller are on the same networ
 2. The gimbal has a NVidia Jetson Orin Nano integrated in it turning it into an edge-compute node. By having the flight controller on the same network as the Jetson, [autonomy](../../explained-concepts/basic-autonomy-using-ros2.md) is enabled in the vehicle without having to strain the radio link by sending the data to the GCS for processing or adding an extra computing note, which would consume more power and increase the wiring complexity.
 
 {% hint style="info" %}
-The UXV Technologies gimbal also has the CAN port exposed for a rebust control, this is however a topic in another guide.&#x20;
+The UXV Technologies gimbal also has CAN pins exposed to allow the gimbal to control other devices and UART for&#x20;
 {% endhint %}
 
-### 2.&#x20;
+### 2. Stream Data to Custom QGC+
 
-
-
+Connect the gimbal to the&#x20;

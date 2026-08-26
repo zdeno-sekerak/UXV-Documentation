@@ -28,12 +28,13 @@
 
 ## UXV Technologies Product Guides
 
+* [Vehicle Integration Guides](uxv-technologies-product-guides/vehicle-integration-guides/README.md)
+  * [GMB600 Mounting and Wiring Ethernet](uxv-technologies-product-guides/vehicle-integration-guides/gmb600-mounting-and-wiring-ethernet.md)
 * [Swappable Radio Modules](uxv-technologies-product-guides/swappable-radio-modules/README.md)
   * [SRM-S-DL+](uxv-technologies-product-guides/swappable-radio-modules/srm-s-dl+.md)
   * [SRM Airside ETH Setup](uxv-technologies-product-guides/swappable-radio-modules/srm-airside-eth-setup.md)
 * [Sensors - Optroxa Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/README.md)
-  * [GMB600 Mounting and Wiring Ethernet](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb600-mounting-and-wiring-ethernet.md)
-  * [Streaming Gimbal Video to QGC](uxv-technologies-product-guides/sensors-optroxa-gimbal/streaming-gimbal-video-to-qgc.md)
+  * [GMB600 Wiring and Setup](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb600-wiring-and-setup.md)
 
 ## GCS, UxV and Antenna Setup
 
