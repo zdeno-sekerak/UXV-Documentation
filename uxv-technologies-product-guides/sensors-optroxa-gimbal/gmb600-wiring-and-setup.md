@@ -15,5 +15,5 @@ Part List:
 
 ### 1. Connect the GMB600 to power and ethernet
 
-Connect the gimbal cable into&#x20;
+Connect the gimbal cable into an ethernet port on your computer and the power it on with&#x20;
 

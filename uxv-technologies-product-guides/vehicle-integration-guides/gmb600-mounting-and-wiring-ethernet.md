@@ -33,6 +33,9 @@ This architecture, where the gimbal and flight controller are on the same networ
 The UXV Technologies gimbal also has CAN pins exposed to allow the gimbal to control other devices and UART for&#x20;
 {% endhint %}
 
+Below is the wiring diagram of the complete vehicle that UxV Technologies used for testing.
+
+<figure><img src="../../.gitbook/assets/GMB600-Car-Wiring (3).png" alt=""><figcaption></figcaption></figure>
+
 ### 2. Stream Data to Custom QGC+
 
-Connect the gimbal to the&#x20;
