@@ -38,11 +38,12 @@
 
 ## GCS, UxV and Antenna Setup
 
+* [Flight Controller Firmware](gcs-uxv-and-antenna-setup/flight-controller-firmware/README.md)
+  * [Setting up a PX4 Vehicle](gcs-uxv-and-antenna-setup/flight-controller-firmware/setting-up-a-px4-vehicle.md)
+  * [Creating a Custom PX4 Build](gcs-uxv-and-antenna-setup/flight-controller-firmware/creating-a-custom-px4-build.md)
+  * [Setting up an ArduPilot Vehicle](gcs-uxv-and-antenna-setup/flight-controller-firmware/setting-up-an-ardupilot-vehicle.md)
 * [Optimizing Antenna Configuration](gcs-uxv-and-antenna-setup/optimizing-antenna-configuration.md)
 * [Setting up a VESC](gcs-uxv-and-antenna-setup/setting-up-a-vesc.md)
-* [Setting up a PX4 Vehicle](gcs-uxv-and-antenna-setup/setting-up-a-px4-vehicle.md)
-* [Setting up an ArduPilot Vehicle](gcs-uxv-and-antenna-setup/setting-up-an-ardupilot-vehicle.md)
-* [Creating a Custom PX4 Build](gcs-uxv-and-antenna-setup/creating-a-custom-px4-build.md)
 * [Physical Wiring of Servos and Motors](gcs-uxv-and-antenna-setup/physical-wiring-of-servos-and-motors.md)
 * [Setting Up Actuators (Servos and Motors) in PX4](gcs-uxv-and-antenna-setup/setting-up-actuators-servos-and-motors-in-px4.md)
 
