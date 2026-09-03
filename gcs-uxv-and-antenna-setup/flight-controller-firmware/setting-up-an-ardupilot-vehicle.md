@@ -103,7 +103,8 @@ It is reccomended to use the GPS\&SAFETY port on the flight controller to enable
 
 &#x20;Other port options (for various GNSS models):
 
-* TELEM
-* UART
+* TELEM (UART + Power and GND + RTS/CTS)
+  * P
+* UART&#x20;
 * CAN
 * GPS

@@ -8,6 +8,18 @@ Synchronous communication protocols share an additional clock wire. One of the d
 
 Asynchronous communication relies on the internal clocks of the two devices, which are not always in sync. Therefore it sends framing (start and stop) bits, which define the start and end of a data frame. The advantage of this protocol is that it requires only one wire (for one-way communication) and a common ground.
 
+## Hardware Flow Control (RTS and CTS)
+
+Request to Send (RTS) and Clear to Send (CTS) are hardware flow control signals used in UART communication to prevent data overflow in the buffer (temporary memory storing received data).
+
+RTS - A output signal driven by the receiving device which indicates whether its buffer has available space. (pulls the line LOW when ready)
+
+CTS - An input signal on the transmitting device, telling it whether it can continue sending data without it being lost.
+
+{% hint style="info" %}
+Note that the RTS and CTS lines are from the point of view of one device. For the device on the opposite side of the connection the Request to Send line is the Clear to send line and vice-versa.
+{% endhint %}
+
 ## UART
 
 Hardware communication protocol used to send serial data between two devices. It uses 3 wires - Transmit (TX), Receive (RX) and Ground (GND). The wires are connected cross-wise, meaning TX pin of Device A is connected to RX pin of Device B.
@@ -84,6 +96,3 @@ Cons:
 
 ## CAN
 
-
-
-##
