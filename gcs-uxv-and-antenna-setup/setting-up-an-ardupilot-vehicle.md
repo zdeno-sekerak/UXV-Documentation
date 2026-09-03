@@ -22,7 +22,7 @@ description: This page explains the process of setting up an ArduPilot vehicle.
 
 * Windows Computer with Mission Planner installed (this guide uses Windows 11)
 
-### 1. Flash the Flight Controller
+### 1. Flash the Flight Controller with Firmware
 
 Start by connecting the Flight Controller to your computer via USB and open Mission Planner.&#x20;
 
@@ -38,7 +38,41 @@ If you need to find out to which COM port the flight controller is connected to,
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-09-03 145013.png" alt=""><figcaption></figcaption></figure>
 
-Continue by navigating to "Setup" - "Install Firmware". A screen will appear stating that firmware cannot be loaded while connected via MavLink and asking the user to click on "Disconnect" in the top right corner.
+Continue by navigating to "Setup" - "Install Firmware". A screen will appear stating that firmware cannot be loaded while connected via MavLink and asking the user to click on "Disconnect" in the top right corner. Click on it and a screen with possible versions appears.&#x20;
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-09-03 145432.png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/Screenshot 2026-09-03 145800.png" alt=""><figcaption></figcaption></figure>
+
+Select the correct ArduPilot distribution for your use case.&#x20;
+
+* [Rover](https://ardupilot.org/rover/) - Use for ground vehicles (cars, tracked vehicles) and surface watercraft.
+* [Plane](https://ardupilot.org/plane/) - Use for Fixed-Wing (airplane, glider, flying wing) and Hybrid Aircraft (Quad-Plane VTOL)
+* [Sub](https://ardupilot.org/sub/) - Use for underwater vehicles (ROV, UUV etc).
+* [Antenna Tracker](https://ardupilot.org/antennatracker/) - Use for Ground Control Station (GCS) directional antenna hardware.
+* [Various Copter Frames](https://ardupilot.org/copter/)
+  * Quadcopter
+  * Hexacopter
+  * Helicopter
+  * Octo-Quad (Coaxial Quad)
+  * Tricopter
+  * Y6 Coaxial
+  * Octocopter
+
+For this use-case, UXV Technologies will flash the Flight Controller with the Rover build. A window will open, prompting the user to select the correct Flight Controller platform. In this case, the basic Pixhawk 6X has been selected.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-09-03 151105.png" alt=""><figcaption></figcaption></figure>
+
+Continue by clicking "Upload Firmware". After the initial setup, a prompt will pop up asking to disconnect and reconnect the Flight Controller and hit the OK button within 30 seconds.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-09-03 151221.png" alt=""><figcaption></figcaption></figure>
+
+After the firmware has been uploaded, the COM port the Flight Controller is connected to will very likely change if you uploaded a different firmware. This time however, Mission Planner will recognise the port and mark it as MavLink. Select the port in the drop-down menu and click on "Connect".
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-09-03 151935.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+The SLCAN option will turn the Flight Controller into a pass-through USB-to-CAN adapter, allowing you to talk directly to a peripheral device connected to it.&#x20;
+{% endhint %}
+
+### 2 Connect Peripherals
