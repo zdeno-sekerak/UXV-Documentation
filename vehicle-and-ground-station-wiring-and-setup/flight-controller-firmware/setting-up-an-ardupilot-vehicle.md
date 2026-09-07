@@ -109,3 +109,20 @@ When the safety switch is engaged, you should see a message PreArm: Safety Switc
 This guide uses an ESC based on the VESC Omega running v6.06 of the firmware.
 {% endhint %}
 
+Begin by setting the baud rate of CAN for the flight controller and the UAVCAN ESC. For example, the settings UXV Technologies is using:
+
+CAN\_D1\_PROTOCOL = 1
+
+CAN\_D1\_UC\_NODE = 1 (different than the VESC node ID)
+
+CAN\_P1\_BITRATE = 1 000 000 (depends on use case)
+
+
+
+To see if the flight controller can recognize the ESC connected, follow the next step while connected to the flight controller. Navigate to Setup - Optional Hardware - DroneCAN/UAVCAN in Mission Planner. Select MAVLinkCAN1 if your ESC is conencted to CAN1 port, or MAVLinkCAN2 respectively, from the drop-down and click on "Connect".
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-09-07 171946 (1).png" alt=""><figcaption></figcaption></figure>
+
+You should see the ESC with the node ID it is set to.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-09-07 172950.png" alt=""><figcaption></figcaption></figure>
