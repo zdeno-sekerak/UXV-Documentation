@@ -30,15 +30,15 @@ The main challenge of connecting a radio without an evaluation board is finding 
 
 To power the radios, locate the PWR and GND pins. Most of the newer radios have more than one pin for PWR and GND. This is to distribute the load across several cables and pins as the connectors have a safe current rating of 1A per contact. Plug in a cable into each of the connectors.
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 Then use tweezers to remove te cables from the free connector. Insert the shart end under a plastic hinge above the metal and lift it up. Then it is possible to pull the cable out.
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 You should end up with something like this.
 
-<figure><img src="../.gitbook/assets/IMG_0474.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/IMG_0474.jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Expected Outcome: Connectors are plugged into a radio on one side and cables are exposed on the other.
@@ -56,11 +56,11 @@ Proceed by stripping the ends of the cable and connecting them to the power sour
 
 {% columns %}
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/Screenshot 2026-05-21222 115437.png" alt=""><figcaption><p>Stripped Cable</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-05-21222 115437.png" alt=""><figcaption><p>Stripped Cable</p></figcaption></figure>
 {% endcolumn %}
 
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/Screenshot 2026-05-21 114050.png" alt=""><figcaption><p>Stripped cable connected to a bench power supply</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-05-21 114050.png" alt=""><figcaption><p>Stripped cable connected to a bench power supply</p></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -70,11 +70,11 @@ A more reliable option is however to solder the correct connector at the end of 
 
 {% columns %}
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/Screenshot 2026-05-21 143338.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-05-21 143338.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/IMG_0542.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/IMG_0542.jpg" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -98,7 +98,7 @@ The last option is to solder a connector (in this case XT60), which can be plugg
 
 For a legacy radio model, which only requires one PWR and GND cable respectively, a connection might look something like the following.
 
-<figure><img src="../.gitbook/assets/IMG_0476.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/IMG_0476.jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Expected Outcome: Power can be delivered to the evaluation board from a battery on the go.
@@ -110,17 +110,17 @@ The next step is to connect ethernet pins to a cable. In this case, UXV Technolo
 
 Start by locating the ETH pins in the documentation and on the radio.
 
-<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 Then find the pinout of the target connector, in our case it is the ETH port on the CUAV V6X.
 
 {% columns %}
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/image (27).png" alt="" width="189"><figcaption><p>Pinout of the ETH port on the CUAV V6X</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27).png" alt="" width="189"><figcaption><p>Pinout of the ETH port on the CUAV V6X</p></figcaption></figure>
 {% endcolumn %}
 
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/46e66c1fcbe21f8910b95691846599ba.jpg" alt=""><figcaption><p>Pinout of the RJ-45 Ethernet connector</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/46e66c1fcbe21f8910b95691846599ba.jpg" alt=""><figcaption><p>Pinout of the RJ-45 Ethernet connector</p></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -134,7 +134,7 @@ In this part, you need to be careful as the pins cannot be simply connected (RX+
 
 A finished connector will look something like this:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-05-21 150521.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-05-21 150521.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Expected Outcome: A functioning connector, which can be used to power the radio and connect it through ethernet without the use of an evaluation board.

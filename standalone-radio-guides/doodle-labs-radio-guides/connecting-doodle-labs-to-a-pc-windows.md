@@ -30,13 +30,13 @@ The IP address of every radio is written on its label:
 {% column %}
 Picture 1:
 
-<div align="left"><figure><img src="../.gitbook/assets/image (7).png" alt="" width="356"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (7).png" alt="" width="356"><figcaption></figcaption></figure></div>
 {% endcolumn %}
 
 {% column %}
 Picture 2:
 
-<div align="left"><figure><img src="../.gitbook/assets/image (9).png" alt="" width="333"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (9).png" alt="" width="333"><figcaption></figcaption></figure></div>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -52,7 +52,7 @@ Firstly we will determine if connection even works by pinging it through the com
 
 windows. Use the command ping . The correct output should look as follows:
 
-<figure><img src="../.gitbook/assets/unknown (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unknown (8).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note that it can take up to 2 minutes for the radio to be available after turning on the power to it. If pinging the radio does not work, try to turn the power off, wait a 10 seconds and turn it back on. Then start trying to ping the radios almost immediately. It is possible that the radio has been configured to enter sleep mode after only a few seconds of inactivity.
@@ -66,15 +66,15 @@ Expected Outcome: The IP adress of the radio can be pinged - verifies it is work
 
 After successfully pinging the radios, go into any web browser and type in the IP address of the radio and press enter. This will open the web Graphical User Interface (GUI), where the radio can be configured.
 
-<div align="center"><img src="../.gitbook/assets/unknown (9).png" alt=""></div>
+<div align="center"><img src="../../.gitbook/assets/unknown (9).png" alt=""></div>
 
 Some browsers will give a warning about the security of the connection. Go into advanced and proceed to the address.
 
-<figure><img src="../.gitbook/assets/unknown (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unknown (10).png" alt=""><figcaption></figcaption></figure>
 
 There are two different combinations of usernames and passwords, depending on the firmware versions. On the older ones the username is root and the password is not set. On newer versions, the username is user with the password being DoodleSmartRadio
 
-<figure><img src="../.gitbook/assets/unknown (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unknown (11).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Expected Outcome: The web GUI can be acessed.

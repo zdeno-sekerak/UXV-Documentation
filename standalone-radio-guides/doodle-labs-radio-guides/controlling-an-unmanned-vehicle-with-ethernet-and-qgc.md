@@ -31,17 +31,17 @@ Alternatively, if you are still in the testing phase, you can use an evaluation 
 
 An example of such a connection is shown below:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-02 131225.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-02 131225.png" alt=""><figcaption></figcaption></figure>
 
 Several alternatives are also shown below with the UXV Micronav Dev Kit, which has a port to connect a doodle labs radio directly. In the second picture, UXV used a simple ETH to USB-A adapter to substitute for the RJ-45 adapter. The point of this step is to have a working connection between the controller and the radio.
 
 {% columns %}
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-02 131032.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-02 131032.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column valign="middle" %}
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-02 131008.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-02 131008.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -49,9 +49,9 @@ The reccomended wiring for a GCS however remains a simple DL Radio -> SRM-RJ45 -
 
 ### 1.2 UxV Radio + PX4 Vehicle Controller
 
-Continue by wiring the ethernet connection from the UAV radio to the flight controller as explained in the [guide](../doodle-labs-connection-setup/physical-connection-without-an-evaluation-board.md). The finished setup will look similar to the example with one servo and one motor.
+Continue by wiring the ethernet connection from the UAV radio to the flight controller as explained in the [guide](physical-connection-without-an-evaluation-board.md). The finished setup will look similar to the example with one servo and one motor.
 
-<figure><img src="../.gitbook/assets/ETH-RC-Car-Connection (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ETH-RC-Car-Connection (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1.2.1 Explaining the Connections
 
@@ -136,23 +136,23 @@ UXV Controller -> GCS Radio -> UAV Radio -> Vehicle Controller
 
 In QGroundControl Click on 'Disconnected - Click to manually connect' in the top left corner.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-03 140042.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-03 140042.png" alt="" width="375"><figcaption></figcaption></figure>
 
 Proceed by clicking on the little arrow in the top right corner of the pop-up.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-03 140623.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-03 140623.png" alt="" width="375"><figcaption></figcaption></figure>
 
 Then click on 'configure' communication links.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-03 140755.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-03 140755.png" alt="" width="375"><figcaption></figcaption></figure>
 
 And click on 'Add Link.'
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-03 140849.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-03 140849.png" alt="" width="375"><figcaption></figcaption></figure>
 
 Then set up according to the following:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-03 140605.png" alt="" width="281"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-03 140605.png" alt="" width="281"><figcaption></figcaption></figure>
 
 By setting the type as UDP, the data transmission will be faster, but there will be less integrity checks in the conection itself. On the other hand, that does not matter much as PX4 does have its own.
 
@@ -179,7 +179,7 @@ Now the Vehicle Controller is connected to the GCS through QGC. However it still
 To send manual stick commands through telemetry, set the parameter `COM_RC_IN_MODE` to `1`. This will allow sending joystick commands through telemetry.
 
 {% hint style="info" %}
-To map the joystick input itself, follow [this](../gcs-uxv-and-antenna-setup/setting-up-actuators-servos-and-motors-in-px4.md) guide.
+To map the joystick input itself, follow [this](../../gcs-uxv-and-antenna-setup/setting-up-actuators-servos-and-motors-in-px4.md) guide.
 {% endhint %}
 
 {% hint style="success" %}

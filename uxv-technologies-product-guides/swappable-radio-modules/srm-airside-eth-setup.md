@@ -49,7 +49,7 @@ To prove that the SRM airside is being powered on, put an SRM into the radio slo
 
 <figure><img src="../../.gitbook/assets/IMG_1711.jpg" alt=""><figcaption></figcaption></figure>
 
-Make sure that the IP 192.168.1.1 is within the IP range of your network adapter. For information on how to configure it, follow this [guide](../../doodle-labs-connection-setup/connecting-doodle-labs-to-a-pc-windows.md).
+Make sure that the IP 192.168.1.1 is within the IP range of your network adapter. For information on how to configure it, follow this [guide](../../standalone-radio-guides/doodle-labs-radio-guides/connecting-doodle-labs-to-a-pc-windows.md).
 
 After about 60 seconds, the SRM Airside ETH is fully booted up and you can connect to it at 192.168.1.1. The easiest way to do it is through a web browser to access the LuCi web interface. The webpage should look something like the following upon loading:
 

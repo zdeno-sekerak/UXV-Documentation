@@ -49,7 +49,7 @@ This guide shows a finished connection integrated into a car. If you are using d
 The following diagram shows the connection on the UxV side. As per electronics convention, a GND (-) cable is black, a VCC (+) cable is red. Signal cables have various other colors.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/SBUS-Rc-Car-Connection (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SBUS-Rc-Car-Connection (10).png" alt=""><figcaption></figcaption></figure>
 
 ## 1. Check Firmare
 
@@ -67,11 +67,11 @@ Therefore it is recommended to use a BEC (battery eliminator circuit) to power t
 
 It is common to have several components drawing power connected to the battery. The components should each be connected in parallel. This is done by splitting both the (+) and (-) cable into the same amount of cables as there are components, in one point. The following schematic shows how to power 3 ESCs from one battery using the star topology, which is the optimal used one.&#x20;
 
-<figure><img src="../.gitbook/assets/3ESC+1Battery-Connection.drawio (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/3ESC+1Battery-Connection.drawio (1).png" alt=""><figcaption></figcaption></figure>
 
 ### C. Ground Connections
 
-All of the components need to be grounded. However not all grounds are the same. Some voltage regulators have a [floating](../explained-concepts/foundational-electronics-concepts.md#floating-power-rail) or [isolated](../explained-concepts/foundational-electronics-concepts.md#isolated-power-rail) power rails. They are good at protecting the components from overvoltages. On the other hand, it can be tricky if you are using a type of communication protocol where the receiving signal is read against the components ground reference (such as SBUS).
+All of the components need to be grounded. However not all grounds are the same. Some voltage regulators have a [floating](../../explained-concepts/foundational-electronics-concepts.md#floating-power-rail) or [isolated](../../explained-concepts/foundational-electronics-concepts.md#isolated-power-rail) power rails. They are good at protecting the components from overvoltages. On the other hand, it can be tricky if you are using a type of communication protocol where the receiving signal is read against the components ground reference (such as SBUS).
 
 Connecting the two components with a ground wire will make the connection work, but you will lose isolation of the sensitive component. If the connected device is capable of producing a powerful back-current (braking motor etc), it can corrupt the signal in other connected components.&#x20;
 
@@ -91,11 +91,11 @@ To integrate the custom electronics in the TRAXXAS MAXX, we will first remove so
 
 Before (ESC and Receiver marked in red):
 
-<figure><img src="../.gitbook/assets/IMG_0810.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/IMG_0810.jpg" alt=""><figcaption></figcaption></figure>
 
 After:
 
-<figure><img src="../.gitbook/assets/IMG_0812.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/IMG_0812.jpg" alt=""><figcaption></figcaption></figure>
 
 Continue by disconnecting the motor from the wheels. When callibrating the VESC (and usually any other ESC), it will spin up the motor. It is less risky to conduct the operations without having to observe the car at all times.
 
@@ -125,7 +125,7 @@ This setup uses a PWM signal to control the VESC. The connectors on the various 
 
 The following picture is an example of what the PWM input pins can look like.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 081317.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 081317.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Expected outcome: Connected cable for PWM output, which has a male servo connector
@@ -145,11 +145,11 @@ When using bullet connectors, it is common to use female on the ESC side and cov
 
 The following picture is an example of connectors on the VESC:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 082308.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 082308.png" alt=""><figcaption></figcaption></figure>
 
 The following picutre is an example of the connectors on the motor:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 095408.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 095408.png" alt=""><figcaption></figcaption></figure>
 
 ### C. SBUS to PWM + Power Connections
 

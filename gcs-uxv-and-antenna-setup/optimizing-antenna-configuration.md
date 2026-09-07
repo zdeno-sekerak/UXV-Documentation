@@ -8,7 +8,7 @@ description: >-
 # Optimizing Antenna Configuration
 
 {% hint style="info" %}
-This guide assumes you already have chosen an antenna based on a previous [manual](../explained-concepts/choosing-an-antenna.md) and therefore only focuses on setting them in the correct orientation.
+This guide assumes you already have chosen an antenna based on a previous [manual](/broken/pages/fwamoAvQjbO1sn4bReCx) and therefore only focuses on setting them in the correct orientation.
 {% endhint %}
 
 {% hint style="warning" %}

@@ -22,19 +22,19 @@ This guide assumes a working connection from [previous](wiring-for-control-of-un
 
 ## 1. UART Output from Micronav
 
-The Micronav controller supports UART output to the Doodle Labs radio. If you have a radio connected (SRM), check if the SBUS (form of UART, check the [guide](../explained-concepts/electronics-communication-basic-concepts.md#sbus)) output is enabled in NavSuite. Navigate to Output, where SBUS EABLED should be displayed.
+The Micronav controller supports UART output to the Doodle Labs radio. If you have a radio connected (SRM), check if the SBUS (form of UART, check the [guide](../../explained-concepts/electronics-communication-basic-concepts.md#sbus)) output is enabled in NavSuite. Navigate to Output, where SBUS EABLED should be displayed.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 014656 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 014656 (1).png" alt=""><figcaption></figcaption></figure>
 
 If SBUS is disabled, unlock the NavSuite settings by clicking on the lock icon in the top right of the screen and type in the entry code.
 
 Then click on ENABLE SBUS to enable SBUS output from the controller. Also click on SBUS AIRSIDE, which will enable failsafe values and a protocol, which will make the SBUS output from the Airside cleaner.&#x20;
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 014741.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 014741.png" alt=""><figcaption></figcaption></figure>
 
 Then proceed to the SBUS tab, which is found at the top center of the screen. Here you can set the serial protocol settings, or configure failsafe behavior. UXV is using the following settings:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 014805.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 014805.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If you get a "Failed to acknowledge settings" error in Navsuite, you very likely entered conflicting settings (one SBUS channel assigned to two axis etc).
@@ -64,19 +64,19 @@ Navigate to Advanced Settings - Services - Serial Configuration and enable socat
 
 A correct configuration for the GCS Radio is the following:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 142416 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 142416 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 142552 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 142552 (1).png" alt=""><figcaption></figcaption></figure>
 
 If you click on the small [here](https://app.gitbook.com/s/KjNFVuuNpc9Zwv7CH0ci/faq) button in the serial configuration, you can also acces the firewall rules, where you have to change the port for socat to 2001 (edit - change port number), which has to be applied to both of the radios
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 142802.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 142802.png" alt=""><figcaption></figcaption></figure>
 
 And respective configuration for the UxV radio:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 143014.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 143014.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 143130.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 143130.png" alt=""><figcaption></figcaption></figure>
 
 Keep in mind to also set the firewall rule for the UAV radio.
 
@@ -114,7 +114,7 @@ To assign axis movements on the Micronav to channel values, go to Navsuite - Loc
 The JHEMCU supports a maximum of 8 PWM output channels.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 055624.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 055624.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Expected outcome: Moving the correct joystick sticks gives the correct input to components (throttle to motor etc).

@@ -10,7 +10,7 @@ This guide offers several workflows for troubleshooting the connection made in t
 
 A common pitfall is a baudrate mismatch in the settings. Verify all of the components keep the workflow:
 
-<figure><img src="../.gitbook/assets/UART-to-PWM-Flowchart (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/UART-to-PWM-Flowchart (1).png" alt=""><figcaption></figcaption></figure>
 
 | Component      | Baudrate Output | Where to change |
 | -------------- | --------------- | --------------- |
@@ -25,7 +25,7 @@ A common symptom of a baudrate mismatch is a glitchy servo. If the baudrates are
 
 The next step to verify all of the components are outputting signal (are not dead), use an oscilloscope. The operating steps for your model can be different, however the basic principle is that you should connect the crocodile clip to a ground wire on the setup (for example from an airside) and touch the different pins in the setup with the probe. When the oscilloscope is set correctly, it will display a square wave for a working UART signal.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 153332.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 153332.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If the signal is a constant low, there is no output and the line is not working. If the output is a constant high, the line is SBUS, however it is idle and no data is flowing.
@@ -43,7 +43,7 @@ It is possible to measure the baudrate of a connection on the oscilloscope, howe
 The cables you are masuring on have to be connected on both sides, otherwise one end of the cable will be left floating and reflect the signal back into the radio, which will create wrongly-shaped waves.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 172147.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 172147.png" alt=""><figcaption></figcaption></figure>
 
 ## 3. Reading the Values from UXV Airside
 
@@ -51,29 +51,29 @@ The UXV Airside module has a function which allows you to debug its working. To 
 
 Start by opening Termite and clicking on Settings:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 073934.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 073934.png" alt=""><figcaption></figcaption></figure>
 
 Then set the values according to the following, except the COM port, which will be different for every computer.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 074015.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 074015.png" alt=""><figcaption></figcaption></figure>
 
 To find the correct port, open Device Manager on windows, open the Ports (COM & LPT) drop-down, then connect the UBS from UXV Airside and observe which port appears. In the case of the UXV setup, it is the COM11 which we will connect to in Termite.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 074134.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 074134.png" alt=""><figcaption></figcaption></figure>
 
 Next click ok in the port settings in Termite and connect to the port. The Airside module will periodically start sending messages.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 074041.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 074041.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The airside might print something about SAMBUS, which is an internal UXV protocol.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 074246.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 074246.png" alt=""><figcaption></figcaption></figure>
 
 Next, type in the command "start\_stream 2". The Airside will start printing live values with 1s update time, which can help verify the input/output is correct.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 165735.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 165735.png" alt=""><figcaption></figcaption></figure>
 
 ## 4. SBUS to PWM from lost packages
 
@@ -98,7 +98,7 @@ it is recommended to read the data from the SBUS output of the airside as SBUS u
 To read the baud rate from the logic analyzer correctly, make sure to understand the logic of the protocol you are using. For example the length of an SBUS byte in the picture is 115 µs as one byte has 12 bits (1 start, 8 data, 1 parity and 2 stop) in it. If one bit is measured, it would give roughly the correct value for SBUS (10 µs). One SBUS frame is composed of many bytes.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-19 162028.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-19 162028.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 There is no single way to encode position values for RC channels in UART, however MavLink has a standard for UART which is commonly used.

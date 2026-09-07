@@ -6,25 +6,21 @@
 * [Foundational Electronics Concepts](explained-concepts/foundational-electronics-concepts.md)
 * [Electronics Communication Basic Concepts](explained-concepts/electronics-communication-basic-concepts.md)
 * [Foundational Antenna Concepts](explained-concepts/readme.md)
-* [Choosing a Doodle Labs Radio](explained-concepts/choosing-a-doodle-labs-radio.md)
-* [Choosing an Antenna](explained-concepts/choosing-an-antenna.md)
 * [Basic Autonomy Using ROS2](explained-concepts/basic-autonomy-using-ros2.md)
 * [Networking Concepts](explained-concepts/networking-concepts.md)
 
-## Doodle Labs Connection Setup
+## Standalone Radio Guides
 
-* [Physical Connection with an Evaluation Board](doodle-labs-connection-setup/physical-connection-with-an-evaluation-board.md)
-* [Physical Connection without an Evaluation Board](doodle-labs-connection-setup/physical-connection-without-an-evaluation-board.md)
-* [Connecting Doodle Labs to a PC (Windows)](doodle-labs-connection-setup/connecting-doodle-labs-to-a-pc-windows.md)
-* [Configuring the DL Radios Connection](doodle-labs-connection-setup/configuring-the-dl-radios-connection.md)
-* [Optimizing Doodle Labs Software Settings](doodle-labs-connection-setup/optimizing-doodle-labs-software-settings.md)
-
-## Doodle Labs integration into UxV
-
-* [Wiring for Control of Unmanned Vehicle using SBUS](doodle-labs-integration-into-uxv/wiring-for-control-of-unmanned-vehicle-using-sbus.md)
-* [Configuring an Unmanned Vehicle with SBUS](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-sbus.md)
-* [Troubleshooting SBUS Connection](doodle-labs-integration-into-uxv/troubleshooting-sbus-connection.md)
-* [Connecting an Unmanned Vehicle with Ethernet and QGC](doodle-labs-integration-into-uxv/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
+* [Doodle Labs Radio Guides](standalone-radio-guides/doodle-labs-radio-guides/README.md)
+  * [Physical Connection with an Evaluation Board](standalone-radio-guides/doodle-labs-radio-guides/physical-connection-with-an-evaluation-board.md)
+  * [Physical Connection without an Evaluation Board](standalone-radio-guides/doodle-labs-radio-guides/physical-connection-without-an-evaluation-board.md)
+  * [Connecting Doodle Labs to a PC (Windows)](standalone-radio-guides/doodle-labs-radio-guides/connecting-doodle-labs-to-a-pc-windows.md)
+  * [Configuring the DL Radios Connection](standalone-radio-guides/doodle-labs-radio-guides/configuring-the-dl-radios-connection.md)
+  * [Optimizing Doodle Labs Software Settings](standalone-radio-guides/doodle-labs-radio-guides/optimizing-doodle-labs-software-settings.md)
+  * [Wiring for Control of Unmanned Vehicle using SBUS](standalone-radio-guides/doodle-labs-radio-guides/wiring-for-control-of-unmanned-vehicle-using-sbus.md)
+  * [Configuring an Unmanned Vehicle with SBUS](standalone-radio-guides/doodle-labs-radio-guides/controlling-an-unmanned-vehicle-with-sbus.md)
+  * [Troubleshooting SBUS Connection](standalone-radio-guides/doodle-labs-radio-guides/troubleshooting-sbus-connection.md)
+  * [Connecting an Unmanned Vehicle with Ethernet and QGC](standalone-radio-guides/doodle-labs-radio-guides/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
 
 ## UXV Technologies Product Guides
 

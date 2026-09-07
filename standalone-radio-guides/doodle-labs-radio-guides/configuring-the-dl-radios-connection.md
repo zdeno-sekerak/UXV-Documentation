@@ -20,7 +20,7 @@ Start by powering both of the radios on (for example by connecting both of the c
 
 Log into the web GUI for the radio that you are setting up. Navigate to simple configuration - simple configuration and select the appropriate settings. Each of them are explained in the next section.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-05-26 091631.png" alt=""><figcaption><p>Simple configuration tab in the Web GUI, firmware version: May 2023 (LST)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-05-26 091631.png" alt=""><figcaption><p>Simple configuration tab in the Web GUI, firmware version: May 2023 (LST)</p></figcaption></figure>
 
 {% hint style="info" %}
 Expected outcome: Open web GUI page where settings can be accessed.
@@ -76,11 +76,11 @@ A functioning setup of the ground control station (GCS) radio can look like this
 These settings should give you the maximum range and reliability at the cost of throughput, if you wish to analyze the settings further, please check the next guide.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
 
 And the equivalent setup for the unmanned aerial vehicle (UAV) radio like this:
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Some radios offer the option to change the frequency band. By doing that you however also change the submodel identity of the radio. Therefore it might be nescessary to clear browser cache in order to connect to it again after the change.
@@ -98,13 +98,13 @@ To verify that the radios are communicating with each other, you can use several
 
 Radios, which have a working link will create a network between each other. This means if you have one connected through ethernet to a computer, the other one will be acessible as if it were connected too. Therefore if you open the console you will be able to ping the other radio.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-05-26 111610.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-05-26 111610.png" alt=""><figcaption></figcaption></figure>
 
 #### B - Mesh Map
 
 The radios have a feature, which allows the user to display a topology map of the entire network once enabled. To open the map, navigate to the Web GUI - Status - Mesh Map. In a point-to-point connection between two radios, you should see two points connected with a line.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-05-26 113231.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-05-26 113231.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The color of the line connecting the two dots representing the radios indicates the link quality ranging from good (green) through medium (orange) to bad (red).

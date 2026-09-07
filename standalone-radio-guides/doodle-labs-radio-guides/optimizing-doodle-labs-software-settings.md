@@ -20,13 +20,13 @@ In order to optimize the link, it is recomended to mount the antennas in the fin
 
 Start by navigating to Advanced Settings - Network configuration - Wireless in the web GUI on both of the radios. Then select edit in the link between the radios. A menu will appear.
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 Make sure that the difference in the signal of antennas of one radios is less than 3 dBm (Every 3-dB coaxial cable loss results in 3-dB loss in the TX power and 3-dB loss in the RX signal which results in 2x reduction in the operating range). As the scale is logarithmic even seemingly small differences can be significant. UXV for example found an antenna was damaged because of the mismatch.
 
 In the image you can see an example of a healthy link:
 
-<figure><img src="../.gitbook/assets/unknown (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unknown (2).png" alt=""><figcaption></figcaption></figure>
 
 Continue by setting the Transmit Power if needed, the default automatic setting is however enough for most applications.
 
