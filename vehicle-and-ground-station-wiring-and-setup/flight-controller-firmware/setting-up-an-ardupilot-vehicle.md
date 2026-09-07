@@ -117,7 +117,9 @@ CAN\_D1\_UC\_NODE = 1 (different than the VESC node ID)
 
 CAN\_P1\_BITRATE = 1 000 000 (depends on use case)
 
+CAN\_D1\_UC\_BM = 1
 
+BATT\_MONITOR = 9 (for ESC, not DroneCAN)
 
 To see if the flight controller can recognize the ESC connected, follow the next step while connected to the flight controller. Navigate to Setup - Optional Hardware - DroneCAN/UAVCAN in Mission Planner. Select MAVLinkCAN1 if your ESC is conencted to CAN1 port, or MAVLinkCAN2 respectively, from the drop-down and click on "Connect".
 
@@ -127,4 +129,15 @@ You should see the ESC with the node ID it is set to.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-09-07 172950.png" alt=""><figcaption></figcaption></figure>
 
-The ID of the ESC does not really matter as long as it is unique. It should also not take any of the numbers assigned to the Flight Controllers or Ground Control Stations - 1, 10, 125, 126, 127
+The ID of the ESC does not really matter as long as it is unique. It should also not take any of the numbers assigned to the Flight Controllers or Ground Control Stations - 1, 10, 125, 126, 127.
+
+Lastly, the motor output chanells have to be configured using the SERVOx\_FUNCTION. After writing the parameters, navigate to Setup - Optional Hardware - Motor Test.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-09-07 174334 (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+If you get the "Command was denied by the autopilot" error, try to:
+
+* FS\_THR\_ENABLE = 0
+{% endhint %}
+
