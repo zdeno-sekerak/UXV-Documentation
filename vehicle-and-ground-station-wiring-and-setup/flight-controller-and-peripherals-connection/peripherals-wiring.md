@@ -2,6 +2,8 @@
 
 ## 1. GPS Connection
 
+<figure><img src="../../.gitbook/assets/images.jpg" alt=""><figcaption><p>Here4 Blue GNSS</p></figcaption></figure>
+
 {% hint style="info" %}
 Connecting the GPS to the GPS\&SAFETY port enables the following
 
@@ -31,6 +33,8 @@ The same result is achieved by connection to the CAN port, but with better EMI i
   * Same as GPS\&SAFETY, but does not enable the safety switch.
 
 ## 2. Servos and UBEC
+
+<figure><img src="../../.gitbook/assets/sav-sv-1250mgp.webp" alt=""><figcaption><p>Savox SV-1250MG PWM Servo</p></figcaption></figure>
 
 There are two main types of servos:
 
@@ -66,6 +70,8 @@ If you wish to power the servos at a different place in the vehicle, simply conn
 
 To connect the servo through PWM, connect the signal cable from the servo to the signal pin on the flight controller servo rail.&#x20;
 
+<figure><img src="../../.gitbook/assets/IMG_1935.jpeg" alt=""><figcaption><p>A Servo connected to the M1 temrinal on the servo rail</p></figcaption></figure>
+
 ### 2.3 Connecting through CAN
 
 Since there are usually just one or two CAN ports on the flight controller, more than one peripheral need to be daisy chained together.
@@ -80,6 +86,29 @@ For a CAN connection to work properly, individual "stubs" should not exceed 30 c
 
 <figure><img src="../../.gitbook/assets/CAN-Conenction-Peripherals.png" alt=""><figcaption></figcaption></figure>
 
-## 3. VESC
+## 3. CAN ESC
 
-#### 2.4 Flight Controller Power Module
+A CAN ESC can not only control an electric motor, but it can also send health, RPM and battery status messages back to the flight controller while keeping the wiring clean thanks to CAN. These advantages come at a price premium.&#x20;
+
+{% hint style="info" %}
+Note: This guide uses a VESC Omega controller as an example.
+{% endhint %}
+
+Please refer to the diagram above for an example of CAN wiring for an ESC. The ESC is usually powered directly from the battery.
+
+## 4 Flight Controller Power Module
+
+The power module serves two purposes for a flight controller:
+
+* Power the Flight Controller
+* Send Voltage and Current data to the Flight Controller
+
+<figure><img src="../../.gitbook/assets/01-1.jpg" alt=""><figcaption><p>CAN PMU Lite</p></figcaption></figure>
+
+While the flight controller can usually be powered on more than one ports. The most common one however is to use a dedicated power module. Some of the notable examples include CAN PMU Lite for CUAV contollers, or Power Brick Mini for CubePilot controllers.
+
+The preffered option to get the Voltage and Current data from a flight controller is through DroneCAN/UAVCAN from an ESC, or directly from a battery. These options are however not always available. Therefore the power detection module has to be placed between the motors and the battery for accurate current readings.&#x20;
+
+{% hint style="info" %}
+Note that the CAN PMU Lite and the Powe Brick Mini use different protocols to send the voltage and current information. Therefore it is possible that conencting the Power Brick Mini to a CUAV flight controller will not work, and it can even corrupt CAN data coming from other ports if you connect it to Power C1/C2 (ports using CAN).
+{% endhint %}
