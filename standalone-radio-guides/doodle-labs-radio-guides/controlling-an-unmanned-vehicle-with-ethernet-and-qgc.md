@@ -1,7 +1,7 @@
 ---
 description: >-
   This guide explains how to set up an ethernet with Doodle Labs radios to
-  control a PX4 Unmanned Vehicle with an SRoC running Windows.
+  control a PX4 Unmanned Vehicle with an SRoC.
 ---
 
 # Connecting an Unmanned Vehicle with Ethernet and QGC
@@ -50,6 +50,47 @@ The reccomended wiring for a GCS however remains a simple DL Radio -> SRM-RJ45 -
 ### 1.2 UxV Radio + PX4 Vehicle Controller
 
 Continue by wiring the ethernet connection from the UAV radio to the flight controller as explained in the [guide](physical-connection-without-an-evaluation-board.md). The finished setup will look similar to the example with one servo and one motor.
+
+**2.1 Setting IP Address of the Controller**
+
+Completely disconnect the PX4 vehicle controller from the radios and only use an connection through USB to your computer.
+
+INSERT AN IMAGE OF A FLIGHT CONRTOLLER CONNECTED WITH A CABLE
+
+To make the configuration work on the current setup, go to QGC Icon -> Analyze Tools -> MavLink Console. The configuration file is located in /fs/microsd/net.cfg on the SD card and the file contains text where each of the settings is written on a new line as a **name=value** pair. Type in the following in the console to change values in the file:
+
+```
+echo DEVICE=eth0 > /fs/microsd/net.cfg
+echo BOOTPROTO=static > /fs/microsd/net.cfg
+echo IPADDR=10.223.218.99 > /fs/microsd/net.cfg
+echo NETMASK=255.255.255.0 > /fs/microsd/net.cfg
+echo ROUTER=10.223.218.204 > /fs/microsd/net.cfg
+echo DNS=10.223.218.204 > /fs/microsd/net.cfg
+```
+
+Next, type the command: _netman update_ Be careful not to use the command _netman save_ as it will load the previous configuration from the volatile memory and override the one you had just set up.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-02 170920.png" alt="" width="339"><figcaption></figcaption></figure>
+
+The IPADDR setting changes the IP adress of the Vehicle Controller. UXV is using 10.223.218.99, however you can use any other one as long as it is not the same as any of the radios. If you are using a different one, make sure to note it down as it will be useful later. The **ROUTER** and **DNS** settings state the IP of the UxV radio, so it is going to be different for each setup. **BOOTPROTO** is set to statis, which means the Vehicle Controller will have the IP defined by **IPADDR**.
+
+The above settings gave the vehicle controller an IP adress on the ethernet network.
+
+**2.2 Configuring the Ethernet port**
+
+To configure the ethernet port on the Vehicle, navigate to QGC Icon -> Vehicle Setup -> Parameters and set the following:
+
+MAV\_2\_CONFIG 1000 (Ethernet) MAV\_2\_BROADCAST 1 (Always Boradcast) MAV\_2\_MODE 0 (Normal) MAV\_2\_RADIO\_CTL 0 (Disabled) MAV\_2\_RATE 100000 (100000 Bits per second) MAV\_2\_REMOTE\_PRT 14550 (Sets 14550 as the remote port number, which is the number at which PX4 listens to GCS Messages) MAV\_2\_UDP\_PRT 14550 (Sets 14550 as the local port number)
+
+For parameter reference visit this link [https://docs.px4.io/main/en/advanced\_config/ethernet\_setup#px4-mavlink-serial-port-configuration](https://docs.px4.io/main/en/advanced_config/ethernet_setup#px4-mavlink-serial-port-configuration).
+
+This will set the framework for how the communication on the port works.
+
+**2.3 Configuring QGroundControl**
+
+
+
+After setting up everything
 
 <figure><img src="../../.gitbook/assets/ETH-RC-Car-Connection (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -179,7 +220,7 @@ Now the Vehicle Controller is connected to the GCS through QGC. However it still
 To send manual stick commands through telemetry, set the parameter `COM_RC_IN_MODE` to `1`. This will allow sending joystick commands through telemetry.
 
 {% hint style="info" %}
-To map the joystick input itself, follow [this](../../gcs-uxv-and-antenna-setup/setting-up-actuators-servos-and-motors-in-px4.md) guide.
+To map the joystick input itself, follow [this](../../vehicle-and-ground-station-wiring-and-setup/setting-up-actuators-servos-and-motors-in-px4.md) guide.
 {% endhint %}
 
 {% hint style="success" %}

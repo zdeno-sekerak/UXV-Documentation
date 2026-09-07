@@ -32,18 +32,22 @@
 * [Sensors - Optroxa Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/README.md)
   * [GMB600 Wiring and Setup](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb600-wiring-and-setup.md)
 
-## GCS, UxV and Antenna Setup
+## Vehicle and Ground Station Wiring and Setup
 
-* [Flight Controller Firmware](gcs-uxv-and-antenna-setup/flight-controller-firmware/README.md)
-  * [Setting up a PX4 Vehicle](gcs-uxv-and-antenna-setup/flight-controller-firmware/setting-up-a-px4-vehicle.md)
-  * [Creating a Custom PX4 Build](gcs-uxv-and-antenna-setup/flight-controller-firmware/creating-a-custom-px4-build.md)
-  * [Setting up an ArduPilot Vehicle](gcs-uxv-and-antenna-setup/flight-controller-firmware/setting-up-an-ardupilot-vehicle.md)
-* [Flight Controller and Peripherals Connection](gcs-uxv-and-antenna-setup/flight-controller-and-peripherals-connection/README.md)
-  * [Peripherals Connection](gcs-uxv-and-antenna-setup/flight-controller-and-peripherals-connection/peripherals-connection.md)
-* [Optimizing Antenna Configuration](gcs-uxv-and-antenna-setup/optimizing-antenna-configuration.md)
-* [Setting up a VESC](gcs-uxv-and-antenna-setup/setting-up-a-vesc.md)
-* [Physical Wiring of Servos and Motors](gcs-uxv-and-antenna-setup/physical-wiring-of-servos-and-motors.md)
-* [Setting Up Actuators (Servos and Motors) in PX4](gcs-uxv-and-antenna-setup/setting-up-actuators-servos-and-motors-in-px4.md)
+* [Flight Controller Firmware](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/README.md)
+  * [Setting up a PX4 Vehicle](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/setting-up-a-px4-vehicle.md)
+  * [Creating a Custom PX4 Build](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/creating-a-custom-px4-build.md)
+  * [Setting up an ArduPilot Vehicle](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/setting-up-an-ardupilot-vehicle.md)
+* [Flight Controller and Peripherals Connection](vehicle-and-ground-station-wiring-and-setup/flight-controller-and-peripherals-connection/README.md)
+  * [Peripherals Wiring](vehicle-and-ground-station-wiring-and-setup/flight-controller-and-peripherals-connection/peripherals-wiring.md)
+* [Optimizing Antenna Configuration](vehicle-and-ground-station-wiring-and-setup/optimizing-antenna-configuration.md)
+* [Setting up a VESC](vehicle-and-ground-station-wiring-and-setup/setting-up-a-vesc.md)
+* [Physical Wiring of Servos and Motors](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-servos-and-motors.md)
+* [Setting Up Actuators (Servos and Motors) in PX4](vehicle-and-ground-station-wiring-and-setup/setting-up-actuators-servos-and-motors-in-px4.md)
+
+## Doodle Labs integration into UxV
+
+* [Upgrading an Ethernet Autonomous Vehicle with UXV Gimbal](doodle-labs-integration-into-uxv/upgrading-an-ethernet-autonomous-vehicle-with-uxv-gimbal.md)
 
 ## FAQ
 

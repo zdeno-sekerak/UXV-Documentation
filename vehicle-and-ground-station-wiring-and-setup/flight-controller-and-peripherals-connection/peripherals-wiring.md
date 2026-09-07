@@ -1,4 +1,4 @@
-# Peripherals Connection
+# Peripherals Wiring
 
 ## 1 GPS Connection
 
@@ -41,6 +41,14 @@ There are two main types of servos:
 * PWM Servos (Controller using Pulse Width Modulation)
   * Cheaper and more readily available
   * Extremely simple setup
+
+### 2.1 Powering the Servos
+
+The simplest way to power the servos is through the servo rail on the flight controller.&#x20;
+
+<figure><img src="../../.gitbook/assets/pixhawk-v6x-v2-main-06 (1).png" alt=""><figcaption></figcaption></figure>
+
+Certain legacy flight controllers have this rail powered. Most of the modern ones however keep it disconnected from the flight controller power to protect the electronics from volrage spikes etc.
 
 #### 2.3 VESC
 
