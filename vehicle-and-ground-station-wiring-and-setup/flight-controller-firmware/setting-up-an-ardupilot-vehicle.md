@@ -4,7 +4,7 @@ description: This page explains the process of setting up an ArduPilot vehicle.
 
 # Setting up an ArduPilot Vehicle
 
-### Part List:
+## Part List:
 
 * Flight Controller (this guide uses CUAV V6X)
 * GNSS (this guide used Here4)
@@ -13,16 +13,16 @@ description: This page explains the process of setting up an ArduPilot vehicle.
 * 5V UBEC (amount depends on number of components)
 * 6V UBEC (amount depends on number of components)
 
-### Optional Part List:
+## Optional Part List:
 
 * VESC (optional amount - keep in mind the required 120Ω resistance requirement) or any other ESC
 * BLDC Motor (most common type)
 
-### Tool List
+## Tool List
 
 * Windows Computer with Mission Planner installed (this guide uses Windows 11)
 
-### 1. Flash the Flight Controller with Firmware
+## 1. Flash the Flight Controller with Firmware
 
 Start by connecting the Flight Controller to your computer via USB and open Mission Planner.&#x20;
 
@@ -75,13 +75,37 @@ After the firmware has been uploaded, the COM port the Flight Controller is conn
 The SLCAN option will turn the Flight Controller into a pass-through USB-to-CAN adapter, allowing you to talk directly to a peripheral device connected to it.&#x20;
 {% endhint %}
 
-### 2 Connect Peripherals
+## 2 Connect Peripherals
 
 For further setup, it is best to connect the peripherals you wish to use on the final build to directly test the settings. In this guide UXV Technologies used:
 
 * 1x Holybro GPS connected to GPS\&SAFETY
-* 1x VESC controlled over CAN 2
+* 1x DroneCAN/UAVCAN ESC (VESC)
 * Servo connected through the servo rail
 * 5V voltage step-down module to power the servo
 * 1x CAN PMU (or equivalent power module for the flight controller) if you are using an ESC which does not send power information
+
+### 2.1 GPS on GPS\&SAFETY
+
+The GPS\&SAFETY is automatically configured to work accept position and compass data, therefore no setup should be required to connect the GPS.
+
+It however enables the GPS Module to be used as a:
+
+* LED Status indication
+* Sound status indication
+* Safety switch that prevents accidental arming and disables output to all motors and servos
+
+All of these functions should be enabled by default upon connecting a compatible GPS to the GPS\&SAFETY port.
+
+{% hint style="info" %}
+When the safety switch is engaged, you should see a message PreArm: Safety Switch (after you have a radio link). To arm the aircraft using the safety switch, press and hold it for 2 seconds. The light on the GPS should change color and you should be able to arm the vehicle.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/IMG_1936.jpeg" alt=""><figcaption><p>Safety Button on the Holybro H-RTK F9P Helical</p></figcaption></figure>
+
+### 2.2 DroneCAN/UAVCAN ESC
+
+{% hint style="info" %}
+This guide uses an ESC based on the VESC Omega running v6.06 of the firmware.
+{% endhint %}
 
