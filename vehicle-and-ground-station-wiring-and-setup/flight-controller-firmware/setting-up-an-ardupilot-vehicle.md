@@ -126,3 +126,5 @@ To see if the flight controller can recognize the ESC connected, follow the next
 You should see the ESC with the node ID it is set to.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-09-07 172950.png" alt=""><figcaption></figcaption></figure>
+
+The ID of the ESC does not really matter as long as it is unique. It should also not take any of the numbers assigned to the Flight Controllers or Ground Control Stations - 1, 10, 125, 126, 127
