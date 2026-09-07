@@ -27,8 +27,8 @@
 * [Vehicle Integration Guides](uxv-technologies-product-guides/vehicle-integration-guides/README.md)
   * [GMB600 Mounting and Wiring Ethernet](uxv-technologies-product-guides/vehicle-integration-guides/gmb600-mounting-and-wiring-ethernet.md)
 * [Swappable Radio Modules](uxv-technologies-product-guides/swappable-radio-modules/README.md)
-  * [SRM-S-DL+](uxv-technologies-product-guides/swappable-radio-modules/srm-s-dl+.md)
   * [SRM Airside ETH Setup](uxv-technologies-product-guides/swappable-radio-modules/srm-airside-eth-setup.md)
+  * [SRM-S-DL+](uxv-technologies-product-guides/swappable-radio-modules/srm-s-dl+.md)
 * [Sensors - Optroxa Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/README.md)
   * [GMB600 Wiring and Setup](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb600-wiring-and-setup.md)
 
@@ -38,6 +38,8 @@
   * [Setting up a PX4 Vehicle](gcs-uxv-and-antenna-setup/flight-controller-firmware/setting-up-a-px4-vehicle.md)
   * [Creating a Custom PX4 Build](gcs-uxv-and-antenna-setup/flight-controller-firmware/creating-a-custom-px4-build.md)
   * [Setting up an ArduPilot Vehicle](gcs-uxv-and-antenna-setup/flight-controller-firmware/setting-up-an-ardupilot-vehicle.md)
+* [Flight Controller and Peripherals Connection](gcs-uxv-and-antenna-setup/flight-controller-and-peripherals-connection/README.md)
+  * [Peripherals Connection](gcs-uxv-and-antenna-setup/flight-controller-and-peripherals-connection/peripherals-connection.md)
 * [Optimizing Antenna Configuration](gcs-uxv-and-antenna-setup/optimizing-antenna-configuration.md)
 * [Setting up a VESC](gcs-uxv-and-antenna-setup/setting-up-a-vesc.md)
 * [Physical Wiring of Servos and Motors](gcs-uxv-and-antenna-setup/physical-wiring-of-servos-and-motors.md)

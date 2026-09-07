@@ -85,26 +85,3 @@ For further setup, it is best to connect the peripherals you wish to use on the 
 * 5V voltage step-down module to power the servo
 * 1x CAN PMU (or equivalent power module for the flight controller) if you are using an ESC which does not send power information
 
-{% hint style="info" %}
-Connecting the GPS to the GPS\&SAFETY port enables the following
-
-* Physical safety switch to prevent accidental arming (additional layer of safety)
-* LED Pin for light status signaling (blinking = safe, solid = armed)
-* Buzzer Pin for sound status signaling
-{% endhint %}
-
-#### 1. GPS Connection
-
-It is reccomended to use the GPS\&SAFETY port on the flight controller to enable all of the following functions:
-
-* Buzzer Pin for sound status signaling
-* LED Pin for light status signaling (blinking = safe, solid = armed)
-* Physical safety switch to prevent accidental arming (additional layer of safety)
-
-&#x20;Other port options (for various GNSS models):
-
-* TELEM (UART + Power and GND + RTS/CTS)
-  * P
-* UART&#x20;
-* CAN
-* GPS
