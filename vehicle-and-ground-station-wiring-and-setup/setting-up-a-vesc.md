@@ -96,7 +96,7 @@ These values will then be used for callibration of the VESC in the next step.
 
 ### 3.1 Setup Motor FOC
 
-Begin by setting up the motor FOC by clicking the "Setup Motor FOC" button. [FOC](../#foc-field-oriented-control) is a control algorithm for 3-phase motors. Make sure to have the motor connected to the VESC and disconnect any wheels/propellers. The callibration will spin up the motor.
+Begin by setting up the motor FOC by clicking the "Setup Motor FOC" button. [FOC](<../README (1).md#foc-field-oriented-control>) is a control algorithm for 3-phase motors. Make sure to have the motor connected to the VESC and disconnect any wheels/propellers. The callibration will spin up the motor.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-22 142119.png" alt=""><figcaption></figcaption></figure>
 

@@ -1,13 +1,17 @@
 # Table of contents
 
-## Explained Concepts
+## Vehicle and Ground Station Wiring and Setup
 
-* [Foundational AC Motor Concepts](README.md)
-* [Foundational Electronics Concepts](explained-concepts/foundational-electronics-concepts.md)
-* [Electronics Communication Basic Concepts](explained-concepts/electronics-communication-basic-concepts.md)
-* [Foundational Antenna Concepts](explained-concepts/readme.md)
-* [Basic Autonomy Using ROS2](explained-concepts/basic-autonomy-using-ros2.md)
-* [Networking Concepts](explained-concepts/networking-concepts.md)
+* [Flight Controller Firmware](README.md)
+  * [Setting up a PX4 Vehicle](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/setting-up-a-px4-vehicle.md)
+  * [Creating a Custom PX4 Build](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/creating-a-custom-px4-build.md)
+  * [Setting up an ArduPilot Vehicle](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/setting-up-an-ardupilot-vehicle.md)
+* [Flight Controller and Peripherals Connection](vehicle-and-ground-station-wiring-and-setup/flight-controller-and-peripherals-connection/README.md)
+  * [Peripherals Wiring](vehicle-and-ground-station-wiring-and-setup/flight-controller-and-peripherals-connection/peripherals-wiring.md)
+* [Optimizing Antenna Configuration](vehicle-and-ground-station-wiring-and-setup/optimizing-antenna-configuration.md)
+* [Setting up a VESC](vehicle-and-ground-station-wiring-and-setup/setting-up-a-vesc.md)
+* [Physical Wiring of Servos and Motors](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-servos-and-motors.md)
+* [Setting Up Actuators (Servos and Motors) in PX4](vehicle-and-ground-station-wiring-and-setup/setting-up-actuators-servos-and-motors-in-px4.md)
 
 ## Standalone Radio Guides
 
@@ -31,23 +35,16 @@
   * [SRM-S-DL+](uxv-technologies-product-guides/swappable-radio-modules/srm-s-dl+.md)
 * [Sensors - Optroxa Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/README.md)
   * [GMB600 Wiring and Setup](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb600-wiring-and-setup.md)
+  * [Upgrading an Ethernet Autonomous Vehicle with UXV Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/upgrading-an-ethernet-autonomous-vehicle-with-uxv-gimbal.md)
 
-## Vehicle and Ground Station Wiring and Setup
+## Explained Concepts
 
-* [Flight Controller Firmware](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/README.md)
-  * [Setting up a PX4 Vehicle](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/setting-up-a-px4-vehicle.md)
-  * [Creating a Custom PX4 Build](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/creating-a-custom-px4-build.md)
-  * [Setting up an ArduPilot Vehicle](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/setting-up-an-ardupilot-vehicle.md)
-* [Flight Controller and Peripherals Connection](vehicle-and-ground-station-wiring-and-setup/flight-controller-and-peripherals-connection/README.md)
-  * [Peripherals Wiring](vehicle-and-ground-station-wiring-and-setup/flight-controller-and-peripherals-connection/peripherals-wiring.md)
-* [Optimizing Antenna Configuration](vehicle-and-ground-station-wiring-and-setup/optimizing-antenna-configuration.md)
-* [Setting up a VESC](vehicle-and-ground-station-wiring-and-setup/setting-up-a-vesc.md)
-* [Physical Wiring of Servos and Motors](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-servos-and-motors.md)
-* [Setting Up Actuators (Servos and Motors) in PX4](vehicle-and-ground-station-wiring-and-setup/setting-up-actuators-servos-and-motors-in-px4.md)
-
-## Doodle Labs integration into UxV
-
-* [Upgrading an Ethernet Autonomous Vehicle with UXV Gimbal](doodle-labs-integration-into-uxv/upgrading-an-ethernet-autonomous-vehicle-with-uxv-gimbal.md)
+* [Foundational AC Motor Concepts](<README (1).md>)
+* [Foundational Electronics Concepts](explained-concepts/foundational-electronics-concepts.md)
+* [Electronics Communication Basic Concepts](explained-concepts/electronics-communication-basic-concepts.md)
+* [Foundational Antenna Concepts](explained-concepts/readme.md)
+* [Basic Autonomy Using ROS2](explained-concepts/basic-autonomy-using-ros2.md)
+* [Networking Concepts](explained-concepts/networking-concepts.md)
 
 ## FAQ
 
