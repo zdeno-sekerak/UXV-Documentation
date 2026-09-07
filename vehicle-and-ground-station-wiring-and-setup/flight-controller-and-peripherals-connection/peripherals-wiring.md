@@ -74,14 +74,12 @@ Since there are usually just one or two CAN ports on the flight controller, more
 If the flight controller and VESC are connected to the same battery, you do not need to connect the GND and 5V cables as they already share these through the battery.
 {% endhint %}
 
-Ideally, the cable should be terminated exactly at the port of the node, where another cable is starting again. In reality, there will be one main cable going from beginning to the end, which is called the "trunk" with short cables going from it to the CAN nodes called a "stub".
+Ideally, the cable should be terminated exactly at the port of the node, where another cable is starting again. In reality, there will likely be one main cable going from beginning to the end, which is called the "trunk" with short cables going from it to the CAN nodes called a "stub".
 
-For a CAN connection to work properly, individual "stubs" should not exceed 30 cm in length. The combined length of all "stubs" should not exceed 1.5m.
+For a CAN connection to work properly, individual "stubs" should not exceed 30 cm in length. The combined length of all "stubs" should not exceed 1.5m. Below is an example of what such a connection might look like.
 
-<figure><img src="/broken/files/hMJdBcGfoFteq8xsBGEz" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CAN-Conenction-Peripherals.png" alt=""><figcaption></figcaption></figure>
 
-Above, you can see an example of a correct CAN connection.
-
-#### 2.3 VESC
+## 3. VESC
 
 #### 2.4 Flight Controller Power Module
