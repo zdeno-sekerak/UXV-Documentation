@@ -181,7 +181,13 @@ The following is listed in the order of accuracy.&#x20;
 {% endtab %}
 {% endtabs %}
 
-Most power modules not only send current and voltage information to the Flight Controller, but also provide it with a stable power supply.&#x20;
+Most power modules not only send current and voltage information to the Flight Controller, but also provide it with a stable power supply. This way the power module reduces the risk of a flight controller brownout in an event of a voltage spike.
+
+The power modules usually do not need to be configured, which significantly reduces the complexity of the setup.&#x20;
+
+{% hint style="info" %}
+In order to provide accurate current reading, most of the standard power modules have to be connected between the battery and the ESC. An exception are Hall-effect sensors which measure the magnetic field induced by the current.
+{% endhint %}
 
 ### 3.2 Data from DroneCAN ESC
 
