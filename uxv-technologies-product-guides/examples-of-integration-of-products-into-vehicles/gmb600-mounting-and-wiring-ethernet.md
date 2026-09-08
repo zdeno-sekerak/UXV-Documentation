@@ -17,7 +17,11 @@ This guide explains the process of integrating a the Optroxa GMB600 into an unma
 * 1x ODU A10WAM-P12XMM0-0000 to ODU G81 - 8 pin and Power (such as XT30) for connecting GMB600 to SRM Airside (UXV does not make one yet, coming soon)
 
 {% hint style="info" %}
-This guide assumes that the SRM Airside ETH is set up according to [this guide](../swappable-radio-modules/srm-airside-eth-setup.md).
+Prerequisites:
+
+1. Flight Controller with [PX4](../../vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/setting-up-a-px4-vehicle.md) or [ArduPilot](../../vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/ardupilot/setting-up-an-ardupilot-vehicle.md) set-up
+2. Other vehicle peripherals connected based on [this guide](../../vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-peripherals/)
+3. SRM Airside ETH is set up according to [this guide](../swappable-radio-modules/srm-airside-eth-setup.md).
 {% endhint %}
 
 ### 1. Explaining the architecture
@@ -33,9 +37,9 @@ This architecture, where the gimbal and flight controller are on the same networ
 The UXV Technologies gimbal also has CAN pins exposed to allow the gimbal to control other devices and UART for&#x20;
 {% endhint %}
 
-Below is the wiring diagram of the complete vehicle that UxV Technologies used for testing.
+Below is the wiring diagram of the complete vehicle that UXV Technologies used for testing.
 
-<figure><img src="../../.gitbook/assets/GMB600-Car-Wiring (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/GMB600-Car-Wiring (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Stream Data to Custom QGC+
 

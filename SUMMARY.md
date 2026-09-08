@@ -40,8 +40,8 @@
 * [Swappable Radio Modules](uxv-technologies-product-guides/swappable-radio-modules/README.md)
   * [SRM Airside ETH Setup](uxv-technologies-product-guides/swappable-radio-modules/srm-airside-eth-setup.md)
   * [SRM-S-DL+](uxv-technologies-product-guides/swappable-radio-modules/srm-s-dl+.md)
-* [Integrating Products into Vehicles](uxv-technologies-product-guides/integrating-products-into-vehicles/README.md)
-  * [GMB600 Mounting and Wiring Ethernet](uxv-technologies-product-guides/integrating-products-into-vehicles/gmb600-mounting-and-wiring-ethernet.md)
+* [Examples of Integration of Products into Vehicles](uxv-technologies-product-guides/examples-of-integration-of-products-into-vehicles/README.md)
+  * [GMB600 Mounting and Wiring Ethernet](uxv-technologies-product-guides/examples-of-integration-of-products-into-vehicles/gmb600-mounting-and-wiring-ethernet.md)
 
 ## Explained Concepts
 
