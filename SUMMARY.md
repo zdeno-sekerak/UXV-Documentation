@@ -37,12 +37,14 @@
 
 ## UXV Technologies Product Guides
 
+* [Overview of UXV Technologies Products](uxv-technologies-product-guides/overview-of-uxv-technologies-products.md)
+* [Soldier Borne](uxv-technologies-product-guides/soldier-borne.md)
+* [Radios](uxv-technologies-product-guides/radios/README.md)
+  * [SRM Airside ETH Setup](uxv-technologies-product-guides/radios/srm-airside-eth-setup.md)
+  * [SRM-S-DL+](uxv-technologies-product-guides/radios/srm-s-dl+.md)
 * [Sensors - Optroxa Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/README.md)
   * [GMB600 Wiring and Setup](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb600-wiring-and-setup.md)
   * [Upgrading an Ethernet Autonomous Vehicle with UXV Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/upgrading-an-ethernet-autonomous-vehicle-with-uxv-gimbal.md)
-* [Swappable Radio Modules](uxv-technologies-product-guides/swappable-radio-modules/README.md)
-  * [SRM Airside ETH Setup](uxv-technologies-product-guides/swappable-radio-modules/srm-airside-eth-setup.md)
-  * [SRM-S-DL+](uxv-technologies-product-guides/swappable-radio-modules/srm-s-dl+.md)
 * [Examples of Integration of Products into Vehicles](uxv-technologies-product-guides/examples-of-integration-of-products-into-vehicles/README.md)
   * [GMB600 Mounting and Wiring Ethernet](uxv-technologies-product-guides/examples-of-integration-of-products-into-vehicles/gmb600-mounting-and-wiring-ethernet.md)
 

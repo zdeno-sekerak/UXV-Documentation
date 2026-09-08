@@ -14,11 +14,13 @@ Flight controller firmware comparison:
 
 ## 1. [PX4](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/)
 
-This software originated at ETH Zurich in 2009 and builds upon&#x20;
+This software originated at ETH Zurich in 2011 and builds upon&#x20;
 
 #### Pros:
 
-* a
+* Best-in-class simulation tooling
+* Clean message-passing architecture
+* BSD License allows any modifications to be commercially sold
 
 #### Cons
 
