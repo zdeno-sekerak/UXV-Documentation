@@ -207,6 +207,8 @@ Set BATT\_MONITOR = 9 if the DroneCAN device is sending only voltage and current
 
 Set BATT\_MONITOR = 8 if your DroneCAN devices is broadcasting BatteryInfo DroneCAN messages. This message includes not only the voltage and current, but also the battery percentage and is available only on specific ESCs. Usually the ones with a Battery Management System (BMS).
 
+### Do not forget to add a tutorial for combining the battery currents if using 2 or more VESCs, each with its own current reading
+
 ### 3.3 Data from the Battery
 
 ## 4. Callibrate the Sensors

@@ -26,7 +26,7 @@ Prerequisites:
 
 ### 1. Explaining the architecture
 
-<figure><img src="../../.gitbook/assets/GMB600_SRM-Airside_FC_SRM-DL_Connection-Diagram.drawio.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/GMB600_SRM-Airside_FC_SRM-DL_Connection-Diagram (5).png" alt=""><figcaption></figcaption></figure>
 
 This architecture, where the gimbal and flight controller are on the same network, is typical for an unmanned vehicle. The SRM Airside ETH acts as a switch, bringing both of the devices and the radio on the same network. This is advantageous for two reasons:
 
@@ -44,3 +44,5 @@ Below is the wiring diagram of the complete vehicle that UXV Technologies used f
 ### 2. Stream Data to Custom QGC+
 
 Finish this section based on information from Andy.
+
+## 3. Quick-Start Guide
