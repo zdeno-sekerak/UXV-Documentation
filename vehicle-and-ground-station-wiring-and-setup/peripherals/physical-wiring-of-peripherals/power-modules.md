@@ -7,7 +7,7 @@ The power module serves two purposes for a flight controller:
 * Power the Flight Controller
 * Send Voltage and Current data to the Flight Controller
 
-<figure><img src="../../.gitbook/assets/01-1.jpg" alt=""><figcaption><p>CAN PMU Lite</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/01-1.jpg" alt=""><figcaption><p>CAN PMU Lite</p></figcaption></figure>
 
 While the flight controller can usually be powered on more than one ports. The most common one however is to use a dedicated power module. Some of the notable examples include CAN PMU Lite for CUAV contollers, or Power Brick Mini for CubePilot controllers.
 

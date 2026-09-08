@@ -20,11 +20,11 @@ The can be used to control BLDC (brushless DC), PMSM (pernament magnet synchrono
 
 Begin by soldering cables of correct thiccnes to the motor phase pads highlighted in the picture:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 144603.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-22 144603.png" alt=""><figcaption></figcaption></figure>
 
 A finished soldered cables can be covered with heat shrink tubing to avoid touching exposed cables while bench testing or integration.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 144843.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-22 144843.png" alt=""><figcaption></figcaption></figure>
 
 These cables can either be connected directly to the motor, or using connectors, which are the more practical option for testing as they allow the motor to be disconnected without powering off the VESC.
 
@@ -38,17 +38,17 @@ For integration, you can use a heat shrink tube or electrical tape to cover the 
 
 
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 145605.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-22 145605.png" alt=""><figcaption></figcaption></figure>
 
 A finished connection will look as following:
 
 {% columns %}
 {% column %}
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 150339.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-22 150339.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 150440.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-22 150440.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -62,11 +62,11 @@ To turn on the VESC, both the power (usually XT60) and connection cable to PC (U
 
 Connected power cable on the VESC:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 151319.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-22 151319.png" alt=""><figcaption></figcaption></figure>
 
 Connected power and USB on the VESC:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 151303.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-22 151303.png" alt=""><figcaption></figcaption></figure>
 
 ### 2.2 VESC Tool
 
@@ -74,7 +74,7 @@ The software, which is used to change the VESC settings is called [VESC Tool](ht
 
 After launching the software with a connected VESC, the tool should recognize a connected VESC and will connect to it after clicking the "connect" button. Alternatively, it is also possible to click the "Autoconnect button."
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 141756.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-22 141756.png" alt=""><figcaption></figcaption></figure>
 
 ## 3. Configuring the VESC
 
@@ -92,23 +92,23 @@ Before running the callibration of the motor, change the following values accord
 
 These values will then be used for callibration of the VESC in the next step.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 162929.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-22 162929.png" alt=""><figcaption></figcaption></figure>
 
 ### 3.1 Setup Motor FOC
 
-Begin by setting up the motor FOC by clicking the "Setup Motor FOC" button. [FOC](<../README (1).md#foc-field-oriented-control>) is a control algorithm for 3-phase motors. Make sure to have the motor connected to the VESC and disconnect any wheels/propellers. The callibration will spin up the motor.
+Begin by setting up the motor FOC by clicking the "Setup Motor FOC" button. [FOC](<../../../../README (1).md#foc-field-oriented-control>) is a control algorithm for 3-phase motors. Make sure to have the motor connected to the VESC and disconnect any wheels/propellers. The callibration will spin up the motor.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 142119.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-22 142119.png" alt=""><figcaption></figcaption></figure>
 
 Once you have entered the values for the motor and the battery and the callibration has been completed, write the motor and app configuration to the VESC to apply everything by clicking the highlighted buttons:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 161547.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-22 161547.png" alt=""><figcaption></figcaption></figure>
 
 ### 3.2 Max Current and Voltage
 
 Go into Motor Settings - General - Current/Voltage to set the maximum current and voltage your battery can provide.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 162355 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-22 162355 (1).png" alt=""><figcaption></figcaption></figure>
 
 You can also set the maximum BMS (battery management system), RPM and wattage in the top ribbon if you wish.
 
@@ -122,7 +122,7 @@ The previous setup shoul produce a "good enough" result while driving a motor, w
 
 The observer is a software which estimates the rotor position and speed in real time without any sensors present on the motor. To set the observer, go into Motor Settings - FOC - Advanced - Observer Type.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-22 165320.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-22 165320.png" alt=""><figcaption></figcaption></figure>
 
 To determine the correct observer, you will usually just need to try all of them and see which one works best.
 
@@ -134,7 +134,7 @@ To find out which observer works the best, enable realtime data by clicking the 
 
 The go into Data Analysis - Sampled Data, spin up the motor using the keyboard for a few seconds and in the meantime, click on the "Sample Now" button.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-23 084528.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-23 084528.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The picture is an improperly callibrated VESC, the sampled data should absolutely not look like this.
@@ -144,11 +144,11 @@ The goal here is to get the "PH1", "PH2" and "PH3" to resemble a sinusoidal as c
 
 As the motor is currently not under load for bench testing, the back-current is lower and the motor is much more sensitive to changes, therefore a result like the following is reasonable. The cyan line is the Motor Controller total current and the green one is the graph for the current of phase 1:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-23 091624.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-23 091624.png" alt=""><figcaption></figcaption></figure>
 
 With the load connected, the graph should look something like the following, where the phases follow a sinusoidal curve perfectly:
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-03-23 121140.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-03-23 121140.png" alt=""><figcaption></figcaption></figure>
 
 ## 4 Additional Resources
 

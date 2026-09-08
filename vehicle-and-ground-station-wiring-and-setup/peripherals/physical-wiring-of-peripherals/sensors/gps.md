@@ -8,7 +8,7 @@ description: >-
 
 ## GPS Connection
 
-<figure><img src="../../../.gitbook/assets/images.jpg" alt=""><figcaption><p>Here4 Blue GNSS</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/images.jpg" alt=""><figcaption><p>Here4 Blue GNSS</p></figcaption></figure>
 
 {% hint style="info" %}
 Connecting the GPS to the GPS\&SAFETY port enables the following
