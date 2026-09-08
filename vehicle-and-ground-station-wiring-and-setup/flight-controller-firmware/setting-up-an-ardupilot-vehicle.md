@@ -18,6 +18,10 @@ description: This page explains the process of setting up an ArduPilot vehicle.
 * VESC (optional amount - keep in mind the required 120Ω resistance requirement) or any other ESC
 * BLDC Motor (most common type)
 
+{% hint style="info" %}
+This guide uses Ardurover v4.7.1 and Mission Planner v1.3.83&#x20;
+{% endhint %}
+
 ## Tool List
 
 * Windows Computer with Mission Planner installed (this guide uses Windows 11)
@@ -131,7 +135,9 @@ You should see the ESC with the node ID it is set to.
 
 The ID of the ESC does not really matter as long as it is unique. It should also not take any of the numbers assigned to the Flight Controllers or Ground Control Stations - 1, 10, 125, 126, 127.
 
-Lastly, the motor output chanells have to be configured using the SERVOx\_FUNCTION. After writing the parameters, navigate to Setup - Optional Hardware - Motor Test.
+Lastly, the motor output chanells have to be configured using the SERVOx\_FUNCTION. After writing the parameters, navigate to Setup - Optional Hardware - Motor Test.&#x20;
+
+For the duration of the test, Ardupilot will quietly arm the vehicle and disarm it after the test without visually showing it. Therefore the motor test will fail if there are any problems, which would disable arming. For testing, you should set the ARMING\_CHECK = -1 to skip the checks. Be careful to check the errors (Data - Messages) in order to not destry the vehicle accidentally.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-09-07 174334 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -139,5 +145,53 @@ Lastly, the motor output chanells have to be configured using the SERVOx\_FUNCTI
 If you get the "Command was denied by the autopilot" error, try to:
 
 * FS\_THR\_ENABLE = 0
+* BRD\_SAFETYENABLE = 0 (disable safety switch, should turn solid red)
+* Make sure the frame is set.
 {% endhint %}
+
+## 3 Battery Settings
+
+Before choosing the source of battery data, set the following set of parameters according to your battery:
+
+BATT\_LOW\_VOLT = If the voltage is below the set voltage for more than 10 seconds, the vehicle performs the action set by BATT\_FS\_LOW\_ACT. Setting this parameter to 0 disables it.
+
+BATT\_CRT\_VOLT = The vehicle performs the action set by BATT\_FS\_CRT\_ACT, which is typically more agressive. Setting this parameter to 0 disables it.
+
+BATT\_CAPACITY = The capacity of the battery in mAh when full.
+
+You can set more parameters in the BATT drop-down in Mission Planner - CONFIG - Full Parameter List - BATT:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-09-08 095112.png" alt=""><figcaption></figcaption></figure>
+
+After setting these parameter, select the source of the battery information by setting the BATT\_MONITOR parameter. Optionally you can set this data in Setup - Optional Hardware - Battery Monitor.&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-09-08 101042.png" alt=""><figcaption></figcaption></figure>
+
+The following is listed in the order of accuracy.&#x20;
+
+### 3.1 Data from Power Module
+
+{% tabs %}
+{% tab title="CubePilot Power Brick Mini" %}
+<figure><img src="/broken/files/uyVSKsYqekRSIrR6fJgC" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+
+{% tab title="CUAV CAN PMU Lite" %}
+<figure><img src="/broken/files/aqPE1qRmKwgitB5czbZ1" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+{% endtabs %}
+
+Most power modules not only send current and voltage information to the Flight Controller, but also provide it with a stable power supply.&#x20;
+
+### 3.2 Data from DroneCAN ESC
+
+<figure><img src="/broken/files/rlfHwUXV60t3aJmlk4Xy" alt=""><figcaption></figcaption></figure>
+
+ESCs already collect data about the voltage and current, which can be sent to the flight controller over CAN if the ESC enables it. The devices however usually differ in the amount of information the send over to the flight controller.
+
+Set BATT\_MONITOR = 9 if the DroneCAN device is sending only voltage and current data, which the flight controller will use to calculate the battery percentage. This is typical for ESCs, such as the VESC.
+
+Set BATT\_MONITOR = 8 if your DroneCAN devices is broadcasting BatteryInfo DroneCAN messages. This message includes not only the voltage and current, but also the battery percentage and is available only on specific ESCs. Usually the ones with a Battery Management System (BMS).
+
+### 3.3 Data from the Battery
 
