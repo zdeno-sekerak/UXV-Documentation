@@ -220,7 +220,7 @@ Now the Vehicle Controller is connected to the GCS through QGC. However it still
 To send manual stick commands through telemetry, set the parameter `COM_RC_IN_MODE` to `1`. This will allow sending joystick commands through telemetry.
 
 {% hint style="info" %}
-To map the joystick input itself, follow [this](../../vehicle-and-ground-station-wiring-and-setup/setting-up-actuators-servos-and-motors-in-px4.md) guide.
+To map the joystick input itself, follow [this](/broken/pages/Z8Ypgb6XoVutwoldE1u9) guide.
 {% endhint %}
 
 {% hint style="success" %}

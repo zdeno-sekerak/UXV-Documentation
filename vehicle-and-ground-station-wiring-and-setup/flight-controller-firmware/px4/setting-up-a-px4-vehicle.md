@@ -47,6 +47,6 @@ It is important to calibrate the sensors in the airframe as some of them will be
 
 <figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption><p>Electronics Inside of the Skywalker X8 Flying Wing</p></figcaption></figure>
 
-Then you can start calibrating the [Servos and the ESC](../../setting-up-actuators-servos-and-motors-in-px4.md).
+Then you can start calibrating the [Servos and the ESC](/broken/pages/Z8Ypgb6XoVutwoldE1u9).
 
 ### 3 Configure the Joysticks

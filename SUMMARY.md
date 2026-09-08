@@ -11,14 +11,13 @@
   * [ArduPilot](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/ardupilot/README.md)
     * [Setting up an ArduPilot Vehicle](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/ardupilot/setting-up-an-ardupilot-vehicle.md)
 * [Physical Wiring of Peripherals](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-peripherals/README.md)
-  * [Sensors](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-peripherals/sensors.md)
+  * [Sensors](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-peripherals/sensors/README.md)
+    * [GPS](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-peripherals/sensors/gps.md)
   * [Servos](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-peripherals/servos.md)
   * [ESC](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-peripherals/esc.md)
   * [Power Modules](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-peripherals/power-modules.md)
 * [Optimizing Antenna Configuration](vehicle-and-ground-station-wiring-and-setup/optimizing-antenna-configuration.md)
 * [Setting up a VESC](vehicle-and-ground-station-wiring-and-setup/setting-up-a-vesc.md)
-* [Physical Wiring of Servos and Motors](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-servos-and-motors.md)
-* [Setting Up Actuators (Servos and Motors) in PX4](vehicle-and-ground-station-wiring-and-setup/setting-up-actuators-servos-and-motors-in-px4.md)
 
 ## Standalone Radio Guides
 
@@ -35,14 +34,14 @@
 
 ## UXV Technologies Product Guides
 
-* [Vehicle Integration Guides](uxv-technologies-product-guides/vehicle-integration-guides/README.md)
-  * [GMB600 Mounting and Wiring Ethernet](uxv-technologies-product-guides/vehicle-integration-guides/gmb600-mounting-and-wiring-ethernet.md)
-* [Swappable Radio Modules](uxv-technologies-product-guides/swappable-radio-modules/README.md)
-  * [SRM Airside ETH Setup](uxv-technologies-product-guides/swappable-radio-modules/srm-airside-eth-setup.md)
-  * [SRM-S-DL+](uxv-technologies-product-guides/swappable-radio-modules/srm-s-dl+.md)
 * [Sensors - Optroxa Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/README.md)
   * [GMB600 Wiring and Setup](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb600-wiring-and-setup.md)
   * [Upgrading an Ethernet Autonomous Vehicle with UXV Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/upgrading-an-ethernet-autonomous-vehicle-with-uxv-gimbal.md)
+* [Swappable Radio Modules](uxv-technologies-product-guides/swappable-radio-modules/README.md)
+  * [SRM Airside ETH Setup](uxv-technologies-product-guides/swappable-radio-modules/srm-airside-eth-setup.md)
+  * [SRM-S-DL+](uxv-technologies-product-guides/swappable-radio-modules/srm-s-dl+.md)
+* [Integrating Products into Vehicles](uxv-technologies-product-guides/integrating-products-into-vehicles/README.md)
+  * [GMB600 Mounting and Wiring Ethernet](uxv-technologies-product-guides/integrating-products-into-vehicles/gmb600-mounting-and-wiring-ethernet.md)
 
 ## Explained Concepts
 
