@@ -39,7 +39,7 @@ The UXV Technologies gimbal also has CAN pins exposed to allow the gimbal to con
 
 Below is the wiring diagram of the complete vehicle that UXV Technologies used for testing.
 
-<figure><img src="../../.gitbook/assets/GMB600-Car-Wiring (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Shcematic-Diagram-GMB600-Vehicle (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Stream Data to Custom QGC+
 
