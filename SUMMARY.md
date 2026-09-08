@@ -1,13 +1,20 @@
 # Table of contents
 
+* [Documentation Writing Rules](README.md)
+
 ## Vehicle and Ground Station Wiring and Setup
 
-* [Flight Controller Firmware](README.md)
-  * [Setting up a PX4 Vehicle](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/setting-up-a-px4-vehicle.md)
-  * [Creating a Custom PX4 Build](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/creating-a-custom-px4-build.md)
-  * [Setting up an ArduPilot Vehicle](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/setting-up-an-ardupilot-vehicle.md)
-* [Flight Controller and Peripherals Connection](vehicle-and-ground-station-wiring-and-setup/flight-controller-and-peripherals-connection/README.md)
-  * [Peripherals Wiring](vehicle-and-ground-station-wiring-and-setup/flight-controller-and-peripherals-connection/peripherals-wiring.md)
+* [Flight Controller Firmware](<README (2).md>)
+  * [PX4](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/README.md)
+    * [Setting up a PX4 Vehicle](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/setting-up-a-px4-vehicle.md)
+    * [Creating a Custom PX4 Build](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/creating-a-custom-px4-build.md)
+  * [ArduPilot](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/ardupilot/README.md)
+    * [Setting up an ArduPilot Vehicle](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/ardupilot/setting-up-an-ardupilot-vehicle.md)
+* [Physical Wiring of Peripherals](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-peripherals/README.md)
+  * [Sensors](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-peripherals/sensors.md)
+  * [Servos](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-peripherals/servos.md)
+  * [ESC](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-peripherals/esc.md)
+  * [Power Modules](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-peripherals/power-modules.md)
 * [Optimizing Antenna Configuration](vehicle-and-ground-station-wiring-and-setup/optimizing-antenna-configuration.md)
 * [Setting up a VESC](vehicle-and-ground-station-wiring-and-setup/setting-up-a-vesc.md)
 * [Physical Wiring of Servos and Motors](vehicle-and-ground-station-wiring-and-setup/physical-wiring-of-servos-and-motors.md)

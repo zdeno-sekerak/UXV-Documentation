@@ -1,2 +1,6 @@
-# Flight Controller Firmware
+---
+hidden: true
+---
+
+# Documentation Writing Rules
 
