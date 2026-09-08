@@ -173,11 +173,11 @@ The following is listed in the order of accuracy.&#x20;
 
 {% tabs %}
 {% tab title="CubePilot Power Brick Mini" %}
-<figure><img src="/broken/files/uyVSKsYqekRSIrR6fJgC" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/power-brick-mini-7687278_1200x.jpg" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="CUAV CAN PMU Lite" %}
-<figure><img src="/broken/files/aqPE1qRmKwgitB5czbZ1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/01-1 (1).jpg" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -185,7 +185,7 @@ Most power modules not only send current and voltage information to the Flight C
 
 ### 3.2 Data from DroneCAN ESC
 
-<figure><img src="/broken/files/rlfHwUXV60t3aJmlk4Xy" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vesc_classic_plus.jpg" alt=""><figcaption></figcaption></figure>
 
 ESCs already collect data about the voltage and current, which can be sent to the flight controller over CAN if the ESC enables it. The devices however usually differ in the amount of information the send over to the flight controller.
 
