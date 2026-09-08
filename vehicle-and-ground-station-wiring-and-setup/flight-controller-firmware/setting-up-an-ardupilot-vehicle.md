@@ -26,6 +26,10 @@ This guide uses Ardurover v4.7.1 and Mission Planner v1.3.83&#x20;
 
 * Windows Computer with Mission Planner installed (this guide uses Windows 11)
 
+{% hint style="info" %}
+Even though Ardupilot is also supported on QGroundControl, Mission Planner has been buit specifically for the purpose and will work better.
+{% endhint %}
+
 ## 1. Flash the Flight Controller with Firmware
 
 Start by connecting the Flight Controller to your computer via USB and open Mission Planner.&#x20;
@@ -141,6 +145,10 @@ For the duration of the test, Ardupilot will quietly arm the vehicle and disarm 
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-09-07 174334 (1).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="danger" %}
+Remember to set the ARMING\_CHECK parameter and others you have changed temporarirly to the correct value before continuing with the configuration.
+{% endhint %}
+
 {% hint style="info" %}
 If you get the "Command was denied by the autopilot" error, try to:
 
@@ -201,3 +209,16 @@ Set BATT\_MONITOR = 8 if your DroneCAN devices is broadcasting BatteryInfo Drone
 
 ### 3.3 Data from the Battery
 
+## 4. Callibrate the Sensors
+
+The sensors have to be callibrated to account for specific vehicle characteristics and geographic variables. Without a callibration being performed, an Ardupilot vehicle will refure to arm.
+
+To callibrate them, open Mission Planner and navigate to SETUP - Mandatory Hardware. In the drop-down, you will see all of your sensors listed. Go through the settings one by one and perform the steps to callibrate the sensors.
+
+{% hint style="warning" %}
+For a lot of the sensors, you will be asked to rotate the Flight Controller in various directions. Be prepared to have space around yourself.
+{% endhint %}
+
+It is reccomended to callibrate the sensors after mounting them on the vehicle you plan to use. For example a metal frame or wiring nearby can cause slight disturbances in the magntic field which the callibration will account for.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-09-08 104720.png" alt=""><figcaption></figcaption></figure>
