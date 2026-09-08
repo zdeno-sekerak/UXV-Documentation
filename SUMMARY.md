@@ -48,7 +48,7 @@
   * [GMB600 Wiring and Setup](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb600-wiring-and-setup.md)
   * [Upgrading an Ethernet Autonomous Vehicle with UXV Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/upgrading-an-ethernet-autonomous-vehicle-with-uxv-gimbal.md)
 * [Examples of Integration of Products into Vehicles](uxv-technologies-product-guides/examples-of-integration-of-products-into-vehicles/README.md)
-  * [GMB600 Mounting and Wiring Ethernet](uxv-technologies-product-guides/examples-of-integration-of-products-into-vehicles/gmb600-mounting-and-wiring-ethernet.md)
+  * [Vehicle with GMB600 Controlled through Ethernet](uxv-technologies-product-guides/examples-of-integration-of-products-into-vehicles/vehicle-with-gmb600-controlled-through-ethernet.md)
 
 ## Explained Concepts
 
