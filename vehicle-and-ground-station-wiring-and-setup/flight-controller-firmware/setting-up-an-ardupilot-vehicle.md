@@ -221,4 +221,8 @@ For a lot of the sensors, you will be asked to rotate the Flight Controller in v
 
 It is reccomended to callibrate the sensors after mounting them on the vehicle you plan to use. For example a metal frame or wiring nearby can cause slight disturbances in the magntic field which the callibration will account for.
 
+{% hint style="danger" %}
+If your vehicles has redundant sensors, such as a compass both in the Flight Controller and the GPS, make sure to have them in a fixed position relative to each other durin the callibration procedure.
+{% endhint %}
+
 <figure><img src="../../.gitbook/assets/Screenshot 2026-09-08 104720.png" alt=""><figcaption></figcaption></figure>
