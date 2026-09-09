@@ -45,6 +45,8 @@ Below is the wiring diagram of the complete vehicle that UXV Technologies used f
 
 Finish this section based on information from Andy.
 
+Remember to include the low-latency mode for the gimbal.
+
 ## (3.) Quick-Start Guide
 
 ### Component List:
