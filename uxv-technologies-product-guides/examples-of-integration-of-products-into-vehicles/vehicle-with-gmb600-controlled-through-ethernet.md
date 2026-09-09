@@ -39,7 +39,7 @@ The UXV Technologies gimbal also has CAN pins exposed to allow the gimbal to con
 
 Below is the wiring diagram of the complete vehicle that UXV Technologies used for testing.
 
-<figure><img src="../../.gitbook/assets/Shcematic-Diagram-GMB600-Vehicle (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Shcematic-Diagram-GMB600-Vehicle (3).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Stream Data to Custom QGC+
 
@@ -63,7 +63,7 @@ It is also possible to use a computer with the SRM and a controller connected ex
 
 Then power on the vehicle and wait for all of the components to boot up, which takes about 2 minutes.
 
-### (3.2) Step 3: Connect to the Flight Controller
+### (3.2) Step 2: Connect to the Flight Controller
 
 Launch QGroundControl (gimball support has not been added to Mission Planner yet) and click on "Disconnnected - Click to Manually Connect".
 
@@ -76,3 +76,5 @@ To verify the connection has been established and is working, navigate to Window
 
 There you will see the IP adress of the adapter, which should be on the 10.224.1.1/16 subnet (or the one you set the SRM Airside ETH to assign to DHCP clients). If it is 169.254.1.1/16, is an adress Windows defaults to if it cannot connect to a DHCP server.
 {% endhint %}
+
+The gimbal live view should appear automatically in QGC.

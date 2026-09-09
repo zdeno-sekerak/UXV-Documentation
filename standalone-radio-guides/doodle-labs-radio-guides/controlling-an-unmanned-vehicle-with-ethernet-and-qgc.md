@@ -51,7 +51,7 @@ The reccomended wiring for a GCS however remains a simple DL Radio -> SRM-RJ45 -
 
 Continue by wiring the ethernet connection from the UAV radio to the flight controller as explained in the [guide](physical-connection-without-an-evaluation-board.md). The finished setup will look similar to the example with one servo and one motor.
 
-**2.1 Setting IP Address of the Controller**
+## **2.1 Setting IP Address of the Controller**
 
 Completely disconnect the PX4 vehicle controller from the radios and only use an connection through USB to your computer.
 
@@ -72,11 +72,11 @@ Next, type the command: _netman update_ Be careful not to use the command _netma
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-06-02 170920.png" alt="" width="339"><figcaption></figcaption></figure>
 
-The IPADDR setting changes the IP adress of the Vehicle Controller. UXV is using 10.223.218.99, however you can use any other one as long as it is not the same as any of the radios. If you are using a different one, make sure to note it down as it will be useful later. The **ROUTER** and **DNS** settings state the IP of the UxV radio, so it is going to be different for each setup. **BOOTPROTO** is set to statis, which means the Vehicle Controller will have the IP defined by **IPADDR**.
+The IPADDR setting changes the IP adress of the Vehicle Controller. UXV is using 10.223.218.99, however you can use any other one as long as it is not the same as any of the radios. If you are using a different one, make sure to note it down as it will be useful later. The **ROUTER** and **DNS** settings state the IP of the UxV radio, so it is going to be different for each setup. **BOOTPROTO** is set to static, which means the Vehicle Controller will have the IP defined by **IPADDR**.
 
 The above settings gave the vehicle controller an IP adress on the ethernet network.
 
-**2.2 Configuring the Ethernet port**
+### **2.2 Configuring the Ethernet port**
 
 To configure the ethernet port on the Vehicle, navigate to QGC Icon -> Vehicle Setup -> Parameters and set the following:
 
@@ -86,7 +86,7 @@ For parameter reference visit this link [https://docs.px4.io/main/en/advanced\_c
 
 This will set the framework for how the communication on the port works.
 
-**2.3 Configuring QGroundControl**
+### **2.3 Configuring QGroundControl**
 
 
 
