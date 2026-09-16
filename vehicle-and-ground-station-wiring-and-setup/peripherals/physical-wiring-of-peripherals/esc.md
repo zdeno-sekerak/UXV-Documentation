@@ -4,9 +4,11 @@ description: This guide describes the physical connection of ESCs to a flight co
 
 # ESC
 
-## 1. CAN ESC
+## 1. Signal
 
-A CAN ESC can not only control an electric motor, but it can also send health, RPM and battery status messages back to the flight controller while keeping the wiring clean thanks to CAN. These advantages come at a price premium.&#x20;
+### 1. CAN ESC
+
+A CAN ESC can not only control an electric motor, but it can also send health, RPM and battery status messages back to the flight controller while keeping the wiring clean thanks to CAN. These advantages however come at a price premium.&#x20;
 
 {% hint style="info" %}
 Note: This guide uses a VESC Omega controller as an example.
@@ -14,4 +16,6 @@ Note: This guide uses a VESC Omega controller as an example.
 
 Please refer to the diagram above for an example of CAN wiring for an ESC. The ESC is usually powered directly from the battery.
 
-## 2. PWM ESC
+### 2. PWM ESC
+
+An ESC can also be controlled using Pulse Width Modulation. A flight controller will usually have&#x20;
