@@ -14,6 +14,10 @@ description: >-
 Please note that this guide focuses on the Point-to-Point communication, which establishes a direct link between two radios. Types of use-cases can be found [here](https://kb.doodlelabs.com/drone-performance-use-cases).
 {% endhint %}
 
+{% hint style="info" %}
+The Doodle Labs raidos use a patented waveform protocol called Mesh Rider, which is in simple terms a heavily modified Wi-Fi. It is therefore not possible to connect a Doodle Labs radio wirelessly over a long distance (except the Wi-Fi option used for configuration) to a different radio.
+{% endhint %}
+
 ### 1 Preliminary Steps
 
 Start by powering both of the radios on (for example by connecting both of the cables to a power supply and setting the current limit higher). Connect at least one of the radios to a computer through an ethernet cable, ideally both at the same time for quicker debugging.
