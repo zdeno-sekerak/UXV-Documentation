@@ -19,16 +19,6 @@
     * [Connecting ArduPilot to Ethernet](unmanned-vehicle-setup/vehicle-controller-firmware/ardupilot/connecting-ardupilot-to-ethernet.md)
     * [Frame-Specific Guides](unmanned-vehicle-setup/vehicle-controller-firmware/ardupilot/frame-specific-guides.md)
     * [Flying an Ardupilot Vehicle](unmanned-vehicle-setup/vehicle-controller-firmware/ardupilot/flying-an-ardupilot-vehicle.md)
-* [Peripherals](unmanned-vehicle-setup/peripherals/README.md)
-  * [Physical Wiring of Peripherals](unmanned-vehicle-setup/peripherals/physical-wiring-of-peripherals/README.md)
-    * [Sensors](unmanned-vehicle-setup/peripherals/physical-wiring-of-peripherals/sensors/README.md)
-      * [GPS](unmanned-vehicle-setup/peripherals/physical-wiring-of-peripherals/sensors/gps.md)
-    * [Servos](unmanned-vehicle-setup/peripherals/physical-wiring-of-peripherals/servos.md)
-    * [ESC](unmanned-vehicle-setup/peripherals/physical-wiring-of-peripherals/esc.md)
-    * [Power Modules](unmanned-vehicle-setup/peripherals/physical-wiring-of-peripherals/power-modules.md)
-  * [Peripherals Firmware Setup](unmanned-vehicle-setup/peripherals/peripherals-firmware-setup/README.md)
-    * [VESC Projec](unmanned-vehicle-setup/peripherals/peripherals-firmware-setup/vesc-projec/README.md)
-      * [Setting up a VESC](unmanned-vehicle-setup/peripherals/peripherals-firmware-setup/vesc-projec/setting-up-a-vesc.md)
 * [Optimizing Antenna Configuration](unmanned-vehicle-setup/optimizing-antenna-configuration.md)
 
 ## Standalone Radio Guides
@@ -48,23 +38,27 @@
 
 * [Overview of UXV Technologies Products](uxv-technologies-product-guides/overview-of-uxv-technologies-products.md)
 * [Soldier Borne](uxv-technologies-product-guides/soldier-borne.md)
-* [Radios](uxv-technologies-product-guides/radios/README.md)
-  * [SRM Airside ETH Setup](uxv-technologies-product-guides/radios/srm-airside-eth-setup.md)
-  * [SRM-S-DL+](uxv-technologies-product-guides/radios/srm-s-dl+.md)
+* [Ground Control Stations (GCS)](uxv-technologies-product-guides/ground-control-stations-gcs.md)
+* [Swappable Radio Modules (SRM)](uxv-technologies-product-guides/swappable-radio-modules-srm/README.md)
+  * [SRM Airside ETH Setup](uxv-technologies-product-guides/swappable-radio-modules-srm/srm-airside-eth-setup.md)
+  * [SRM-S-DL+](uxv-technologies-product-guides/swappable-radio-modules-srm/srm-s-dl+.md)
 * [Sensors - Optroxa Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/README.md)
   * [GMB600 Wiring and Setup](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb600-wiring-and-setup.md)
   * [Upgrading an Ethernet Autonomous Vehicle with UXV Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/upgrading-an-ethernet-autonomous-vehicle-with-uxv-gimbal.md)
-* [Examples of Integration of Products into Vehicles](uxv-technologies-product-guides/examples-of-integration-of-products-into-vehicles/README.md)
-  * [Vehicle with GMB550 Controlled through Ethernet](uxv-technologies-product-guides/examples-of-integration-of-products-into-vehicles/vehicle-with-gmb550-controlled-through-ethernet.md)
+* [Examples of Integration of Products into Vehicles](uxv-technologies-product-guides/examples-of-integration-of-products-into-vehicles.md)
 
-## Explained Concepts
+## Vehicle Build Guides
 
-* [Foundational AC Motor Concepts](<README (1).md>)
-* [Foundational Electronics Concepts](explained-concepts/foundational-electronics-concepts.md)
-* [Electronics Communication Basic Concepts](explained-concepts/electronics-communication-basic-concepts.md)
-* [Foundational Antenna Concepts](explained-concepts/readme.md)
-* [Basic Autonomy Using ROS2](explained-concepts/basic-autonomy-using-ros2.md)
-* [Networking Concepts](explained-concepts/networking-concepts.md)
+* [Vehicle with GMB550 Controlled through Ethernet](vehicle-build-guides/vehicle-with-gmb550-controlled-through-ethernet.md)
+
+## Foundational Concepts
+
+* [Foundational AC Motor Concepts](foundational-concepts/foundational-ac-motor-concepts.md)
+* [Foundational Electronics Concepts](foundational-concepts/foundational-electronics-concepts.md)
+* [Electronics Communication Basic Concepts](foundational-concepts/electronics-communication-basic-concepts.md)
+* [Foundational Antenna Concepts](foundational-concepts/readme.md)
+* [Basic Autonomy Using ROS2](foundational-concepts/basic-autonomy-using-ros2.md)
+* [Networking Concepts](foundational-concepts/networking-concepts.md)
 
 ## FAQ
 

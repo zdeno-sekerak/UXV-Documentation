@@ -1,2 +1,0 @@
-# Peripherals Firmware Setup
-

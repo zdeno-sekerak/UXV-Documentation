@@ -21,7 +21,7 @@ The mounting requirements will depend on the mounting location
 
 ### 1 Ground Control Station (GCS)
 
-The GCS antenna is usually not limited by space and remains stationary. Therefore the usual antenna used is a directional one, if the unmanned vehicle moves in a single direction. It is also mounted on a tripod due to the [Fresnel Zone](../explained-concepts/#fresnel-zone) clearance.
+The GCS antenna is usually not limited by space and remains stationary. Therefore the usual antenna used is a directional one, if the unmanned vehicle moves in a single direction. It is also mounted on a tripod due to the [Fresnel Zone](../foundational-concepts/#fresnel-zone) clearance.
 
 {% hint style="info" %}
 This is the ideal mounting case, operational requirements may demand a less optimal mounting position, which will however result in a weaker link.
@@ -44,5 +44,5 @@ Essentially the conclusion is to keep the antenna radiation pattern peaks pointe
 {% endhint %}
 
 {% hint style="danger" %}
-Be careful about [SMA and RP-SMA](../explained-concepts/#sma-and-rp-sma) antenna types.
+Be careful about [SMA and RP-SMA](../foundational-concepts/#sma-and-rp-sma) antenna types.
 {% endhint %}
