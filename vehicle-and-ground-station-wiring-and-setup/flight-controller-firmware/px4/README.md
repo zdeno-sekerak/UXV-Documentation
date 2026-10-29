@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # PX4
 
 {% content-ref url="setting-up-a-px4-vehicle.md" %}
