@@ -10,7 +10,7 @@
 
 </details>
 
-### [Ground Control Stations (GCS)](ground-control-stations-gcs.md)
+### [Ground Control Stations (GCS)](ground-control-stations-gcs/)
 
 {% columns %}
 {% column %}

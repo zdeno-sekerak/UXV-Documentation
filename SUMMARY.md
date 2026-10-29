@@ -36,7 +36,8 @@
 
 * [Overview of UXV Technologies Products](uxv-technologies-product-guides/overview-of-uxv-technologies-products.md)
 * [Soldier Borne](uxv-technologies-product-guides/soldier-borne.md)
-* [Ground Control Stations (GCS)](uxv-technologies-product-guides/ground-control-stations-gcs.md)
+* [Ground Control Stations (GCS)](uxv-technologies-product-guides/ground-control-stations-gcs/README.md)
+  * [UXV Technologies SRoC 7" Windows](uxv-technologies-product-guides/ground-control-stations-gcs/uxv-technologies-sroc-7-windows.md)
 * [Swappable Radio Modules (SRM)](uxv-technologies-product-guides/swappable-radio-modules-srm/README.md)
   * [SRM Airside ETH Setup](uxv-technologies-product-guides/swappable-radio-modules-srm/srm-airside-eth-setup.md)
   * [SRM-S-DL+](uxv-technologies-product-guides/swappable-radio-modules-srm/srm-s-dl+.md)
