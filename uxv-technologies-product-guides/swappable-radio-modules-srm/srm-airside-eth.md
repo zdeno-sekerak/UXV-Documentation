@@ -27,6 +27,8 @@ The SRM Airside is a [Linux](https://en.wikipedia.org/wiki/Linux) computer runni
 
 <figure><img src="../../.gitbook/assets/image__5_-removebg-preview.png" alt=""><figcaption></figcaption></figure>
 
+## Hardware Overview
+
 It has the following physical ports exposed:
 
 * 2x Ethernet on the ODU G81 - 8 pin
