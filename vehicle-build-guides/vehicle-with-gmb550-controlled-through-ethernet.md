@@ -20,8 +20,8 @@ This guide explains the process of integrating a the Optroxa GMB600 into an unma
 Prerequisites:
 
 1. Flight Controller with [PX4](../unmanned-vehicle-setup/vehicle-controller-firmware/px4/setting-up-a-px4-vehicle.md) or [ArduPilot](../unmanned-vehicle-setup/vehicle-controller-firmware/ardupilot/setting-up-an-ardupilot-vehicle.md) set-up
-2. Other vehicle peripherals connected based on [this guide](https://app.gitbook.com/s/KjNFVuuNpc9Zwv7CH0ci/unmanned-vehicle-setup/peripherals/physical-wiring-of-peripherals)
-3. SRM Airside ETH is set up according to [this guide](../uxv-technologies-product-guides/swappable-radio-modules-srm/srm-airside-eth-setup.md).
+2. Other vehicle peripherals connected based on [this guide](/broken/pages/XI2Y69BiFHPV3YnkQKrh)
+3. SRM Airside ETH is set up according to [this guide](../uxv-technologies-product-guides/swappable-radio-modules-srm/srm-airside-eth.md).
 {% endhint %}
 
 ### 1. Explaining the architecture

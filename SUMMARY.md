@@ -39,10 +39,10 @@
 * [Ground Control Stations (GCS)](uxv-technologies-product-guides/ground-control-stations-gcs/README.md)
   * [UXV Technologies SRoC 7" Windows](uxv-technologies-product-guides/ground-control-stations-gcs/uxv-technologies-sroc-7-windows.md)
 * [Swappable Radio Modules (SRM)](uxv-technologies-product-guides/swappable-radio-modules-srm/README.md)
-  * [SRM Airside ETH Setup](uxv-technologies-product-guides/swappable-radio-modules-srm/srm-airside-eth-setup.md)
+  * [SRM Airside ETH ](uxv-technologies-product-guides/swappable-radio-modules-srm/srm-airside-eth.md)
   * [SRM-S-DL+](uxv-technologies-product-guides/swappable-radio-modules-srm/srm-s-dl+.md)
 * [Sensors - Optroxa Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/README.md)
-  * [GMB600 Wiring and Setup](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb600-wiring-and-setup.md)
+  * [GMB550 Wiring and Setup](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb550-wiring-and-setup.md)
   * [Upgrading an Ethernet Autonomous Vehicle with UXV Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/upgrading-an-ethernet-autonomous-vehicle-with-uxv-gimbal.md)
 
 ## Vehicle Build Guides

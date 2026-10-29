@@ -1,43 +1,67 @@
 ---
-description: >-
-  This guide explains how to integrate the SRM Airside ETH into your UxV
-  (Unmanned Vehicle).
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
 ---
 
-# SRM Airside ETH Setup
+# SRM Airside ETH&#x20;
+
+The SRM Airside is a [Linux](https://en.wikipedia.org/wiki/Linux) computer running [OpenWRT](https://en.wikipedia.org/wiki/OpenWrt). It can be used as a [network switch](https://en.wikipedia.org/wiki/Network_switch) for an [SRM Radio](./) and other [ethernet](https://en.wikipedia.org/wiki/Ethernet) connections, such as a [Camera Gimbal](../sensors-optroxa-gimbal/), or a Flight Controller.
 
 <figure><img src="../../.gitbook/assets/image__5_-removebg-preview.png" alt=""><figcaption></figcaption></figure>
 
-## Part list:
-
-* SRM Airside ETH
-* 2x SRM Radio (This guide uses SRM-S-DL+)
-* 1x ODU S11YAR 8 Pin to 4-pin JST-GH1.25 with ETH pinout
-* 1x ODU S11YAR 8 Pin to whatever the GMB600 connector is
-* 1x ODU S10YAR 10 Pin to XT60 (or other power connector)
-* 1x UXV SRoC
-
-Optional Components/Tools:
-
-* SRM Dock with Xt30 and USB-A - Used for configuration/debugging of the SRM
-
-### 1. What is the SRM Airside ETH
-
-The SRM Airside is a linux computer running OpenWRT, which is a linux-based operating system built for routers and other embedded network devices. This way it can act as a switch for the radio and other ethernet connections.
-
-It has the following physical ports:
+It has the following physical ports exposed:
 
 * 2x Ethernet on the ODU G81 - 8 pin
 * 1x Ethernet in the SRM slot
 * 1x Power and UART on the ODU G80 - 10 pin
 
+{% columns %}
+{% column width="58.333333333333336%" %}
+<figure><img src="../../.gitbook/assets/uxv_technologies_airside_eth (3).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column width="41.666666666666664%" %}
+<figure><img src="../../.gitbook/assets/srm-airside-eth (2).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
+
+{% hint style="info" %}
 By default, the first ethernet port on the side is set as a configuration port to directly access the SRM Airside ETH. The second ethernet port is set as a passthrough port for the SRM slot.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-25 165559 (1).png" alt=""><figcaption></figcaption></figure>
+{% columns %}
+{% column %}
+<figure><img src="../../.gitbook/assets/uxv_technologies_airside_eth_with_descriptions.png" alt=""><figcaption></figcaption></figure>
 
-### 2. Connecting to the SRM Airside ETH
 
-Locate the ethernet port set up for configuration. Connect a cable from the SRM Airside ETH configuration port (ODU S11YAR 8 Pin) to an ethernet port on your computer. An example of the cable UXV used is pictured below:
+{% endcolumn %}
+
+{% column %}
+
+{% endcolumn %}
+{% endcolumns %}
+
+## Connecting to the SRM Airside ETH
+
+Locate the ethernet, which port set up for configuration (see picture above). Connect a cable from the SRM Airside ETH configuration port (ODU S11YAR 8 Pin) to an ethernet port on your computer. An example of the cable UXV Technologies used ([RJ](https://en.wikipedia.org/wiki/Registered_jack)-45 to ODU S11YAR 8 Pin) is pictured below:
 
 <figure><img src="../../.gitbook/assets/img_1710-removebg-preview (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -47,11 +71,11 @@ Then connect the power cable to the middle connector (ODU S10YAR 10 Pin) and pow
 To prove that the SRM airside is being powered on, put an SRM into the radio slot and observe its power status LED after turning the power switch to ON.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/IMG_1711.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uxv_technologies_srm_airside_and_radio_b_and_w.png" alt=""><figcaption></figcaption></figure>
 
-Make sure that the IP 192.168.1.1 is within the IP range of your network adapter. For information on how to configure it, follow this [guide](../../standalone-radio-guides/doodle-labs-radio-guides/connecting-doodle-labs-to-a-pc-windows.md).
+Make sure that the IP 192.168.1.1 is within the IP range of your network adapter.&#x20;
 
-After about 60 seconds, the SRM Airside ETH is fully booted up and you can connect to it at 192.168.1.1. The easiest way to do it is through a web browser to access the LuCi web interface. The webpage should look something like the following upon loading:
+Wait for about 60 seconds, then the SRM Airside ETH is fully booted up and you can connect to it at 192.168.1.1. The easiest way to do it is through a web browser to access the LuCi web interface. The webpage should look something like the following upon loading:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 093112.png" alt=""><figcaption></figcaption></figure>
 
@@ -63,11 +87,26 @@ If you cannot connect to the SRM Airside ETH, try the following (in order):
 3. Try to ssh into the SRM Airside ETH through the terminal (ssh root@192.168.1.1). If it works but you cannot acces the web GUI, try clearing browsing cache. Certain internet browsers will block a connection after several attempts.
 {% endhint %}
 
-The rest of the guide will focus on configuring the SRM Airside ETH in a specific way to use with a ethernet-enabled flight controller and a UXV Technologies Optroxa Gimbal.
+## Configuration as Ethernet Switch
 
-### 3. Settings Rationale
+The rest of the guide will focus on configuring the SRM Airside ETH in a specific way to be used as an ethernet switch. For examplee with an ethernet-enabled flight controller and a UXV Technologies Optroxa Gimbal.
 
-The settings described in step 4. will set the device as a multi-homed router. The following is the reasoning behind it.
+### Part list:
+
+* SRM Airside ETH
+* 2x [SRM](./) Radio (This guide uses [SRM-S-DL+](srm-s-dl+.md))
+* 1x ODU S11YAR 8 Pin to 4-pin JST-GH1.25 with ETH pinout cable
+* 1x ODU S11YAR 8 Pin to whatever the GMB550 connector is
+* 1x ODU S10YAR 10 Pin to Power Connector (for example XT60)
+* 1x [UXV Technologies SROC 7" Windows](../ground-control-stations-gcs/uxv-technologies-sroc-7-windows.md)
+
+Optional Components/Tools:
+
+* SRM Dock with Xt30 and USB-A - Used for configuration/debugging of the SRM
+
+### Settings Rationale
+
+The settings described in the [following step](srm-airside-eth.md#id-4.-configuring-srm-airside-eth-network-interfaces). will set the device as a multi-homed router. The following is the reasoning behind it.
 
 {% hint style="info" %}
 A multi-homed router is a router equipped with multiple network interfaces, each of them connected to a different network or a subnet. This allows it to relay traffic between those separate networks, meaning only the target device gets the information without the whole network being flooded by it.
@@ -85,7 +124,7 @@ The following setup also divides the network into several segments. This way the
 The current setup does not consider security as the firewall is set to forward all. If you wish to add security, it is reccomended to configure the firewall settings first.
 {% endhint %}
 
-### 4. Configuring SRM Airside ETH network interfaces
+### Configuring SRM Airside ETH network interfaces
 
 To implement the settings, log into the web interface and navigate to Network - Interfaces.
 
@@ -173,7 +212,7 @@ If you wish to allocate the IP addresses of connected devices based on numerical
 The alias port (interface 4) was added to alias the IP of the radios on the IP 10.223.0.0/16 to the 10.224.30.1 port. This way the radios get assigned an IP on 10.224.x.x and will keep the 10.223.x.x instead of having both of the IPs overlapping. IP aliasing lets a single physical network interface respond to multiple IP addresses simultaneously, which means that devices on the other side of the radio link and the radios themselves also get assigned IPs on 10.224.30.x.&#x20;
 {% endhint %}
 
-### 5. Configuring SRM Airside ETH network devices
+### Configuring SRM Airside ETH network devices
 
 {% hint style="info" %}
 A network device in OpenWRT is the underlying physical or virtual networking hardware where hardware-specific properties like MAC address are set up.
@@ -183,7 +222,7 @@ To change Network Devices settings, navigate to Network - Interfaces - Devices.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 123733.png" alt=""><figcaption></figcaption></figure>
 
-### 6. Configuring SRM Airside ETH Firewall
+### Configuring SRM Airside ETH Firewall
 
 To configure the firewall settings, navigate to Network - Firewall.&#x20;
 
@@ -197,7 +236,7 @@ Ensure Input, Output and Forward are all set to accept and verify that all of th
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 124536.png" alt=""><figcaption></figcaption></figure>
 
-### 7. Saving the settings
+### Saving the settings
 
 When you save and apply the settings, you will lose connection to the SRM Airside ETH because its IP adress will change from 192.168.1.1. to 10.224.10/20/30.1 (depending on which port you have the computer connected to.&#x20;
 
