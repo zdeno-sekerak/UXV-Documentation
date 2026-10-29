@@ -10,3 +10,5 @@ hidden: true
   * Part list
   * Content
   * Expected outcome
+
+<figure><img src=".gitbook/assets/UXX_Technologies_Documentation_Structure.png" alt=""><figcaption></figcaption></figure>

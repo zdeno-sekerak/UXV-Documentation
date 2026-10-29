@@ -1,4 +1,4 @@
-# Vehicle with GMB600 Controlled through Ethernet
+# Vehicle with GMB550 Controlled through Ethernet
 
 {% hint style="info" %}
 This guide explains the process of integrating a the Optroxa GMB600 into an unmanned vehicle with other UXV Technologies products using the ethernet connection.
@@ -19,8 +19,8 @@ This guide explains the process of integrating a the Optroxa GMB600 into an unma
 {% hint style="info" %}
 Prerequisites:
 
-1. Flight Controller with [PX4](../../vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/setting-up-a-px4-vehicle.md) or [ArduPilot](../../vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/ardupilot/setting-up-an-ardupilot-vehicle.md) set-up
-2. Other vehicle peripherals connected based on [this guide](../../vehicle-and-ground-station-wiring-and-setup/peripherals/physical-wiring-of-peripherals/)
+1. Flight Controller with [PX4](../../unmanned-vehicle-setup/vehicle-controller-firmware/px4/setting-up-a-px4-vehicle.md) or [ArduPilot](../../unmanned-vehicle-setup/vehicle-controller-firmware/ardupilot/setting-up-an-ardupilot-vehicle.md) set-up
+2. Other vehicle peripherals connected based on [this guide](../../unmanned-vehicle-setup/peripherals/physical-wiring-of-peripherals/)
 3. SRM Airside ETH is set up according to [this guide](../radios/srm-airside-eth-setup.md).
 {% endhint %}
 
