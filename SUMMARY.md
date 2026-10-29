@@ -1,10 +1,8 @@
 # Table of contents
 
-* [Documentation Writing Rules](README.md)
-
 ## Introduction
 
-* [UXV Technologies](introduction/uxv-technologies.md)
+* [UXV Technologies](README.md)
 
 ## Unmanned Vehicle Setup
 
@@ -58,6 +56,10 @@
 * [Foundational Antenna Concepts](foundational-concepts/readme.md)
 * [Basic Autonomy Using ROS2](foundational-concepts/basic-autonomy-using-ros2.md)
 * [Networking Concepts](foundational-concepts/networking-concepts.md)
+
+***
+
+* [Documentation Writing Rules](<README (1).md>)
 
 ## FAQ
 

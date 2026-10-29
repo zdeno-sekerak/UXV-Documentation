@@ -52,6 +52,6 @@
 {% endcolumn %}
 
 {% column %}
-More coming soon...
+
 {% endcolumn %}
 {% endcolumns %}
