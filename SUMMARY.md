@@ -9,12 +9,6 @@
     * [Setting up a PX4 Vehicle](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/setting-up-a-px4-vehicle.md)
     * [Ethernet Setup for PX4](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/ethernet-setup-for-px4.md)
     * [Creating a Custom PX4 Build](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/creating-a-custom-px4-build.md)
-    * [Frame-Specific Guides](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/frame-specific-guides/README.md)
-      * [Fixed-Wing](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/frame-specific-guides/fixed-wing.md)
-      * [VTOL](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/frame-specific-guides/vtol.md)
-    * [Flying a PX4 Vehicle](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/flying-a-px4-vehicle/README.md)
-      * [Autotune](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/flying-a-px4-vehicle/autotune.md)
-    * [Autonomous Navigation with PX4](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/px4/autonomous-navigation-with-px4.md)
   * [ArduPilot](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/ardupilot/README.md)
     * [Setting up an ArduPilot Vehicle](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/ardupilot/setting-up-an-ardupilot-vehicle.md)
     * [Ethernet Setup for Ardupilot](vehicle-and-ground-station-wiring-and-setup/flight-controller-firmware/ardupilot/ethernet-setup-for-ardupilot.md)
@@ -57,7 +51,7 @@
   * [GMB600 Wiring and Setup](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb600-wiring-and-setup.md)
   * [Upgrading an Ethernet Autonomous Vehicle with UXV Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/upgrading-an-ethernet-autonomous-vehicle-with-uxv-gimbal.md)
 * [Examples of Integration of Products into Vehicles](uxv-technologies-product-guides/examples-of-integration-of-products-into-vehicles/README.md)
-  * [Vehicle with GMB600 Controlled through Ethernet](uxv-technologies-product-guides/examples-of-integration-of-products-into-vehicles/vehicle-with-gmb600-controlled-through-ethernet.md)
+  * [Vehicle with GMB550 Controlled through Ethernet](uxv-technologies-product-guides/examples-of-integration-of-products-into-vehicles/vehicle-with-gmb550-controlled-through-ethernet.md)
 
 ## Explained Concepts
 

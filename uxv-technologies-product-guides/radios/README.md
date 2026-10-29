@@ -1,9 +1,3 @@
----
-description: >-
-  These guides explain how to work with UXV technologies radios and their
-  accessories.
----
-
 # Radios
 
 {% content-ref url="srm-s-dl+.md" %}

@@ -15,7 +15,7 @@ Please note that this guide focuses on the Point-to-Point communication, which e
 {% endhint %}
 
 {% hint style="info" %}
-The Doodle Labs raidos use a patented waveform protocol called Mesh Rider, which is in simple terms a heavily modified Wi-Fi. It is therefore not possible to connect a Doodle Labs radio wirelessly over a long distance (except the Wi-Fi option used for configuration) to a different radio.
+Doodle Labs radios use a patented waveform protocol called Mesh Rider, which, in simple terms, is heavily modified Wi-Fi. Therefore, it is not possible to connect a Doodle Labs radio wirelessly over long distances to a non-Doodle Labs radio (except when using the short-range Wi-Fi option for configuration).
 {% endhint %}
 
 ### 1 Preliminary Steps
