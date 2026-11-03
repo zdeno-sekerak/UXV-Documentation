@@ -2,21 +2,9 @@
 
 The [SRM interface](srm-interface.md) enables the Ground Control Stations (GCS) to easily swap out radios without changing the GCS itself.
 
-{% columns %}
-{% column width="41.66666666666667%" %}
-<figure><img src="../../.gitbook/assets/uxv_technologies_srm_s_mh_+.png" alt=""><figcaption><p>UXV Technologies SRM-S-MH+</p></figcaption></figure>
-
-
-{% endcolumn %}
-
-{% column width="58.33333333333333%" %}
-<figure><img src="../../.gitbook/assets/uxv_technologies_airside_eth.png" alt=""><figcaption><p>UXV Technologies SRM Airside ETH</p></figcaption></figure>
-
-
-{% endcolumn %}
-{% endcolumns %}
-
 ## UXV Technologies SRM Radios
+
+<div align="left"><figure><img src="../../.gitbook/assets/image (34).png" alt="" width="188"><figcaption><p>UXV Technologies SRM-S-MH+</p></figcaption></figure></div>
 
 The SRM Radios integrate radios from various vendors into a ruggedized package with an SRM Interface.
 
@@ -43,6 +31,8 @@ All of the radios follow the same naming convention:
 * \+ at the end of the name indicates the possibility of powering the small (S) radios from an external twist-on battery.
 
 ## UXV Technologies SRM Airside Modules
+
+<div align="left"><figure><img src="../../.gitbook/assets/image (36).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 These modules are used to make a drone or vehicle SRM compatible. It allows powering and communication with the radio through the ruggedized connections at the bottom.
 
