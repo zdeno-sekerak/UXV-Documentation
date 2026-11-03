@@ -1,7 +1,9 @@
 # Vehicle with GMB550 Controlled through Ethernet
 
+<figure><img src="../.gitbook/assets/rc-car-bgw-gemini.jpg" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
-This guide explains the process of integrating a the Optroxa GMB600 into an unmanned vehicle with other UXV Technologies products using the ethernet connection.
+This guide explains the process of integrating a the Optroxa GMB550 into an unmanned vehicle with other UXV Technologies products using the ethernet connection.
 {% endhint %}
 
 ### Part List:

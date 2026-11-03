@@ -104,11 +104,11 @@ The rest of the guide will focus on configuring the SRM Airside ETH in a specifi
 
 Optional Components/Tools:
 
-* SRM Dock with Xt30 and USB-A - Used for configuration/debugging of the SRM
+* SRM Dock with XT30 and USB-A - Used for configuration/debugging of the SRM
 
 ### Settings Rationale
 
-The settings described in the [following step](srm-airside-eth.md#id-4.-configuring-srm-airside-eth-network-interfaces). will set the device as a multi-homed router. The following is the reasoning behind it.
+The settings described in the [following step](srm-airside-eth.md#id-4.-configuring-srm-airside-eth-network-interfaces) will set the device as a multi-homed router. The following is the reasoning behind it.
 
 {% hint style="info" %}
 A multi-homed router is a router equipped with multiple network interfaces, each of them connected to a different network or a subnet. This allows it to relay traffic between those separate networks, meaning only the target device gets the information without the whole network being flooded by it.

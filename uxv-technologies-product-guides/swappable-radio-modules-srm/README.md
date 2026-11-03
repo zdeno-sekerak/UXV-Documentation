@@ -1,6 +1,6 @@
 # Swappable Radio Modules (SRM)
 
-The SRM (Swappable Radio Module) radios are a U.S. government standard for defense robotics. It is an interface standard used by UXV Technologies on [GCS](../ground-control-stations-gcs/) and [Radios](./), which allows the user to easily swap out forms of communication.
+The [SRM interface](srm-interface.md) enables the Ground Control Stations (GCS) to easily swap out radios without changing the GCS itself.
 
 {% columns %}
 {% column width="41.66666666666667%" %}
@@ -16,14 +16,15 @@ The SRM (Swappable Radio Module) radios are a U.S. government standard for defen
 {% endcolumn %}
 {% endcolumns %}
 
-UXV Technologies SRM Radios:
+## UXV Technologies SRM Radios
 
-* [SRM-S-DL+](srm-s-dl+.md)
-* Visit the UXV Technologies [website](https://www.uxvtechnologies.com/) for more...
+The SRM Radios integrate radios from various vendors into a ruggedized package with an SRM Interface.
 
-UXV Technologies SRM Airside Modules:
+Since the radios are not made by UXV itself, the setup is not limited to UXV Technologies products. For example an SRM-S-DL+ (Doodle Labs integrated) is able to connect to any other compatible Doodle Labs radio.
 
-* [SRM Airside ETH](srm-airside-eth.md)
+### Examples of radios and vendors:
+
+* Doodle Labs - [SRM-S-DL+](srm-s-dl+.md)
 * Visit the UXV Technologies [website](https://www.uxvtechnologies.com/) for more...
 
 ### Naming Convention
@@ -40,3 +41,12 @@ All of the radios follow the same naming convention:
   * RKM - Rajant Corporation
   * ST - Silvus Technologies
 * \+ at the end of the name indicates the possibility of powering the small (S) radios from an external twist-on battery.
+
+## UXV Technologies SRM Airside Modules
+
+These modules are used to make a drone or vehicle SRM compatible. It allows powering and communication with the radio through the ruggedized connections at the bottom.
+
+* [SRM Airside ETH](srm-airside-eth.md) - Exposes one power and two ethernet ports. Can be configured as an ethernet switch.
+* Visit the UXV Technologies [website](https://www.uxvtechnologies.com/) for more...
+
+###

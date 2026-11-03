@@ -2,6 +2,7 @@
 description: >-
   This guide is an introduction to the ruggedized swappable radio module (SRM)
   with an integrated Doodle Labs radio.
+hidden: true
 ---
 
 # SRM-S-DL+
