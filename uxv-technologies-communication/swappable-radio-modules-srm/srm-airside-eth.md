@@ -23,7 +23,7 @@ layout:
 
 # SRM Airside ETH&#x20;
 
-The SRM Airside is a [Linux](https://en.wikipedia.org/wiki/Linux) computer running [OpenWRT](https://en.wikipedia.org/wiki/OpenWrt). It can be used as a [network switch](https://en.wikipedia.org/wiki/Network_switch) for an [SRM Radio](./) and other [ethernet](https://en.wikipedia.org/wiki/Ethernet) connections, such as a [Camera Gimbal](../sensors-optroxa-gimbal/), or a Flight Controller.
+The SRM Airside is a [Linux](https://en.wikipedia.org/wiki/Linux) computer running [OpenWRT](https://en.wikipedia.org/wiki/OpenWrt). It can be used as a [network switch](https://en.wikipedia.org/wiki/Network_switch) for an [SRM Radio](./) and other [ethernet](https://en.wikipedia.org/wiki/Ethernet) connections, such as a [Camera Gimbal](../../uxv-technologies-sensors/sensors-optroxa-gimbal/), or a Flight Controller.
 
 <figure><img src="../../.gitbook/assets/image__5_-removebg-preview.png" alt=""><figcaption></figcaption></figure>
 
@@ -100,7 +100,7 @@ The rest of the guide will focus on configuring the SRM Airside ETH in a specifi
 * 1x ODU S11YAR 8 Pin to 4-pin JST-GH1.25 with ETH pinout cable
 * 1x ODU S11YAR 8 Pin to whatever the GMB550 connector is
 * 1x ODU S10YAR 10 Pin to Power Connector (for example XT60)
-* 1x [UXV Technologies SROC 7" Windows](../ground-control-stations-gcs/uxv-technologies-sroc-7-windows.md)
+* 1x [UXV Technologies SROC 7" Windows](../../uxv-technologies-ground-control-stations/ground-control-stations-gcs/uxv-technologies-sroc-7-windows.md)
 
 Optional Components/Tools:
 
