@@ -31,17 +31,17 @@ Alternatively, if you are still in the testing phase, you can use an evaluation 
 
 An example of such a connection is shown below:
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-06-02 131225.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-02 131225.png" alt=""><figcaption></figcaption></figure>
 
 Several alternatives are also shown below with the UXV Micronav Dev Kit, which has a port to connect a doodle labs radio directly. In the second picture, UXV used a simple ETH to USB-A adapter to substitute for the RJ-45 adapter. The point of this step is to have a working connection between the controller and the radio.
 
 {% columns %}
 {% column valign="middle" %}
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-06-02 131032.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-02 131032.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column valign="middle" %}
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-06-02 131008.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-02 131008.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -70,7 +70,7 @@ echo DNS=10.223.218.204 > /fs/microsd/net.cfg
 
 Next, type the command: _netman update_ Be careful not to use the command _netman save_ as it will load the previous configuration from the volatile memory and override the one you had just set up.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-06-02 170920.png" alt="" width="339"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-02 170920.png" alt="" width="339"><figcaption></figcaption></figure>
 
 The IPADDR setting changes the IP adress of the Vehicle Controller. UXV is using 10.223.218.99, however you can use any other one as long as it is not the same as any of the radios. If you are using a different one, make sure to note it down as it will be useful later. The **ROUTER** and **DNS** settings state the IP of the UxV radio, so it is going to be different for each setup. **BOOTPROTO** is set to static, which means the Vehicle Controller will have the IP defined by **IPADDR**.
 
@@ -92,7 +92,7 @@ This will set the framework for how the communication on the port works.
 
 After setting up everything
 
-<figure><img src="../../../.gitbook/assets/ETH-RC-Car-Connection (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ETH-RC-Car-Connection (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1.2.1 Explaining the Connections
 
@@ -177,23 +177,23 @@ UXV Controller -> GCS Radio -> UAV Radio -> Vehicle Controller
 
 In QGroundControl Click on 'Disconnected - Click to manually connect' in the top left corner.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-06-03 140042.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-03 140042.png" alt="" width="375"><figcaption></figcaption></figure>
 
 Proceed by clicking on the little arrow in the top right corner of the pop-up.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-06-03 140623.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-03 140623.png" alt="" width="375"><figcaption></figcaption></figure>
 
 Then click on 'configure' communication links.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-06-03 140755.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-03 140755.png" alt="" width="375"><figcaption></figcaption></figure>
 
 And click on 'Add Link.'
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-06-03 140849.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-03 140849.png" alt="" width="375"><figcaption></figcaption></figure>
 
 Then set up according to the following:
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-06-03 140605.png" alt="" width="281"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-03 140605.png" alt="" width="281"><figcaption></figcaption></figure>
 
 By setting the type as UDP, the data transmission will be faster, but there will be less integrity checks in the conection itself. On the other hand, that does not matter much as PX4 does have its own.
 

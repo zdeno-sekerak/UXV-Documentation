@@ -6,7 +6,7 @@ UXV Technologies GCS integrate a (Windows/Linux/Android) computer and a [Joystic
 
 Handheld GCS, as the name suggests, can be easily held in hand and carried around.
 
-<figure><img src="../../.gitbook/assets/uxv_technologies_sroc_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uxv_technologies_sroc_7.png" alt=""><figcaption></figcaption></figure>
 
 Handheld controllers from UXV Technologies
 
@@ -18,7 +18,7 @@ Handheld controllers from UXV Technologies
 
 GCS for Stationary Operations are intended to be used in one place at a time, with the ability to be easily transported.
 
-<figure><img src="../../.gitbook/assets/uxv_technologies_g2_nav.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uxv_technologies_g2_nav.webp" alt=""><figcaption></figcaption></figure>
 
 GCS for Stationary Operations from UXV Technologies:
 

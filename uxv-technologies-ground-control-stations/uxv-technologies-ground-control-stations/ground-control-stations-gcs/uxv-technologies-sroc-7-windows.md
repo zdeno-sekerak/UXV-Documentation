@@ -2,7 +2,7 @@
 
 The UXV Technologies SRoC (Soldier Robotic Controller) 7" Windows is an integrated GCS (Ground Control Station) running _Windows 11_. The unit combines a _Windows_ computer and a gamepad into a single package.
 
-<figure><img src="../../.gitbook/assets/uxv_technologies_sroc_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uxv_technologies_sroc_7.png" alt=""><figcaption></figcaption></figure>
 
 | Specification          | Value                                                                       |
 | ---------------------- | --------------------------------------------------------------------------- |
@@ -21,19 +21,19 @@ The UXV Technologies SRoC (Soldier Robotic Controller) 7" Windows is an integrat
 
 {% tabs %}
 {% tab title="Front" %}
-<figure><img src="../../.gitbook/assets/uxv_technologies_sroc_7in_front_overview.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uxv_technologies_sroc_7in_front_overview.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Back" %}
-<figure><img src="../../.gitbook/assets/uxv_technologies_sroc_7in_back_overview.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uxv_technologies_sroc_7in_back_overview.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Untitled" %}
-<figure><img src="../../.gitbook/assets/uxv_technologies_sroc_7in_top_overview.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uxv_technologies_sroc_7in_top_overview.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Bottom" %}
-<figure><img src="../../.gitbook/assets/uxv_technologies_sroc_7in_bottom_overview.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uxv_technologies_sroc_7in_bottom_overview.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -41,7 +41,7 @@ The UXV Technologies SRoC (Soldier Robotic Controller) 7" Windows is an integrat
 
 The bezel buttons are located on both sides of the display and are used for firmware or SRoC-specific controls.
 
-<figure><img src="../../.gitbook/assets/uxv_technologies_sroc_7_bezel_buttons.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uxv_technologies_sroc_7_bezel_buttons.png" alt=""><figcaption></figcaption></figure>
 
 * **Power on/off** - Turns the controller on or off.
 * **F1/SCREEN/LED BRIGHTNESS UP** - To be implemented.
@@ -66,15 +66,15 @@ To enable joystick/button input, the operator presence buttons on the back must 
 
 The LED battery indicators show the state of charge of the [SBMs](https://www.uxvtechnologies.com/ground-control-stations/sbm-swappable-battery-module) (Swappable Battery Modules).
 
-<figure><img src="../../.gitbook/assets/uxv_technologies_sroc_7_battery_LED.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uxv_technologies_sroc_7_battery_LED.png" alt=""><figcaption></figcaption></figure>
 
 Back view with SRM (Swappable Radio Module) and SBMs (Swappable Battery Modules) connected.
 
-<figure><img src="../../.gitbook/assets/uxv_technologies_sroc_7_in_back_sbm_srm.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uxv_technologies_sroc_7_in_back_sbm_srm.png" alt=""><figcaption></figcaption></figure>
 
 The SBMs can be charged through the Nett Warrior desktop charger, the SBM charger, or the USB-C port connected to the SRoC. The chart below shows the state of charge of the batteries:
 
-<figure><img src="../../.gitbook/assets/sbm_charge_state_chart.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/sbm_charge_state_chart.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The SRM-S versions can be powered using the SBMs and the internal battery. The SRM-L, however, consumes more power and requires an external twist-on battery.

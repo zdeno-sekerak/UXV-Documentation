@@ -6,19 +6,19 @@ An SRM Radio can be inserted directly into a compatible interface, as shown belo
 
 {% columns %}
 {% column valign="middle" %}
-<figure><img src="../../../.gitbook/assets/R2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/R2 (1).png" alt=""><figcaption></figcaption></figure>
 
 
 {% endcolumn %}
 
 {% column width="33.33333333333333%" valign="middle" %}
-<figure><img src="../../../.gitbook/assets/R1 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/R1 (2).png" alt=""><figcaption></figcaption></figure>
 
 
 {% endcolumn %}
 
 {% column width="33.33333333333333%" valign="middle" %}
-<figure><img src="../../../.gitbook/assets/R0.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/R0.png" alt=""><figcaption></figcaption></figure>
 
 
 {% endcolumn %}
@@ -26,4 +26,4 @@ An SRM Radio can be inserted directly into a compatible interface, as shown belo
 
 The interface uses spring-loaded pogo-pin contacts to supply power and provide Ethernet connectivity, with USB communication supported on compatible modules.
 
-<figure><img src="../../../.gitbook/assets/sroc_srm_interface.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/sroc_srm_interface.png" alt=""><figcaption></figcaption></figure>

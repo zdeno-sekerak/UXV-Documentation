@@ -12,7 +12,7 @@ UXV Technologies is a manufacturer of various kinds of technologies and hardware
 
 </details>
 
-### [Ground Control Stations (GCS)](https://app.gitbook.com/s/KjNFVuuNpc9Zwv7CH0ci/uxv-technologies-ground-control-stations)
+### [Ground Control Stations (GCS)](/broken/pages/SFcPeXK0Jg0c3MbLsA5Y)
 
 {% columns %}
 {% column %}
@@ -28,7 +28,7 @@ UXV Technologies is a manufacturer of various kinds of technologies and hardware
 {% endcolumn %}
 {% endcolumns %}
 
-### [Communications Equipment](https://app.gitbook.com/s/KjNFVuuNpc9Zwv7CH0ci/uxv-technologies-communication)
+### [Communications Equipment](/broken/pages/89OXfOaehRlffazMV4QF)
 
 {% columns %}
 {% column width="41.66666666666667%" %}
@@ -44,7 +44,7 @@ UXV Technologies is a manufacturer of various kinds of technologies and hardware
 {% endcolumn %}
 {% endcolumns %}
 
-### [Sensors - Optroxa Gimbal](https://app.gitbook.com/s/KjNFVuuNpc9Zwv7CH0ci/uxv-technologies-sensors)
+### [Sensors - Optroxa Gimbal](/broken/pages/ZDA8JrJIp4SYsEZdobYS)
 
 {% columns %}
 {% column %}
