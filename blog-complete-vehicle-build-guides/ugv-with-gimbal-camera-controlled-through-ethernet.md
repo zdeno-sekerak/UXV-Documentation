@@ -1,4 +1,4 @@
-# Vehicle with GMB550 Controlled through Ethernet
+# UGV with Gimbal Camera Controlled through Ethernet
 
 <figure><img src="../.gitbook/assets/rc-car-bgw-gemini.jpg" alt=""><figcaption></figcaption></figure>
 
@@ -21,7 +21,7 @@ This guide explains the process of integrating a the Optroxa GMB550 into an unma
 {% hint style="info" %}
 Prerequisites:
 
-1. Flight Controller with [PX4](../unmanned-vehicle-setup/vehicle-controller-firmware/px4/setting-up-a-px4-vehicle.md) or [ArduPilot](../unmanned-vehicle-setup/vehicle-controller-firmware/ardupilot/setting-up-an-ardupilot-vehicle.md) set-up
+1. Flight Controller with [PX4](../unmanned-vehicle-software/vehicle-controller-firmware/px4/setting-up-a-px4-vehicle.md) or [ArduPilot](../unmanned-vehicle-software/vehicle-controller-firmware/ardupilot/setting-up-an-ardupilot-vehicle.md) set-up
 2. Other vehicle peripherals connected based on [this guide](/broken/pages/XI2Y69BiFHPV3YnkQKrh)
 3. SRM Airside ETH is set up according to [this guide](../uxv-technologies-product-guides/swappable-radio-modules-srm/srm-airside-eth.md).
 {% endhint %}

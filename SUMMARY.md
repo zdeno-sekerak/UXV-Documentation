@@ -1,36 +1,35 @@
 # Table of contents
 
-## Introduction
-
 * [UXV Technologies](README.md)
 
-## Unmanned Vehicle Setup
+## Unmanned Vehicle Software
 
-* [Vehicle Controller Firmware](unmanned-vehicle-setup/vehicle-controller-firmware/README.md)
-  * [PX4](unmanned-vehicle-setup/vehicle-controller-firmware/px4/README.md)
-    * [Setting up a PX4 Vehicle](unmanned-vehicle-setup/vehicle-controller-firmware/px4/setting-up-a-px4-vehicle.md)
-    * [Ethernet Setup for PX4](unmanned-vehicle-setup/vehicle-controller-firmware/px4/ethernet-setup-for-px4.md)
-    * [Creating a Custom PX4 Build](unmanned-vehicle-setup/vehicle-controller-firmware/px4/creating-a-custom-px4-build.md)
-  * [ArduPilot](unmanned-vehicle-setup/vehicle-controller-firmware/ardupilot/README.md)
-    * [Setting up an ArduPilot Vehicle](unmanned-vehicle-setup/vehicle-controller-firmware/ardupilot/setting-up-an-ardupilot-vehicle.md)
-    * [Ethernet Setup for Ardupilot](unmanned-vehicle-setup/vehicle-controller-firmware/ardupilot/ethernet-setup-for-ardupilot.md)
-    * [Connecting ArduPilot to Ethernet](unmanned-vehicle-setup/vehicle-controller-firmware/ardupilot/connecting-ardupilot-to-ethernet.md)
-    * [Frame-Specific Guides](unmanned-vehicle-setup/vehicle-controller-firmware/ardupilot/frame-specific-guides.md)
-    * [Flying an Ardupilot Vehicle](unmanned-vehicle-setup/vehicle-controller-firmware/ardupilot/flying-an-ardupilot-vehicle.md)
-* [Optimizing Antenna Configuration](unmanned-vehicle-setup/optimizing-antenna-configuration.md)
+* [Vehicle Controller Firmware](unmanned-vehicle-software/vehicle-controller-firmware/README.md)
+  * [PX4](unmanned-vehicle-software/vehicle-controller-firmware/px4/README.md)
+    * [Setting up a PX4 Vehicle](unmanned-vehicle-software/vehicle-controller-firmware/px4/setting-up-a-px4-vehicle.md)
+    * [Ethernet Setup for PX4](unmanned-vehicle-software/vehicle-controller-firmware/px4/ethernet-setup-for-px4.md)
+    * [Creating a Custom PX4 Build](unmanned-vehicle-software/vehicle-controller-firmware/px4/creating-a-custom-px4-build.md)
+  * [ArduPilot](unmanned-vehicle-software/vehicle-controller-firmware/ardupilot/README.md)
+    * [Setting up an ArduPilot Vehicle](unmanned-vehicle-software/vehicle-controller-firmware/ardupilot/setting-up-an-ardupilot-vehicle.md)
+    * [Ethernet Setup for Ardupilot](unmanned-vehicle-software/vehicle-controller-firmware/ardupilot/ethernet-setup-for-ardupilot.md)
+    * [Connecting ArduPilot to Ethernet](unmanned-vehicle-software/vehicle-controller-firmware/ardupilot/connecting-ardupilot-to-ethernet.md)
+    * [Frame-Specific Guides](unmanned-vehicle-software/vehicle-controller-firmware/ardupilot/frame-specific-guides.md)
+    * [Flying an Ardupilot Vehicle](unmanned-vehicle-software/vehicle-controller-firmware/ardupilot/flying-an-ardupilot-vehicle.md)
 
-## Standalone Radio Guides
+## Radios
 
-* [Doodle Labs Radio Guides](standalone-radio-guides/doodle-labs-radio-guides/README.md)
-  * [Physical Connection with an Evaluation Board](standalone-radio-guides/doodle-labs-radio-guides/physical-connection-with-an-evaluation-board.md)
-  * [Physical Connection without an Evaluation Board](standalone-radio-guides/doodle-labs-radio-guides/physical-connection-without-an-evaluation-board.md)
-  * [Connecting Doodle Labs to a PC (Windows)](standalone-radio-guides/doodle-labs-radio-guides/connecting-doodle-labs-to-a-pc-windows.md)
-  * [Configuring the DL Radios Connection](standalone-radio-guides/doodle-labs-radio-guides/configuring-the-dl-radios-connection.md)
-  * [Optimizing Doodle Labs Software Settings](standalone-radio-guides/doodle-labs-radio-guides/optimizing-doodle-labs-software-settings.md)
-  * [Wiring for Control of Unmanned Vehicle using SBUS](standalone-radio-guides/doodle-labs-radio-guides/wiring-for-control-of-unmanned-vehicle-using-sbus.md)
-  * [Configuring an Unmanned Vehicle with SBUS](standalone-radio-guides/doodle-labs-radio-guides/controlling-an-unmanned-vehicle-with-sbus.md)
-  * [Troubleshooting SBUS Connection](standalone-radio-guides/doodle-labs-radio-guides/troubleshooting-sbus-connection.md)
-  * [Connecting an Unmanned Vehicle with Ethernet and QGC](standalone-radio-guides/doodle-labs-radio-guides/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
+* [Optimizing Antenna Configuration](radios/optimizing-antenna-configuration.md)
+* [Doodle Labs Radio Guides](radios/doodle-labs-radio-guides/README.md)
+  * [Physical Connection with an Evaluation Board](radios/doodle-labs-radio-guides/physical-connection-with-an-evaluation-board.md)
+  * [Physical Connection without an Evaluation Board](radios/doodle-labs-radio-guides/physical-connection-without-an-evaluation-board.md)
+  * [Connecting Doodle Labs to a PC (Windows)](radios/doodle-labs-radio-guides/connecting-doodle-labs-to-a-pc-windows.md)
+  * [Configuring the DL Radios Connection](radios/doodle-labs-radio-guides/configuring-the-dl-radios-connection.md)
+  * [Optimizing Doodle Labs Software Settings](radios/doodle-labs-radio-guides/optimizing-doodle-labs-software-settings.md)
+  * [Wiring for Control of Unmanned Vehicle using SBUS](radios/doodle-labs-radio-guides/wiring-for-control-of-unmanned-vehicle-using-sbus.md)
+  * [Configuring an Unmanned Vehicle with SBUS](radios/doodle-labs-radio-guides/controlling-an-unmanned-vehicle-with-sbus.md)
+  * [Troubleshooting SBUS Connection](radios/doodle-labs-radio-guides/troubleshooting-sbus-connection.md)
+  * [Connecting an Unmanned Vehicle with Ethernet and QGC](radios/doodle-labs-radio-guides/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
+  * [UXV Technologies](radios/doodle-labs-radio-guides/uxv-technologies.md)
 
 ## UXV Technologies Product Guides
 
@@ -45,10 +44,6 @@
 * [Sensors - Optroxa Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/README.md)
   * [GMB550 Wiring and Setup](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb550-wiring-and-setup.md)
 
-## Vehicle Build Guides
-
-* [Vehicle with GMB550 Controlled through Ethernet](vehicle-build-guides/vehicle-with-gmb550-controlled-through-ethernet.md)
-
 ## Foundational Concepts
 
 * [Foundational AC Motor Concepts](foundational-concepts/foundational-ac-motor-concepts.md)
@@ -58,10 +53,14 @@
 * [Basic Autonomy Using ROS2](foundational-concepts/basic-autonomy-using-ros2.md)
 * [Networking Concepts](foundational-concepts/networking-concepts.md)
 
-***
+## BLOG: Complete Vehicle Build Guides
 
-* [Documentation Writing Rules](<README (1).md>)
+* [UGV with Gimbal Camera Controlled through Ethernet](blog-complete-vehicle-build-guides/ugv-with-gimbal-camera-controlled-through-ethernet.md)
 
 ## FAQ
 
-* [Page 1](faq/page-1.md)
+* [FAQ](faq/page-1.md)
+
+***
+
+* [Documentation Writing Rules](<README (1).md>)
