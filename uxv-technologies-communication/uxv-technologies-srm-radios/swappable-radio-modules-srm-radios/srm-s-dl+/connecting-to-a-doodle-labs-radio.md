@@ -1,60 +1,66 @@
-# Connecting to a Doodle Labs radio
+# Connecting to a Doodle Labs Radio
 
-To connect to a Doodle Labs radio through ethernet using IPv4 from a computer, follow the steps described below.
+This guide describes how to connect a computer to a Doodle Labs radio over Ethernet using IPv4.
 
-The radio runs [Mesh Rider OS](https://doodlelabs.com/technology), Doodle Labs' [OpenWrt](https://en.wikipedia.org/wiki/OpenWrt)-based firmware.
-
-{% hint style="info" %}
-This guide assumes a physical connection is established.
-{% endhint %}
-
-## Radio IP Adress
-
-The default [IPv4 adress](https://en.wikipedia.org/wiki/IP_address) of a Doodle Labs radio is `10.223.1.1/16` on the `225.225.0.0` [subnet](https://en.wikipedia.org/wiki/Subnet#Internet_Protocol_version_4).
+Doodle Labs radios run [Mesh Rider OS](https://doodlelabs.com/technology), an [OpenWrt](https://en.wikipedia.org/wiki/OpenWrt)-based firmware developed by Doodle Labs.
 
 {% hint style="info" %}
-Onder Doodle Labs radios also have a fallback IP `192.168.153.1` , which can be used to connect and change settings on the radio.
+This guide assumes that a physical connection between the computer and the radio has already been established.
 {% endhint %}
 
-In order to connect to a Doodle Labs radio, you have to find its exact IP address. Some of the ways to find the adress if the radio is in default settings are listed below:
+## Radio IP Address
 
-* Device label (newer models): Read the IP address printed directly on the standalone radio label.
-* MAC address calculation: Derive the `10.223.x.y` address from the radio's MAC address, where `x` and `y` are the last two hexadecimal octets converted to decimal.
-* Fallback IP (older models): Connect using the fallback IP `192.168.153.1` and view the assigned address in the settings.
+The default [IPv4 address](https://en.wikipedia.org/wiki/IP_address) of a Doodle Labs radio is `10.223.1.1/16`, with a subnet mask of `225.225.0.0`.
 
-If the radio is in non-default settings, try using the `nmap` scan on a Linux device.
+{% hint style="info" %}
+Older Doodle Labs radios also have a fallback IP address of `192.168.153.1`, which can be used to access the radio and modify its configuration.
+{% endhint %}
 
-Otherwise contact UXV Technologies for SRM-S-DL+ and Doodle Labs for standalone radio, for support
+To connect to the radio, you must first determine its IP address.
+
+For radios using the default configuration, the IP address can be determined using one of the following methods:
+
+* **Device label (newer models):** Read the IP address printed on the standalone radio's label.
+* **MAC address calculation:** Derive the `10.223.x.y` address from the radio's MAC address, where `x` and `y` correspond to the last two hexadecimal octets converted to decimal.
+* **Fallback IP (older models):** Connect to the radio using `192.168.153.1` and check its assigned IP address in the radio settings.
+
+If the radio is not using the default configuration, try using `nmap` on a Linux computer to scan for its IP address.
+
+If you cannot determine the IP address, contact UXV Technologies for support with the SRM-S-DL+ or Doodle Labs for support with standalone radios.
 
 ## Computer Setup
 
 {% hint style="warning" %}
-No single configuration is correct. Some users may require different settings for various use cases. This guide only the setup of a radio with the default IP adress `10.223.1.1/16`.
+The required network configuration depends on the application.
+This guide covers only the configuration of a radio using the default IP address `10.223.1.1/16`.
 {% endhint %}
 
 ### Windows
 
 {% hint style="info" %}
-This setup has been verified to work with Windows 11. Older versions might now work as described.
+This procedure has been verified on Windows 11.
+Older Windows versions may require different steps.
 {% endhint %}
 
-1. Navigate to Windows Network Adapter setting, select Internet Protocol version 4 (IPv4) adapter and open properties.
-2. Select "Use the following IP address:".
-3. Set the IP adress and the subnet mask to your required settings based on your radio configuration.
+1. Open the Windows network adapter settings and select **Internet Protocol Version 4 (TCP/IPv4)** in the adapter properties.
+2. Select **Use the following IP address**.
+3. Configure the IP address and subnet mask according to the radio's network configuration.
 
-Below is an example of the settings for a radio in the default configuration:
+The following example shows the settings for a radio using the default configuration:
 
 <div align="center"><figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FKjNFVuuNpc9Zwv7CH0ci%2Fuploads%2FfD9kqedmdwtBffW091Tc%2Funknown.png?alt=media&#x26;token=442751f3-41dd-453b-95c4-9a5da82c0ce1" alt="" width="563"><figcaption></figcaption></figure></div>
 
 ### Linux
 
-Set the IP adress of the computer to an IP adress on the same subnet (`255.255.0.0` is the default) as the radio. For a Doodle Labs radio in the default configuration use `10.223.1.1/16`.
+Configure the computer's IP address to be on the same subnet as the radio.
+The default subnet mask is `255.255.0.0`.
+
+For a radio using the default IP address `10.223.1.1/16`, assign the computer a different IP address within the same subnet.
+
+Use the following command to assign an IP address to the network interface:
 
 ```
 sudo ip addr add <IP_ADDRESS>/<CIDR> dev <INTERFACE>
 ```
 
 ### Verifying the Connection
-
-
-
