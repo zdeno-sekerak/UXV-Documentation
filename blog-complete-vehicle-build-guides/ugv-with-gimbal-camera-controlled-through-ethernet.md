@@ -8,7 +8,7 @@ This guide explains the process of integrating a the Optroxa GMB550 into an unma
 
 ### Part List:
 
-* 1x Optroxa GMB600 Gimbal
+* 1x UXV Technologies Optroxa GMB600 Gimbal
 * 2x SRM Radios
 * 1x SRM Airside ETH (or other equivalent SRM Airside module that will act as a switch)
 * 1x SRoC Controller
