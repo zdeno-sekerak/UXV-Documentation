@@ -39,23 +39,21 @@
 * [UXV Technologies Tactical Ecosystem](uxv-technologies-tactical-ecosystem/uxv-technologies-tactical-ecosystem/README.md)
   * [Page 1](uxv-technologies-tactical-ecosystem/uxv-technologies-tactical-ecosystem/page-1.md)
 
-## Unmanned Vehicle Software
+## Unmanned Vehicle Integration
 
-* [Unmanned Vehicle Software](unmanned-vehicle-software/unmanned-vehicle-software/README.md)
-  * [PX4](unmanned-vehicle-software/unmanned-vehicle-software/px4/README.md)
-    * [Setting up a PX4 Vehicle](unmanned-vehicle-software/unmanned-vehicle-software/px4/setting-up-a-px4-vehicle.md)
-    * [Ethernet Setup for PX4](unmanned-vehicle-software/unmanned-vehicle-software/px4/ethernet-setup-for-px4.md)
-    * [Creating a Custom PX4 Build](unmanned-vehicle-software/unmanned-vehicle-software/px4/creating-a-custom-px4-build.md)
-  * [ArduPilot](unmanned-vehicle-software/unmanned-vehicle-software/ardupilot/README.md)
-    * [Setting up an ArduPilot Vehicle](unmanned-vehicle-software/unmanned-vehicle-software/ardupilot/setting-up-an-ardupilot-vehicle.md)
-    * [Ethernet Setup for Ardupilot](unmanned-vehicle-software/unmanned-vehicle-software/ardupilot/ethernet-setup-for-ardupilot.md)
-    * [Connecting ArduPilot to Ethernet](unmanned-vehicle-software/unmanned-vehicle-software/ardupilot/connecting-ardupilot-to-ethernet.md)
-    * [Frame-Specific Guides](unmanned-vehicle-software/unmanned-vehicle-software/ardupilot/frame-specific-guides.md)
-    * [Flying an Ardupilot Vehicle](unmanned-vehicle-software/unmanned-vehicle-software/ardupilot/flying-an-ardupilot-vehicle.md)
-
-## Unmanned Vehicle Hardware
-
-* [Vedder Electronic Speed Controller (VESC)](unmanned-vehicle-hardware/vedder-electronic-speed-controller-vesc.md)
+* [Unmanned Vehicle Hardware](unmanned-vehicle-integration/unmanned-vehicle-hardware/README.md)
+  * [Vedder Electronic Speed Controller (VESC)](unmanned-vehicle-integration/unmanned-vehicle-hardware/vedder-electronic-speed-controller-vesc.md)
+* [Unmanned Vehicle Software](unmanned-vehicle-integration/unmanned-vehicle-software/README.md)
+  * [PX4](unmanned-vehicle-integration/unmanned-vehicle-software/px4/README.md)
+    * [Setting up a PX4 Vehicle](unmanned-vehicle-integration/unmanned-vehicle-software/px4/setting-up-a-px4-vehicle.md)
+    * [Ethernet Setup for PX4](unmanned-vehicle-integration/unmanned-vehicle-software/px4/ethernet-setup-for-px4.md)
+    * [Creating a Custom PX4 Build](unmanned-vehicle-integration/unmanned-vehicle-software/px4/creating-a-custom-px4-build.md)
+  * [ArduPilot](unmanned-vehicle-integration/unmanned-vehicle-software/ardupilot/README.md)
+    * [Setting up an ArduPilot Vehicle](unmanned-vehicle-integration/unmanned-vehicle-software/ardupilot/setting-up-an-ardupilot-vehicle.md)
+    * [Ethernet Setup for Ardupilot](unmanned-vehicle-integration/unmanned-vehicle-software/ardupilot/ethernet-setup-for-ardupilot.md)
+    * [Connecting ArduPilot to Ethernet](unmanned-vehicle-integration/unmanned-vehicle-software/ardupilot/connecting-ardupilot-to-ethernet.md)
+    * [Frame-Specific Guides](unmanned-vehicle-integration/unmanned-vehicle-software/ardupilot/frame-specific-guides.md)
+    * [Flying an Ardupilot Vehicle](unmanned-vehicle-integration/unmanned-vehicle-software/ardupilot/flying-an-ardupilot-vehicle.md)
 
 ## BLOG: Complete Vehicle Build Guides
 
