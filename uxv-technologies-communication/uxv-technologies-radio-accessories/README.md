@@ -4,8 +4,7 @@
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (35).png" alt="" width="375"><figcaption><p>UXV Technologies SRM Airside ETH</p></figcaption></figure></div>
 
-SRM Airside modules provide an interface for integrating SRM-compatible radios into drones and other vehicles.
-They enable power and data connections to the radio through the ruggedised connectors on the underside of the SRM interface.
+SRM Airside modules provide an interface for integrating [SRM radios](../uxv-technologies-srm-radios/) into drones and other vehicles. They enable power and data connections to the radio through the ruggedised connectors on the underside of the [SRM interface](../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/srm-interface.md).
 
 ### Product Index
 
