@@ -23,19 +23,20 @@ layout:
 
 # SRM Airside ETH
 
-The SRM Airside ETH isis a [Linux](https://en.wikipedia.org/wiki/Linux) computer running [OpenWRT](https://en.wikipedia.org/wiki/OpenWrt). It is mounted on a drone/vehicle to make it compatible with the [SRM Radios](../../uxv-technologies-srm-radios/).&#x20;
+The SRM Airside ETH is a [Linux](https://en.wikipedia.org/wiki/Linux)-based computer running [OpenWrt](https://en.wikipedia.org/wiki/OpenWrt).
+It is installed on a drone or other vehicle to provide compatibility with [SRM radios](../../uxv-technologies-srm-radios/).
 
 <figure><img src="../../../.gitbook/assets/image__5_-removebg-preview.png" alt=""><figcaption></figcaption></figure>
 
-It can be used as a [network switch](https://en.wikipedia.org/wiki/Network_switch) for an [SRM Radio](../../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/) and other [ethernet](https://en.wikipedia.org/wiki/Ethernet) connections, such as a [Camera Gimbal](/broken/pages/M0yaFCR0HYV4lMNHHpNt), or a Flight Controller.
+The SRM Airside ETH can be configured as a [network switch](https://en.wikipedia.org/wiki/Network_switch) to connect an [SRM radio](../../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/) with other [Ethernet](https://en.wikipedia.org/wiki/Ethernet) devices, such as a [camera gimbal](/broken/pages/M0yaFCR0HYV4lMNHHpNt) or flight controller.
 
 ## Hardware Overview
 
-It has the following physical ports exposed:
+The SRM Airside ETH provides the following physical interfaces:
 
-* 2x Ethernet on the ODU G81 - 8 pin
-* 1x Ethernet (+ Power to SRM Radio) in the [SRM Interface](../../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/srm-interface.md)
-* 1x Power IN and UART on the ODU G80 - 10 pin
+* **2 × Ethernet ports** via ODU G81 8-pin connectors.
+* **1 × Ethernet port and power output** to the SRM radio via the [SRM interface](../../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/srm-interface.md).
+* **1 × Power input and UART** via an ODU G80 10-pin connector.
 
 {% columns %}
 {% column width="58.333333333333336%" %}
@@ -47,7 +48,8 @@ It has the following physical ports exposed:
 {% endcolumn %}
 {% endcolumns %}
 
-By default, the first ethernet port on the side is set as a configuration port to directly access the SRM Airside ETH. The second ethernet port is set as a passthrough port for the SRM slot.
+By default, the first Ethernet port on the side of the unit is configured as a **configuration port**, providing direct access to the SRM Airside ETH.
+The second Ethernet port is configured as a **passthrough port**, providing access to the radio installed in the SRM slot.
 
 {% columns %}
 {% column %}
@@ -62,43 +64,56 @@ By default, the first ethernet port on the side is set as a configuration port t
 ## Connection to SRM Airside ETH
 
 {% hint style="info" %}
-The configuration options for the SRM Airside ETH will differ for devices with non-default configuration.
+The following instructions assume that the SRM Airside ETH is using its default network configuration.
+Devices with modified network settings may require a different configuration.
 {% endhint %}
 
-1. Connect an ethernet cable from the Configuration port (ODU S11YAR 8 Pin, see above) to an ethernet port on your computer.&#x20;
+1. Connect the **Configuration** port (ODU S11YAR 8-pin connector, shown above) to an Ethernet port on the computer.
 
 <figure><img src="../../../.gitbook/assets/img_1710-removebg-preview (2).png" alt=""><figcaption></figcaption></figure>
 
-2. Connect power (5V - 20V) to the power port (ODU S10YAR 10 Pin) on the SRM Airside ETH.
+2. Connect a **5–20 V** power supply to the power input (ODU S10YAR 10-pin connector) on the SRM Airside ETH.
 
 <figure><img src="../../../.gitbook/assets/uxv_technologies_srm_airside_and_radio_b_and_w.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-To prove that the SRM airside is being powered on, put an SRM into the radio slot and observe its power status LED after turning the power switch to ON.
+To verify that the SRM Airside ETH is powered, insert an SRM radio into the radio slot and set the power switch to **ON**.
+Check that the radio's power status LED is illuminated.
 {% endhint %}
 
-3. Configure your computer
+3. Configure the computer's network settings.
 
-Make sure that the IP 192.168.1.1 is within the IP range of your network adapter.
+Ensure that the computer's Ethernet adapter is configured with an IP address on the same subnet as `192.168.1.1`.
 
-Wait for about 60 seconds, then the SRM Airside ETH is fully booted up and you can connect to it at 192.168.1.1. The easiest way to do it is through a web browser to access the LuCi web interface. The webpage should look something like the following upon loading:
+Allow approximately 60 seconds for the SRM Airside ETH to boot.
+Once booted, the device can be accessed at `192.168.1.1`.
+
+The simplest way to access the device is through the **LuCI web interface**.
+Enter `192.168.1.1` in a web browser to open the configuration interface.
+
+The interface should appear as shown below:
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 093112.png" alt=""><figcaption></figcaption></figure>
 
-Alternatively you can also connect to the SRM Airside ETH through Secure Shell ([ssh](https://en.wikipedia.org/wiki/SSH)) using the terminal command `ssh root@192.168.1.1` .&#x20;
+Alternatively, connect to the SRM Airside ETH using [SSH](https://en.wikipedia.org/wiki/SSH) with the following command:
+
+```bash
+ssh root@192.168.1.1
+```
 
 {% hint style="warning" %}
-If you can acces the SRM Airside ETH through ssh, but not through the browser GUI, try clearing the browser caches. Some browsers will block a connection after several failed attempts.
+If the SRM Airside ETH is accessible via SSH but not through the web interface, try clearing the browser cache.
+Some browsers may block access after repeated failed connection attempts.
 {% endhint %}
 
 ## Connection to SRM Radio
 
-By default, the second ethernet port is configured as a passthrough to the SRM radio.&#x20;
+By default, the second Ethernet port is configured as a passthrough connection to the SRM radio.
 
-Use the same ODU S11YAR 8 Pin to RJ-45 cable to connect to the radio through ethernet on your computer.
+Connect the computer to this port using the same ODU S11YAR 8-pin to RJ45 Ethernet cable.
 
-For software configuration guide, please refer to the [Doodle Labs radio guide](../../standalone-radio-guides/connecting-to-a-doodle-labs-radio.md).
+For instructions on configuring the radio, see [Connecting to a Doodle Labs Radio](../../standalone-radio-guides/connecting-to-a-doodle-labs-radio.md).
 
 ## Integration Notes
 
-In order to use the SRM Airside ETH on a drone/vehicle, it is reccomended to configure it as a [switch](srm-airside-eth-as-a-switch.md) to use both of the ethernet ports.
+When integrating the SRM Airside ETH into a drone or other vehicle, it is recommended to configure the device as an [Ethernet switch](srm-airside-eth-as-a-switch.md) to enable the use of both Ethernet ports.
