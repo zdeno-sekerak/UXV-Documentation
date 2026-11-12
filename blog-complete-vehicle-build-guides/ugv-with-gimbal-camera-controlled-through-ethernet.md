@@ -1,6 +1,6 @@
 # UGV with Gimbal Camera Controlled through Ethernet
 
-<figure><img src="../../.gitbook/assets/rc-car-bgw-gemini.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/rc-car-bgw-gemini.jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 This guide explains the process of integrating a the Optroxa GMB550 into an unmanned vehicle with other UXV Technologies products using the ethernet connection.
@@ -21,19 +21,19 @@ This guide explains the process of integrating a the Optroxa GMB550 into an unma
 {% hint style="info" %}
 Prerequisites:
 
-1. Flight Controller with [PX4](../../unmanned-vehicle-software/unmanned-vehicle-software/px4/setting-up-a-px4-vehicle.md) or [ArduPilot](../../unmanned-vehicle-software/unmanned-vehicle-software/ardupilot/setting-up-an-ardupilot-vehicle.md) set-up
+1. Flight Controller with [PX4](../unmanned-vehicle-software/unmanned-vehicle-software/px4/setting-up-a-px4-vehicle.md) or [ArduPilot](../unmanned-vehicle-software/unmanned-vehicle-software/ardupilot/setting-up-an-ardupilot-vehicle.md) set-up
 2. Other vehicle peripherals connected based on [this guide](/broken/pages/XI2Y69BiFHPV3YnkQKrh)
-3. SRM Airside ETH is set up according to [this guide](../../uxv-technologies-communication/uxv-technologies-communication/uxv-technologies-communication/radio-accessories/srm-airside-eth.md).
+3. SRM Airside ETH is set up according to [this guide](../uxv-technologies-communication/uxv-technologies-communication/radio-accessories/srm-airside-eth.md).
 {% endhint %}
 
 ### 1. Explaining the architecture
 
-<figure><img src="../../.gitbook/assets/GMB600_SRM-Airside_FC_SRM-DL_Connection-Diagram (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/GMB600_SRM-Airside_FC_SRM-DL_Connection-Diagram (5).png" alt=""><figcaption></figcaption></figure>
 
 This architecture, where the gimbal and flight controller are on the same network, is typical for an unmanned vehicle. The SRM Airside ETH acts as a switch, bringing both of the devices and the radio on the same network. This is advantageous for two reasons:
 
 1. The video and telemetry stream are unified on one link, eliminating any redundancies of old systems where the streams were split.
-2. The gimbal has a NVidia Jetson Orin Nano integrated in it turning it into an edge-compute node. By having the flight controller on the same network as the Jetson, [autonomy](../../foundational-concepts/basic-autonomy-using-ros2.md) is enabled in the vehicle without having to strain the radio link by sending the data to the GCS for processing or adding an extra computing note, which would consume more power and increase the wiring complexity.
+2. The gimbal has a NVidia Jetson Orin Nano integrated in it turning it into an edge-compute node. By having the flight controller on the same network as the Jetson, [autonomy](../foundational-concepts/basic-autonomy-using-ros2.md) is enabled in the vehicle without having to strain the radio link by sending the data to the GCS for processing or adding an extra computing note, which would consume more power and increase the wiring complexity.
 
 {% hint style="info" %}
 The UXV Technologies gimbal also has CAN pins exposed to allow the gimbal to control other devices and UART for&#x20;
@@ -41,7 +41,7 @@ The UXV Technologies gimbal also has CAN pins exposed to allow the gimbal to con
 
 Below is the wiring diagram of the complete vehicle that UXV Technologies used for testing.
 
-<figure><img src="../../.gitbook/assets/Shcematic-Diagram-GMB600-Vehicle (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Shcematic-Diagram-GMB600-Vehicle (3).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Stream Data to Custom QGC+
 
@@ -71,7 +71,7 @@ Then power on the vehicle and wait for all of the components to boot up, which t
 
 Launch QGroundControl (gimball support has not been added to Mission Planner yet) and click on "Disconnnected - Click to Manually Connect".
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-09-08 171304.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-09-08 171304.png" alt=""><figcaption></figcaption></figure>
 
 Continue by clicking on the small arrow and then on "Configure".
 
