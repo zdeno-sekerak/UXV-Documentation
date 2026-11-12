@@ -44,6 +44,14 @@
 * [Sensors - Optroxa Gimbal](uxv-technologies-product-guides/sensors-optroxa-gimbal/README.md)
   * [GMB550 Wiring and Setup](uxv-technologies-product-guides/sensors-optroxa-gimbal/gmb550-wiring-and-setup.md)
 
+## BLOG: Complete Vehicle Build Guides
+
+* [UGV with Gimbal Camera Controlled through Ethernet](blog-complete-vehicle-build-guides/ugv-with-gimbal-camera-controlled-through-ethernet.md)
+
+## FAQ
+
+* [FAQ](faq/page-1.md)
+
 ## Foundational Concepts
 
 * [Foundational AC Motor Concepts](foundational-concepts/foundational-ac-motor-concepts.md)
@@ -52,14 +60,6 @@
 * [Foundational Antenna Concepts](foundational-concepts/readme.md)
 * [Basic Autonomy Using ROS2](foundational-concepts/basic-autonomy-using-ros2.md)
 * [Networking Concepts](foundational-concepts/networking-concepts.md)
-
-## BLOG: Complete Vehicle Build Guides
-
-* [UGV with Gimbal Camera Controlled through Ethernet](blog-complete-vehicle-build-guides/ugv-with-gimbal-camera-controlled-through-ethernet.md)
-
-## FAQ
-
-* [FAQ](faq/page-1.md)
 
 ***
 
