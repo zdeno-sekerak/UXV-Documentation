@@ -1,6 +1,6 @@
 # SRM Interface
 
-Swappable Radio Modules (SRMs) follow a US government standard for defense robotics. UXV Technologies offers more than 30 radio configurations that share the same interface, allowing operators to interchange radios without modifying the ground control station, or the unmanned vehicle.
+Swappable Radio Modules (SRMs) are standardized radio units compliant with a US government standard for defense robotics. Over 30 UXV Technologies configurations share a common interface, allowing operators to interchange radios without modifying the ground control station (GCS) or vehicle.
 
 An SRM Radio can be inserted directly into a compatible interface, as shown below:
 
