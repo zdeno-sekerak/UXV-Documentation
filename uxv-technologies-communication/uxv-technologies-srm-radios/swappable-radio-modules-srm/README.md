@@ -8,7 +8,7 @@ The SRM Radios integrate radios from various vendors into a ruggedized package w
 
 Since the radios are not made by UXV itself, the setup is not limited to UXV Technologies products. For example an SRM-S-DL+ (Doodle Labs integrated) is able to connect to any other compatible Doodle Labs radio.
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (34).png" alt="" width="188"><figcaption><p>UXV Technologies SRM-S-MH+</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (34).png" alt="" width="188"><figcaption><p>UXV Technologies SRM-S-MH+</p></figcaption></figure></div>
 
 ### Product Index:
 
@@ -32,13 +32,13 @@ All of the radios follow the same naming convention:
 
 ## UXV Technologies SRM Airside Modules
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (36).png" alt="" width="375"><figcaption><p>UXV Technologies SRM Airside ETH</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (36).png" alt="" width="375"><figcaption><p>UXV Technologies SRM Airside ETH</p></figcaption></figure></div>
 
 These modules are used to make a drone or vehicle SRM compatible. It allows powering and communication with the radio through the ruggedized connections at the bottom.
 
 ### Product Index:
 
-* [SRM Airside ETH](srm-airside-eth.md) - Exposes one power and two ethernet ports. Can be configured as an ethernet switch.
+* [SRM Airside ETH](../../uxv-technologies-communication-equipment/srm-airside-eth.md) - Exposes one power and two ethernet ports. Can be configured as an ethernet switch.
 * Visit the UXV Technologies [website](https://www.uxvtechnologies.com/) for more...
 
 ###

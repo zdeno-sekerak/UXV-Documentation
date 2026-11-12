@@ -1,4 +1,4 @@
-# Overview of UXV Technologies Products
+# UXV Technologies
 
 UXV Technologies is a manufacturer of various kinds of technologies and hardware solutions. Our solutions support a wide range of unmanned platforms - including UUVs, USVs, UGVs, and UAVs - playing a crucial role in mission-critical applications globally.
 
@@ -12,7 +12,7 @@ UXV Technologies is a manufacturer of various kinds of technologies and hardware
 
 </details>
 
-### [Ground Control Stations (GCS)](uxv-technologies-ground-control-stations/ground-control-stations-gcs/)
+### [Ground Control Stations (GCS)](https://app.gitbook.com/s/KjNFVuuNpc9Zwv7CH0ci/uxv-technologies-ground-control-stations)
 
 {% columns %}
 {% column %}
@@ -28,7 +28,7 @@ UXV Technologies is a manufacturer of various kinds of technologies and hardware
 {% endcolumn %}
 {% endcolumns %}
 
-### [Swappable Radio Modules (SRM)](uxv-technologies-communication/swappable-radio-modules-srm/)
+### [Communications Equipment](https://app.gitbook.com/s/KjNFVuuNpc9Zwv7CH0ci/uxv-technologies-communication)
 
 {% columns %}
 {% column width="41.66666666666667%" %}
@@ -44,7 +44,7 @@ UXV Technologies is a manufacturer of various kinds of technologies and hardware
 {% endcolumn %}
 {% endcolumns %}
 
-### [Sensors - Optroxa Gimbal](uxv-technologies-sensors/sensors-optroxa-gimbal/)
+### [Sensors - Optroxa Gimbal](https://app.gitbook.com/s/KjNFVuuNpc9Zwv7CH0ci/uxv-technologies-sensors)
 
 {% columns %}
 {% column %}
