@@ -1,4 +1,4 @@
-# Connecting to a Doodle Labs radio
+# Doodle Labs Radios
 
 This guide explains how to connect a computer to a Doodle Labs radio over Ethernet using IPv4.
 
@@ -80,12 +80,14 @@ Enter the radio's IP address in a web browser to access its web-based graphical 
 
 Depending on the browser, you may see a security warning when connecting. It is safe to proceed to the radio's interface.
 
-<figure><img src="../../../../.gitbook/assets/unknown (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unknown (10).png" alt=""><figcaption></figcaption></figure>
 
 Log in using the username and password for your radio. Depending on the radio, the default credentials may be:
 
 * **Username:** `root` **Password:** Leave blank.
-* **Username:** `user` **Password:** `DoodleSmartRadio`
+* **Username:** `user` **Password:** `DoodleSmartRadio`&#x20;
+
+Further information can be found in the [Doodle Labs Mesh Rider Radio GUI Walkthrough](https://kb.doodlelabs.com/gui-walk-through-guide).
 
 ## SSH Connection
 
@@ -108,3 +110,4 @@ SSH connections are particularly useful for:
 * Automated fleet configuration.
 * Reliability over degraded RF links.
 * Advanced diagnostics.
+

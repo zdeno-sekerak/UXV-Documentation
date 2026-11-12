@@ -33,10 +33,10 @@ Prerequisites:
 This architecture, where the gimbal and flight controller are on the same network, is typical for an unmanned vehicle. The SRM Airside ETH acts as a switch, bringing both of the devices and the radio on the same network. This is advantageous for two reasons:
 
 1. The video and telemetry stream are unified on one link, eliminating any redundancies of old systems where the streams were split.
-2. The gimbal has a NVidia Jetson Orin Nano integrated in it turning it into an edge-compute node. By having the flight controller on the same network as the Jetson, [autonomy](../foundational-concepts/basic-autonomy-using-ros2.md) is enabled in the vehicle without having to strain the radio link by sending the data to the GCS for processing or adding an extra computing note, which would consume more power and increase the wiring complexity.
+2. The gimbal has a NVidia Jetson Orin Nano integrated in it turning it into an edge-compute node. By having the flight controller on the same network as the Jetson, [autonomy](../old/foundational-concepts/basic-autonomy-using-ros2.md) is enabled in the vehicle without having to strain the radio link by sending the data to the GCS for processing or adding an extra computing note, which would consume more power and increase the wiring complexity.
 
 {% hint style="info" %}
-The UXV Technologies gimbal also has CAN pins exposed to allow the gimbal to control other devices and UART for&#x20;
+The UXV Technologies gimbal also has CAN pins exposed to allow the gimbal to control other devices and UART for
 {% endhint %}
 
 Below is the wiring diagram of the complete vehicle that UXV Technologies used for testing.
@@ -76,7 +76,7 @@ Launch QGroundControl (gimball support has not been added to Mission Planner yet
 Continue by clicking on the small arrow and then on "Configure".
 
 {% hint style="info" %}
-To verify the connection has been established and is working, navigate to Windows Control Panel - Network and Internet - Network and Sharing Center - Change Adapter Settings - click on the adapter you expect to use - Details.&#x20;
+To verify the connection has been established and is working, navigate to Windows Control Panel - Network and Internet - Network and Sharing Center - Change Adapter Settings - click on the adapter you expect to use - Details.
 
 There you will see the IP adress of the adapter, which should be on the 10.224.1.1/16 subnet (or the one you set the SRM Airside ETH to assign to DHCP clients). If it is 169.254.1.1/16, is an adress Windows defaults to if it cannot connect to a DHCP server.
 {% endhint %}

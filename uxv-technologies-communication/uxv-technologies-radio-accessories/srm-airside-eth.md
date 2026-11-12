@@ -94,7 +94,7 @@ The rest of the guide will focus on configuring the SRM Airside ETH in a specifi
 ### Part list:
 
 * SRM Airside ETH
-* 2x [SRM](../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/) Radio (This guide uses [SRM-S-DL+](../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/srm-s-dl+/))
+* 2x [SRM](../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/) Radio (This guide uses [SRM-S-DL+](../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/srm-s-dl+.md))
 * 1x ODU S11YAR 8 Pin to 4-pin JST-GH1.25 with ETH pinout cable
 * 1x ODU S11YAR 8 Pin to whatever the GMB550 connector is
 * 1x ODU S10YAR 10 Pin to Power Connector (for example XT60)

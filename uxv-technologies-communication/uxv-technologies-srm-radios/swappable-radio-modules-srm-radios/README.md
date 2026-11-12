@@ -10,7 +10,7 @@ The SRM Radios integrate radios from [various vendors](../../standalone-radio-gu
 
 ### Product Index:
 
-* [SRM-S-DL+](srm-s-dl+/) - Doodle Labs
+* [SRM-S-DL+](srm-s-dl+.md) - Doodle Labs
 * Visit the UXV Technologies [website](https://www.uxvtechnologies.com/) for more...
 
 ### Naming Convention
