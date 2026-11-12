@@ -4,17 +4,18 @@
 
 ## UXV Technologies Ground Control Stations
 
-* [Ground Control Stations (GCS)](uxv-technologies-ground-control-stations/ground-control-stations-gcs/README.md)
-  * [UXV Technologies SRoC 7" Windows](uxv-technologies-ground-control-stations/ground-control-stations-gcs/uxv-technologies-sroc-7-windows.md)
+* [Ground Control Stations](uxv-technologies-ground-control-stations/ground-control-stations/README.md)
+  * [UXV Technologies SRoC 7" Windows](uxv-technologies-ground-control-stations/ground-control-stations/uxv-technologies-sroc-7-windows.md)
+* [UXV Technologies UXVSuite](uxv-technologies-ground-control-stations/uxv-technologies-uxvsuite.md)
 
 ## UXV Technologies Communication
 
-* [UXV Technologies Communication](uxv-technologies-communication/uxv-technologies-communication/README.md)
-  * [Swappable Radio Modules (SRM)](uxv-technologies-communication/uxv-technologies-communication/swappable-radio-modules-srm/README.md)
-    * [SRM Interface](uxv-technologies-communication/uxv-technologies-communication/swappable-radio-modules-srm/srm-interface.md)
-    * [SRM-S-DL+](uxv-technologies-communication/uxv-technologies-communication/swappable-radio-modules-srm/srm-s-dl+.md)
-  * [Radio Accessories](uxv-technologies-communication/uxv-technologies-communication/radio-accessories/README.md)
-    * [SRM Airside ETH ](uxv-technologies-communication/uxv-technologies-communication/radio-accessories/srm-airside-eth.md)
+* [UXV Technologies SRM/Radios](uxv-technologies-communication/uxv-technologies-srm-radios/README.md)
+  * [Swappable Radio Modules (SRM)](uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm/README.md)
+    * [SRM Interface](uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm/srm-interface.md)
+    * [SRM-S-DL+](uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm/srm-s-dl+.md)
+* [UXV Technologies Radio Accessories](uxv-technologies-communication/uxv-technologies-radio-accessories/README.md)
+  * [SRM Airside ETH ](uxv-technologies-communication/uxv-technologies-radio-accessories/srm-airside-eth.md)
 * [Standalone Radio Guides](uxv-technologies-communication/standalone-radio-guides/README.md)
   * [Doodle Labs Radio Guides](uxv-technologies-communication/standalone-radio-guides/doodle-labs-radio-guides/README.md)
     * [Physical Connection with an Evaluation Board](uxv-technologies-communication/standalone-radio-guides/doodle-labs-radio-guides/physical-connection-with-an-evaluation-board.md)
