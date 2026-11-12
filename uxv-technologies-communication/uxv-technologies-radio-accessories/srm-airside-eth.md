@@ -23,7 +23,7 @@ layout:
 
 # SRM Airside ETH&#x20;
 
-The SRM Airside is a [Linux](https://en.wikipedia.org/wiki/Linux) computer running [OpenWRT](https://en.wikipedia.org/wiki/OpenWrt). It can be used as a [network switch](https://en.wikipedia.org/wiki/Network_switch) for an [SRM Radio](../uxv-technologies-srm-radios/swappable-radio-modules-srm/) and other [ethernet](https://en.wikipedia.org/wiki/Ethernet) connections, such as a [Camera Gimbal](/broken/pages/M0yaFCR0HYV4lMNHHpNt), or a Flight Controller.
+The SRM Airside is a [Linux](https://en.wikipedia.org/wiki/Linux) computer running [OpenWRT](https://en.wikipedia.org/wiki/OpenWrt). It can be used as a [network switch](https://en.wikipedia.org/wiki/Network_switch) for an [SRM Radio](../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/) and other [ethernet](https://en.wikipedia.org/wiki/Ethernet) connections, such as a [Camera Gimbal](/broken/pages/M0yaFCR0HYV4lMNHHpNt), or a Flight Controller.
 
 <figure><img src="../../.gitbook/assets/image__5_-removebg-preview.png" alt=""><figcaption></figcaption></figure>
 
@@ -96,7 +96,7 @@ The rest of the guide will focus on configuring the SRM Airside ETH in a specifi
 ### Part list:
 
 * SRM Airside ETH
-* 2x [SRM](../uxv-technologies-srm-radios/swappable-radio-modules-srm/) Radio (This guide uses [SRM-S-DL+](../uxv-technologies-srm-radios/swappable-radio-modules-srm/srm-s-dl+.md))
+* 2x [SRM](../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/) Radio (This guide uses [SRM-S-DL+](../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/srm-s-dl+.md))
 * 1x ODU S11YAR 8 Pin to 4-pin JST-GH1.25 with ETH pinout cable
 * 1x ODU S11YAR 8 Pin to whatever the GMB550 connector is
 * 1x ODU S10YAR 10 Pin to Power Connector (for example XT60)

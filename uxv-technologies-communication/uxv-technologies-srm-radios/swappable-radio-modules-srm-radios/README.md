@@ -1,12 +1,10 @@
-# Swappable Radio Modules (SRM)
+# Swappable Radio Modules (SRM) Radios
 
 The [SRM interface](srm-interface.md) enables the Ground Control Stations (GCS) to easily swap out radios without changing the GCS itself.
 
 ## UXV Technologies SRM Radios
 
 The SRM Radios integrate radios from [various vendors](../../standalone-radio-guides/) into a ruggedized package with an SRM Interface.
-
-Since the radios are not made by UXV itself, the setup is not limited to UXV Technologies products. For example an SRM-S-DL+ (Doodle Labs integrated) is able to connect to any other compatible Doodle Labs radio.
 
 <div align="left"><figure><img src="../../../.gitbook/assets/image (34).png" alt="" width="188"><figcaption><p>UXV Technologies SRM-S-MH+</p></figcaption></figure></div>
 
@@ -20,7 +18,7 @@ Since the radios are not made by UXV itself, the setup is not limited to UXV Tec
 All of the radios follow the same naming convention:
 
 * SRM stands for "Swappable Radio Module."
-* S/L stands for small or large. The small version of the module can be powered from the controller while the larger one has to be powered using the twist-on battery.
+* S/L stands for small or large. The small version of the module can be powered from the controller while the larger one has to be powered using a twist-on battery.
 * DL/DTC/MH/PS5/RKM/ST stand for the brand of the radio inside of the SRM.
   * DL - Doodle Labs
   * DTC - Domo Tactical Communications

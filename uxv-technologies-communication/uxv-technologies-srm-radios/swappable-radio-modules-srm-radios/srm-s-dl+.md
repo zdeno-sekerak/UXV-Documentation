@@ -2,12 +2,11 @@
 description: >-
   This guide is an introduction to the ruggedized swappable radio module (SRM)
   with an integrated Doodle Labs radio.
-hidden: true
 ---
 
 # SRM-S-DL+
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-23 084455.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-04-23 084455.png" alt=""><figcaption></figcaption></figure>
 
 The SRM (Swappable radio module) radios are a US government standard for defense robotics. With The SRM radios you have more than 25 different radio configurations available which all fit\
 the same interface.
@@ -16,7 +15,7 @@ the same interface.
 
 Below is the pinout of the SRM-Interface:
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2026-09-09 091924.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-09 091924.png" alt=""><figcaption></figcaption></figure>
 
 | Pin no. | Name             |
 | ------- | ---------------- |

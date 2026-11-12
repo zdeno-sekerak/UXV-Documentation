@@ -11,9 +11,9 @@
 ## UXV Technologies Communication
 
 * [UXV Technologies SRM/Radios](uxv-technologies-communication/uxv-technologies-srm-radios/README.md)
-  * [Swappable Radio Modules (SRM)](uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm/README.md)
-    * [SRM Interface](uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm/srm-interface.md)
-    * [SRM-S-DL+](uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm/srm-s-dl+.md)
+  * [Swappable Radio Modules (SRM) Radios](uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/README.md)
+    * [SRM Interface](uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/srm-interface.md)
+    * [SRM-S-DL+](uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/srm-s-dl+.md)
 * [UXV Technologies Radio Accessories](uxv-technologies-communication/uxv-technologies-radio-accessories/README.md)
   * [SRM Airside ETH ](uxv-technologies-communication/uxv-technologies-radio-accessories/srm-airside-eth.md)
 * [Standalone Radio Guides](uxv-technologies-communication/standalone-radio-guides/README.md)
@@ -27,8 +27,6 @@
     * [Configuring an Unmanned Vehicle with SBUS](uxv-technologies-communication/standalone-radio-guides/doodle-labs-radio-guides/controlling-an-unmanned-vehicle-with-sbus.md)
     * [Troubleshooting SBUS Connection](uxv-technologies-communication/standalone-radio-guides/doodle-labs-radio-guides/troubleshooting-sbus-connection.md)
     * [Connecting an Unmanned Vehicle with Ethernet and QGC](uxv-technologies-communication/standalone-radio-guides/doodle-labs-radio-guides/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
-    * [UXV Technologies](uxv-technologies-communication/standalone-radio-guides/doodle-labs-radio-guides/uxv-technologies.md)
-* [Optimizing Antenna Configuration](uxv-technologies-communication/optimizing-antenna-configuration.md)
 
 ## UXV Technologies Sensors
 
@@ -43,6 +41,8 @@
 
 * [Unmanned Vehicle Hardware](unmanned-vehicle-integration/unmanned-vehicle-hardware/README.md)
   * [Vedder Electronic Speed Controller (VESC)](unmanned-vehicle-integration/unmanned-vehicle-hardware/vedder-electronic-speed-controller-vesc.md)
+  * [Antennas](unmanned-vehicle-integration/unmanned-vehicle-hardware/antennas/README.md)
+    * [Optimizing Antenna Configuration](unmanned-vehicle-integration/unmanned-vehicle-hardware/antennas/optimizing-antenna-configuration.md)
 * [Unmanned Vehicle Software](unmanned-vehicle-integration/unmanned-vehicle-software/README.md)
   * [PX4](unmanned-vehicle-integration/unmanned-vehicle-software/px4/README.md)
     * [Setting up a PX4 Vehicle](unmanned-vehicle-integration/unmanned-vehicle-software/px4/setting-up-a-px4-vehicle.md)
