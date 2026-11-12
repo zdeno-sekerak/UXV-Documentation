@@ -21,7 +21,7 @@ layout:
     visible: true
 ---
 
-# SRM Airside ETH&#x20;
+# SRM Airside ETH
 
 The SRM Airside is a [Linux](https://en.wikipedia.org/wiki/Linux) computer running [OpenWRT](https://en.wikipedia.org/wiki/OpenWrt). It can be used as a [network switch](https://en.wikipedia.org/wiki/Network_switch) for an [SRM Radio](../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/) and other [ethernet](https://en.wikipedia.org/wiki/Ethernet) connections, such as a [Camera Gimbal](/broken/pages/M0yaFCR0HYV4lMNHHpNt), or a Flight Controller.
 
@@ -52,8 +52,6 @@ By default, the first ethernet port on the side is set as a configuration port t
 {% columns %}
 {% column %}
 <figure><img src="../../.gitbook/assets/uxv_technologies_airside_eth_with_descriptions.png" alt=""><figcaption></figcaption></figure>
-
-
 {% endcolumn %}
 
 {% column %}
@@ -67,7 +65,7 @@ Locate the ethernet, which port set up for configuration (see picture above). Co
 
 <figure><img src="../../.gitbook/assets/img_1710-removebg-preview (2).png" alt=""><figcaption></figcaption></figure>
 
-Then connect the power cable to the middle connector (ODU S10YAR 10 Pin) and power on the SRM Airside with 5V to 20V.&#x20;
+Then connect the power cable to the middle connector (ODU S10YAR 10 Pin) and power on the SRM Airside with 5V to 20V.
 
 {% hint style="info" %}
 To prove that the SRM airside is being powered on, put an SRM into the radio slot and observe its power status LED after turning the power switch to ON.
@@ -75,7 +73,7 @@ To prove that the SRM airside is being powered on, put an SRM into the radio slo
 
 <figure><img src="../../.gitbook/assets/uxv_technologies_srm_airside_and_radio_b_and_w.png" alt=""><figcaption></figcaption></figure>
 
-Make sure that the IP 192.168.1.1 is within the IP range of your network adapter.&#x20;
+Make sure that the IP 192.168.1.1 is within the IP range of your network adapter.
 
 Wait for about 60 seconds, then the SRM Airside ETH is fully booted up and you can connect to it at 192.168.1.1. The easiest way to do it is through a web browser to access the LuCi web interface. The webpage should look something like the following upon loading:
 
@@ -114,7 +112,7 @@ The settings described in the [following step](srm-airside-eth.md#id-4.-configur
 A multi-homed router is a router equipped with multiple network interfaces, each of them connected to a different network or a subnet. This allows it to relay traffic between those separate networks, meaning only the target device gets the information without the whole network being flooded by it.
 {% endhint %}
 
-The goal of this setup is to have the SRM Airside ETH function as a DHCP server and assign IP adresses to various devices on the network based on the ports they are connected to. This way the IP of the devices are always the same, which allows the radio, flight controller, or the gimbal to be swapped and the routing will not break.&#x20;
+The goal of this setup is to have the SRM Airside ETH function as a DHCP server and assign IP adresses to various devices on the network based on the ports they are connected to. This way the IP of the devices are always the same, which allows the radio, flight controller, or the gimbal to be swapped and the routing will not break.
 
 {% hint style="info" %}
 The device is configured to assign IP adresses on the 10.224.1.1/16 (10.224.x.x) network because Doodle Labs radios function on the 10.223.0.0/16 and giving it another adress on 10.223.0.0/16 would cause an IP overlap and break the connection. Therefore it is possible to use any other adress except that one.
@@ -136,9 +134,9 @@ The current settings should look like this:
 
 <figure><img src="../../.gitbook/assets/041b70cb-4f5e-4cb8-8340-ec1c194374ce.png" alt=""><figcaption></figcaption></figure>
 
-Delete all of the interfaces and create new ones by clicking the "Add new interface" button. Set the basic parameters according to the ones below and click "Create interface."&#x20;
+Delete all of the interfaces and create new ones by clicking the "Add new interface" button. Set the basic parameters according to the ones below and click "Create interface."
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 110505.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 After the interface is created, edit it through the interfaces tab.
 
@@ -195,8 +193,6 @@ The DHCP lease expire time sets how long the DHCP server will keep an IP assigne
 
 {% tab title="Firewall Settings" %}
 <figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 111325.png" alt=""><figcaption></figcaption></figure>
-
-
 {% endtab %}
 
 {% tab title="DHCP Server" %}
@@ -211,7 +207,7 @@ Please note that the IP addresses on the 10.224.30.1 port will not be assigned b
 If you wish to allocate the IP addresses of connected devices based on numerical order instead as a number based on the mac address, navigate to: Network - DHCP and DNS. Scroll down and find a check box labelled "Allocate IPs sequentially." It is not recommended to use because now the IPs are more likely to change specifically when a client's lease is allowed to expire
 
 {% hint style="info" %}
-The alias port (interface 4) was added to alias the IP of the radios on the IP 10.223.0.0/16 to the 10.224.30.1 port. This way the radios get assigned an IP on 10.224.x.x and will keep the 10.223.x.x instead of having both of the IPs overlapping. IP aliasing lets a single physical network interface respond to multiple IP addresses simultaneously, which means that devices on the other side of the radio link and the radios themselves also get assigned IPs on 10.224.30.x.&#x20;
+The alias port (interface 4) was added to alias the IP of the radios on the IP 10.223.0.0/16 to the 10.224.30.1 port. This way the radios get assigned an IP on 10.224.x.x and will keep the 10.223.x.x instead of having both of the IPs overlapping. IP aliasing lets a single physical network interface respond to multiple IP addresses simultaneously, which means that devices on the other side of the radio link and the radios themselves also get assigned IPs on 10.224.30.x.
 {% endhint %}
 
 ### Configuring SRM Airside ETH network devices
@@ -226,11 +222,11 @@ To change Network Devices settings, navigate to Network - Interfaces - Devices.
 
 ### Configuring SRM Airside ETH Firewall
 
-To configure the firewall settings, navigate to Network - Firewall.&#x20;
+To configure the firewall settings, navigate to Network - Firewall.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 124055.png" alt=""><figcaption></figcaption></figure>
 
-In zones, find the LAN row and click on Edit.&#x20;
+In zones, find the LAN row and click on Edit.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 124236.png" alt=""><figcaption></figcaption></figure>
 
@@ -240,12 +236,12 @@ Ensure Input, Output and Forward are all set to accept and verify that all of th
 
 ### Saving the settings
 
-When you save and apply the settings, you will lose connection to the SRM Airside ETH because its IP adress will change from 192.168.1.1. to 10.224.10/20/30.1 (depending on which port you have the computer connected to.&#x20;
+When you save and apply the settings, you will lose connection to the SRM Airside ETH because its IP adress will change from 192.168.1.1. to 10.224.10/20/30.1 (depending on which port you have the computer connected to.
 
 Previously it was nescessary to set the IP of your computer manually to connect to the device. Now that it works as a DHCP however, you can set your computer as a DHCP client. The computer will now get its IP address assigned from the SRM Airside ETH and you can acces the web interface on its new address again.
 
 {% hint style="info" %}
-If your compuer is set as a DHCP client and sets its address to 169.254.1.1/16, which is the fallback address, it has not received an IP from the DHCP server. Before doing any changes, it is reccomended to wait a minute as booting up the devices on the network can take some time.&#x20;
+If your compuer is set as a DHCP client and sets its address to 169.254.1.1/16, which is the fallback address, it has not received an IP from the DHCP server. Before doing any changes, it is reccomended to wait a minute as booting up the devices on the network can take some time.
 {% endhint %}
 
 {% hint style="success" %}

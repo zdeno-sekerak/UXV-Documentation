@@ -19,7 +19,7 @@ description: This page explains the process of setting up an ArduPilot vehicle.
 * BLDC Motor (most common type)
 
 {% hint style="info" %}
-This guide uses Ardurover v4.7.1 and Mission Planner v1.3.83&#x20;
+This guide uses Ardurover v4.7.1 and Mission Planner v1.3.83
 {% endhint %}
 
 ## Tool List
@@ -32,27 +32,27 @@ Even though Ardupilot is also supported on QGroundControl, Mission Planner has b
 
 ## 1. Flash the Flight Controller with Firmware
 
-Start by connecting the Flight Controller to your computer via USB and open Mission Planner.&#x20;
+Start by connecting the Flight Controller to your computer via USB and open Mission Planner.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-03 144100.png" alt=""><figcaption></figcaption></figure>
 
-In Mission Planner, select the correct COM port in the top-right corner and click connect.&#x20;
+In Mission Planner, select the correct COM port in the top-right corner and click connect.
 
 {% hint style="info" %}
 If you need to find out to which COM port the flight controller is connected to, open Device Manager on your Windows computer. Open the "Ports (COM & LPT)" drop-down. Now connect the flight controller and notice which port appears, which is the one the flight controller is connected to.
 
-![](<../../../.gitbook/assets/Screenshot 2026-09-03 144545 (1).png>)
+<img src="../../../.gitbook/assets/Screenshot 2026-09-03 144545 (1).png" alt="" data-size="original">
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-03 145013.png" alt=""><figcaption></figcaption></figure>
 
-Continue by navigating to "Setup" - "Install Firmware". A screen will appear stating that firmware cannot be loaded while connected via MavLink and asking the user to click on "Disconnect" in the top right corner. Click on it and a screen with possible versions appears.&#x20;
+Continue by navigating to "Setup" - "Install Firmware". A screen will appear stating that firmware cannot be loaded while connected via MavLink and asking the user to click on "Disconnect" in the top right corner. Click on it and a screen with possible versions appears.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-03 145432.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-03 145800.png" alt=""><figcaption></figcaption></figure>
 
-Select the correct ArduPilot distribution for your use case.&#x20;
+Select the correct ArduPilot distribution for your use case.
 
 * [Rover](https://ardupilot.org/rover/) - Use for ground vehicles (cars, tracked vehicles) and surface watercraft.
 * [Plane](https://ardupilot.org/plane/) - Use for Fixed-Wing (airplane, glider, flying wing) and Hybrid Aircraft (Quad-Plane VTOL)
@@ -73,14 +73,14 @@ For this use-case, UXV Technologies will flash the Flight Controller with the Ro
 
 Continue by clicking "Upload Firmware". After the initial setup, a prompt will pop up asking to disconnect and reconnect the Flight Controller and hit the OK button within 30 seconds.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-03 151221.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 After the firmware has been uploaded, the COM port the Flight Controller is connected to will very likely change if you uploaded a different firmware. This time however, Mission Planner will recognise the port and mark it as MavLink. Select the port in the drop-down menu and click on "Connect".
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-03 151935.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-The SLCAN option will turn the Flight Controller into a pass-through USB-to-CAN adapter, allowing you to talk directly to a peripheral device connected to it.&#x20;
+The SLCAN option will turn the Flight Controller into a pass-through USB-to-CAN adapter, allowing you to talk directly to a peripheral device connected to it.
 {% endhint %}
 
 ## 2 Connect Peripherals
@@ -139,11 +139,11 @@ You should see the ESC with the node ID it is set to.
 
 The ID of the ESC does not really matter as long as it is unique. It should also not take any of the numbers assigned to the Flight Controllers or Ground Control Stations - 1, 10, 125, 126, 127.
 
-Lastly, the motor output chanells have to be configured using the SERVOx\_FUNCTION. After writing the parameters, navigate to Setup - Optional Hardware - Motor Test.&#x20;
+Lastly, the motor output chanells have to be configured using the SERVOx\_FUNCTION. After writing the parameters, navigate to Setup - Optional Hardware - Motor Test.
 
 For the duration of the test, Ardupilot will quietly arm the vehicle and disarm it after the test without visually showing it. Therefore the motor test will fail if there are any problems, which would disable arming. For testing, you should set the ARMING\_CHECK = -1 to skip the checks. Be careful to check the errors (Data - Messages) in order to not destry the vehicle accidentally.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-07 174334 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-07 174334.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 Remember to set the ARMING\_CHECK parameter and others you have changed temporarirly to the correct value before continuing with the configuration.
@@ -171,11 +171,11 @@ You can set more parameters in the BATT drop-down in Mission Planner - CONFIG - 
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-08 095112.png" alt=""><figcaption></figcaption></figure>
 
-After setting these parameter, select the source of the battery information by setting the BATT\_MONITOR parameter. Optionally you can set this data in Setup - Optional Hardware - Battery Monitor.&#x20;
+After setting these parameter, select the source of the battery information by setting the BATT\_MONITOR parameter. Optionally you can set this data in Setup - Optional Hardware - Battery Monitor.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-08 101042.png" alt=""><figcaption></figcaption></figure>
 
-The following is listed in the order of accuracy.&#x20;
+The following is listed in the order of accuracy.
 
 ### 3.1 Data from Power Module
 
@@ -191,7 +191,7 @@ The following is listed in the order of accuracy.&#x20;
 
 Most power modules not only send current and voltage information to the Flight Controller, but also provide it with a stable power supply. This way the power module reduces the risk of a flight controller brownout in an event of a voltage spike.
 
-The power modules usually do not need to be configured, which significantly reduces the complexity of the setup.&#x20;
+The power modules usually do not need to be configured, which significantly reduces the complexity of the setup.
 
 {% hint style="info" %}
 In order to provide accurate current reading, most of the standard power modules have to be connected between the battery and the ESC. An exception are Hall-effect sensors which measure the magnetic field induced by the current.

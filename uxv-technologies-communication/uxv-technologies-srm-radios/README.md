@@ -29,6 +29,10 @@ The UXV Technologies radios integrate standalone radios from various vendors int
 
 * UXV Technologies [SRM Radios](swappable-radio-modules-srm-radios/).
   * Compatible with any product with the [SRM Interface](swappable-radio-modules-srm-radios/srm-interface.md).
-* UXV Technologies [NavBay radios](https://www.uxvtechnologies.com/communication/navbay-radio).&#x20;
+
+<div align="left"><figure><img src="../../.gitbook/assets/UXV_technologies_srm_s_dl+.png" alt="" width="331"><figcaption></figcaption></figure></div>
+
+* UXV Technologies [NavBay radios](https://www.uxvtechnologies.com/communication/navbay-radio).
   * Compatible with UXV Technologies Navigator [Tab 5](https://www.uxvtechnologies.com/ground-control-stations/navigator-tab-5) and (backwards compatible) [Tab 3](https://www.uxvtechnologies.com/ground-control-stations/navigator-tab3) controllers.
 
+<div align="left"><figure><img src="../../.gitbook/assets/uxv_technologies_navbay_radios.webp" alt="" width="563"><figcaption></figcaption></figure></div>
