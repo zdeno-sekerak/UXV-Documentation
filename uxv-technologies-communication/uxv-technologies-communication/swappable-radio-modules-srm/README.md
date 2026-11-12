@@ -38,7 +38,7 @@ These modules are used to make a drone or vehicle SRM compatible. It allows powe
 
 ### Product Index:
 
-* [SRM Airside ETH](../../uxv-technologies-communication-equipment/srm-airside-eth.md) - Exposes one power and two ethernet ports. Can be configured as an ethernet switch.
+* [SRM Airside ETH](../radio-accessories/srm-airside-eth.md) - Exposes one power and two ethernet ports. Can be configured as an ethernet switch.
 * Visit the UXV Technologies [website](https://www.uxvtechnologies.com/) for more...
 
 ###

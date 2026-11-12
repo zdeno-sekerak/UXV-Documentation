@@ -9,13 +9,12 @@
 
 ## UXV Technologies Communication
 
-* [UXV Technologies SRM / Radios](uxv-technologies-communication/uxv-technologies-srm-radios/README.md)
-  * [Swappable Radio Modules (SRM)](uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm/README.md)
-    * [SRM Interface](uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm/srm-interface.md)
-    * [SRM-S-DL+](uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm/srm-s-dl+.md)
-* [UXV Technologies Communication Equipment](uxv-technologies-communication/uxv-technologies-communication-equipment/README.md)
-  * [SRM Airside ETH ](uxv-technologies-communication/uxv-technologies-communication-equipment/srm-airside-eth.md)
-* [Optimizing Antenna Configuration](uxv-technologies-communication/optimizing-antenna-configuration.md)
+* [UXV Technologies Communication](uxv-technologies-communication/uxv-technologies-communication/README.md)
+  * [Swappable Radio Modules (SRM)](uxv-technologies-communication/uxv-technologies-communication/swappable-radio-modules-srm/README.md)
+    * [SRM Interface](uxv-technologies-communication/uxv-technologies-communication/swappable-radio-modules-srm/srm-interface.md)
+    * [SRM-S-DL+](uxv-technologies-communication/uxv-technologies-communication/swappable-radio-modules-srm/srm-s-dl+.md)
+  * [Radio Accessories](uxv-technologies-communication/uxv-technologies-communication/radio-accessories/README.md)
+    * [SRM Airside ETH ](uxv-technologies-communication/uxv-technologies-communication/radio-accessories/srm-airside-eth.md)
 * [Standalone Radio Guides](uxv-technologies-communication/standalone-radio-guides/README.md)
   * [Doodle Labs Radio Guides](uxv-technologies-communication/standalone-radio-guides/doodle-labs-radio-guides/README.md)
     * [Physical Connection with an Evaluation Board](uxv-technologies-communication/standalone-radio-guides/doodle-labs-radio-guides/physical-connection-with-an-evaluation-board.md)
@@ -28,6 +27,7 @@
     * [Troubleshooting SBUS Connection](uxv-technologies-communication/standalone-radio-guides/doodle-labs-radio-guides/troubleshooting-sbus-connection.md)
     * [Connecting an Unmanned Vehicle with Ethernet and QGC](uxv-technologies-communication/standalone-radio-guides/doodle-labs-radio-guides/controlling-an-unmanned-vehicle-with-ethernet-and-qgc.md)
     * [UXV Technologies](uxv-technologies-communication/standalone-radio-guides/doodle-labs-radio-guides/uxv-technologies.md)
+* [Optimizing Antenna Configuration](uxv-technologies-communication/optimizing-antenna-configuration.md)
 
 ## UXV Technologies Sensors
 
@@ -50,6 +50,10 @@
     * [Connecting ArduPilot to Ethernet](unmanned-vehicle-software/vehicle-controller-firmware/ardupilot/connecting-ardupilot-to-ethernet.md)
     * [Frame-Specific Guides](unmanned-vehicle-software/vehicle-controller-firmware/ardupilot/frame-specific-guides.md)
     * [Flying an Ardupilot Vehicle](unmanned-vehicle-software/vehicle-controller-firmware/ardupilot/flying-an-ardupilot-vehicle.md)
+
+## Unmanned Vehicle Hardware
+
+* [Vedder Electronic Speed Controller (VESC)](unmanned-vehicle-hardware/vedder-electronic-speed-controller-vesc.md)
 
 ## BLOG: Complete Vehicle Build Guides
 
