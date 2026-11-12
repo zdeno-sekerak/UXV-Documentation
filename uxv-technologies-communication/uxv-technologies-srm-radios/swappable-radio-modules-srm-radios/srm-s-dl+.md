@@ -23,5 +23,9 @@ The bottom has the SRM interface connector and an external twist-on battery inte
 
 ## Configuration
 
-1. To configure the SRM-S-DL+ using a computer, connect it via Ethernet using the [SRM Airside ETH](../../uxv-technologies-radio-accessories/srm-airside-eth.md). Alternatively, connect it using the SRM interface on a UXV Technologies ground control station.
+1. To configure the SRM-S-DL+ using a computer, connect it via Ethernet using the [SRM Airside ETH](../../uxv-technologies-radio-accessories/srm-airside-eth/). Alternatively, connect it using the SRM interface on a UXV Technologies ground control station.
 2. Follow the [Connecting to a Doodle Labs Radio](../../standalone-radio-guides/connecting-to-a-doodle-labs-radio.md) guide to configure the radio software.
+
+{% hint style="info" %}
+Check that the power switch is in the correct position so that the radio is getting power.
+{% endhint %}

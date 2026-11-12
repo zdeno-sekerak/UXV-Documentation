@@ -1,112 +1,21 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
-  tags:
-    visible: true
-  actions:
-    visible: true
-  anchors:
-    visible: true
----
-
-# SRM Airside ETH
-
-The SRM Airside is a [Linux](https://en.wikipedia.org/wiki/Linux) computer running [OpenWRT](https://en.wikipedia.org/wiki/OpenWrt). It can be used as a [network switch](https://en.wikipedia.org/wiki/Network_switch) for an [SRM Radio](../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/) and other [ethernet](https://en.wikipedia.org/wiki/Ethernet) connections, such as a [Camera Gimbal](/broken/pages/M0yaFCR0HYV4lMNHHpNt), or a Flight Controller.
-
-<figure><img src="../../.gitbook/assets/image__5_-removebg-preview.png" alt=""><figcaption></figcaption></figure>
-
-## Hardware Overview
-
-It has the following physical ports exposed:
-
-* 2x Ethernet on the ODU G81 - 8 pin
-* 1x Ethernet in the SRM slot
-* 1x Power and UART on the ODU G80 - 10 pin
-
-{% columns %}
-{% column width="58.333333333333336%" %}
-<figure><img src="../../.gitbook/assets/uxv_technologies_airside_eth (3).png" alt=""><figcaption></figcaption></figure>
-{% endcolumn %}
-
-{% column width="41.666666666666664%" %}
-<figure><img src="../../.gitbook/assets/srm-airside-eth (2).png" alt=""><figcaption></figcaption></figure>
-{% endcolumn %}
-{% endcolumns %}
-
-{% hint style="info" %}
-By default, the first ethernet port on the side is set as a configuration port to directly access the SRM Airside ETH. The second ethernet port is set as a passthrough port for the SRM slot.
-{% endhint %}
-
-{% columns %}
-{% column %}
-<figure><img src="../../.gitbook/assets/uxv_technologies_airside_eth_with_descriptions.png" alt=""><figcaption></figcaption></figure>
-{% endcolumn %}
-
-{% column %}
-
-{% endcolumn %}
-{% endcolumns %}
-
-## Connecting to the SRM Airside ETH
-
-Locate the ethernet, which port set up for configuration (see picture above). Connect a cable from the SRM Airside ETH configuration port (ODU S11YAR 8 Pin) to an ethernet port on your computer. An example of the cable UXV Technologies used ([RJ](https://en.wikipedia.org/wiki/Registered_jack)-45 to ODU S11YAR 8 Pin) is pictured below:
-
-<figure><img src="../../.gitbook/assets/img_1710-removebg-preview (2).png" alt=""><figcaption></figcaption></figure>
-
-Then connect the power cable to the middle connector (ODU S10YAR 10 Pin) and power on the SRM Airside with 5V to 20V.
-
-{% hint style="info" %}
-To prove that the SRM airside is being powered on, put an SRM into the radio slot and observe its power status LED after turning the power switch to ON.
-{% endhint %}
-
-<figure><img src="../../.gitbook/assets/uxv_technologies_srm_airside_and_radio_b_and_w.png" alt=""><figcaption></figcaption></figure>
-
-Make sure that the IP 192.168.1.1 is within the IP range of your network adapter.
-
-Wait for about 60 seconds, then the SRM Airside ETH is fully booted up and you can connect to it at 192.168.1.1. The easiest way to do it is through a web browser to access the LuCi web interface. The webpage should look something like the following upon loading:
-
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 093112.png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-If you cannot connect to the SRM Airside ETH, try the following (in order):
-
-1. Try the other ethernet port on the SRM Airside ETH.
-2. Make sure that your computer and the SRM airside are on the same subnet. Sometimes there is an IP mismatch which prevents a connection.
-3. Try to ssh into the SRM Airside ETH through the terminal (ssh root@192.168.1.1). If it works but you cannot acces the web GUI, try clearing browsing cache. Certain internet browsers will block a connection after several attempts.
-{% endhint %}
+# SRM Airside ETH as a Switch
 
 ## Configuration as Ethernet Switch
 
-The rest of the guide will focus on configuring the SRM Airside ETH in a specific way to be used as an ethernet switch. For examplee with an ethernet-enabled flight controller and a UXV Technologies Optroxa Gimbal.
+The guide describes the configuration of the SRM Airside ETH in a specific way to be used as an ethernet switch. For examplee with an ethernet-enabled flight controller and a UXV Technologies Optroxa Gimbal.
 
 ### Part list:
 
 * SRM Airside ETH
-* 2x [SRM](../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/) Radio (This guide uses [SRM-S-DL+](../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/srm-s-dl+.md))
+* 2x [SRM](../../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/) Radio (This guide uses [SRM-S-DL+](../../uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/srm-s-dl+.md))
 * 1x ODU S11YAR 8 Pin to 4-pin JST-GH1.25 with ETH pinout cable
 * 1x ODU S11YAR 8 Pin to whatever the GMB550 connector is
 * 1x ODU S10YAR 10 Pin to Power Connector (for example XT60)
-* 1x [UXV Technologies SROC 7" Windows](../../uxv-technologies-ground-control-stations/ground-control-stations/uxv-technologies-sroc-7-windows.md)
-
-Optional Components/Tools:
-
-* SRM Dock with XT30 and USB-A - Used for configuration/debugging of the SRM
+* 1x [UXV Technologies SROC 7" Windows](../../../uxv-technologies-ground-control-stations/ground-control-stations/uxv-technologies-sroc-7-windows.md)
 
 ### Settings Rationale
 
-The settings described in the [following step](srm-airside-eth.md#id-4.-configuring-srm-airside-eth-network-interfaces) will set the device as a multi-homed router. The following is the reasoning behind it.
+The settings described in the [following step](srm-airside-eth-as-a-switch.md#id-4.-configuring-srm-airside-eth-network-interfaces) will set the device as a multi-homed router. The following is the reasoning behind it.
 
 {% hint style="info" %}
 A multi-homed router is a router equipped with multiple network interfaces, each of them connected to a different network or a subnet. This allows it to relay traffic between those separate networks, meaning only the target device gets the information without the whole network being flooded by it.
@@ -128,19 +37,19 @@ The current setup does not consider security as the firewall is set to forward a
 
 To implement the settings, log into the web interface and navigate to Network - Interfaces.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 104057 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 104057 (1).png" alt=""><figcaption></figcaption></figure>
 
 The current settings should look like this:
 
-<figure><img src="../../.gitbook/assets/041b70cb-4f5e-4cb8-8340-ec1c194374ce.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/041b70cb-4f5e-4cb8-8340-ec1c194374ce.png" alt=""><figcaption></figcaption></figure>
 
 Delete all of the interfaces and create new ones by clicking the "Add new interface" button. Set the basic parameters according to the ones below and click "Create interface."
 
-<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 After the interface is created, edit it through the interfaces tab.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 110753.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 110753.png" alt=""><figcaption></figcaption></figure>
 
 Continue setting all the rest of the parameters listed below:
 
@@ -188,15 +97,15 @@ The DHCP lease expire time sets how long the DHCP server will keep an IP assigne
 
 {% tabs %}
 {% tab title="General Settings" %}
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 111314.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 111314.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Firewall Settings" %}
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 111325.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 111325.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="DHCP Server" %}
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 111331.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 111331.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -218,21 +127,21 @@ A network device in OpenWRT is the underlying physical or virtual networking har
 
 To change Network Devices settings, navigate to Network - Interfaces - Devices.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 123733.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 123733.png" alt=""><figcaption></figcaption></figure>
 
 ### Configuring SRM Airside ETH Firewall
 
 To configure the firewall settings, navigate to Network - Firewall.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 124055.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 124055.png" alt=""><figcaption></figcaption></figure>
 
 In zones, find the LAN row and click on Edit.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 124236.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 124236.png" alt=""><figcaption></figcaption></figure>
 
 Ensure Input, Output and Forward are all set to accept and verify that all of the ports (RADIO, FR, CAM) are listed under covered networks.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-26 124536.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-26 124536.png" alt=""><figcaption></figcaption></figure>
 
 ### Saving the settings
 

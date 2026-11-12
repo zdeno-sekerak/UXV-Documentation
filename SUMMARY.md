@@ -17,7 +17,8 @@
     * [SRM Interface](uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/srm-interface.md)
     * [SRM-S-DL+](uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/srm-s-dl+.md)
 * [UXV Technologies Radio Accessories](uxv-technologies-communication/uxv-technologies-radio-accessories/README.md)
-  * [SRM Airside ETH](uxv-technologies-communication/uxv-technologies-radio-accessories/srm-airside-eth.md)
+  * [SRM Airside ETH](uxv-technologies-communication/uxv-technologies-radio-accessories/srm-airside-eth/README.md)
+    * [SRM Airside ETH as a Switch](uxv-technologies-communication/uxv-technologies-radio-accessories/srm-airside-eth/srm-airside-eth-as-a-switch.md)
 * [Standalone Radio Guides](uxv-technologies-communication/standalone-radio-guides/README.md)
   * [Doodle Labs Radios](uxv-technologies-communication/standalone-radio-guides/connecting-to-a-doodle-labs-radio.md)
 

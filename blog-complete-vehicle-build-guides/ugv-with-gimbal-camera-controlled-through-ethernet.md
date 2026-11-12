@@ -23,7 +23,7 @@ Prerequisites:
 
 1. Flight Controller with [PX4](../unmanned-vehicle-integration/unmanned-vehicle-software/px4/setting-up-a-px4-vehicle.md) or [ArduPilot](../unmanned-vehicle-integration/unmanned-vehicle-software/ardupilot/setting-up-an-ardupilot-vehicle.md) set-up
 2. Other vehicle peripherals connected based on [this guide](/broken/pages/XI2Y69BiFHPV3YnkQKrh)
-3. SRM Airside ETH is set up according to [this guide](../uxv-technologies-communication/uxv-technologies-radio-accessories/srm-airside-eth.md).
+3. SRM Airside ETH is set up according to [this guide](../uxv-technologies-communication/uxv-technologies-radio-accessories/srm-airside-eth/).
 {% endhint %}
 
 ### 1. Explaining the architecture
