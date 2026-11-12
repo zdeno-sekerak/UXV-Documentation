@@ -108,10 +108,3 @@ SSH Connection is favorable for:
 * Automated fleet configuration.
 * Reliability over degraded RF links.
 * Advanced diagnostics.
-
-## Debugging
-
-If the connection is not working, try the following in order:
-
-1. (Standalone radio) Try a full reset to erase previous configurations and connect on the default IP adress.
-2.
