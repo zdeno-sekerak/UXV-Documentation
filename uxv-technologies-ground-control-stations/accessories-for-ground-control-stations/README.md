@@ -1,6 +1,6 @@
 # Accessories for Ground Control Stations
 
-## [Swappable Battery Modules (SBM)](uxv-technologies-swappable-battery-modules.md)
+## [Swappable Battery Modules (SBM)](swappable-battery-modules-sbm.md)
 
 SBMs offer the capability to swap out power to an [SRoC controller](../ground-control-stations/uxv-technologies-sroc-7-windows.md) on the go.
 

@@ -67,7 +67,7 @@ The LED battery indicators show the state of charge of the [SBMs](https://www.ux
 
 <figure><img src="../../.gitbook/assets/uxv_technologies_sroc_7_battery_LED.png" alt=""><figcaption></figcaption></figure>
 
-Back view with [SRM](../../uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/) (Swappable Radio Module) and [SBMs](../accessories-for-ground-control-stations/uxv-technologies-swappable-battery-modules.md) (Swappable Battery Modules) connected.
+Back view with [SRM](../../uxv-technologies-communication/uxv-technologies-srm-radios/swappable-radio-modules-srm-radios/) (Swappable Radio Module) and [SBMs](../accessories-for-ground-control-stations/swappable-battery-modules-sbm.md) (Swappable Battery Modules) connected.
 
 <figure><img src="../../.gitbook/assets/uxv_technologies_sroc_7_in_back_sbm_srm.png" alt=""><figcaption></figcaption></figure>
 
@@ -84,3 +84,5 @@ The SRM-S versions can be powered using the SBMs and the internal battery. The S
 {% hint style="info" %}
 If your controller does not come with built-in wifi, use a USB Drive, or another medium for software installation and updates.
 {% endhint %}
+
+The controller functions are configures using the [UXVSuite](../uxv-technologies-uxvsuite.md) software.

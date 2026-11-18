@@ -8,8 +8,8 @@
   * [UXV Technologies Micronav](uxv-technologies-ground-control-stations/ground-control-stations/uxv-technologies-micronav.md)
   * [UXV Technologies SRoC 7" Windows](uxv-technologies-ground-control-stations/ground-control-stations/uxv-technologies-sroc-7-windows.md)
 * [Accessories for Ground Control Stations](uxv-technologies-ground-control-stations/accessories-for-ground-control-stations/README.md)
-  * [UXV Technologies Swappable Battery Modules](uxv-technologies-ground-control-stations/accessories-for-ground-control-stations/uxv-technologies-swappable-battery-modules.md)
-* [UXV Technologies UXVSuite](uxv-technologies-ground-control-stations/uxv-technologies-uxvsuite.md)
+  * [Swappable Battery Modules (SBM)](uxv-technologies-ground-control-stations/accessories-for-ground-control-stations/swappable-battery-modules-sbm.md)
+* [UXVSuite](uxv-technologies-ground-control-stations/uxv-technologies-uxvsuite.md)
 
 ## UXV Technologies Communication
 

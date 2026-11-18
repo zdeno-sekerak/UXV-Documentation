@@ -1,4 +1,4 @@
-# UXV Technologies UXVSuite
+# UXVSuite
 
 UXV Suite is a software on UXV Technologies controllers used for configuration and software updates of the controller.
 
@@ -12,7 +12,7 @@ Examples of functions of UXV Suite:
 
 1. Button and joystick callibration.
 2. Failsafe settings.
-3. Battery information (including [SBMs](accessories-for-ground-control-stations/uxv-technologies-swappable-battery-modules.md)) and power settings.
+3. Battery information (including [SBMs](accessories-for-ground-control-stations/swappable-battery-modules-sbm.md)) and power settings.
 4. Software update.
 5. Serial output (on compatible controllers).
 6. NavBay settings (on compatible controllers).
