@@ -8,6 +8,8 @@ Doodle Labs radios run [Mesh Rider OS](https://doodlelabs.com/technology), an [O
 This guide assumes that the radio is powered and physically connected to the computer via Ethernet.
 {% endhint %}
 
+For more in-depth information, visit the Doodle Labs [Knowledge Base](https://kb.doodlelabs.com/).
+
 ## Radio IP Address
 
 The default [IPv4 address](https://en.wikipedia.org/wiki/IP_address) of a Doodle Labs radio is `10.223.1.1/16`, with a subnet mask of `255.255.0.0`.
@@ -85,7 +87,7 @@ Depending on the browser, you may see a security warning when connecting. It is 
 Log in using the username and password for your radio. Depending on the radio, the default credentials may be:
 
 * **Username:** `root` **Password:** Leave blank.
-* **Username:** `user` **Password:** `DoodleSmartRadio`&#x20;
+* **Username:** `user` **Password:** `DoodleSmartRadio`
 
 Further information can be found in the [Doodle Labs Mesh Rider Radio GUI Walkthrough](https://kb.doodlelabs.com/gui-walk-through-guide).
 
@@ -111,3 +113,12 @@ SSH connections are particularly useful for:
 * Reliability over degraded RF links.
 * Advanced diagnostics.
 
+## RF Performance
+
+For more information about how to improve the performance of the radio through software settings, visit the [Optimizing RF Link](https://kb.doodlelabs.com/optimizing-the-rf-link) guide by Doodle Labs (access restrictions may apply).
+
+For information about improving the performance of the radio through hardware setup, visit the [Doodle Labs Guidelines](https://kb.doodlelabs.com/guidelines-for-rf-performance-uav/ugv) website.
+
+## Standalone Radio Hardware Integration
+
+For information about hardware integration of standalone Doodle Labs radios, visit the Doodle Labs [Hardware Integration](https://kb.doodlelabs.com/hardware-integration) Guide (access restrictions may apply).
