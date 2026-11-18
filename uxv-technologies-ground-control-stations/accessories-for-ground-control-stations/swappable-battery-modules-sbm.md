@@ -1,4 +1,4 @@
-# UXV Technologies Swappable Battery Modules
+# Swappable Battery Modules (SBM)
 
 SBMs slot into the SMB Slots on the UXV Technologies SRoC controller. The operator can swap out the batteries at any time to enable continuous operation in the field.
 
@@ -18,7 +18,7 @@ SBMs slot into the SMB Slots on the UXV Technologies SRoC controller. The operat
 
 The following table describes the data for the SBM UXV 1608 model:
 
-| Metric         | Value       |
+| Specification  | Value       |
 | -------------- | ----------- |
 | Capacity       | 33.588 Wh   |
 | Voltage rating | 10.8 Vdc    |

@@ -81,8 +81,8 @@ The SRM-S versions can be powered using the SBMs and the internal battery. The S
 
 ## Software
 
+For controller configuration and firmware updates, please refer to the [UXVSuite](../uxv-technologies-uxvsuite.md) software guide.
+
 {% hint style="info" %}
 If your controller does not come with built-in wifi, use a USB Drive, or another medium for software installation and updates.
 {% endhint %}
-
-The controller functions are configures using the [UXVSuite](../uxv-technologies-uxvsuite.md) software.

@@ -5,7 +5,7 @@ This guide explains how to connect a computer to a Doodle Labs radio over Ethern
 Doodle Labs radios run [Mesh Rider OS](https://doodlelabs.com/technology), an [OpenWrt](https://en.wikipedia.org/wiki/OpenWrt)-based firmware developed by Doodle Labs.
 
 {% hint style="info" %}
-This guide assumes that the radio is powered and physically connected to the computer via Ethernet.
+This guide assumes that the radio is powered and physically connected to the computer/controller via Ethernet.
 {% endhint %}
 
 For more in-depth information, visit the Doodle Labs [Knowledge Base](https://kb.doodlelabs.com/).
@@ -119,6 +119,6 @@ For more information about how to improve the performance of the radio through s
 
 For information about improving the performance of the radio through hardware setup, visit the [Doodle Labs Guidelines](https://kb.doodlelabs.com/guidelines-for-rf-performance-uav/ugv) website.
 
-## Standalone Radio Hardware Integration
+## Standalone Radio Hardware Setup
 
-For information about hardware integration of standalone Doodle Labs radios, visit the Doodle Labs [Hardware Integration](https://kb.doodlelabs.com/hardware-integration) Guide (access restrictions may apply).
+For information about hardware setup of standalone Doodle Labs radios, visit the Doodle Labs [Hardware Integration](https://kb.doodlelabs.com/hardware-integration) Guide (access restrictions may apply).
