@@ -8,17 +8,13 @@ The controller is radio-agnostic, meaning the communication links can be swapped
 
 {% columns %}
 {% column %}
-<figure><img src="../../.gitbook/assets/uxv_technologies_micronav_controller_front_plates.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/uxv_technologies_micronav_controller_front_plates (1).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
 
 {% endcolumn %}
 {% endcolumns %}
-
-* Handles can also have switches/joysticks:
 
 | Specificaton     | Value                                                      |
 | ---------------- | ---------------------------------------------------------- |
@@ -45,7 +41,7 @@ The controller is radio-agnostic, meaning the communication links can be swapped
 {% endtab %}
 {% endtabs %}
 
-## Software Overview
+## Software
 
 For controller configuration and firmware updates, please refer to the [UXVSuite](../uxv-technologies-uxvsuite.md) software guide.
 
@@ -53,3 +49,4 @@ If your controller has a radio, follow the [Doodle Labs](../../uxv-technologies-
 
 ## Connectivity
 
+The connectivity options differ between&#x20;
