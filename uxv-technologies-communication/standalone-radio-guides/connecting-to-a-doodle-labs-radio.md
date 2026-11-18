@@ -2,6 +2,10 @@
 
 This guide explains how to connect a controller/computer to a Doodle Labs radio over Ethernet using IPv4.
 
+{% hint style="info" %}
+IPv6 connections are also supported, but are less commonly used.
+{% endhint %}
+
 Doodle Labs radios run [Mesh Rider OS](https://doodlelabs.com/technology), an [OpenWrt](https://en.wikipedia.org/wiki/OpenWrt)-based firmware developed by Doodle Labs.
 
 {% hint style="info" %}
@@ -132,3 +136,7 @@ For information about improving the performance of the radio through hardware se
 ## Standalone Radio Hardware Setup
 
 For information about hardware setup of standalone Doodle Labs radios, visit the Doodle Labs [Hardware Integration](https://kb.doodlelabs.com/hardware-integration) Guide (access restrictions may apply).
+
+## Radio Access Issues
+
+If you are having radio access issues, follow the Doodle Labs guide for [debugging](https://kb.doodlelabs.com/radio-access-issues).
