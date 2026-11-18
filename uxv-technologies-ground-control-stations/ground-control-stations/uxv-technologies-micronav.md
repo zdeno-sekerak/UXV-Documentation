@@ -20,10 +20,21 @@ The controller is radio-agnostic, meaning the communication links can be swapped
 
 * Handles can also have switches/joysticks:
 
-| Specificaton | Value |
-| ------------ | ----- |
-|              |       |
-|              |       |
-|              |       |
+| Specificaton     | Value                                                      |
+| ---------------- | ---------------------------------------------------------- |
+| Weight           |                                                            |
+| Screen size      | 7 inch / 17.78 cm                                          |
+| Operating System | Windows 10 / Android (upon customer request)               |
+| CPU              | Intel® CoreTM m5-6Y57 vProTM Processor                     |
+| Memory           | 8GB SDRAM \[LPDDR3]                                        |
+| Human Interface  | Based on customer request                                  |
+| Battery          | Panasonic FZ-M1 battery 3220mAh                            |
+| Charger          | 110-239 V AC/DC 72W                                        |
+| USB Ports        | 2x USB 2.0 Type A                                          |
+| Communication    | Radio Integrated in the Controller (upon customer request) |
 
 ## Hardware Overview
+
+## Software Overview
+
+For setup of the radio
