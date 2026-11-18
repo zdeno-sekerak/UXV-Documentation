@@ -35,6 +35,21 @@ The controller is radio-agnostic, meaning the communication links can be swapped
 
 ## Hardware Overview
 
+{% tabs %}
+{% tab title="Front" %}
+<figure><img src="../../.gitbook/assets/uxv_technologies_micronav_controller.png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+
+{% tab title="Back" %}
+
+{% endtab %}
+{% endtabs %}
+
 ## Software Overview
 
-For setup of the radio
+For controller configuration and firmware updates, please refer to the [UXVSuite](../uxv-technologies-uxvsuite.md) software guide.
+
+If your controller has a radio, follow the [Doodle Labs](../../uxv-technologies-communication/standalone-radio-guides/connecting-to-a-doodle-labs-radio.md) guide for setup information. Please note that the radio is already integrated into the controller so you do not have to worry about hardware connections.
+
+## Connectivity
+
