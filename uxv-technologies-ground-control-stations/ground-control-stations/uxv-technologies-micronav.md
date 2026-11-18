@@ -1,10 +1,12 @@
+
 # UXV Technologies Micronav
 
-The UXV Technologies Micronav is an Integrated Ground Control Station (GCS) based on the 7" Panasonic Toughpad FZ-M1 tablet.
+The UXV Technologies Micronav is an integrated Ground Control Station (GCS) based on the 7-inch Panasonic Toughpad FZ-M1 tablet.
 
 <figure><img src="../../.gitbook/assets/uxv_technologies_micronav_controller.webp" alt=""><figcaption></figcaption></figure>
 
-The controller is radio-agnostic, meaning the communication links can be swapped. It also offers a high degree of customizabiliy for UXV Technologies customers in terms of joystick and button configurations on the front plates and handles.
+The controller is radio-agnostic, allowing its communication links to be changed.
+Joystick and button configurations on the front plates and handles can also be customized to meet customer requirements.
 
 {% columns %}
 {% column %}
@@ -16,20 +18,18 @@ The controller is radio-agnostic, meaning the communication links can be swapped
 {% endcolumn %}
 {% endcolumns %}
 
-* Handles can also have switches/joysticks:
-
-| Specificaton     | Value                                                      |
-| ---------------- | ---------------------------------------------------------- |
-| Weight           |                                                            |
-| Screen size      | 7 inch / 17.78 cm                                          |
-| Operating System | Windows 10 / Android (upon customer request)               |
-| CPU              | Intel® CoreTM m5-6Y57 vProTM Processor                     |
-| Memory           | 8GB SDRAM \[LPDDR3]                                        |
-| Human Interface  | Based on customer request                                  |
-| Battery          | Panasonic FZ-M1 battery 3220mAh                            |
-| Charger          | 110-239 V AC/DC 72W                                        |
-| USB Ports        | 2x USB 2.0 Type A                                          |
-| Communication    | Radio Integrated in the Controller (upon customer request) |
+| Specification | Value |
+| ------------- | ----- |
+| Weight | |
+| Screen size | 7 inches / 17.78 cm |
+| Operating system | Windows 10 / Android (upon customer request) |
+| CPU | Intel® Core™ m5-6Y57 vPro™ processor |
+| Memory | 8 GB SDRAM (LPDDR3) |
+| Human interface | Configured to customer requirements |
+| Battery | Panasonic FZ-M1 battery, 3220 mAh |
+| Charger | 110–239 V AC/DC, 72 W |
+| USB ports | 2 × USB 2.0 Type-A |
+| Communication | Radio integrated into the controller (upon customer request) |
 
 ## Hardware Overview
 
@@ -43,10 +43,13 @@ The controller is radio-agnostic, meaning the communication links can be swapped
 {% endtab %}
 {% endtabs %}
 
-## Software Overview
+## Software
 
-For controller configuration and firmware updates, please refer to the [UXVSuite](../uxv-technologies-uxvsuite.md) software guide.
+For controller configuration and firmware updates, refer to the [UXVSuite](../uxv-technologies-uxvsuite.md) software guide.
 
-If your controller has a radio, follow the [Doodle Labs](../../uxv-technologies-communication/standalone-radio-guides/connecting-to-a-doodle-labs-radio.md) guide for setup information. Please note that the radio is already integrated into the controller so you do not have to worry about hardware connections.
+If the controller is equipped with a radio, follow the [Doodle Labs](../../uxv-technologies-communication/standalone-radio-guides/connecting-to-a-doodle-labs-radio.md) guide for setup instructions.
+The radio is already integrated into the controller, so no additional hardware connections are required.
 
 ## Connectivity
+
+The connectivity options differ between
