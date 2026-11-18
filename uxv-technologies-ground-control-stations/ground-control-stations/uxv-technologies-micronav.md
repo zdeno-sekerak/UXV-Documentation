@@ -16,6 +16,8 @@ The controller is radio-agnostic, meaning the communication links can be swapped
 {% endcolumn %}
 {% endcolumns %}
 
+* Handles can also have switches/joysticks:
+
 | Specificaton     | Value                                                      |
 | ---------------- | ---------------------------------------------------------- |
 | Weight           |                                                            |
@@ -41,12 +43,10 @@ The controller is radio-agnostic, meaning the communication links can be swapped
 {% endtab %}
 {% endtabs %}
 
-## Software
+## Software Overview
 
 For controller configuration and firmware updates, please refer to the [UXVSuite](../uxv-technologies-uxvsuite.md) software guide.
 
 If your controller has a radio, follow the [Doodle Labs](../../uxv-technologies-communication/standalone-radio-guides/connecting-to-a-doodle-labs-radio.md) guide for setup information. Please note that the radio is already integrated into the controller so you do not have to worry about hardware connections.
 
 ## Connectivity
-
-The connectivity options differ between&#x20;

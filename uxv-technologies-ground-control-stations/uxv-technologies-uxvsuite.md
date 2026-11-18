@@ -1,27 +1,27 @@
 # UXVSuite
 
-UXV Suite is a software on UXV Technologies controllers used for configuration and software updates of the controller.
+UXVSuite is an application used to configure UXV Technologies controllers and update their software.
 
 {% hint style="info" %}
-Nav Suite software is an older application with a similar function, which is being phased out in favor of UXV Suite.&#x20;
+Nav Suite is an older application with similar functionality. It is being phased out in favor of UXVSuite.
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-10-21 193237.png" alt=""><figcaption><p>UXVSuite home screen on the UXV Technologies SRoC 7" Windows controller</p></figcaption></figure>
 
-Examples of functions of UXV Suite:
+The main functions of UXVSuite include:
 
-1. Button and joystick callibration.
-2. Failsafe settings.
-3. Battery information (including [SBMs](accessories-for-ground-control-stations/swappable-battery-modules-sbm.md)) and power settings.
-4. Software update.
-5. Serial output (on compatible controllers).
-6. NavBay settings (on compatible controllers).
+1. Calibrating buttons and joysticks.
+2. Configuring failsafe settings.
+3. Viewing battery information (including [SBMs](accessories-for-ground-control-stations/swappable-battery-modules-sbm.md)) and configuring power settings.
+4. Updating controller software.
+5. Configuring serial output (on supported controllers).
+6. Configuring NavBay settings (on supported controllers).
 
 ## UXVSuite User Guide
 
-For the most up-to-date information about the UXVSuite software, use the official UXVSuite Service Guide by UXV Technologies. You can acces it in two ways:
+For the latest information, refer to the official UXVSuite Service Guide provided by UXV Technologies. The guide can be accessed in two ways:
 
-* You can get the guide directly from UXV Technologies by sending an email to [gcssupport@uxvtechnologies.com](mailto:gcssupport@uxvtechnologies.com).
-* If you have a UXV Technologies controller, navigate to UXVSuite Application > Help > UXVSuite Service Guide.
+* Request the guide from UXV Technologies by emailing [gcssupport@uxvtechnologies.com](mailto:gcssupport@uxvtechnologies.com).
+* On a UXV Technologies controller, navigate to `UXVSuite Application` > `Help` > `UXVSuite Service Guide`.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-10-21 193237 - Copy.png" alt=""><figcaption></figcaption></figure>
