@@ -12,7 +12,7 @@ For more in-depth information, visit the Doodle Labs [Knowledge Base](https://kb
 
 ## Radio IP Address
 
-The default [IPv4 address](https://en.wikipedia.org/wiki/IP_address) of a Doodle Labs radio is `10.223.1.1/16`, with a subnet mask of `255.255.0.0`.
+The default [IPv4 address](https://en.wikipedia.org/wiki/IP_address) of a Doodle Labs radio is `10.223.1.1/16`, with a subnet mask of `255.255.0.0` , based on the [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) standard.
 
 {% hint style="info" %}
 Older Doodle Labs radios also have a fallback IP address of `192.168.153.1`, which can be used to access the radio and modify its configuration.
@@ -69,7 +69,13 @@ sudo ip addr add <IP_ADDRESS>/<CIDR> dev <INTERFACE>
 To verify that the radio is reachable, use the `ping` command:
 
 ```
-ping <IP_ADDRESS>
+ping <RADIO_IP_ADDRESS>
+```
+
+You should see a response in the following format:
+
+```
+Reply from <RADIO_IP_ADDRESS>: bytes=<ICPM_NETWORK_BYTES_RETURNED> time=<ROUND_TRIP_TIME> TTL=<TIME_TO_LIVE> 
 ```
 
 {% hint style="info" %}
@@ -89,7 +95,11 @@ Log in using the username and password for your radio. Depending on the radio, t
 * **Username:** `root` **Password:** Leave blank.
 * **Username:** `user` **Password:** `DoodleSmartRadio`
 
-Further information can be found in the [Doodle Labs Mesh Rider Radio GUI Walkthrough](https://kb.doodlelabs.com/gui-walk-through-guide).
+Further information can be found in the [Doodle Labs Mesh Rider Radio GUI Walkthrough](https://kb.doodlelabs.com/gui-walk-through-guide).&#x20;
+
+{% hint style="info" %}
+If the radios are connected together, you can acces the settings (web GUI/ssh) of any radio on the network from any other radio on the same network.
+{% endhint %}
 
 ## SSH Connection
 
