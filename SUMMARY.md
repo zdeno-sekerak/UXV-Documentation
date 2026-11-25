@@ -9,7 +9,8 @@
   * [UXV Technologies SRoC 7" Windows](uxv-technologies-ground-control-stations/ground-control-stations/uxv-technologies-sroc-7-windows.md)
 * [Accessories for Ground Control Stations](uxv-technologies-ground-control-stations/accessories-for-ground-control-stations/README.md)
   * [Swappable Battery Modules (SBM)](uxv-technologies-ground-control-stations/accessories-for-ground-control-stations/swappable-battery-modules-sbm.md)
-* [UXVSuite](uxv-technologies-ground-control-stations/uxv-technologies-uxvsuite.md)
+* [UXVSuite](uxv-technologies-ground-control-stations/uxv-technologies-uxvsuite/README.md)
+  * [UXVSuite Service Guide](uxv-technologies-ground-control-stations/uxv-technologies-uxvsuite/uxvsuite-service-guide.md)
 
 ## UXV Technologies Communication
 

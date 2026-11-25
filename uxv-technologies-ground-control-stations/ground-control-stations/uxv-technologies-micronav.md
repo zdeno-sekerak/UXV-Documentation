@@ -46,7 +46,7 @@ The controller is radio-agnostic, allowing its communication links to be changed
 
 ## Software
 
-For controller configuration and firmware updates, refer to the [UXVSuite](../uxv-technologies-uxvsuite.md) software guide.
+For controller configuration and firmware updates, refer to the [UXVSuite](../uxv-technologies-uxvsuite/) software guide.
 
 If the controller is equipped with a radio, follow the [Doodle Labs](../../uxv-technologies-communication/standalone-radio-guides/connecting-to-a-doodle-labs-radio.md) guide for setup instructions. The radio is already integrated into the controller, so no additional hardware connections are required.
 
